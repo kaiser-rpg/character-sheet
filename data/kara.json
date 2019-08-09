@@ -1,0 +1,110 @@
+{
+    "name": "Kara",
+    "characteristics": {
+        "base": [
+            {
+                "key": "str",
+                "value": 6
+            },
+            {
+                "key": "dex",
+                "value": 10
+            },
+            {
+                "key": "wp",
+                "value": 4
+            },
+            {
+                "key": "foc",
+                "value": 4
+            }
+        ],
+        "level": [
+            {
+                "key": "str",
+                "value": 1,
+                "note": "level 2"
+            }
+        ]
+    },
+    "class": {
+        "name": "classA",
+        "level": 2,
+        "generalInvest": [
+        ],
+        "martialInvest": [
+            {
+                "key": "dodge",
+                "value": 20
+            }
+        ],
+        "magicInvest": [
+        ],
+        "manifestInvest": [
+        ],
+        "secondaryInvest": [
+            {
+                "key": "style",
+                "value": 2,
+                "note": "character creation"
+            }
+        ],
+        "miscInvest": [
+        ]
+    },
+    "natural": [
+    ],
+    "characterFeatures": [
+        {
+            "name": "jack of all trades",
+            "cost": 2,
+            "actions": [
+                {
+                    "superType": "skill",
+                    "type": "add-natural-factor-skill",
+                    "key": "secondary",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "hard to kill",
+            "cost": 2,
+            "actions": [
+                {
+                    "superType": "ability.general",
+                    "type": "innate-bonus-feature",
+                    "key": "lifePoints",
+                    "value": 10,
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "name": "add one point to a strength",
+            "cost": 2,
+            "actions": [
+                {
+                    "superType": "char",
+                    "type": "add-natural-factor-char",
+                    "key": "str",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "add one point to a strength",
+            "cost": 2,
+            "actions": [
+                {
+                    "superType": "char",
+                    "type": "add-natural-factor-char",
+                    "key": "str",
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "creatureFeature": [
+    ]
+}

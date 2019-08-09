@@ -1,0 +1,133 @@
+{
+    "name": "corsair",
+    "archetype": [
+        "fighter"
+    ],
+    "general": {
+        "lifePoints": 3,
+        "innate": [
+            {
+                "superType": "ability.general",
+                "key": "lifePoints",
+                "level": 1,
+                "value": 10
+            },
+            {
+                "superType": "skill",
+                "key": "initiative",
+                "level": 1,
+                "value": 1
+            }
+        ]
+    },
+    "martial": {
+        "limit": 60,
+        "strike": 4,
+        "block": 4,
+        "dodge": 4,
+        "wearArmor": 4,
+        "kiReserve": 2,
+        "chakra": 2,
+        "innate": [
+            {
+                "superType": "ability.martial",
+                "key": "spiritKnowledge",
+                "level": 1,
+                "value": 3
+            },
+            {
+                "superType": "skill",
+                "key": "strike",
+                "level": 2,
+                "value": 1,
+                "max": 5
+            },
+            {
+                "superType": "skill",
+                "key": "dodge",
+                "level": 2,
+                "value": 1,
+                "max": 5
+            }
+        ]
+    },
+    "magic": {
+        "limit": 50,
+        "manaPool": 3,
+        "manaAccumulation": 7,
+        "manaRecovery": 3,
+        "spellProjection": 5,
+        "summon": 5,
+        "control": 5,
+        "banish": 5,
+        "innate": [
+            {
+                "superType": "ability.magic",
+                "key": "manaPool",
+                "level": 1,
+                "value": 5
+            }
+        ]
+    },
+    "manifest": {
+        "limit": 50,
+        "phenomPoint": 2,
+        "phenomProjection": 5,
+        "innate": [
+            {
+                "superType": "ability.manifest",
+                "key": "phenomStock",
+                "level": 3,
+                "value": 1
+            }
+        ]
+    },
+    "secondary": {
+        "exertion": 4,
+        "social": 4,
+        "perception": 4,
+        "intellectual": 5,
+        "vigor": 4,
+        "subterfuge": 4,
+        "creative": 4,
+        "trade": 4,
+        "innate": [
+            {
+                "superType": "skill",
+                "key": "acrobatics",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "athletics",
+                "level": 2,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "sleightOfHand",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "style",
+                "level": 1,
+                "value": 1
+            }
+        ],
+        "reduced": [
+            {
+                "superType": "skill",
+                "key": "acrobatics",
+                "cost": 3
+            },
+            {
+                "superType": "skill",
+                "key": "style",
+                "cost": 3
+            }
+        ]
+    }
+}
