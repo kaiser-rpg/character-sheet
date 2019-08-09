@@ -8,15 +8,6 @@ import {
     SUPER_TYPE_CHAR
 } from "./super-types";
 
-export const SET_BASE_VALUE_CHAR = "set-base-char";
-export const ADD_NATURAL_FACTOR_CHAR = "add-natural-factor-char";
-export const ADD_INVEST_FACTOR_CHAR = "add-invest-factor-char";
-
-export const ADD_ALL_ACTION_FACTOR_CHAR = "add-all-action-factor-char";
-export const ADD_DEED_FACTOR_CHAR = "add-deed-factor-char";
-export const ADD_QUALITY_FACTOR_CHAR = "add-quality-factor-char";
-export const ADD_POWER_FACTOR_CHAR = "add-power-factor-char";
-
 export const setBaseValueChar = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_CHAR,
     type: SET_BASE_VALUE,

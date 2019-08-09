@@ -164,7 +164,7 @@ export class KiReserve extends PoolEntry {
     }
 
     get total() {
-        return this.base + 2 * this.multiplier + sumFactors(this.factors).total;
+        return this.permanentTotal + this.temporaryBonus;
     }
 }
 

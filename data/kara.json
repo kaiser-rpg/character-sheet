@@ -34,19 +34,35 @@
         ],
         "martialInvest": [
             {
+                "superType": "skill",
                 "key": "dodge",
                 "value": 20
             }
         ],
         "magicInvest": [
+            {
+                "superType": "skill",
+                "key": "spellProjection",
+                "value": 2
+            },
+            {
+                "superType": "ability.magic",
+                "key": "manaPool",
+                "value": 2
+            }
         ],
         "manifestInvest": [
+            {
+                "superType": "ability.manifest",
+                "key": "phenomStock",
+                "value": 2
+            }
         ],
         "secondaryInvest": [
             {
+                "superType": "skill",
                 "key": "style",
-                "value": 2,
-                "note": "character creation"
+                "value": 2
             }
         ],
         "miscInvest": [
@@ -61,7 +77,7 @@
             "actions": [
                 {
                     "superType": "skill",
-                    "type": "add-natural-factor-skill",
+                    "type": "add-natural-factor",
                     "key": "secondary",
                     "value": 1
                 }
@@ -86,7 +102,7 @@
             "actions": [
                 {
                     "superType": "char",
-                    "type": "add-natural-factor-char",
+                    "type": "add-natural-factor",
                     "key": "str",
                     "value": 1
                 }
@@ -98,7 +114,7 @@
             "actions": [
                 {
                     "superType": "char",
-                    "type": "add-natural-factor-char",
+                    "type": "add-natural-factor",
                     "key": "str",
                     "value": 1
                 }

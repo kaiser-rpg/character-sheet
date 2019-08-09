@@ -71,7 +71,7 @@
     },
     "manifest": {
         "limit": 50,
-        "phenomPoint": 2,
+        "phenomStock": 2,
         "phenomProjection": 5,
         "innate": [
             {

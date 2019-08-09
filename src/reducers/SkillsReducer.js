@@ -1,13 +1,3 @@
-import {
-    ADD_ALL_ACTION_FACTOR_SKILL,
-    ADD_BASE_VALUE_SKILL,
-    ADD_DEED_FACTOR_SKILL,
-    ADD_INNATE_FACTOR_SKILL,
-    ADD_NATURAL_FACTOR_SKILL,
-    ADD_POWER_FACTOR_SKILL,
-    ADD_QUALITY_FACTOR_SKILL,
-} from "../actions/skill-actions";
-import {INVEST_XP_SKILL} from "../actions/invest-actions";
 import SkillList from "../containers/raw/SkillList";
 import {
     allActionFactor,
@@ -20,8 +10,17 @@ import {
 import {devCostBase, devCostClassMod} from "../containers/raw/DevCost";
 import {INNATE_BONUS_CLASS, INNATE_BONUS_FEATURE} from "../actions/innate-bonus-actions";
 import {LEVEL_UP} from "../actions/level-actions";
-import {REDUCE_DEV_COST_SKILL, SET_DEV_COST_SKILL} from "../actions/dev-cost-actions";
-import {SUPER_TYPE_SKILL} from "../actions/super-types";
+import {REDUCE_DEV_COST, SET_DEV_COST} from "../actions/dev-cost-actions";
+import {
+    ADD_ALL_ACTION_FACTOR,
+    ADD_BASE_VALUE,
+    ADD_DEED_FACTOR,
+    ADD_INNATE_FACTOR,
+    ADD_NATURAL_FACTOR,
+    ADD_POWER_FACTOR,
+    ADD_QUALITY_FACTOR,
+    SUPER_TYPE_SKILL
+} from "../actions/super-types";
 
 export function skills(state = new SkillList(), action) {
     if (!action.key || action.superType !== SUPER_TYPE_SKILL) {
@@ -37,8 +36,7 @@ export function skills(state = new SkillList(), action) {
 
             newState.getSkillGroup("all").forEach((skill) => skill.updateRollingInnate(action.newLevel));
             return newState;
-        case ADD_BASE_VALUE_SKILL:
-        case INVEST_XP_SKILL:
+        case ADD_BASE_VALUE:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -54,7 +52,6 @@ export function skills(state = new SkillList(), action) {
                 case "primary":
                 case "secondary":
                     let group = newState.getSkillGroup(key);
-                    console.log(group);
                     group.forEach((skill) => {
                         skill.baseValue += action.value;
                     });
@@ -71,7 +68,7 @@ export function skills(state = new SkillList(), action) {
 
             console.log("added Base Skill Value to", action.key);
             return newState;
-        case ADD_INNATE_FACTOR_SKILL:
+        case ADD_INNATE_FACTOR:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -87,7 +84,6 @@ export function skills(state = new SkillList(), action) {
                 case "primary":
                 case "secondary":
                     let group = newState.getSkillGroup(key);
-                    console.log(group);
                     group.forEach((skill) => {
                         skill.factors.push(new innateFactor(action.value, action.source, action.note));
                     });
@@ -104,7 +100,7 @@ export function skills(state = new SkillList(), action) {
 
             console.log("added innate factor to", action.key);
             return newState;
-        case ADD_NATURAL_FACTOR_SKILL:
+        case ADD_NATURAL_FACTOR:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -120,7 +116,6 @@ export function skills(state = new SkillList(), action) {
                 case "primary":
                 case "secondary":
                     let group = newState.getSkillGroup(key);
-                    console.log(group);
                     group.forEach((skill) => {
                         console.log("natural skill", skill)
                         skill.factors.push(new naturalFactor(action.value, action.source, action.note));
@@ -137,7 +132,7 @@ export function skills(state = new SkillList(), action) {
             }
             console.log("added natural factor to", action.key);
             return newState;
-        case ADD_ALL_ACTION_FACTOR_SKILL:
+        case ADD_ALL_ACTION_FACTOR:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -153,7 +148,6 @@ export function skills(state = new SkillList(), action) {
                 case "primary":
                 case "secondary":
                     let group = newState.getSkillGroup(key);
-                    console.log(group);
                     group.forEach((skill) => {
                         skill.factors.push(new allActionFactor(action.value, action.source, action.note));
                     });
@@ -170,7 +164,7 @@ export function skills(state = new SkillList(), action) {
 
             console.log("added all-action factor to", action.key);
             return newState;
-        case ADD_DEED_FACTOR_SKILL:
+        case ADD_DEED_FACTOR:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -186,7 +180,6 @@ export function skills(state = new SkillList(), action) {
                 case "primary":
                 case "secondary":
                     let group = newState.getSkillGroup(key);
-                    console.log(group);
                     group.forEach((skill) => {
                         skill.factors.push(new deedFactor(action.value, action.source, action.note));
                     });
@@ -203,7 +196,7 @@ export function skills(state = new SkillList(), action) {
 
             console.log("added deed factor to", action.key);
             return newState;
-        case ADD_QUALITY_FACTOR_SKILL:
+        case ADD_QUALITY_FACTOR:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -219,7 +212,6 @@ export function skills(state = new SkillList(), action) {
                 case "primary":
                 case "secondary":
                     let group = newState.getSkillGroup(key);
-                    console.log(group);
                     group.forEach((skill) => {
                         skill.factors.push(new qualityFactor(action.value, action.source, action.note));
                     });
@@ -236,7 +228,7 @@ export function skills(state = new SkillList(), action) {
 
             console.log("added quality factor to", action.key);
             return newState;
-        case ADD_POWER_FACTOR_SKILL:
+        case ADD_POWER_FACTOR:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -252,7 +244,6 @@ export function skills(state = new SkillList(), action) {
                 case "primary":
                 case "secondary":
                     let group = newState.getSkillGroup(key);
-                    console.log(group);
                     group.forEach((skill) => {
                         skill.factors.push(new powerFactor(action.value, action.source, action.note));
                     });
@@ -269,7 +260,7 @@ export function skills(state = new SkillList(), action) {
 
             console.log("added power factor to", action.key);
             return newState;
-        case SET_DEV_COST_SKILL:
+        case SET_DEV_COST:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -285,7 +276,6 @@ export function skills(state = new SkillList(), action) {
                 case "primary":
                 case "secondary":
                     let group = newState.getSkillGroup(key);
-                    console.log(group);
                     group.forEach((skill) => {
                         skill.devCostMod.push(new devCostBase(action.value, action.source, action.note));
                     });
@@ -302,7 +292,7 @@ export function skills(state = new SkillList(), action) {
 
             console.log("set new dev cost to ", action.key);
             return newState;
-        case REDUCE_DEV_COST_SKILL:
+        case REDUCE_DEV_COST:
             switch (key) {
                 case "martial":
                 case "magic":
@@ -317,7 +307,8 @@ export function skills(state = new SkillList(), action) {
                 case "all":
                 case "primary":
                 case "secondary":
-                    newState.getSkillGroup(key).forEach((skill) => {
+                    let group = newState.getSkillGroup(key);
+                    group.forEach((skill) => {
                         skill.devCostMod.push(new devCostClassMod(action.value, action.source, action.note));
                     });
                     break;
@@ -344,10 +335,10 @@ export function skills(state = new SkillList(), action) {
                 case "all":
                 case "primary":
                 case "secondary":
-                    newState.getSkillGroup(key)
-                        .forEach((skill) => {
-                            skill.rollingInnate.push(action);
-                        });
+                    let group = newState.getSkillGroup(key);
+                    group.forEach((skill) => {
+                        skill.rollingInnate.push(action);
+                    });
                     break;
                 default:
                     newState[key].rollingInnate.push(action);

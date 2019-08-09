@@ -1,13 +1,14 @@
-import {SUPER_TYPE_MANIFEST} from "./super-types";
-
-export const MANIFEST_ADD_BASE_PHENOM_STOCK = "add-base-phenom-stock";
-export const MANIFEST_ADD_INNATE_PHENOM_STOCK = "add-innate-phenom-stock";
-export const MANIFEST_ADD_NATURAL_PHENOM_STOCK = "add-natural-phenom-stock";
-export const MANIFEST_ADD_INVEST_PHENOM_STOCK = "add-invest-phenom-stock";
+import {
+    ADD_BASE_VALUE,
+    ADD_INNATE_FACTOR,
+    ADD_INVEST_FACTOR,
+    ADD_NATURAL_FACTOR,
+    SUPER_TYPE_MANIFEST
+} from "./super-types";
 
 export const add2BasePhenomStock = (value, source = "", note = "") => ({
     superType: SUPER_TYPE_MANIFEST,
-    type: MANIFEST_ADD_BASE_PHENOM_STOCK,
+    type: ADD_BASE_VALUE,
     key: "phenomStock",
     value,
     source,
@@ -16,7 +17,7 @@ export const add2BasePhenomStock = (value, source = "", note = "") => ({
 
 export const add2InnatePhenomStock = (value, source = "", note = "") => ({
     superType: SUPER_TYPE_MANIFEST,
-    type: MANIFEST_ADD_INNATE_PHENOM_STOCK,
+    type: ADD_INNATE_FACTOR,
     key: "phenomStock",
     value,
     source,
@@ -25,7 +26,7 @@ export const add2InnatePhenomStock = (value, source = "", note = "") => ({
 
 export const add2NaturalPhenomStock = (value, source = "", note = "") => ({
     superType: SUPER_TYPE_MANIFEST,
-    type: MANIFEST_ADD_NATURAL_PHENOM_STOCK,
+    type: ADD_NATURAL_FACTOR,
     key: "phenomStock",
     value,
     source,
@@ -34,7 +35,7 @@ export const add2NaturalPhenomStock = (value, source = "", note = "") => ({
 
 export const add2InvestPhenomStock = (value, source = "", note = "") => ({
     superType: SUPER_TYPE_MANIFEST,
-    type: MANIFEST_ADD_INVEST_PHENOM_STOCK,
+    type: ADD_INVEST_FACTOR,
     key: "phenomStock",
     value,
     source,

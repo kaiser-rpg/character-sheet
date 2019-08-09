@@ -1,9 +1,8 @@
 import {sheet} from "../reducers/SheetApp";
 import {addNaturalFactor2Char, setBaseValueChar} from "../actions/char-actions";
 import {increaseLevel} from "../actions/level-actions";
-import {setDevCost2Skill} from "../actions/dev-cost-actions";
+import {setDevCost} from "../actions/dev-cost-actions";
 import {innateBonusClass} from "../actions/innate-bonus-actions";
-import {addBaseValue2Skill, addInnateFactor2Skill, addNaturalFactor2Skill} from "../actions/skill-actions";
 import {
     setCharacterName,
     setClassName,
@@ -11,6 +10,14 @@ import {
     setManifestLimit,
     setMartialLimit
 } from "../actions/info-actions";
+import {
+    SUPER_TYPE_GENERAL,
+    SUPER_TYPE_MAGIC,
+    SUPER_TYPE_MANIFEST,
+    SUPER_TYPE_MARTIAL,
+    SUPER_TYPE_SKILL
+} from "../actions/super-types";
+import {add2Base, add2Innate, add2Natural} from "../actions/factor-actions";
 
 const fs = window.require('fs');
 
@@ -44,28 +51,28 @@ const loadCharacteristics = (charData) => {
     });
 };
 
-const loadClassData = (className) => {
-    let classData = JSON.parse(fs.readFileSync("data/" + className + ".json"));
+const loadClassData = (fileName) => {
+    let classData = JSON.parse(fs.readFileSync("data/" + fileName + ".json"));
+    let className = classData.name;
 
     sheet.dispatch(setClassName(classData.name));
-    sheet.dispatch(setMartialLimit(classData.martial.limit));
-    sheet.dispatch(setMagicLimit(classData.magic.limit));
-    sheet.dispatch(setManifestLimit(classData.manifest.limit));
 
-    // Load secondary group
+
+    /* Load Secondary */
+
     let secondary = classData.secondary;
-    sheet.dispatch(setDevCost2Skill("creative", secondary.creative, className));
-    sheet.dispatch(setDevCost2Skill("exertion", secondary.exertion, className));
-    sheet.dispatch(setDevCost2Skill("intellectual", secondary.intellectual, className));
-    sheet.dispatch(setDevCost2Skill("perception", secondary.perception, className));
-    sheet.dispatch(setDevCost2Skill("social", secondary.social, className));
-    sheet.dispatch(setDevCost2Skill("subterfuge", secondary.subterfuge, className));
-    sheet.dispatch(setDevCost2Skill("vigor", secondary.vigor, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "creative", secondary.creative, className, "group"));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "exertion", secondary.exertion, className, "group"));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "intellectual", secondary.intellectual, className, "group"));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "perception", secondary.perception, className, "group"));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "social", secondary.social, className, "group"));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "subterfuge", secondary.subterfuge, className, "group"));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "vigor", secondary.vigor, className, "group"));
 
     // Load reduced dev cost
     secondary.reduced.forEach((skill) => {
         console.log(skill);
-        sheet.dispatch(setDevCost2Skill(skill.name, skill.cost, className, "class reduced"));
+        sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, skill.name, skill.cost, className, "class reduced"));
     });
 
     // Load innate
@@ -74,37 +81,57 @@ const loadClassData = (className) => {
     });
 
 
-    // Load Primary dev costs
+    /* Load Primary */
+
+    // Load General
+    let general = classData.general;
+    sheet.dispatch(setDevCost(SUPER_TYPE_GENERAL, "lifePoints", general.lifePoints, className));
+
+    general.innate.forEach((e) => {
+        sheet.dispatch(innateBonusClass(e.superType, e.key, e.value, e.level, className));
+    });
+
+    // Load Martial
     let martial = classData.martial;
-    sheet.dispatch(setDevCost2Skill("strike", martial.strike, className));
-    sheet.dispatch(setDevCost2Skill("block", martial.block, className));
-    sheet.dispatch(setDevCost2Skill("dodge", martial.dodge, className));
-    sheet.dispatch(setDevCost2Skill("wearArmor", martial.wearArmor, className));
+    sheet.dispatch(setMartialLimit(martial.limit));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "strike", martial.strike, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "block", martial.block, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "dodge", martial.dodge, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "wearArmor", martial.wearArmor, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_MARTIAL, "kiReserve", martial.kiReserve, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_MARTIAL, "chakra", martial.chakra, className));
 
+    martial.innate.forEach((e) => {
+        sheet.dispatch(innateBonusClass(e.superType, e.key, e.value, e.level, className));
+    });
+
+    // Load Magic
     let magic = classData.magic;
-    sheet.dispatch(setDevCost2Skill("spellProjection", magic.spellProjection, className));
-    sheet.dispatch(setDevCost2Skill("summon", magic.summon, className));
-    sheet.dispatch(setDevCost2Skill("control", magic.control, className));
-    sheet.dispatch(setDevCost2Skill("banish", magic.banish, className));
+    sheet.dispatch(setMagicLimit(magic.limit));
+    sheet.dispatch(setDevCost(SUPER_TYPE_MAGIC, "manaPool", magic.manaPool, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_MAGIC, "manaAccumulation", magic.manaAccumulation, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_MAGIC, "manaRecovery", magic.manaRecovery, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "spellProjection", magic.spellProjection, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "summon", magic.summon, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "control", magic.control, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "banish", magic.banish, className));
 
+    magic.innate.forEach((e) => {
+        sheet.dispatch(innateBonusClass(e.superType, e.name, e.value, e.level, className));
+    });
+
+    // Load Manifest
     let manifest = classData.manifest;
-    sheet.dispatch(setDevCost2Skill("phenomProjection", manifest.phenomProjection, className));
+    sheet.dispatch(setManifestLimit(manifest.limit));
+    sheet.dispatch(setDevCost(SUPER_TYPE_MANIFEST, "phenomStock", magic.phenomStock, className));
+    sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "phenomProjection", manifest.phenomProjection, className));
 
-    // Load innate
-    martial.innate.forEach((skill) => {
-        sheet.dispatch(innateBonusClass(skill.name, skill.value, skill.level, className));
-    });
-
-    magic.innate.forEach((skill) => {
-        sheet.dispatch(innateBonusClass(skill.name, skill.value, skill.level, className));
-    });
-
-    manifest.innate.forEach((skill) => {
-        sheet.dispatch(innateBonusClass(skill.name, skill.value, skill.level, className));
+    manifest.innate.forEach((e) => {
+        sheet.dispatch(innateBonusClass(e.superType, e.name, e.value, e.level, className));
     });
 
 
-    sheet.dispatch(increaseLevel(3, "classA", "creation"))
+    sheet.dispatch(increaseLevel(3, className, "creation"))
 
 };
 
@@ -112,33 +139,33 @@ const loadCharacterClass = (classData) => {
 
     // Load Martial
     classData.martialInvest.forEach((c) => {
-        sheet.dispatch(addBaseValue2Skill(c.key, c.value, c.source, c.note))
+        sheet.dispatch(add2Base(c.superType, c.key, c.value, c.source, c.note));
     });
 
     // Load Magic
     classData.magicInvest.forEach((c) => {
-        sheet.dispatch(addBaseValue2Skill(c.key, c.value, c.source, c.note))
+        sheet.dispatch(add2Base(c.superType, c.key, c.value, c.source, c.note));
     });
 
     // Load Manifest
     classData.manifestInvest.forEach((c) => {
-        sheet.dispatch(addBaseValue2Skill(c.key, c.value, c.source, c.note))
+        sheet.dispatch(add2Base(c.superType, c.key, c.value, c.source, c.note));
     });
 
     // Load Secondary
     classData.secondaryInvest.forEach((c) => {
-        sheet.dispatch(addBaseValue2Skill(c.key, c.value, c.source, c.note))
+        sheet.dispatch(add2Base(c.superType, c.key, c.value, c.source, c.note));
     });
 
 };
 
 const loadFactors = (natural = [], invest = []) => {
     natural.forEach((c) => {
-        sheet.dispatch(addNaturalFactor2Skill(c.key, c.value, c.source, c.note))
+        sheet.dispatch(add2Natural(c.superType, c.key, c.value, c.source, c.note));
     });
 
     invest.forEach((c) => {
-        sheet.dispatch(addInnateFactor2Skill(c.key, c.value, c.source, c.note))
+        sheet.dispatch(add2Innate(c.superType, c.key, c.value, c.source, c.note));
     });
 };
 

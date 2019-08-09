@@ -1,19 +1,19 @@
-import {SUPER_TYPE_SKILL} from "./super-types";
-
-export const ADD_BASE_VALUE_SKILL = "add-base-value-skill";
-export const ADD_INNATE_FACTOR_SKILL = "add-innate-factor-skill";
-export const ADD_NATURAL_FACTOR_SKILL = "add-natural-factor-skill";
-export const ADD_INVEST_FACTOR_SKILL = "add-invest-factor-skill";
-
-export const ADD_ALL_ACTION_FACTOR_SKILL = "add-all-action-factor-skill";
-export const ADD_DEED_FACTOR_SKILL = "add-deed-factor-skill";
-export const ADD_QUALITY_FACTOR_SKILL = "add-quality-factor-skill";
-export const ADD_POWER_FACTOR_SKILL = "add-power-factor-skill";
+import {
+    ADD_ALL_ACTION_FACTOR,
+    ADD_BASE_VALUE,
+    ADD_DEED_FACTOR,
+    ADD_INNATE_FACTOR,
+    ADD_INVEST_FACTOR,
+    ADD_NATURAL_FACTOR,
+    ADD_POWER_FACTOR,
+    ADD_QUALITY_FACTOR,
+    SUPER_TYPE_SKILL
+} from "./super-types";
 
 
 export const addBaseValue2Skill = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_SKILL,
-    type: ADD_BASE_VALUE_SKILL,
+    type: ADD_BASE_VALUE,
     key,
     value,
     source,
@@ -22,7 +22,7 @@ export const addBaseValue2Skill = (key, value, source = "", note = "") => ({
 
 export const addInnateFactor2Skill = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_SKILL,
-    type: ADD_INNATE_FACTOR_SKILL,
+    type: ADD_INNATE_FACTOR,
     key,
     value,
     source,
@@ -31,7 +31,7 @@ export const addInnateFactor2Skill = (key, value, source = "", note = "") => ({
 
 export const addNaturalFactor2Skill = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_SKILL,
-    type: ADD_NATURAL_FACTOR_SKILL,
+    type: ADD_NATURAL_FACTOR,
     key,
     value,
     source,
@@ -40,7 +40,7 @@ export const addNaturalFactor2Skill = (key, value, source = "", note = "") => ({
 
 export const addInvestFactor2Skill = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_SKILL,
-    type: ADD_INVEST_FACTOR_SKILL,
+    type: ADD_INVEST_FACTOR,
     key,
     value,
     source,
@@ -49,7 +49,7 @@ export const addInvestFactor2Skill = (key, value, source = "", note = "") => ({
 
 export const addAllActionFactor2Skill = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_SKILL,
-    type: ADD_ALL_ACTION_FACTOR_SKILL,
+    type: ADD_ALL_ACTION_FACTOR,
     key,
     value,
     source,
@@ -58,7 +58,7 @@ export const addAllActionFactor2Skill = (key, value, source = "", note = "") => 
 
 export const addDeedFactor2Skill = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_SKILL,
-    type: ADD_DEED_FACTOR_SKILL,
+    type: ADD_DEED_FACTOR,
     key,
     value,
     source,
@@ -67,7 +67,7 @@ export const addDeedFactor2Skill = (key, value, source = "", note = "") => ({
 
 export const addQualityFactor2Skill = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_SKILL,
-    type: ADD_QUALITY_FACTOR_SKILL,
+    type: ADD_QUALITY_FACTOR,
     key,
     value,
     source,
@@ -76,7 +76,7 @@ export const addQualityFactor2Skill = (key, value, source = "", note = "") => ({
 
 export const addPowerFactor2Skill = (key, value, source = "", note = "") => ({
     superType: SUPER_TYPE_SKILL,
-    type: ADD_POWER_FACTOR_SKILL,
+    type: ADD_POWER_FACTOR,
     key,
     value,
     source,
