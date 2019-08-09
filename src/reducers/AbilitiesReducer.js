@@ -15,6 +15,7 @@ import {
     SUPER_TYPE_MARTIAL
 } from "../actions/super-types";
 import {innateFactor, investFactor, naturalFactor} from "../containers/raw/Factor";
+import {INNATE_BONUS_CLASS, INNATE_BONUS_FEATURE} from "../actions/innate-bonus-actions";
 
 export function abilities(state = new AbilityList(), action) {
     let newState = Object.assign(state);
@@ -63,6 +64,11 @@ function generalAbilities(state = new GeneralAbilities(), action) {
                     newState.lifePoints.factors.push(new investFactor(action.value, action.source, action.note));
                     console.log("added invest factor to life points");
                     return newState;
+                case INNATE_BONUS_CLASS:
+                case INNATE_BONUS_FEATURE:
+                    newState.lifePoints.rollingInnate.push(action);
+                    console.log("add innate to ", action.key, action);
+                    return newState;
                 default:
                     return state;
             }
@@ -98,6 +104,11 @@ function martialAbilities(state = new MartialAbilities(), action) {
                     newState.kiReserve.factors.push(new investFactor(action.value, action.source, action.note));
                     console.log("added invest factor to ki reserve");
                     return newState;
+                case INNATE_BONUS_CLASS:
+                case INNATE_BONUS_FEATURE:
+                    newState.kiReserve.rollingInnate.push(action);
+                    console.log("add innate to ", action.key, action);
+                    return newState;
                 default:
                     return state;
             }
@@ -118,6 +129,11 @@ function martialAbilities(state = new MartialAbilities(), action) {
                 case ADD_INVEST_FACTOR:
                     newState.spiritKnowledge.factors.push(new investFactor(action.value, action.source, action.note));
                     console.log("added invest factor to spirit knowledge");
+                    return newState;
+                case INNATE_BONUS_CLASS:
+                case INNATE_BONUS_FEATURE:
+                    newState.spiritKnowledge.rollingInnate.push(action);
+                    console.log("add innate to ", action.key, action);
                     return newState;
                 default:
                     return state;
@@ -153,6 +169,11 @@ function magicAbilities(state = new MagicAbilities(), action) {
                     newState.manaPool.factors.push(new investFactor(action.value, action.source, action.note));
                     console.log("added invest factor to mana pool");
                     return newState;
+                case INNATE_BONUS_CLASS:
+                case INNATE_BONUS_FEATURE:
+                    newState.manaPool.rollingInnate.push(action);
+                    console.log("add innate to ", action.key, action);
+                    return newState;
                 default:
                     return state;
             }
@@ -173,6 +194,11 @@ function magicAbilities(state = new MagicAbilities(), action) {
                 case ADD_INVEST_FACTOR:
                     newState.manaKnowledge.factors.push(new investFactor(action.value, action.source, action.note));
                     console.log("added invest factor to mana knowledge");
+                    return newState;
+                case INNATE_BONUS_CLASS:
+                case INNATE_BONUS_FEATURE:
+                    newState.manaKnowledge.rollingInnate.push(action);
+                    console.log("add innate to ", action.key, action);
                     return newState;
                 default:
                     return state;
@@ -208,6 +234,11 @@ function manifestAbilities(state = new ManifestAbilities(), action) {
                     newState.phenomStock.factors.push(new investFactor(action.value, action.source, action.note));
                     console.log("added invest factor to phenom stock");
                     return newState;
+                case INNATE_BONUS_CLASS:
+                case INNATE_BONUS_FEATURE:
+                    newState.phenomStock.rollingInnate.push(action);
+                    console.log("add innate to ", action.key, action);
+                    return newState;
                 default:
                     return state;
             }
@@ -228,6 +259,11 @@ function manifestAbilities(state = new ManifestAbilities(), action) {
                 case ADD_INVEST_FACTOR:
                     newState.phenomKnowledge.factors.push(new investFactor(action.value, action.source, action.note));
                     console.log("added invest factor to phenom knowledge");
+                    return newState;
+                case INNATE_BONUS_CLASS:
+                case INNATE_BONUS_FEATURE:
+                    newState.phenomKnowledge.rollingInnate.push(action);
+                    console.log("add innate to ", action.key, action);
                     return newState;
                 default:
                     return state;

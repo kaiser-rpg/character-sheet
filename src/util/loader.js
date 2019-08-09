@@ -72,12 +72,12 @@ const loadClassData = (fileName) => {
     // Load reduced dev cost
     secondary.reduced.forEach((skill) => {
         console.log(skill);
-        sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, skill.name, skill.cost, className, "class reduced"));
+        sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, skill.key, skill.cost, className, "class reduced"));
     });
 
     // Load innate
     secondary.innate.forEach((skill) => {
-        sheet.dispatch(innateBonusClass(skill.superType, skill.name, skill.value, skill.level, className));
+        sheet.dispatch(innateBonusClass(skill.superType, skill.key, skill.value, skill.level, className));
     });
 
 
@@ -117,7 +117,7 @@ const loadClassData = (fileName) => {
     sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "banish", magic.banish, className));
 
     magic.innate.forEach((e) => {
-        sheet.dispatch(innateBonusClass(e.superType, e.name, e.value, e.level, className));
+        sheet.dispatch(innateBonusClass(e.superType, e.key, e.value, e.level, className));
     });
 
     // Load Manifest
@@ -127,7 +127,7 @@ const loadClassData = (fileName) => {
     sheet.dispatch(setDevCost(SUPER_TYPE_SKILL, "phenomProjection", manifest.phenomProjection, className));
 
     manifest.innate.forEach((e) => {
-        sheet.dispatch(innateBonusClass(e.superType, e.name, e.value, e.level, className));
+        sheet.dispatch(innateBonusClass(e.superType, e.key, e.value, e.level, className));
     });
 
 

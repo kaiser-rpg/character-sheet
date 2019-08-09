@@ -17,4 +17,10 @@ export default class Makeup {
         this.settings = {};
     }
 
+    updateRollingInnate(newLevel) {
+        this.info.currentLevel = newLevel;
+        this.skills.updateRollingInnate(newLevel);
+        this.abilities.updateRollingInnate(newLevel);
+    }
+
 }

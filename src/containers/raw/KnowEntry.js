@@ -1,5 +1,5 @@
 import {toCamelCase, toTitleCase} from "../../util/StringHelper";
-import {sumFactors} from "./Factor";
+import {innateFactor, sumFactors} from "./Factor";
 import {presentSheet} from "../../reducers/SheetApp";
 
 class KnowEntry {
@@ -55,6 +55,23 @@ class KnowEntry {
 
     get xpCost() {
         return this.baseValue * this.devCost;
+    }
+
+    updateRollingInnate(newLevel) {
+        if (newLevel <= this.lastInnateLevel) return;
+
+        for (let currLevel = this.lastInnateLevel + 1; currLevel <= newLevel; currLevel++) {
+            this.rollingInnate
+                .filter((innate) => (currLevel - 1) % innate.level === 0)
+                .forEach((innate) => {
+                    console.log("increase innate", this.name, innate.value);
+                    this.factors.push(
+                        new innateFactor(innate.value, innate.source + " level" + currLevel, innate.note)
+                    );
+                });
+        }
+
+        this.lastInnateLevel = newLevel;
     }
 }
 

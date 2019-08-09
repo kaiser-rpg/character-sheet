@@ -9,7 +9,6 @@ import {
 } from "../containers/raw/Factor";
 import {devCostBase, devCostClassMod} from "../containers/raw/DevCost";
 import {INNATE_BONUS_CLASS, INNATE_BONUS_FEATURE} from "../actions/innate-bonus-actions";
-import {LEVEL_UP} from "../actions/level-actions";
 import {REDUCE_DEV_COST, SET_DEV_COST} from "../actions/dev-cost-actions";
 import {
     ADD_ALL_ACTION_FACTOR,
@@ -31,11 +30,6 @@ export function skills(state = new SkillList(), action) {
     let newState = Object.assign(state);
 
     switch (action.type) {
-        case LEVEL_UP:
-            console.log("level ", action.newLevel);
-
-            newState.getSkillGroup("all").forEach((skill) => skill.updateRollingInnate(action.newLevel));
-            return newState;
         case ADD_BASE_VALUE:
             switch (key) {
                 case "martial":

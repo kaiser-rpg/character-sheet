@@ -142,6 +142,10 @@ export default class ClassSkills {
         return arr;
     }
 
+    updateRollingInnate(newLevel) {
+        this.getSkillGroup("all").forEach((skill) => skill.updateRollingInnate(newLevel));
+    }
+
     get primarySkills() {
         return [
             this.getSkillGroup("martial"),

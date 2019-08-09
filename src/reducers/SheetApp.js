@@ -5,6 +5,46 @@ import {skills} from "./SkillsReducer";
 import {info} from "./InfoReducer";
 import {abilities} from "./AbilitiesReducer";
 import undoable from 'redux-undo';
+import {
+    SUPER_TYPE_CHAR,
+    SUPER_TYPE_GENERAL,
+    SUPER_TYPE_MAGIC,
+    SUPER_TYPE_MANIFEST,
+    SUPER_TYPE_MARTIAL,
+    SUPER_TYPE_SKILL
+} from "../actions/super-types";
+import {LEVEL_UP} from "../actions/level-actions";
+
+function sheetReducer(state = new Makeup(), action) {
+    let newState = Object.assign(state);
+
+    newState.info = info(newState.info, action);
+
+    switch (action.type) {
+        case LEVEL_UP:
+            console.log("level up", action.newLevel);
+            newState.updateRollingInnate(action.newLevel);
+            return newState;
+        default:
+            break;
+    }
+
+
+    switch (action.superType) {
+        case SUPER_TYPE_CHAR:
+            newState.characteristics = characteristics(newState.characteristics, action);
+        case SUPER_TYPE_SKILL:
+            newState.skills = skills(newState.skills, action);
+        case SUPER_TYPE_GENERAL:
+        case SUPER_TYPE_MARTIAL:
+        case SUPER_TYPE_MAGIC:
+        case SUPER_TYPE_MANIFEST:
+            newState.abilities = abilities(newState.abilities, action);
+            return newState;
+        default:
+            return state;
+    }
+}
 
 const sheetApp = combineReducers({
     info,
@@ -14,7 +54,7 @@ const sheetApp = combineReducers({
     // classes
 });
 
-const undoableApp = undoable(sheetApp);
+const undoableApp = undoable(sheetReducer);
 
 export const sheet = createStore(undoableApp, new Makeup());
 export const presentSheet = sheet.getState().present;
