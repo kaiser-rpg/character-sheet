@@ -1,10 +1,10 @@
 {
-    "key": "corsair",
+    "key": "ranger",
     "archetype": [
-        "fighter"
+        "fighter", "explorer"
     ],
     "general": {
-        "lifePoints": 3,
+        "lifePoints": 4,
         "innate": [
             {
                 "superType": "ability.general",
@@ -15,7 +15,7 @@
             {
                 "superType": "skill",
                 "key": "initiative",
-                "level": 1,
+                "level": 2,
                 "value": 1
             }
         ]
@@ -27,13 +27,13 @@
         "dodge": 4,
         "wearArmor": 4,
         "kiReserve": 2,
-        "chakra": 2,
+        "chakra": 3,
         "innate": [
             {
                 "superType": "ability.martial",
                 "key": "spiritKnowledge",
                 "level": 1,
-                "value": 3
+                "value": 2
             },
             {
                 "superType": "skill",
@@ -44,7 +44,8 @@
             },
             {
                 "superType": "skill",
-                "key": "dodge",
+                "choose": ["block", "dodge"],
+                "chooseCount": 1,
                 "level": 2,
                 "value": 1,
                 "max": 5
@@ -85,48 +86,80 @@
     "secondary": {
         "exertion": 4,
         "social": 4,
-        "perception": 4,
+        "perception": 3,
         "intellectual": 5,
-        "vigor": 4,
+        "vigor": 5,
         "subterfuge": 4,
         "creative": 4,
         "trade": 4,
         "innate": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
+                "key": "detectSpirit",
                 "level": 1,
                 "value": 1
             },
             {
                 "superType": "skill",
-                "key": "athletics",
+                "key": "notice",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "search",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "intuition",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "engineering",
                 "level": 2,
                 "value": 1
             },
             {
                 "superType": "skill",
-                "key": "sleightOfHand",
-                "level": 1,
+                "key": "animals",
+                "level": 2,
                 "value": 1
             },
             {
                 "superType": "skill",
-                "key": "style",
-                "level": 1,
+                "key": "herbalLore",
+                "level": 2,
                 "value": 1
             }
         ],
         "reduced": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
-                "cost": 3
+                "key": "animals",
+                "cost": 3,
+                "value": 1
             },
             {
                 "superType": "skill",
-                "key": "style",
-                "cost": 3
+                "key": "engineering",
+                "cost": 3,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "herbal lore",
+                "cost": 4,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "medicine",
+                "cost": 4,
+                "value": 1
             }
         ]
     }

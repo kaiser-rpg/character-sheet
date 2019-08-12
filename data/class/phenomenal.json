@@ -1,0 +1,81 @@
+{
+    "key": "phenomenal",
+    "archetype": [
+        "manifester"
+    ],
+    "general": {
+        "lifePoints": 4,
+        "innate": [
+            {
+                "superType": "ability.general",
+                "key": "lifePoints",
+                "level": 1,
+                "value": 5
+            },
+            {
+                "superType": "skill",
+                "key": "initiative",
+                "level": 2,
+                "value": 1
+            }
+        ]
+    },
+    "martial": {
+        "limit": 50,
+        "strike": 5,
+        "block": 5,
+        "dodge": 4,
+        "wearArmor": 5,
+        "kiReserve": 3,
+        "chakra": 3,
+        "innate": [
+            {
+                "superType": "ability.martial",
+                "key": "spiritKnowledge",
+                "level": 1,
+                "value": 1
+            }
+        ]
+    },
+    "magic": {
+        "limit": 50,
+        "manaPool": 3,
+        "manaAccumulation": 7,
+        "manaRecovery": 3,
+        "spellProjection": 5,
+        "summon": 5,
+        "control": 5,
+        "banish": 5,
+        "innate": [
+            {
+                "superType": "ability.magic",
+                "key": "manaPool",
+                "level": 1,
+                "value": 5
+            }
+        ]
+    },
+    "manifest": {
+        "limit": 60,
+        "phenomStock": 1,
+        "phenomProjection": 4,
+        "innate": [
+            {
+                "superType": "ability.manifest",
+                "key": "phenomStock",
+                "level": 1,
+                "value": 1
+            }
+        ]
+    },
+    "secondary": {
+        "exertion": 4,
+        "social": 4,
+        "perception": 4,
+        "intellectual": 4,
+        "vigor": 5,
+        "subterfuge": 4,
+        "creative": 4,
+        "trade": 4
+    }
+}

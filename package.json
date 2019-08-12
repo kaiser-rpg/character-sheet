@@ -4,7 +4,7 @@
   "description": "A minimal Electron React application",
   "main": "main.js",
   "scripts": {
-      "dev": "webpack --watch",
+    "dev": "webpack --watch",
     "start": "electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
@@ -27,11 +27,12 @@
     "webpack": "^1.13.3"
   },
   "dependencies": {
+    "npm": "^6.10.3",
     "react": "^15.3.2",
-      "react-dom": "^15.3.2",
-      "react-redux": "^7.1.0",
-      "redux": "^4.0.4",
-      "redux-undo": "^1.0.0-beta9-9-7",
-      "shortid": "^2.2.14"
+    "react-dom": "^15.3.2",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-undo": "^1.0.0-beta9-9-7",
+    "shortid": "^2.2.14"
   }
 }
