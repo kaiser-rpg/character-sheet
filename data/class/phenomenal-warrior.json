@@ -1,10 +1,10 @@
 {
-    "key": "corsair",
+    "key": "phenomenal warrior",
     "archetype": [
-        "fighter"
+        "fighter", "manifester"
     ],
     "general": {
-        "lifePoints": 3,
+        "lifePoints": 4,
         "innate": [
             {
                 "superType": "ability.general",
@@ -15,25 +15,25 @@
             {
                 "superType": "skill",
                 "key": "initiative",
-                "level": 1,
+                "level": 2,
                 "value": 1
             }
         ]
     },
     "martial": {
-        "limit": 60,
+        "limit": 50,
         "strike": 4,
         "block": 4,
         "dodge": 4,
         "wearArmor": 4,
         "kiReserve": 2,
-        "chakra": 2,
+        "chakra": 3,
         "innate": [
             {
                 "superType": "ability.martial",
                 "key": "spiritKnowledge",
                 "level": 1,
-                "value": 3
+                "value": 2
             },
             {
                 "superType": "skill",
@@ -44,7 +44,8 @@
             },
             {
                 "superType": "skill",
-                "key": "dodge",
+                "choose": ["block", "dodge"],
+                "chooseCount": 1,
                 "level": 2,
                 "value": 1,
                 "max": 5
@@ -71,13 +72,13 @@
     },
     "manifest": {
         "limit": 50,
-        "phenomStock": 2,
-        "phenomProjection": 5,
+        "phenomStock": 1,
+        "phenomProjection": 4,
         "innate": [
             {
                 "superType": "ability.manifest",
                 "key": "phenomStock",
-                "level": 3,
+                "level": 1,
                 "value": 1
             }
         ]
@@ -90,44 +91,6 @@
         "vigor": 4,
         "subterfuge": 4,
         "creative": 4,
-        "trade": 4,
-        "innate": [
-            {
-                "superType": "skill",
-                "key": "acrobatics",
-                "level": 1,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "athletics",
-                "level": 2,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "sleightOfHand",
-                "level": 1,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "level": 1,
-                "value": 1
-            }
-        ],
-        "reduced": [
-            {
-                "superType": "skill",
-                "key": "acrobatics",
-                "cost": 3
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "cost": 3
-            }
-        ]
+        "trade": 4
     }
 }

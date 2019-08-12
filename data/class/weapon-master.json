@@ -1,21 +1,21 @@
 {
-    "key": "corsair",
+    "key": "weapon master",
     "archetype": [
         "fighter"
     ],
     "general": {
-        "lifePoints": 3,
+        "lifePoints": 2,
         "innate": [
             {
                 "superType": "ability.general",
                 "key": "lifePoints",
                 "level": 1,
-                "value": 10
+                "value": 20
             },
             {
                 "superType": "skill",
                 "key": "initiative",
-                "level": 1,
+                "level": 2,
                 "value": 1
             }
         ]
@@ -25,15 +25,15 @@
         "strike": 4,
         "block": 4,
         "dodge": 4,
-        "wearArmor": 4,
-        "kiReserve": 2,
-        "chakra": 2,
+        "wearArmor": 3,
+        "kiReserve": 3,
+        "chakra": 3,
         "innate": [
             {
                 "superType": "ability.martial",
                 "key": "spiritKnowledge",
                 "level": 1,
-                "value": 3
+                "value": 1
             },
             {
                 "superType": "skill",
@@ -44,10 +44,16 @@
             },
             {
                 "superType": "skill",
-                "key": "dodge",
+                "key": "block",
                 "level": 2,
                 "value": 1,
                 "max": 5
+            },
+            {
+                "superType": "skill",
+                "key": "wearArmor",
+                "level": 1,
+                "value": 1
             }
         ]
     },
@@ -59,15 +65,7 @@
         "spellProjection": 5,
         "summon": 5,
         "control": 5,
-        "banish": 5,
-        "innate": [
-            {
-                "superType": "ability.magic",
-                "key": "manaPool",
-                "level": 1,
-                "value": 5
-            }
-        ]
+        "banish": 5
     },
     "manifest": {
         "limit": 50,
@@ -87,47 +85,22 @@
         "social": 4,
         "perception": 4,
         "intellectual": 5,
-        "vigor": 4,
-        "subterfuge": 4,
+        "vigor": 3,
+        "subterfuge": 5,
         "creative": 4,
         "trade": 4,
         "innate": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
-                "level": 1,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "athletics",
-                "level": 2,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "sleightOfHand",
-                "level": 1,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "style",
+                "key": "featsOfStrength",
                 "level": 1,
                 "value": 1
             }
-        ],
-        "reduced": [
-            {
-                "superType": "skill",
-                "key": "acrobatics",
-                "cost": 3
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "cost": 3
-            }
+        ]
+    },
+    "special": {
+        "entries": [
+            "You can purchase Combat Modules for half the normal XP, round down. A module reduced to 0 XP can be mastered immediately."
         ]
     }
 }

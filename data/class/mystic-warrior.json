@@ -1,10 +1,10 @@
 {
-    "key": "corsair",
+    "key": "mystic warrior",
     "archetype": [
-        "fighter"
+        "fighter", "conjurer"
     ],
     "general": {
-        "lifePoints": 3,
+        "lifePoints": 4,
         "innate": [
             {
                 "superType": "ability.general",
@@ -15,13 +15,13 @@
             {
                 "superType": "skill",
                 "key": "initiative",
-                "level": 1,
+                "level": 2,
                 "value": 1
             }
         ]
     },
     "martial": {
-        "limit": 60,
+        "limit": 50,
         "strike": 4,
         "block": 4,
         "dodge": 4,
@@ -33,7 +33,7 @@
                 "superType": "ability.martial",
                 "key": "spiritKnowledge",
                 "level": 1,
-                "value": 3
+                "value": 2
             },
             {
                 "superType": "skill",
@@ -44,7 +44,8 @@
             },
             {
                 "superType": "skill",
-                "key": "dodge",
+                "choose": ["block", "dodge"],
+                "chooseCount": 1,
                 "level": 2,
                 "value": 1,
                 "max": 5
@@ -53,19 +54,37 @@
     },
     "magic": {
         "limit": 50,
-        "manaPool": 3,
-        "manaAccumulation": 7,
-        "manaRecovery": 3,
+        "manaPool": 1,
+        "manaAccumulation": 6,
+        "manaRecovery": 2,
         "spellProjection": 5,
-        "summon": 5,
-        "control": 5,
-        "banish": 5,
+        "summon": 3,
+        "control": 3,
+        "banish": 3,
         "innate": [
             {
                 "superType": "ability.magic",
                 "key": "manaPool",
                 "level": 1,
-                "value": 5
+                "value": 40
+            },
+            {
+                "superType": "skill",
+                "key": "summon",
+                "level": 2,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "control",
+                "level": 2,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "banish",
+                "level": 2,
+                "value": 1
             }
         ]
     },
@@ -86,7 +105,7 @@
         "exertion": 4,
         "social": 4,
         "perception": 4,
-        "intellectual": 5,
+        "intellectual": 4,
         "vigor": 4,
         "subterfuge": 4,
         "creative": 4,
@@ -94,39 +113,9 @@
         "innate": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
-                "level": 1,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "athletics",
+                "key": "occult",
                 "level": 2,
                 "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "sleightOfHand",
-                "level": 1,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "level": 1,
-                "value": 1
-            }
-        ],
-        "reduced": [
-            {
-                "superType": "skill",
-                "key": "acrobatics",
-                "cost": 3
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "cost": 3
             }
         ]
     }

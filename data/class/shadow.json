@@ -1,16 +1,16 @@
 {
-    "key": "corsair",
+    "key": "shadow",
     "archetype": [
-        "fighter"
+        "fighter", "explorer"
     ],
     "general": {
-        "lifePoints": 3,
+        "lifePoints": 4,
         "innate": [
             {
                 "superType": "ability.general",
                 "key": "lifePoints",
                 "level": 1,
-                "value": 10
+                "value": 5
             },
             {
                 "superType": "skill",
@@ -23,7 +23,7 @@
     "martial": {
         "limit": 60,
         "strike": 4,
-        "block": 4,
+        "block": 5,
         "dodge": 4,
         "wearArmor": 4,
         "kiReserve": 2,
@@ -94,14 +94,20 @@
         "innate": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
+                "key": "notice",
                 "level": 1,
                 "value": 1
             },
             {
                 "superType": "skill",
-                "key": "athletics",
-                "level": 2,
+                "key": "search",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "stealth",
+                "level": 1,
                 "value": 1
             },
             {
@@ -109,24 +115,6 @@
                 "key": "sleightOfHand",
                 "level": 1,
                 "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "level": 1,
-                "value": 1
-            }
-        ],
-        "reduced": [
-            {
-                "superType": "skill",
-                "key": "acrobatics",
-                "cost": 3
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "cost": 3
             }
         ]
     }

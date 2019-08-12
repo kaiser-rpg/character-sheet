@@ -1,5 +1,5 @@
 {
-    "key": "corsair",
+    "key": "champion",
     "archetype": [
         "fighter"
     ],
@@ -10,12 +10,12 @@
                 "superType": "ability.general",
                 "key": "lifePoints",
                 "level": 1,
-                "value": 10
+                "value": 15
             },
             {
                 "superType": "skill",
                 "key": "initiative",
-                "level": 1,
+                "level": 2,
                 "value": 1
             }
         ]
@@ -44,10 +44,16 @@
             },
             {
                 "superType": "skill",
-                "key": "dodge",
+                "key": "block",
                 "level": 2,
                 "value": 1,
                 "max": 5
+            },
+            {
+                "superType": "skill",
+                "key": "wearArmor",
+                "level": 2,
+                "value": 1
             }
         ]
     },
@@ -90,43 +96,27 @@
         "vigor": 4,
         "subterfuge": 4,
         "creative": 4,
-        "trade": 4,
+        "trade":4,
         "innate": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
-                "level": 1,
-                "value": 1
-            },
-            {
-                "superType": "skill",
                 "key": "athletics",
-                "level": 2,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "sleightOfHand",
                 "level": 1,
                 "value": 1
             },
             {
                 "superType": "skill",
-                "key": "style",
+                "key": "featsOfStrength",
                 "level": 1,
-                "value": 1
+                "value": 2
             }
         ],
         "reduced": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
-                "cost": 3
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "cost": 3
+                "key": "featsOfStrength",
+                "cost": 3,
+                "value": 1
             }
         ]
     }

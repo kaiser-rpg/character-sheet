@@ -1,7 +1,7 @@
 {
-    "key": "corsair",
+    "key": "hedge knight",
     "archetype": [
-        "fighter"
+        "fighter", "conjurer"
     ],
     "general": {
         "lifePoints": 3,
@@ -10,12 +10,12 @@
                 "superType": "ability.general",
                 "key": "lifePoints",
                 "level": 1,
-                "value": 10
+                "value": 15
             },
             {
                 "superType": "skill",
                 "key": "initiative",
-                "level": 1,
+                "level": 2,
                 "value": 1
             }
         ]
@@ -33,7 +33,7 @@
                 "superType": "ability.martial",
                 "key": "spiritKnowledge",
                 "level": 1,
-                "value": 3
+                "value": 2
             },
             {
                 "superType": "skill",
@@ -44,28 +44,33 @@
             },
             {
                 "superType": "skill",
-                "key": "dodge",
+                "key": "wearArmor",
                 "level": 2,
-                "value": 1,
-                "max": 5
+                "value": 1
             }
         ]
     },
     "magic": {
         "limit": 50,
-        "manaPool": 3,
-        "manaAccumulation": 7,
-        "manaRecovery": 3,
+        "manaPool": 2,
+        "manaAccumulation": 6,
+        "manaRecovery": 2,
         "spellProjection": 5,
         "summon": 5,
-        "control": 5,
+        "control": 3,
         "banish": 5,
         "innate": [
             {
                 "superType": "ability.magic",
                 "key": "manaPool",
                 "level": 1,
-                "value": 5
+                "value": 20
+            },
+            {
+                "superType": "skill",
+                "key": "control",
+                "level": 1,
+                "value": 1
             }
         ]
     },
@@ -84,9 +89,9 @@
     },
     "secondary": {
         "exertion": 4,
-        "social": 4,
+        "social": 3,
         "perception": 4,
-        "intellectual": 5,
+        "intellectual": 4,
         "vigor": 4,
         "subterfuge": 4,
         "creative": 4,
@@ -94,19 +99,13 @@
         "innate": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
+                "key": "intimidate",
                 "level": 1,
                 "value": 1
             },
             {
                 "superType": "skill",
-                "key": "athletics",
-                "level": 2,
-                "value": 1
-            },
-            {
-                "superType": "skill",
-                "key": "sleightOfHand",
+                "key": "composure",
                 "level": 1,
                 "value": 1
             },
@@ -114,20 +113,27 @@
                 "superType": "skill",
                 "key": "style",
                 "level": 1,
-                "value": 1
+                "value": 2
+            },
+            {
+                "superType": "skill",
+                "key": "persuasion",
+                "level": 1,
+                "value": 2
             }
         ],
         "reduced": [
             {
                 "superType": "skill",
-                "key": "acrobatics",
-                "cost": 3
-            },
-            {
-                "superType": "skill",
-                "key": "style",
-                "cost": 3
+                "key": "composure",
+                "cost": 3,
+                "value": 1
             }
+        ]
+    },
+    "special": {
+        "entries": [
+            "You can exchange innate factor to Control and Mana Pool for a +1 Withstand Pain per level."
         ]
     }
 }
