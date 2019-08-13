@@ -15,7 +15,7 @@ export default class CharList {
 
     lookupChar(name) {
         if (Array.isArray(name)) {
-            return name.reduce((arr, curr) => arr.concat(this.lookupChar(curr)), []);
+            return name.map(curr => this.lookupChar(curr));
         }
 
         if (this.strength.isName(name)) {
@@ -51,6 +51,28 @@ export default class CharList {
         }
 
         console.log("found no proper characteristic for " + name);
-        return this.strength;
+        return null;
+    }
+
+    removeBySource(sourceName) {
+        this.strength.removeBySource(sourceName);
+        this.constitution.removeBySource(sourceName);
+        this.dexterity.removeBySource(sourceName);
+        this.agility.removeBySource(sourceName);
+        this.perception.removeBySource(sourceName);
+        this.aptitude.removeBySource(sourceName);
+        this.focus.removeBySource(sourceName);
+        this.willpower.removeBySource(sourceName);
+    }
+
+    removeById(id) {
+        this.strength.removeById(id);
+        this.constitution.removeById(id);
+        this.dexterity.removeById(id);
+        this.agility.removeById(id);
+        this.perception.removeById(id);
+        this.aptitude.removeById(id);
+        this.focus.removeById(id);
+        this.willpower.removeById(id);
     }
 }

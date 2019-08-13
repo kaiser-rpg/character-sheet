@@ -23,4 +23,16 @@ export default class Makeup {
         this.abilities.updateRollingInnate(newLevel);
     }
 
+    removeBySource(sourceName) {
+        this.characteristics.removeBySource(sourceName);
+        this.skills.removeBySource(sourceName);
+        this.abilities.removeBySource(sourceName);
+    }
+
+    removeById(id) {
+        this.characteristics.removeById(id);
+        this.skills.removeById(id);
+        this.abilities.removeById(id);
+    }
+
 }

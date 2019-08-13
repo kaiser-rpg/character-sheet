@@ -92,7 +92,17 @@ class CharEntry {
         return this.baseValue + sumFactors(this.factors).total;
     }
 
+    removeBySource(sourceName) {
+        this.factors = this.factors.filter(item => item.source !== sourceName);
+    }
 
+    removeById(id) {
+        this.factors = this.factors.filter(item => item._id && item._id !== id);
+    }
+
+    get cost() {
+        return this.baseValue + this.modifier;
+    }
 }
 
 export class Strength extends CharEntry {

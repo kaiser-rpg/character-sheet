@@ -128,8 +128,8 @@ export default class ClassSkills {
         this.dodge.tiedTo = {skill: this.block, behind: 6};
     }
 
-    getSkillGroup(name) {
-        if (name === "primary") return this.primarySkills.reduce((arr, curr) => arr.concat(curr), []);
+    getSkillGroup(name = "all") {
+        if (name === "primary") return this.primarySkills.map((arr, curr) => arr.concat(curr), []);
         if (name === "secondary") return this.secondarySkills.reduce((arr, curr) => arr.concat(curr), []);
 
         let arr = [];
@@ -143,7 +143,15 @@ export default class ClassSkills {
     }
 
     updateRollingInnate(newLevel) {
-        this.getSkillGroup("all").forEach((skill) => skill.updateRollingInnate(newLevel));
+        this.getSkillGroup().forEach((skill) => skill.updateRollingInnate(newLevel));
+    }
+
+    removeBySource(sourceName) {
+        this.getSkillGroup().forEach(skill => skill.removeBySource(sourceName));
+    }
+
+    removeById(id) {
+        this.getSkillGroup().forEach(skill => skill.removeById(id));
     }
 
     get primarySkills() {

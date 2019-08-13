@@ -18,6 +18,20 @@ export default class AbilityList {
         this.manifestAbilities.updateRollingInnate(newLevel);
     }
 
+    removeBySource(sourceName) {
+        this.generalAbilities.removeBySource(sourceName);
+        this.martialAbilities.removeBySource(sourceName);
+        this.magicAbilities.removeBySource(sourceName);
+        this.manifestAbilities.removeBySource(sourceName);
+    }
+
+    removeById(id) {
+        this.generalAbilities.removeById(id);
+        this.martialAbilities.removeById(id);
+        this.magicAbilities.removeById(id);
+        this.manifestAbilities.removeById(id);
+    }
+
 }
 
 export class GeneralAbilities {
@@ -34,6 +48,22 @@ export class GeneralAbilities {
         this.lifePoints.updateRollingInnate(newLevel);
         this.presence.updateRollingInnate(newLevel);
     }
+
+    removeBySource(sourceName) {
+        this.lifePoints.removeBySource(sourceName);
+        this.presence.removeBySource(sourceName);
+        this.physicalResistance.removeBySource(sourceName);
+        this.spiritResistance.removeBySource(sourceName);
+        this.mentalResistance.removeBySource(sourceName);
+    }
+
+    removeById(id) {
+        this.lifePoints.removeById(id);
+        this.presence.removeById(id);
+        this.physicalResistance.removeById(id);
+        this.spiritResistance.removeById(id);
+        this.mentalResistance.removeById(id);
+    }
 }
 
 
@@ -47,6 +77,16 @@ export class MartialAbilities {
     updateRollingInnate(newLevel) {
         this.kiReserve.updateRollingInnate(newLevel);
         this.spiritKnowledge.updateRollingInnate(newLevel);
+    }
+
+    removeBySource(sourceName) {
+        this.kiReserve.removeBySource(sourceName);
+        this.spiritKnowledge.removeBySource(sourceName);
+    }
+
+    removeById(id) {
+        this.kiReserve.removeById(id);
+        this.spiritKnowledge.removeById(id);
     }
 
 }
@@ -63,6 +103,16 @@ export class MagicAbilities {
         this.manaKnowledge.updateRollingInnate(newLevel);
     }
 
+    removeBySource(sourceName) {
+        this.manaPool.removeBySource(sourceName);
+        this.manaKnowledge.removeBySource(sourceName);
+    }
+
+    removeById(id) {
+        this.manaPool.removeById(id);
+        this.manaKnowledge.removeById(id);
+    }
+
 }
 
 export class ManifestAbilities {
@@ -75,5 +125,15 @@ export class ManifestAbilities {
     updateRollingInnate(newLevel) {
         this.phenomStock.updateRollingInnate(newLevel);
         this.phenomKnowledge.updateRollingInnate(newLevel);
+    }
+
+    removeBySource(sourceName) {
+        this.phenomStock.removeBySource(sourceName);
+        this.phenomKnowledge.removeBySource(sourceName);
+    }
+
+    removeById(id) {
+        this.phenomStock.removeById(id);
+        this.phenomKnowledge.removeById(id);
     }
 }

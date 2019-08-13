@@ -1,13 +1,13 @@
 import {toCamelCase, toTitleCase} from "../../util/StringHelper";
-import {innateFactor, sumFactors} from "./Factor";
+import {sumFactors} from "./Factor";
 import {presentSheet} from "../../reducers/SheetApp";
+import {add2Innate} from "../../actions/factor-actions";
 
 class KnowEntry {
 
     constructor(name) {
         this.name = name;
-        this.devCostMod = [];
-        this.baseValue = 0;
+        this.baseValues = [];
         this.factors = [];
         this.rollingInnate = [];
         this.lastInnateLevel = 0;
@@ -22,11 +22,13 @@ class KnowEntry {
     }
 
     get base() {
-        return this.baseValue;
+        return this.baseValues.reduce((total, curr) => total + curr.value, 0);
     }
 
     get modifier() {
-        return 0;
+        if (!this.char) return 0;
+        let arr = presentSheet.characteristics.lookupChar(this.char);
+        return Array.isArray(arr) ? arr.reduce((sum, curr) => sum + curr.permanentTotal, 0) : arr.permanentTotal;
     }
 
     get innate() {
@@ -54,7 +56,7 @@ class KnowEntry {
     }
 
     get xpCost() {
-        return this.baseValue * this.devCost;
+        return this.base * this.devCost;
     }
 
     updateRollingInnate(newLevel) {
@@ -66,12 +68,24 @@ class KnowEntry {
                 .forEach((innate) => {
                     console.log("increase innate", this.name, innate.value);
                     this.factors.push(
-                        new innateFactor(innate.value, innate.source + " level" + currLevel, innate.note)
+                        new add2Innate(innate.superType, innate.key, innate.value, innate.source, ["level " + currLevel, innate.note])
                     );
                 });
         }
 
         this.lastInnateLevel = newLevel;
+    }
+
+    removeBySource(sourceName) {
+        this.baseValues = this.baseValues.filter(item => item.source !== sourceName);
+        this.factors = this.factors.filter(item => item.source !== sourceName);
+        this.rollingInnate = this.rollingInnate.filter(item => item.source !== sourceName);
+    }
+
+    removeById(id) {
+        this.baseValues = this.baseValues.filter(item => item._id && item._id !== id);
+        this.factors = this.factors.filter(item => item._id && item._id !== id);
+        this.rollingInnate = this.rollingInnate.filter(item => item._id && item._id !== id);
     }
 }
 
@@ -89,15 +103,10 @@ export class ManaKnowledge extends KnowEntry {
         this.char = "apt";
     }
 
-    get base() {
-        return this.baseValue * 10;
-    }
-
     get modifier() {
-        if (!this.char) return 0;
-        let mod = presentSheet.characteristics.lookupChar(this.char);
-        let sum = Array.isArray(mod) ? mod.reduce((sum, curr) => sum + curr.permanentTotal, 0) : mod.permanentTotal;
-        switch (Math.min(sum, 30)) {
+        let mod = super.modifier;
+        console.log("MK mod", mod);
+        switch (Math.min(mod, 30)) {
             case 6:
                 return 10;
             case 7:
@@ -153,6 +162,10 @@ export class ManaKnowledge extends KnowEntry {
 
         }
 
+    }
+
+    get total() {
+        return (this.base * 10) + this.modifier + this.innate + this.natural;
     }
 
 }

@@ -1,7 +1,8 @@
 import {toCamelCase, toTitleCase} from "../../util/StringHelper";
-import {innateFactor, sumFactors} from "./Factor";
+import {sumFactors} from "./Factor";
 import {presentSheet} from "../../reducers/SheetApp";
 import {DEV_COST_BASE, DEV_COST_MOD_CLASS, DEV_COST_MOD_FEATURE} from "./DevCost";
+import {add2Innate} from "../../actions/factor-actions";
 
 class PoolEntry {
 
@@ -9,7 +10,7 @@ class PoolEntry {
         this.name = name;
         this.char = defaultChar;
         this.devCostMod = [];
-        this.baseValue = 0;
+        this.baseValues = [];
         this.factors = [];
         this.rollingInnate = [];
         this.lastInnateLevel = 0;
@@ -26,6 +27,10 @@ class PoolEntry {
         return toTitleCase(this.name);
     }
 
+    get base() {
+        return this.baseValues.reduce((total, curr) => total + curr.value, 0);
+    }
+
     get innate() {
         return sumFactors(this.factors).innate;
     }
@@ -38,8 +43,16 @@ class PoolEntry {
         return sumFactors(this.factors).invest;
     }
 
+    get permanentTotal() {
+        return this.base + sumFactors(this.factors).permanent;
+    }
+
+    get temporaryBonus() {
+        return sumFactors(this.factors).temporary;
+    }
+
     get total() {
-        return sumFactors(this.factors).total;
+        return this.permanentTotal + this.temporaryBonus;
     }
 
     get devCost() {
@@ -53,7 +66,7 @@ class PoolEntry {
     }
 
     get xpCost() {
-        return this.baseValue * this.devCost;
+        return this.base * this.devCost;
     }
 
     updateRollingInnate(newLevel) {
@@ -65,7 +78,7 @@ class PoolEntry {
                 .forEach((innate) => {
                     console.log("increase innate", this.name, innate.value);
                     this.factors.push(
-                        new innateFactor(innate.value, innate.source + " level" + currLevel, innate.note)
+                        new add2Innate(innate.superType, innate.key, innate.value, innate.source, ["level " + currLevel, innate.note])
                     );
                 });
         }
@@ -79,25 +92,32 @@ class PoolEntry {
 
     healSacrifice(value) {
         this.sacrificeDamage = Math.max(0, this.sacrificeDamage - value);
-        ß
     }
 
     get currentTotal() {
         return this.total - this.sacrificeDamage - this.normalDamage;
     }
+
+    removeBySource(sourceName) {
+        this.baseValues = this.baseValues.filter(item => item.source !== sourceName);
+        this.factors = this.factors.filter(item => item.source !== sourceName);
+        this.rollingInnate = this.rollingInnate.filter(item => item.source !== sourceName);
+    }
+
+    removeById(id) {
+        this.baseValues = this.baseValues.filter(item => item._id && item._id !== id);
+        this.factors = this.factors.filter(item => item._id && item._id !== id);
+        this.rollingInnate = this.rollingInnate.filter(item => item._id && item._id !== id);
+    }
 }
 
 export class LifePoints extends PoolEntry {
-    constructor(startValue = 20, startMultiplier = 10) {
+    constructor(startValue = 20, startBase = 10) {
         super("life points", "con");
         this.freeValue = startValue;
-        this.freeBase = startMultiplier;
+        this.freeBase = startBase;
 
         this.rex = 0;
-    }
-
-    get base() {
-        return this.baseValue + this.freeBase;
     }
 
     get multiplier() {
@@ -107,7 +127,7 @@ export class LifePoints extends PoolEntry {
     }
 
     get permanentTotal() {
-        let lp = this.freeValue + this.base * this.multiplier + sumFactors(this.factors).permanent;
+        let lp = this.freeValue + (this.base + this.freeBase) * this.multiplier + sumFactors(this.factors).permanent;
         if (this.rex) {
             return this.rex * lp;
         }
@@ -121,18 +141,10 @@ export class LifePoints extends PoolEntry {
         }
         return Math.floor(lp);
     }
-
-    get total() {
-        let lp = this.freeValue + this.base * this.multiplier + sumFactors(this.factors).total;
-        if (this.rex) {
-            return this.rex * lp;
-        }
-        return Math.floor(lp);
-    }
 }
 
 export class KiReserve extends PoolEntry {
-    constructor(startMultiplier = 2) {
+    constructor(startCharMult = 2) {
         super("ki reserve", [
             "str",
             "con",
@@ -142,11 +154,7 @@ export class KiReserve extends PoolEntry {
             "wp"
         ]);
 
-        this.freeBase = startMultiplier;
-    }
-
-    get base() {
-        return this.baseValue;
+        this.charMult = startCharMult;
     }
 
     get multiplier() {
@@ -156,27 +164,15 @@ export class KiReserve extends PoolEntry {
     }
 
     get permanentTotal() {
-        return this.base + 2 * this.multiplier + sumFactors(this.factors).permanent;
-    }
-
-    get temporaryBonus() {
-        return sumFactors(this.factors).temporary;
-    }
-
-    get total() {
-        return this.permanentTotal + this.temporaryBonus;
+        return this.base + this.charMult * this.multiplier + sumFactors(this.factors).permanent;
     }
 }
 
 export class ManaPool extends PoolEntry {
-    constructor(startValue = 20, startMultiplier = 10) {
+    constructor(startValue = 20, startBase = 10) {
         super("mana pool", "foc");
         this.freeValue = startValue;
-        this.freeBase = startMultiplier;
-    }
-
-    get base() {
-        return this.baseValue + this.freeBase;
+        this.freeBase = startBase;
     }
 
     get multiplier() {
@@ -186,36 +182,12 @@ export class ManaPool extends PoolEntry {
     }
 
     get permanentTotal() {
-        return this.freeValue + this.base * this.multiplier + sumFactors(this.factors).permanent;
-    }
-
-    get temporaryBonus() {
-        return sumFactors(this.factors).temporary;
-    }
-
-    get total() {
-        return this.freeValue + this.base * this.multiplier + sumFactors(this.factors).total;
+        return this.freeValue + this.base * 50 + this.freeBase * this.multiplier + sumFactors(this.factors).permanent;
     }
 }
 
 export class PhenomStock extends PoolEntry {
     constructor() {
         super("phenom stock");
-    }
-
-    get base() {
-        return this.baseValue;
-    }
-
-    get permanentTotal() {
-        return this.base + sumFactors(this.factors).permanent;
-    }
-
-    get temporaryBonus() {
-        return sumFactors(this.factors).temporary;
-    }
-
-    get total() {
-        return this.permanentTotal + this.temporaryBonus;
     }
 }

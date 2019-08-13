@@ -9,9 +9,11 @@ import {
     ADD_QUALITY_FACTOR,
     SUPER_TYPE_SKILL
 } from "./super-types";
+import {shortid} from "../reducers/SheetApp";
 
 
 export const addBaseValue2Skill = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
     type: ADD_BASE_VALUE,
     key,
@@ -21,6 +23,7 @@ export const addBaseValue2Skill = (key, value, source = "", note = "") => ({
 });
 
 export const addInnateFactor2Skill = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
     type: ADD_INNATE_FACTOR,
     key,
@@ -30,6 +33,7 @@ export const addInnateFactor2Skill = (key, value, source = "", note = "") => ({
 });
 
 export const addNaturalFactor2Skill = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
     type: ADD_NATURAL_FACTOR,
     key,
@@ -39,6 +43,7 @@ export const addNaturalFactor2Skill = (key, value, source = "", note = "") => ({
 });
 
 export const addInvestFactor2Skill = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
     type: ADD_INVEST_FACTOR,
     key,
@@ -48,6 +53,7 @@ export const addInvestFactor2Skill = (key, value, source = "", note = "") => ({
 });
 
 export const addAllActionFactor2Skill = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
     type: ADD_ALL_ACTION_FACTOR,
     key,
@@ -57,6 +63,7 @@ export const addAllActionFactor2Skill = (key, value, source = "", note = "") => 
 });
 
 export const addDeedFactor2Skill = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
     type: ADD_DEED_FACTOR,
     key,
@@ -66,6 +73,7 @@ export const addDeedFactor2Skill = (key, value, source = "", note = "") => ({
 });
 
 export const addQualityFactor2Skill = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
     type: ADD_QUALITY_FACTOR,
     key,
@@ -75,6 +83,7 @@ export const addQualityFactor2Skill = (key, value, source = "", note = "") => ({
 });
 
 export const addPowerFactor2Skill = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
     type: ADD_POWER_FACTOR,
     key,

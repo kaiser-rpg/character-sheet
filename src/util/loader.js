@@ -27,9 +27,12 @@ export default function loadCharacterData(err, fileData) {
     let rawJson = JSON.parse(fileData);
     console.log(rawJson);
 
-    sheet.dispatch(setCharacterName(rawJson.name));
+    let className = rawJson.class.name;
 
-    loadClassData("classA");
+    sheet.dispatch(setCharacterName(rawJson.name));
+    sheet.dispatch(setClassName(className));
+
+    loadClassData(className.replace(" ", "-"));
     loadCharacteristics(rawJson.characteristics);
 
     loadCharacterClass(rawJson.class);
@@ -52,7 +55,7 @@ const loadCharacteristics = (charData) => {
 };
 
 const loadClassData = (fileName) => {
-    let classData = JSON.parse(fs.readFileSync("data/" + fileName + ".json"));
+    let classData = JSON.parse(fs.readFileSync("data/class/" + fileName + ".json"));
     let className = classData.name;
 
     sheet.dispatch(setClassName(classData.name));

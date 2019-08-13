@@ -1,0 +1,174 @@
+import {sheet} from "../reducers/SheetApp";
+import {deleteId} from "../actions/sheet-actions";
+import React from "react";
+import Modal from 'react-modal';
+
+
+export default class SkillModal extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            modalIsOpen: false
+        };
+
+        this.openModal = this.openModal.bind(this);
+        this.afterOpenModal = this.afterOpenModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+    }
+
+
+    openModal() {
+        this.setState({modalIsOpen: true});
+    }
+
+    afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        this.subtitle.style.color = '#000000';
+    }
+
+    closeModal() {
+        this.setState({modalIsOpen: false});
+    }
+
+    render() {
+        let skill = this.props.skill;
+
+        let baseRows = skill.baseValues.map(factor => <FactorRow key={factor._id} factor={factor}/>);
+        let factorRows = skill.factors.sort(sortFactor).map(factor => <FactorRow key={factor._id} factor={factor}/>);
+
+        if (skill.isUntrained) {
+            let r = {
+                _id: 0,
+                type: "untrained",
+                value: -3,
+                source: "core",
+                note: ""
+            }
+            factorRows.push(<FactorRow key={r._id} factor={r}/>);
+        }
+
+        if (skill.isLowerTie) {
+            let r = {
+                _id: 0,
+                type: "tied to",
+                value: skill.base,
+                source: skill.tiedTo.skill.title,
+                note: ""
+            };
+            baseRows.push(<FactorRow key={r._id} factor={r}/>);
+        }
+
+        return (
+            <div>
+                <button onClick={this.openModal}>i</button>
+                <Modal
+                    isOpen={this.state.modalIsOpen}
+                    onAfterOpen={this.afterOpenModal}
+                    onRequestClose={this.closeModal}
+                    contentLabel="Skill Modal"
+                    className="modal-content"
+                >
+                    <div className="modal-header">
+                        <span className="modal-close" onClick={this.closeModal}>&times;</span>
+                        <h2>{skill.title}</h2>
+                    </div>
+
+                    <div className="modal-body">
+                        <h4>Base Value</h4>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>value</th>
+                                <th>type</th>
+                                <th>source</th>
+                                <th colSpan={3}>notes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {baseRows}
+                            </tbody>
+                        </table>
+
+                        <h4>Modifier</h4>
+                        <div>{skill.char.toUpperCase()}: {skill.modifier}</div>
+
+                        <h4>Factors</h4>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>value</th>
+                                <th>type</th>
+                                <th>source</th>
+                                <th colSpan={3}>notes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {factorRows}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div className="modal-footer">
+                        <h3>Total</h3>
+                        <div>{skill.total}</div>
+                    </div>
+                </Modal>
+            </div>
+        )
+    }
+}
+
+class FactorRow extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.deleteById = this.deleteById.bind(this);
+    }
+
+    deleteById() {
+        console.log("delete by id for", this.props.factor._id);
+        sheet.dispatch(deleteId(this.props.factor._id));
+    }
+
+    render() {
+        let {
+            _id,
+            type,
+            value,
+            source,
+            note
+        } = this.props.factor;
+
+        if (note && Array.isArray(note)) {
+            note = note.filter(n => n).map(n => (<div key={n}>{n}</div>));
+        }
+
+        let button;
+        if (_id) {
+            button = (<td>
+                <button onClick={this.deleteById}>X</button>
+            </td>);
+        }
+
+        type = type.replace("add", "").replace(/-/g, " ").trim();
+
+        return (
+            <tr>
+                <td>{value > 0 ? '+' + value : value}</td>
+                <td>{type}</td>
+                <td>{source}</td>
+                <td colSpan={3}>{note}</td>
+                {button}
+            </tr>
+
+        );
+    }
+}
+
+const sortFactor = (a, b) => {
+    // Sort by Type
+    if (a.type.toLowerCase() !== b.type.toLowerCase()) return a.type.toLowerCase() > b.type.toLowerCase() ? 1 : -1;
+
+    return a.value - b.value;
+};

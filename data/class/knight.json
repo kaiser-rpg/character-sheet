@@ -44,7 +44,7 @@
             },
             {
                 "superType": "skill",
-                "key": "wear armor",
+                "key": "wearArmor",
                 "level": 1,
                 "value": 1
             }

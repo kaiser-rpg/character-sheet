@@ -14,6 +14,9 @@ import {
     SUPER_TYPE_SKILL
 } from "../actions/super-types";
 import {LEVEL_UP} from "../actions/level-actions";
+import {DELETE_ID} from "../actions/sheet-actions";
+
+export const shortid = require('shortid');
 
 function sheetReducer(state = new Makeup(), action) {
     let newState = Object.assign(state);
@@ -25,10 +28,17 @@ function sheetReducer(state = new Makeup(), action) {
             console.log("level up", action.newLevel);
             newState.updateRollingInnate(action.newLevel);
             return newState;
+        case DELETE_ID:
+            console.log("delete", action.id);
+            newState.removeById(action.id);
+            return newState;
         default:
             break;
     }
 
+    if (!action._id) {
+        action._id = shortid.generate();
+    }
 
     switch (action.superType) {
         case SUPER_TYPE_CHAR:

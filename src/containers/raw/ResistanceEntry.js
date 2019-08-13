@@ -1,7 +1,8 @@
 import {toCamelCase, toTitleCase} from "../../util/StringHelper";
 import {presentSheet} from "../../reducers/SheetApp";
-import {innateFactor, sumFactors} from "./Factor";
-
+import {sumFactors} from "./Factor";
+import {add2Innate} from "../../actions/factor-actions";
+import {innateBonusClass} from "../../actions/innate-bonus-actions";
 
 export class Presence {
 
@@ -10,13 +11,8 @@ export class Presence {
         this.shortName = "PrR";
         this.group = "general";
         this.factors = [];
-        this.rollingInnate = [];
+        this.rollingInnate = [new innateBonusClass("ability.general", "presence", 1, 2, "core")];
         this.lastInnateLevel = 0;
-        this.rollingInnate.push({
-            value: 1,
-            level: 2,
-            source: "exist"
-        })
     }
 
     get key() {
@@ -29,10 +25,6 @@ export class Presence {
 
     get base() {
         return 2;
-    }
-
-    get modifier() {
-        return 0;
     }
 
     get innate() {
@@ -48,7 +40,7 @@ export class Presence {
     }
 
     get permanentTotal() {
-        return this.base + this.modifier + this.innate + this.natural - this.invested;
+        return this.base + sumFactors(this.factors).permanent;
     }
 
     get temporaryBonus() {
@@ -68,12 +60,22 @@ export class Presence {
                 .forEach((innate) => {
                     console.log("increase innate", this.name, innate.value);
                     this.factors.push(
-                        new innateFactor(innate.value, innate.source + " level" + currLevel, innate.note)
+                        new add2Innate(innate.superType, innate.key, innate.value, innate.source, ["level " + currLevel, innate.note])
                     );
                 });
         }
 
         this.lastInnateLevel = newLevel;
+    }
+
+    removeBySource(sourceName) {
+        this.rollingInnate = this.rollingInnate.filter(item => item.source !== sourceName);
+        this.factors = this.factors.filter(item => item.source !== sourceName);
+    }
+
+    removeById(id) {
+        this.rollingInnate = this.rollingInnate.filter(item => item._id && item._id !== id);
+        this.factors = this.factors.filter(item => item._id && item._id !== id);
     }
 
 }
@@ -131,6 +133,16 @@ export class ResistanceEntry {
 
     get total() {
         return this.permanentTotal + this.temporaryBonus;
+    }
+
+    removeBySource(sourceName) {
+        this.rollingInnate = this.rollingInnate.filter(item => item.source !== sourceName);
+        this.factors = this.factors.filter(item => item.source !== sourceName);
+    }
+
+    removeById(id) {
+        this.rollingInnate = this.rollingInnate.filter(item => item._id && item._id !== id);
+        this.factors = this.factors.filter(item => item._id && item._id !== id);
     }
 
 }

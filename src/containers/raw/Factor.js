@@ -1,66 +1,13 @@
-// PERMANENT
-export const INNATE_FACTOR = "innate-factor";
-export const NATURAL_FACTOR = "natural-factor";
-export const INVEST_FACTOR = "invest-factor";
+import {
+    ADD_ALL_ACTION_FACTOR,
+    ADD_DEED_FACTOR,
+    ADD_INNATE_FACTOR,
+    ADD_INVEST_FACTOR,
+    ADD_NATURAL_FACTOR,
+    ADD_POWER_FACTOR,
+    ADD_QUALITY_FACTOR
+} from "../../actions/super-types";
 
-// TEMPORARY
-export const ALL_ACTION_FACTOR = "all-action-factor";
-export const DEED_FACTOR = "deed-factor";
-export const QUALITY_FACTOR = "quality-factor";
-export const POWER_FACTOR = "power-factor";
-
-export const innateFactor = (value, source, note) => ({
-    type: INNATE_FACTOR,
-    value,
-    source,
-    note
-});
-
-export const naturalFactor = (value, source, note) => ({
-    type: NATURAL_FACTOR,
-    value,
-    source,
-    note
-});
-
-export const investFactor = (value, source, note) => ({
-    type: INVEST_FACTOR,
-    value: Math.abs(value),
-    source,
-    note
-});
-
-export const allActionFactor = (value, source, note) => ({
-    type: ALL_ACTION_FACTOR,
-    value,
-    source,
-    note
-});
-
-export const deedFactor = (value, source, note) => ({
-    type: DEED_FACTOR,
-    value,
-    source,
-    note
-});
-
-export const qualityFactor = (value, source, note) => ({
-    type: QUALITY_FACTOR,
-    value,
-    source,
-    note
-});
-
-export const powerFactor = (value, source, note) => ({
-    type: POWER_FACTOR,
-    value,
-    source,
-    note
-});
-
-export function sumByFactor(factorName, factorList) {
-    return sumFactors(factorList.map((f) => f.type === factorName));
-}
 
 export function sumFactors(factorList) {
     let innateSum = 0;
@@ -79,29 +26,29 @@ export function sumFactors(factorList) {
 
         let factor = factorList[i];
         switch (factor.type) {
-            case INNATE_FACTOR:
+            case ADD_INNATE_FACTOR:
                 innateSum += factor.value;
                 break;
-            case NATURAL_FACTOR:
+            case ADD_NATURAL_FACTOR:
                 naturalSum += factor.value;
                 break;
-            case INVEST_FACTOR:
+            case ADD_INVEST_FACTOR:
                 investSum += factor.value;
                 break;
-            case ALL_ACTION_FACTOR:
+            case ADD_ALL_ACTION_FACTOR:
                 allActionSum = factor.value;
                 break;
-            case DEED_FACTOR:
+            case ADD_DEED_FACTOR:
                 deedSum = factor.value;
                 break;
-            case QUALITY_FACTOR:
+            case ADD_QUALITY_FACTOR:
                 if (factor.value > 0) {
                     qualityBonus = qualityBonus > factor.value ? qualityBonus : factor.value;
                 } else {
                     qualityPenalty = qualityPenalty < factor.value ? qualityPenalty : factor.value;
                 }
                 break;
-            case POWER_FACTOR:
+            case ADD_POWER_FACTOR:
                 if (factor.value > 0) {
                     powerBonus = powerBonus > factor.value ? powerBonus : factor.value;
                 } else {

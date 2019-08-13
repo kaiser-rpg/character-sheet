@@ -1,16 +1,17 @@
 import {toCamelCase, toTitleCase} from "../../util/StringHelper";
-import {innateFactor, sumFactors} from "./Factor";
+import {sumFactors} from "./Factor";
 import {presentSheet} from "../../reducers/SheetApp";
-import {DEV_COST_BASE, DEV_COST_MOD_CLASS, DEV_COST_MOD_FEATURE} from "./DevCost";
+import {REDUCE_DEV_COST, SET_DEV_COST} from "../../actions/dev-cost-actions";
+import {add2Innate} from "../../actions/factor-actions";
 
 export default class SkillEntry {
 
-    constructor(name, group, defaultChar, baseValue = 0) {
+    constructor(name, group, defaultChar) {
         this.name = name;
         this.group = group;
         this.char = defaultChar;
         this.devCostMod = [];
-        this.baseValue = baseValue;
+        this.baseValues = [];
         this.factors = [];
         this.rollingInnate = [];
         this.lastInnateLevel = 0;
@@ -24,12 +25,23 @@ export default class SkillEntry {
         return toTitleCase(this.name);
     }
 
-    get base() {
-        if (this.tiedTo) {
-            return Math.max(this.baseValue, this.tiedTo.skill.baseValue - this.tiedTo.behind);
-        }
+    get isUntrained() {
+        let f = sumFactors(this.factors);
+        return this.base === 0 && f.innate === 0 && f.natural === 0;
+    }
 
-        return this.baseValue;
+    get isLowerTie() {
+        if (!this.tiedTo) return false;
+        return this.baseValues.length === 0 && (this.tiedTo.skill.baseValues.reduce((total, curr) => total + curr.value, 0) - this.tiedTo.behind) > 0;
+    }
+
+    get base() {
+        let b = this.baseValues.reduce((total, curr) => total + curr.value, 0);
+
+        if (this.tiedTo) {
+            return Math.max(b, this.tiedTo.skill.baseValues.reduce((total, curr) => total + curr.value, 0) - this.tiedTo.behind);
+        }
+        return b;
     }
 
     get modifier() {
@@ -43,11 +55,10 @@ export default class SkillEntry {
     }
 
     get natural() {
-        let f = sumFactors(this.factors);
-        if (this.base === 0 && f.innate === 0 && f.natural === 0) {
+        if (this.isUntrained) {
             return -3;
         }
-        return f.natural;
+        return sumFactors(this.factors).natural;
     }
 
     get invested() {
@@ -68,16 +79,16 @@ export default class SkillEntry {
 
     get devCost() {
         let baseCost = this.devCostMod
-            .filter((d) => d.type === DEV_COST_BASE)
+            .filter((d) => d.type === SET_DEV_COST)
             .reduce((min, curr) => Math.min(min, curr.value), 5);
         let reduction = this.devCostMod
-            .filter((d) => d.type === DEV_COST_MOD_CLASS || d.type === DEV_COST_MOD_FEATURE)
+            .filter((d) => d.type === REDUCE_DEV_COST)
             .reduce((sum, curr) => sum + curr, 0);
         return Math.max(3, baseCost - reduction);
     }
 
     get xpCost() {
-        return this.baseValue * this.devCost;
+        return this.baseValues.reduce((total, curr) => total + curr.value, 0) * this.devCost;
     }
 
     updateRollingInnate(newLevel) {
@@ -89,7 +100,7 @@ export default class SkillEntry {
                 .forEach((innate) => {
                     console.log("increase innate", this.name, innate.value);
                     this.factors.push(
-                        new innateFactor(innate.value, innate.source + " level" + currLevel, innate.note)
+                        new add2Innate("skill", innate.key, innate.value, innate.source, ["level " + currLevel, innate.note])
                     );
                 });
         }
@@ -97,14 +108,26 @@ export default class SkillEntry {
         this.lastInnateLevel = newLevel;
     }
 
+    removeBySource(sourceName) {
+        this.baseValues = this.baseValues.filter(item => item.source !== sourceName);
+        this.rollingInnate = this.rollingInnate.filter(item => item.source !== sourceName);
+        this.factors = this.factors.filter(item => item.source !== sourceName);
+    }
+
+    removeById(id) {
+        this.baseValues = this.baseValues.filter(item => item._id && item._id !== id);
+        this.rollingInnate = this.rollingInnate.filter(item => item._id && item._id !== id);
+        this.factors = this.factors.filter(item => item._id && item._id !== id);
+    }
+
 }
 
 export class Initiative {
-    constructor(defaultChar) {
+    constructor(defaultChar, startBase = 10) {
         this.name = "initiative";
         this.group = "general";
         this.char = defaultChar;
-        this.baseValue = 20;
+        this.baseValue = startBase;
         this.factors = [];
         this.rollingInnate = [];
         this.lastInnateLevel = 0;
@@ -161,12 +184,22 @@ export class Initiative {
                 .forEach((innate) => {
                     console.log("increase innate", this.name, innate.value);
                     this.factors.push(
-                        new innateFactor(innate.value, innate.source + " level" + currLevel, innate.note)
+                        new add2Innate("skill", innate.key, innate.value, innate.source, ["level " + currLevel, innate.note])
                     );
                 });
         }
 
         this.lastInnateLevel = newLevel;
+    }
+
+    removeBySource(sourceName) {
+        this.rollingInnate = this.rollingInnate.filter(item => item.source !== sourceName);
+        this.factors = this.factors.filter(item => item.source !== sourceName);
+    }
+
+    removeById(id) {
+        this.rollingInnate = this.rollingInnate.filter(item => item._id && item._id !== id);
+        this.factors = this.factors.filter(item => item._id && item._id !== id);
     }
 
 }
@@ -233,11 +266,21 @@ export class SpiritSkillEntry {
                 .forEach((innate) => {
                     console.log("increase innate", this.name, innate.value);
                     this.factors.push(
-                        new innateFactor(innate.value, innate.source + " level" + currLevel, innate.note)
+                        new add2Innate("skill", innate.key, innate.value, innate.source, ["level " + currLevel, innate.note])
                     );
                 });
         }
 
         this.lastInnateLevel = newLevel;
+    }
+
+    removeBySource(sourceName) {
+        this.rollingInnate = this.rollingInnate.filter(item => item.source !== sourceName);
+        this.factors = this.factors.filter(item => item.source !== sourceName);
+    }
+
+    removeById(id) {
+        this.rollingInnate = this.rollingInnate.filter(item => item._id && item._id !== id);
+        this.factors = this.factors.filter(item => item._id && item._id !== id);
     }
 }
