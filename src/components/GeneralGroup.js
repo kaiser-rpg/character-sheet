@@ -33,7 +33,7 @@ class LifePoints extends React.Component {
         let lp = this.props.lifePoints;
 
         return (
-            <div>
+            <div className="column">
                 <h3>{lp.title}</h3>
                 <table style={styles.table}>
                     <tbody>
@@ -93,7 +93,7 @@ class Resistance extends React.Component {
         let {prr, phr, sr, mr} = this.props.resistance;
 
         return (
-            <div>
+            <div className="column">
                 <h3>Resistance</h3>
                 <table style={styles.table}>
                     <tbody>

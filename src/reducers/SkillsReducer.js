@@ -18,7 +18,7 @@ export function skills(state = new SkillList(), action) {
         return state;
     }
 
-    let newState = Object.assign(state);
+    let newState = Object.assign(new SkillList(), state);
     let targetGroup = newState.getSkillGroup(action.key);
 
     if (targetGroup.length === 0) {

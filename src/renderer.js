@@ -1,28 +1,37 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
-
 import React from 'react'
-import {presentSheet, sheet} from "./reducers/SheetApp";
+import { presentSheet, sheet } from "./reducers/SheetApp";
 import * as ReactDOM from "react-dom";
 import loadCharacterData from "./util/loader";
-import ColumnA from "./components/ColumnA";
+import ColumnLeft from "./components/ColumnLeft";
+import ColumnRight from "./components/ColumnRight";
 import Modal from "react-modal";
+import GeneralGroup from "./components/GeneralGroup";
+
 
 const fs = window.require('fs');
 
 Modal.setAppElement(document.getElementById('app'));
 
-sheet.subscribe(() => ReactDOM.render(<App sheet={presentSheet}/>, document.getElementById('app')));
+sheet.subscribe(() => ReactDOM.render(<App sheet={presentSheet} />, document.getElementById('app')));
 
 
 fs.readFile('data/kara.json', loadCharacterData);
 
 class App extends React.Component {
     render() {
+        let { abilities, skills, characteristics } = this.props.sheet;
         return (
-            <div className="row">
-                <ColumnA sheet={this.props.sheet}/>
+            <div >
+                <div className="container">
+                    <h1>
+                        {this.props.sheet.info.name}
+                    </h1>
+                    <GeneralGroup generalAbilities={abilities.generalAbilities} />
+                </div>
+                <div className="container">
+                    <ColumnLeft sheet={this.props.sheet} />
+                    <ColumnRight sheet={this.props.sheet} />
+                </div>
             </div>
         )
     }

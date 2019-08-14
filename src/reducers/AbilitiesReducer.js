@@ -21,7 +21,7 @@ import {
 import {INNATE_BONUS_CLASS, INNATE_BONUS_FEATURE} from "../actions/innate-bonus-actions";
 
 export function abilities(state = new AbilityList(), action) {
-    let newState = Object.assign(state);
+    let newState = Object.assign(new AbilityList(), state);
 
     switch (action.superType) {
         case SUPER_TYPE_GENERAL:
@@ -46,7 +46,7 @@ function generalAbilities(state = new GeneralAbilities(), action) {
         return state;
     }
 
-    let newState = Object.assign(state);
+    let newState = Object.assign(new GeneralAbilities(), state);
 
     switch (action.type) {
         case ADD_BASE_VALUE:
@@ -82,7 +82,7 @@ function martialAbilities(state = new MartialAbilities(), action) {
         return state;
     }
 
-    let newState = Object.assign(state);
+    let newState = Object.assign(new MartialAbilities(), state);
 
     switch (action.type) {
         case ADD_BASE_VALUE:
@@ -117,7 +117,7 @@ function magicAbilities(state = new MagicAbilities(), action) {
         return state;
     }
 
-    let newState = Object.assign(state);
+    let newState = Object.assign(new MagicAbilities(), state);
 
     switch (action.type) {
         case ADD_BASE_VALUE:
@@ -152,7 +152,7 @@ function manifestAbilities(state = new ManifestAbilities(), action) {
         return state;
     }
 
-    let newState = Object.assign(state);
+    let newState = Object.assign(new ManifestAbilities(), state);
 
     switch (action.type) {
         case ADD_BASE_VALUE:

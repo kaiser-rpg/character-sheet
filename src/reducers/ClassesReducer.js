@@ -5,7 +5,7 @@ import ClassEntry from "../containers/raw/ClassEntry";
 
 
 export function classes(state = {}, action) {
-    // let newState = Object.assign(state);
+    // let newState = Object.assign({}, state);
     // // Send to skill reducer
     // return
 
@@ -13,7 +13,7 @@ export function classes(state = {}, action) {
     if (!action.source) {
         return state;
     }
-    let newState = Object.assign(state);
+    let newState = Object.assign({}, state);
 
     console.log("working on ", action.source)
 

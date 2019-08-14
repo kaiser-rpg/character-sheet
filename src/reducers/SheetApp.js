@@ -19,7 +19,7 @@ import {DELETE_ID} from "../actions/sheet-actions";
 export const shortid = require('shortid');
 
 function sheetReducer(state = new Makeup(), action) {
-    let newState = Object.assign(state);
+    let newState = Object.assign(new Makeup(), state);
 
     newState.info = info(newState.info, action);
 

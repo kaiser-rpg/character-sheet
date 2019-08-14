@@ -16,7 +16,7 @@ export function characteristics(state = new CharList(), action) {
     }
 
     let key = action.key;
-    let newState = Object.assign(state);
+    let newState = Object.assign(new CharList(), state);
 
     switch (action.type) {
         case SET_BASE_VALUE:

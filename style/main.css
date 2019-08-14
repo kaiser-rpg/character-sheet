@@ -3,18 +3,30 @@
 /*}*/
 
 /* Create three equal columns that floats next to each other */
-.column {
+.column{
     float: left;
-    width: 50%;
+}
+.column-66-left {
+    float: left;
+    width: 60%;
     padding: 10px;
     border-left: solid black;
     border-right: solid black;
-    /* Should be removed.
-     Only for demonstration */
+    overflow:hidden;
+}
+
+.column-33-right {
+    /* float: left; */
+    /* width: 33%; */
+    margin-left: 60%;
+    padding: 10px;
+    border-left: solid black;
+    border-right: solid black;
+    overflow:hidden;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.container:after {
     content: "";
     display: table;
     clear: both;
@@ -23,9 +35,9 @@
 /* Responsive layout - makes the three columns stack on top of
 each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
+    .column-33-right, .column-66-left {
         width: 100%;
-
+        margin-left: 0%
     }
 }
 
@@ -42,61 +54,33 @@ h1, h2, h3, h4 {
     margin: 0px
 }
 
-/* Modal Header */
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-/* Modal Body */
-.modal-body {
-    padding: 2px 16px;
-}
-
-/* Modal Footer */
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-/* Modal Content */
-.modal-content {
+/* Tooltip container */
+.tooltip {
     position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
 
-/* Add Animation */
-@keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
+    top: -5px;
+    left: 105%; 
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 
-/* The Close Button */
-.modal-close {
-    color: #5a5a5a;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}

@@ -9,7 +9,7 @@ import Info from "../containers/raw/Info";
 
 
 export function info(state = new Info(), action) {
-    let newState = Object.assign(state);
+    let newState = Object.assign(new Info(), state);
 
     switch (action.type) {
         case SET_CHARACTER_NAME:

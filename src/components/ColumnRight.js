@@ -1,7 +1,8 @@
 import React from 'react'
 import FactorBlock from "./block/FactorBlock";
+import SkillTable from "./SkillTable";
 
-export default class ColumnB extends React.Component {
+export default class ColumnRight extends React.Component {
 
     render() {
         let arr = [];
@@ -11,8 +12,8 @@ export default class ColumnB extends React.Component {
         skills.block.factors.forEach(factor => arr.push(<FactorBlock name={"block"} factor={factor}/>));
 
         return (
-            <div className="column">
-                {arr}
+            <div className="column-33-right">
+                <SkillTable skillGroups={skills.secondarySkills}/>
             </div>
         )
     }

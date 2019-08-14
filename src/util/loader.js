@@ -175,8 +175,9 @@ const loadFactors = (natural = [], invest = []) => {
 const loadFeatures = (aFeatures = [], bFeatures = []) => {
     aFeatures.forEach((c = []) => {
         c.actions.forEach((a) => {
-            let action = Object.assign(a);
-            action.source = c.name + " (" + c.cost + ")";
+            let action = Object.assign(a, {
+                source: c.name + " (" + c.cost + ")"
+            });
             sheet.dispatch(action);
             console.log("feature action ", c.name, action);
         })

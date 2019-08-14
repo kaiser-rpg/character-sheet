@@ -1,5 +1,5 @@
-import {sheet} from "../reducers/SheetApp";
-import {deleteId} from "../actions/sheet-actions";
+import { sheet } from "../../reducers/SheetApp";
+import { deleteId } from "../../actions/sheet-actions";
 import React from "react";
 import Modal from 'react-modal';
 
@@ -13,29 +13,56 @@ export default class SkillModal extends React.Component {
         };
 
         this.openModal = this.openModal.bind(this);
-        this.afterOpenModal = this.afterOpenModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
     }
 
 
     openModal() {
-        this.setState({modalIsOpen: true});
-    }
-
-    afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        this.subtitle.style.color = '#000000';
+        this.setState({ modalIsOpen: true });
     }
 
     closeModal() {
-        this.setState({modalIsOpen: false});
+        this.setState({ modalIsOpen: false });
     }
 
-    render() {
+    get baseTable() {
         let skill = this.props.skill;
+        let baseRows = skill.baseValues.map(factor => <FactorRow key={factor._id} factor={factor} />);
 
-        let baseRows = skill.baseValues.map(factor => <FactorRow key={factor._id} factor={factor}/>);
-        let factorRows = skill.factors.sort(sortFactor).map(factor => <FactorRow key={factor._id} factor={factor}/>);
+        if (skill.isLowerTie) {
+            let r = {
+                _id: 0,
+                type: "tied to",
+                value: skill.base,
+                source: skill.tiedTo.skill.title,
+                note: "behind by " + skill.tiedTo.behind + " points"
+            };
+            baseRows.push(<FactorRow key={r._id} factor={r} />);
+        }
+
+        if(baseRows.length === 0) baseRows.push(<tr><td colSpan={8}>No base value</td></tr>)
+
+
+        return (
+            <table className='modal-table'>
+                <thead>
+                    <tr>
+                        <th>value</th>
+                        <th>type</th>
+                        <th colSpan={3}>notes</th>
+                        <th>source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {baseRows}
+                </tbody>
+            </table>
+        );
+    }
+
+    get factorTable() {
+        let skill = this.props.skill;
+        let factorRows = skill.factors.sort(sortFactor).map(factor => <FactorRow key={factor._id} factor={factor} />);
 
         if (skill.isUntrained) {
             let r = {
@@ -45,26 +72,35 @@ export default class SkillModal extends React.Component {
                 source: "core",
                 note: ""
             }
-            factorRows.push(<FactorRow key={r._id} factor={r}/>);
+            factorRows.push(<FactorRow key={r._id} factor={r} />);
         }
 
-        if (skill.isLowerTie) {
-            let r = {
-                _id: 0,
-                type: "tied to",
-                value: skill.base,
-                source: skill.tiedTo.skill.title,
-                note: ""
-            };
-            baseRows.push(<FactorRow key={r._id} factor={r}/>);
-        }
+        if(factorRows.length === 0) factorRows.push(<tr><td colSpan={5}>No factors</td></tr>)
 
         return (
+            <table className='modal-table'>
+                <thead>
+                    <tr>
+                        <th>value</th>
+                        <th>type</th>
+                        <th colSpan={3}>notes</th>
+                        <th>source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {factorRows}
+                </tbody>
+            </table>
+        );
+    }
+
+    render() {
+        let skill = this.props.skill;
+        return (
             <div>
-                <button onClick={this.openModal}>i</button>
+                <span className="modal-open" onClick={this.openModal}>&#8942;</span>
                 <Modal
                     isOpen={this.state.modalIsOpen}
-                    onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
                     contentLabel="Skill Modal"
                     className="modal-content"
@@ -76,37 +112,15 @@ export default class SkillModal extends React.Component {
 
                     <div className="modal-body">
                         <h4>Base Value</h4>
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>value</th>
-                                <th>type</th>
-                                <th>source</th>
-                                <th colSpan={3}>notes</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {baseRows}
-                            </tbody>
-                        </table>
+                        <div>{skill.base}</div>
+                        {this.baseTable}
 
                         <h4>Modifier</h4>
                         <div>{skill.char.toUpperCase()}: {skill.modifier}</div>
 
                         <h4>Factors</h4>
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>value</th>
-                                <th>type</th>
-                                <th>source</th>
-                                <th colSpan={3}>notes</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {factorRows}
-                            </tbody>
-                        </table>
+                        {this.factorTable}
+
                     </div>
 
                     <div className="modal-footer">
@@ -147,7 +161,7 @@ class FactorRow extends React.Component {
         let button;
         if (_id) {
             button = (<td>
-                <button onClick={this.deleteById}>X</button>
+                <span className="skill-factor-delete" onClick={this.deleteById}>&times;</span>
             </td>);
         }
 
@@ -157,8 +171,8 @@ class FactorRow extends React.Component {
             <tr>
                 <td>{value > 0 ? '+' + value : value}</td>
                 <td>{type}</td>
-                <td>{source}</td>
                 <td colSpan={3}>{note}</td>
+                <td>{source}</td>
                 {button}
             </tr>
 
