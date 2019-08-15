@@ -9,7 +9,7 @@ export default class ColumnRight extends React.Component {
 
         let {skills, abilities} = this.props.sheet;
 
-        skills.block.factors.forEach(factor => arr.push(<FactorBlock name={"block"} factor={factor}/>));
+        skills.block.factorValues.forEach(factor => arr.push(<FactorBlock name={"block"} factor={factor}/>));
 
         return (
             <div className="column-33-right">

@@ -6,7 +6,7 @@ import {
     ADD_NATURAL_FACTOR,
     ADD_POWER_FACTOR,
     ADD_QUALITY_FACTOR
-} from "../../actions/super-types";
+} from "../actions/super-types";
 
 
 export function sumFactors(factorList) {

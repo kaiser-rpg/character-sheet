@@ -1,7 +1,8 @@
-import {KiReserve, LifePoints, ManaPool, PhenomStock} from "./PoolEntry";
-import {ManaKnowledge, PhenomKnowledge, SpiritKnowledge} from "./KnowEntry";
-import {Presence, ResistanceEntry} from "./ResistanceEntry";
-import ChakraEntry from "./ChakraEntry";
+import {KiReserve, LifePoints, ManaPool, PhenomStock} from "./Entry/PoolEntry";
+import {ManaKnowledge, PhenomKnowledge, SpiritKnowledge} from "./Entry/KnowEntry";
+import {Presence, ResistanceEntry} from "./Entry/ResistanceEntry";
+import ChakraEntry from "./Entry/ChakraEntry";
+import {ManaAccumulation, ManaRecovery} from "./Entry/MAEntry";
 
 export default class AbilityList {
 
@@ -110,8 +111,8 @@ export class MagicAbilities {
     constructor() {
         this.manaPool = new ManaPool();
         this.manaKnowledge = new ManaKnowledge();
-
-
+        this.manaAccumulation = new ManaAccumulation();
+        this.manaRecovery = new ManaRecovery();
     }
 
     updateRollingInnate(newLevel) {

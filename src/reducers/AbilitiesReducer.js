@@ -61,8 +61,8 @@ function generalAbilities(state = new GeneralAbilities(), action) {
         case ADD_DEED_FACTOR:
         case ADD_QUALITY_FACTOR:
         case ADD_POWER_FACTOR:
-            if (!newState[action.key] || !newState[action.key].factors) return state;
-            newState[action.key].factors.push(action);
+            if (!newState[action.key] || !newState[action.key].factorValues) return state;
+            newState[action.key].factorValues.push(action);
             console.log(action.type, action.key, action);
             return newState;
         case INNATE_BONUS_CLASS:
@@ -97,8 +97,8 @@ function martialAbilities(state = new MartialAbilities(), action) {
         case ADD_DEED_FACTOR:
         case ADD_QUALITY_FACTOR:
         case ADD_POWER_FACTOR:
-            if (!newState[action.key] || !newState[action.key].factors) return state;
-            newState[action.key].factors.push(action);
+            if (!newState[action.key] || !newState[action.key].factorValues) return state;
+            newState[action.key].factorValues.push(action);
             console.log(action.type, action.key, action);
             return newState;
         case INNATE_BONUS_CLASS:

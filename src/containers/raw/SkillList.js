@@ -1,4 +1,4 @@
-import SkillEntry, {Initiative, SpiritSkillEntry} from "./SkillEntry";
+import SkillEntry, {Initiative, SpiritSkillEntry} from "./Entry/SkillEntry";
 
 export function martialSkills() {
     return [

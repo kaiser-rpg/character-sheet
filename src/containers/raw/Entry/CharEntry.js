@@ -1,29 +1,16 @@
-import {toCamelCase, toTitleCase} from "../../util/StringHelper";
-import {sumFactors} from "./Factor";
+import {IEntry__core} from "../core/CoreEntry";
+import {setBaseValueChar} from "../../../actions/char-actions";
 
-class CharEntry {
+class CharEntry extends IEntry__core {
     constructor(name, baseValue = 5, ...altNames) {
+        super(name, "general", altNames);
         this.name = name;
         this.altNames = altNames;
-        this.baseValue = 5;
-        this.factors = [];
+        this.baseValues = [setBaseValueChar(this.key, baseValue, "start")];
     }
 
-    get title() {
-        return toTitleCase(this.name);
-    }
-
-    get key() {
-        return toCamelCase(this.name);
-    }
-
-    isName(check) {
-        return check === name || this.altNames.includes(check);
-    }
-
-    get modifier() {
-        let total = this.total;
-        if (total <= 1)
+    static lookupModifier(value) {
+        if (value <= 1)
             return -3;
 
         if (total <= 3)
@@ -68,40 +55,16 @@ class CharEntry {
         return -5;
     }
 
-    get innate() {
-        return sumFactors(this.factors).innate;
+    get permanentModifier() {
+        return CharEntry.lookupModifier(this.permanentTotal);
     }
 
-    get natural() {
-        return sumFactors(this.factors).natural;
-    }
-
-    get invested() {
-        return sumFactors(this.factors).invest;
-    }
-
-    get permanentTotal() {
-        return this.baseValue + sumFactors(this.factors).permanent;
-    }
-
-    get temporaryBonus() {
-        return sumFactors(this.factors).temporary;
-    }
-
-    get total() {
-        return this.baseValue + sumFactors(this.factors).total;
-    }
-
-    removeBySource(sourceName) {
-        this.factors = this.factors.filter(item => item.source !== sourceName);
-    }
-
-    removeById(id) {
-        this.factors = this.factors.filter(item => item._id && item._id !== id);
+    get modifier() {
+        return CharEntry.lookupModifier(this.total);
     }
 
     get cost() {
-        return this.baseValue + this.modifier;
+        return this.base + this.permanentModifier;
     }
 }
 

@@ -1,4 +1,4 @@
-import {Agility, Aptitude, Constitution, Dexterity, Focus, Perception, Strength, Willpower} from "./CharEntry";
+import {Agility, Aptitude, Constitution, Dexterity, Focus, Perception, Strength, Willpower} from "./Entry/CharEntry";
 
 export default class CharList {
     constructor(str = 5, con = 5, dex = 5, agi = 5, per = 5, apt = 5, foc = 5, wp = 5) {
@@ -52,6 +52,18 @@ export default class CharList {
 
         console.log("found no proper characteristic for " + name);
         return null;
+    }
+
+    lookupCharValue(name, valueKey) {
+        let char = this.lookupChar(name);
+        if (!char) return 0;
+        if (Array.isArray(char)) {
+            if (!char[0].hasOwnProperty(valueKey)) return 0;
+            return char.reduce((sum, curr) => sum + curr[valueKey]);
+        } else {
+            if (!char.hasOwnProperty(valueKey)) return 0;
+            return char[valueKey];
+        }
     }
 
     removeBySource(sourceName) {

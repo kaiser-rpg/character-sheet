@@ -1,5 +1,5 @@
-import { sheet } from "../../reducers/SheetApp";
-import { deleteId } from "../../actions/sheet-actions";
+import {sheet} from "../../reducers/SheetApp";
+import {deleteId} from "../../actions/sheet-actions";
 import React from "react";
 import Modal from 'react-modal';
 
@@ -62,7 +62,8 @@ export default class SkillModal extends React.Component {
 
     get factorTable() {
         let skill = this.props.skill;
-        let factorRows = skill.factors.sort(sortFactor).map(factor => <FactorRow key={factor._id} factor={factor} />);
+        let factorRows = skill.factorValues.sort(sortFactor).map(factor => <FactorRow key={factor._id}
+                                                                                      factor={factor}/>);
 
         if (skill.isUntrained) {
             let r = {

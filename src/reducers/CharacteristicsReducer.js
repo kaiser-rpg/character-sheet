@@ -20,7 +20,7 @@ export function characteristics(state = new CharList(), action) {
 
     switch (action.type) {
         case SET_BASE_VALUE:
-            newState.lookupChar(key).baseValue = action.value;
+            newState.lookupChar(key).baseValues = [action];
             console.log(action.type, action.key, action);
             return newState;
         case ADD_NATURAL_FACTOR:
@@ -30,8 +30,8 @@ export function characteristics(state = new CharList(), action) {
         case ADD_QUALITY_FACTOR:
         case ADD_POWER_FACTOR:
             let char = newState.lookupChar(action.key);
-            if (!char || !char.factors) return state;
-            char.factors.push(action);
+            if (!char || !char.factorValues) return state;
+            char.factorValues.push(action);
             console.log(action.type, action.key, action);
             return newState;
         default:
