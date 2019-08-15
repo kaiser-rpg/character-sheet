@@ -27,13 +27,13 @@ class CharacteristicRow extends React.Component {
         return (
             <tr style={styles.row}>
                 <td className='char-row-name'>
-                    {this.props.charEntry.name}
+                    {this.props.charEntry.title}
                 </td>
                 <td className='char-row-total'>
                     {this.props.charEntry.total}
                 </td>
                 <td className='char-row-mod'>
-                    {(this.props.charEntry.modifier < 0 ? "" : "+") + this.props.charEntry.modifier}
+                    {(this.props.charEntry.modifier > 0 ? "+" : "") + this.props.charEntry.modifier}
                 </td>
             </tr>
         )

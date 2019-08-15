@@ -1,6 +1,7 @@
 import {KiReserve, LifePoints, ManaPool, PhenomStock} from "./PoolEntry";
 import {ManaKnowledge, PhenomKnowledge, SpiritKnowledge} from "./KnowEntry";
 import {Presence, ResistanceEntry} from "./ResistanceEntry";
+import ChakraEntry from "./ChakraEntry";
 
 export default class AbilityList {
 
@@ -72,21 +73,34 @@ export class MartialAbilities {
     constructor() {
         this.kiReserve = new KiReserve();
         this.spiritKnowledge = new SpiritKnowledge();
+        this.redChakra = new ChakraEntry("red chakra", ["str", "con"]);
+        this.greenChakra = new ChakraEntry("green chakra", ["dex", "agi"]);
+        this.blueChakra = new ChakraEntry("blue chakra", ["foc", "wp"]);
+
     }
 
     updateRollingInnate(newLevel) {
         this.kiReserve.updateRollingInnate(newLevel);
         this.spiritKnowledge.updateRollingInnate(newLevel);
+        this.redChakra.updateRollingInnate(newLevel);
+        this.greenChakra.updateRollingInnate(newLevel);
+        this.blueChakra.updateRollingInnate(newLevel);
     }
 
     removeBySource(sourceName) {
         this.kiReserve.removeBySource(sourceName);
         this.spiritKnowledge.removeBySource(sourceName);
+        this.redChakra.removeBySource(sourceName);
+        this.greenChakra.removeBySource(sourceName);
+        this.blueChakra.removeBySource(sourceName);
     }
 
     removeById(id) {
         this.kiReserve.removeById(id);
         this.spiritKnowledge.removeById(id);
+        this.redChakra.removeById(id);
+        this.greenChakra.removeById(id);
+        this.blueChakra.removeById(id);
     }
 
 }
@@ -96,6 +110,8 @@ export class MagicAbilities {
     constructor() {
         this.manaPool = new ManaPool();
         this.manaKnowledge = new ManaKnowledge();
+
+
     }
 
     updateRollingInnate(newLevel) {

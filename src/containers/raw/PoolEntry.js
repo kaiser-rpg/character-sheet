@@ -62,7 +62,7 @@ class PoolEntry {
         let reduction = this.devCostMod
             .filter((d) => d.type === DEV_COST_MOD_CLASS || d.type === DEV_COST_MOD_FEATURE)
             .reduce((sum, curr) => sum + curr, 0);
-        return Math.max(3, baseCost - reduction);
+        return Math.max(1, baseCost - reduction);
     }
 
     get xpCost() {

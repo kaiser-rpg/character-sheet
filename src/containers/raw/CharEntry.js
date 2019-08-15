@@ -10,11 +10,11 @@ class CharEntry {
     }
 
     get title() {
-        toTitleCase(this.name);
+        return toTitleCase(this.name);
     }
 
     get key() {
-        toCamelCase(this.name);
+        return toCamelCase(this.name);
     }
 
     isName(check) {
