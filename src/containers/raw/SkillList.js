@@ -1,4 +1,5 @@
 import {Initiative, SkillEntry, SpiritSkillEntry} from "./Entry";
+import {addTie2Skill} from "../../actions/tied-actions";
 
 export function martialSkills() {
     return [
@@ -121,8 +122,8 @@ export default class ClassSkills {
         skillList().forEach(skill => this[skill.key] = skill);
 
         if (this.hasOwnProperty("block") && this.hasOwnProperty("dodge")) {
-            this.block.setTiedSkill("dodge", 6);
-            this.dodge.setTiedSkill("block", 6);
+            this.block.tieValues.push(addTie2Skill("block", "dodge", 6, "start"));
+            this.dodge.tieValues.push(addTie2Skill("dodge", "block", 6, "start"));
         }
     }
 

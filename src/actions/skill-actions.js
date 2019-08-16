@@ -11,7 +11,6 @@ import {
 } from "./super-types";
 import {shortid} from "../reducers/SheetApp";
 
-
 export const addBaseValue2Skill = (key, value, source = "", note = "") => ({
     _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,

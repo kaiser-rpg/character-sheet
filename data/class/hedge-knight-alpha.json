@@ -1,5 +1,6 @@
 {
     "key": "hedge knight",
+    "subKey": "alpha",
     "archetype": [
         "fighter", "conjurer"
     ],

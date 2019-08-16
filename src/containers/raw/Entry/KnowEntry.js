@@ -3,13 +3,9 @@ import {IEntry__thirdOrder} from "../core/CoreEntry";
 class KnowEntry extends IEntry__thirdOrder {
 
     constructor(name, group, defaultChar, ...altNames) {
-        super(name, group, defaultChar, ...altNames);
+        super(name, group, "xp", defaultChar, ...altNames);
         this.devCostMin = 1;
         this.devCostMax = 1;
-    }
-
-    get unused() {
-        return this.total - this.factors.invest;
     }
 }
 

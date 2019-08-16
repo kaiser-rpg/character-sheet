@@ -1,0 +1,1437 @@
+[
+    {
+        "name": "Minor Creation",
+        "type": "path",
+        "level": 2,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You create a number of simple objects. Each object cannot have more than 2 Presence."
+        ],
+        "degree": {
+            "base": {
+                "mana": 30,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "1 object"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "4 objects"
+                ]
+            },
+            "advanced": {
+                "mana": 100,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "8 objects"
+                ]
+            },
+            "arcane": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "12 objects"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Reconstruct",
+        "type": "path",
+        "level": 6,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [
+            "affectable presence"
+        ],
+        "description": [
+            "You cause a non-living object, whose total Presence is no greater than the listed Presence, to reassemble itself. If there are some parts missing, you can substitute a similar amount of raw material to recreate a simple part. Once the spell is cast, the reconstruction takes a 1 minute per point of Presence."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 5,
+                "maint": 0,
+                "effect": [
+                    "Presence 2"
+                ]
+            },
+            "intermediate": {
+                "mana": 140,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "Presence 6"
+                ]
+            },
+            "advanced": {
+                "mana": 200,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "Presence 10"
+                ]
+            },
+            "arcane": {
+                "mana": 280,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Presence 12"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create Intensity",
+        "type": "path",
+        "level": 8,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [
+            "intensity"
+        ],
+        "description": [
+            "You create a number of Heat, Cold, Electricity, or Light intensities."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "1 intensity"
+                ]
+            },
+            "intermediate": {
+                "mana": 150,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "5 intensities"
+                ]
+            },
+            "advanced": {
+                "mana": 200,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "10 intensities"
+                ]
+            },
+            "arcane": {
+                "mana": 250,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "20 intensities"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Regeneration",
+        "type": "path",
+        "level": 10,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You cause the natural healing of a creature to be enhanced. Choose a single creature to target. The target's Final Regeneration Value becomes the listed value if it is greater than their current value."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "Regeneration 4"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "Regeneration 6"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Regeneration 8"
+                ]
+            },
+            "arcane": {
+                "mana": 250,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "Regeneration 10"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Basic Modification",
+        "type": "path",
+        "level": 12,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You alter the form and function of an object. Choose a single non-living object whose total Presence is no greater than the listed Presence. The target's form changes to one you choose. The new form must have a Presence no greater than the original forms Presence."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "Presence 2"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 5,
+                "effect": [
+                    "Presence 3"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 5,
+                "effect": [
+                    "Presence 4"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 10,
+                "effect": [
+                    "Presence 5"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Increase Resistance",
+        "type": "path",
+        "level": 16,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You cause a entity to become more reslient. Choose a single entity to target. The target gains the listed power bonus to their PhR, IR, SR, and MR."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "`+1` bonus"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "`+2` bonus"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 14,
+                "maint": 30,
+                "effect": [
+                    "`+3` bonus"
+                ]
+            },
+            "arcane": {
+                "mana": 200,
+                "int": 18,
+                "maint": 40,
+                "effect": [
+                    "`+4` bonus"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Royal Shield",
+        "type": "path",
+        "level": 18,
+        "power": [
+            "defense"
+        ],
+        "action": "swift",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You create a supernatural barrier with the listed Life Points.",
+            "The barrier possess the Imbued trait."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "500 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 150,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "3000 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 260,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "5000 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "10,000 Life Points"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Heal",
+        "type": "path",
+        "level": 20,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "description": [
+            "Choose a single creature to target. The target regains the listed number of Life Points.",
+            "This spell does not restore lost or destroyed limbs, but it is capable of removing the listed degrees of the Pain state."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "50 Life Points",
+                    "Reduce Pain by 1"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "150 Life Points",
+                    "Reduce Pain by 5"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "250 Life Points",
+                    "Reduce Pain by 10"
+                ]
+            },
+            "arcane": {
+                "mana": 200,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "250 Life Points",
+                    "Reduce Pain by 15"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Negate Damage",
+        "type": "path",
+        "level": 22,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "Choose a single entity to target. The target gains the listed Base Damage Negate against the Physical Damage Group. This BDN can be overcome by attacks with the Imbued trait."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "Base Damage Negate 3"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "Base Damage Negate 5"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Base Damage Negate 8"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "Base Damage Negate 10"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create Homunculus",
+        "type": "path",
+        "level": 26,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You create a number of level 0 mana elementals. The creatures are level 0 and follow the rules for creatures created by powers.",
+            "Each homunculus created can have different profiles. Additionally, the following rules apply:",
+            {
+                "type": "list",
+                "items": [
+                    "The creature is a monad mana elemental with Nornir 5.",
+                    "No Characteristic or Skill can have a Final Value greater than 5.",
+                    "The creature's size is reduced by 2 and it cannot choose the Uncommon Size feature.",
+                    "No Intellecual or Creative Skill's Final Value can be greater than your Final Value."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "1 homunculus"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "10 homunculi"
+                ]
+            },
+            "advanced": {
+                "mana": 250,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "25 homunculi"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 15,
+                "maint": 35,
+                "effect": [
+                    "100 homunculi"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Minor Change",
+        "type": "path",
+        "level": 28,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "Choose a number of entities to target whose total Presence is no greater than the listed Presence. The target must succeed a SR Check or have its appearance changed. The target can repeat the Resistance Check on the End Phase after a number of minutes have passed equal to its Degree of Failure.",
+            "The change is limited to superficial appearances. For example, you could cause a boulder to appear to be covered in moss. A living target can have its size modified by 2 points but anything it is wearing does not change with it, since they are not targeted."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "SR 8",
+                    "Presence 6"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "SR 10",
+                    "Presence 9"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "SR 12",
+                    "Presence 12"
+                ]
+            },
+            "arcane": {
+                "mana": 250,
+                "int": 15,
+                "maint": 25,
+                "effect": [
+                    "SR 14",
+                    "Presence 18"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Imitate",
+        "type": "path",
+        "level": 30,
+        "power": [
+            "effect",
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "Choose a single non-living object you are in contact with and whose total Presence is no greater than the listed Presence. You create a perfect copy of the target. The copy retains all the qualities the original possessed, including supernatural ones. The copied object has the same Presence as the original."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "Presence 3"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "Presence 8"
+                ]
+            },
+            "advanced": {
+                "mana": 300,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Presence 12"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 15,
+                "maint": 20,
+                "effect": [
+                    "Presence 16"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Immunity",
+        "type": "path",
+        "level": 32,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "Choose a single entity to target and one elemental intensity. The target gains the listed intensity immunity to the choosen elemental."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "4 intensities"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "16 intensities"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "24 intensities"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "36 intensities"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Reduce Damage",
+        "type": "path",
+        "level": 36,
+        "power": [
+            "automatic"
+        ],
+        "action": "reaction",
+        "maintTime": "no",
+        "tags": [],
+        "description": [
+            "You can cast this spell when an attack is declared but before any dice are rolled. You reduce the Base Damage of the triggering attack."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "Base Damage -4"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "Base Damage -6"
+                ]
+            },
+            "advanced": {
+                "mana": 160,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "Base Damage -8"
+                ]
+            },
+            "arcane": {
+                "mana": 240,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "Base Damage -10"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Physical Control",
+        "type": "path",
+        "level": 38,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [
+            "physical control"
+        ],
+        "description": [
+            "You gain physical control over a creature. Choose a single creature to target. The target must succeed a SR Check or have its physical actions controlled by you. The target can repeat the Resistance Check on the End Phase after a number of hours have passed equal to their Degree of Failure."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 6,
+                "maint": 25,
+                "effect": [
+                    "SR 8"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 40,
+                "effect": [
+                    "SR 10"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 50,
+                "effect": [
+                    "SR 12"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 60,
+                "effect": [
+                    "SR 14"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Raise Skill",
+        "type": "path",
+        "level": 40,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "Choose a single entity to target. The target gains the listed number of points that they can distribute to any trained Secondary Skill as a power bonus."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "5 points"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "15 points"
+                ]
+            },
+            "advanced": {
+                "mana": 280,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "25 points"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 15,
+                "maint": 20,
+                "effect": [
+                    "40 points"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Fuse",
+        "type": "path",
+        "level": 42,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "Choose two entities to target whose total Presence is no greater than the listed Presence and who are within 5 feet of each other. The targets must succeed a SR Check or be fused into a single new entity. A creature can willingly accept the effects of this spell.",
+            {
+                "name": "Case: two creatures",
+                "type": "entries",
+                "entries": [
+                    "This new creature possess the abilities and features of both targets. You can designate which Base Values, innate bonuses, natural bonuses, and other abilities come from which target. For example, if you fuse a martial artist and a manifester, you can give the new creature the physical Characteristics of the martial artitist and the mental Characteristics of the mentalist. The new creature can fight unarmed and use phenom with ease.",
+                    "Control of the resulting creature is determined by an Opposed Willpower Check between the targets. The Opposed Willpower Check can be repeated on the End Phase after a number of hours have passed equal to the Degree of Difference. If the DoD is less than 10, then the personality of the loser will influence the actions of the new creature."
+                ]
+            },
+            {
+                "name": "Case: one creature and one object",
+                "type": "entries",
+                "entries": [
+                    "The Game Master can grant the new creature features related to the fused object."
+                ]
+            },
+            {
+                "name": "Case: two objects",
+                "type": "entries",
+                "entries": [
+                    "You can the Game Master can determine what the new object will be able to do, based on the original objects."
+                ]
+            },
+            "When the spell ends, the targets return to the state they were in before the spell. The death of the new creature, or the breaking of the new object, causes both targets to die."
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "SR 8",
+                    "Presence 8"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "SR 10",
+                    "Presence 12"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "SR 12",
+                    "Presence 16"
+                ]
+            },
+            "arcane": {
+                "mana": 0,
+                "int": 18,
+                "maint": 30,
+                "effect": [
+                    "SR 14",
+                    "Presence 20"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create Memories",
+        "type": "path",
+        "level": 46,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "description": [
+            "You can implant memories into a creature. Choose a single creature to target. The target must succeed a SR or MR Check or you creature memories that they accept as real. The memories to plant must be determined before the Resistance Check is made. The target can repeat the Resistance Check whenever they are given a reason to doubt the planted memories.",
+            "Memories that are go against the nature of the creature have their Resistance Check difficulty reduced by 6 points."
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "SR or MR 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "SR or MR 12"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "SR or MR 16"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "SR or MR 20"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Recover",
+        "type": "path",
+        "level": 48,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "description": [
+            "Choose a single creature to target. The target regains the listed number of Life Points. This spell removes all degrees of Pain caused by natural means."
+        ],
+        "degree": {
+            "base": {
+                "mana": 250,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "500 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 300,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "750 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 350,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "1000 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "1500 Life Points"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Aquire Power",
+        "type": "path",
+        "level": 50,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "Choose a single entity to target. The target can temporarily gain creature features whose total XP cost is no greater than the listed amount. The target can buy features as a Nornir 25 creature and their phsyical shape will change as approriat. For example, if the target gains a natural Flight Value, they would sprout wings."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 8,
+                "maint": 20,
+                "effect": [
+                    "10 XP"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 40,
+                "effect": [
+                    "20 XP"
+                ]
+            },
+            "advanced": {
+                "mana": 300,
+                "int": 14,
+                "maint": 60,
+                "effect": [
+                    "30 XP"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 18,
+                "maint": 80,
+                "effect": [
+                    "40 XP"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create Creature",
+        "type": "path",
+        "level": 52,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [
+            "power creature"
+        ],
+        "description": [
+            "You create a creature out of thin air. The creature is the listed level and follows the rules for creatures created by powers. The creature Additionally, the following rules apply:",
+            {
+                "type": "list",
+                "items": [
+                    "The creature is a monad with Nornir 20.",
+                    "The creature can never be given a soul."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "Level 2"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Level 4"
+                ]
+            },
+            "advanced": {
+                "mana": 250,
+                "int": 16,
+                "maint": 25,
+                "effect": [
+                    "Level 8"
+                ]
+            },
+            "arcane": {
+                "mana": 500,
+                "int": 20,
+                "maint": 50,
+                "effect": [
+                    "Level 12"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Protective Aura",
+        "type": "path",
+        "level": 56,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "All entities you choose within the listed area gain the listed power bonus to all PhR, IR, SR, and MR Checks. You must be aware of an entity to grant the bonus."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "300-foot radius",
+                    "+2 bonus"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 15,
+                "effect": [
+                    "1000-foot radius",
+                    "+5 bonus"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "3,000-foot radius",
+                    "+8 bonus"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 18,
+                "maint": 35,
+                "effect": [
+                    "1-mi radius",
+                    "+12 bonus"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Spiritual Standstill",
+        "type": "path",
+        "level": 58,
+        "power": [
+            "attack",
+            "defense",
+            "effect",
+            "automatic",
+            "trigger",
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "Choose a single entity to target. The target must succeed a SR Check or become spiritually immutable. The target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure.",
+            "Any mental state affecting the target at the time of casting will not change. The target ignores any further mental state changes. The nature of the target cannot be changed either."
+        ],
+        "degree": {
+            "base": {
+                "mana": 150,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "SR 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "SR 12"
+                ]
+            },
+            "advanced": {
+                "mana": 250,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "SR 14"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 18,
+                "maint": 30,
+                "effect": [
+                    "SR 16"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Perfect Shield",
+        "type": "path",
+        "level": 60,
+        "power": [
+            "defense"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You create a supernatural barrier with the listed Life Points. If the barrier is not broken, it regains all its Life Points at the start of the End Phase.",
+            "Unlike most defensive powers, this spell is cast as an Active Action."
+        ],
+        "degree": {
+            "base": {
+                "mana": 150,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "100 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "250 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 300,
+                "int": 14,
+                "maint": 30,
+                "effect": [
+                    "500 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 18,
+                "maint": 40,
+                "effect": [
+                    "1000 Life Points"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Vitality",
+        "type": "path",
+        "level": 62,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "Choose a single entity to target. The target gains a power bonus to their maximum Life Points. When the spell ends, the targets current and maximum amount are reduced by the amount gained.",
+            "A target with the Rex Damage Role mutliplies the bonus by their Rex Multiplier."
+        ],
+        "degree": {
+            "base": {
+                "mana": 150,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "Life Point max +50"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "Life Point max +75"
+                ]
+            },
+            "advanced": {
+                "mana": 250,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "Life Point max +100"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 18,
+                "maint": 35,
+                "effect": [
+                    "Life Point max +150"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Complete Creation",
+        "type": "path",
+        "level": 66,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You create object whose total Presence is no greater than the listed Presence or twice your Presence. The object must appear in a location that is logical for it, according to its nature. For example, you could not create a boulder in mid air, but a cloud could appear in the sky."
+        ],
+        "degree": {
+            "base": {
+                "mana": 150,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "Presence 4"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "Presence 8"
+                ]
+            },
+            "advanced": {
+                "mana": 300,
+                "int": 14,
+                "maint": 30,
+                "effect": [
+                    "Presence 12"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 18,
+                "maint": 40,
+                "effect": [
+                    "Presence 16"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Reinforce Magic",
+        "type": "path",
+        "level": 68,
+        "power": [
+            "automatic"
+        ],
+        "action": "reaction",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You can cast this spell when you cast another spell. The triggering spell has the following benefits:",
+            {
+                "type": "list",
+                "items": [
+                    "Any SR Check increases the difficulty by 2",
+                    "Any Base Damage is increased by 50%",
+                    "Supernatural barrier's increase Life Points by 50%",
+                    "All other numbers increase by 20%, round down, except for Nornir."
+                ]
+            },
+            "You must pay the maintaince of the triggering spell and this spell. If either spell ends, they both end."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "Base Degree spells"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "Intermediate Degree spells"
+                ]
+            },
+            "advanced": {
+                "mana": 300,
+                "int": 14,
+                "maint": 30,
+                "effect": [
+                    "Advanced Degree spells"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 18,
+                "maint": 40,
+                "effect": [
+                    "Arcane Degree spells"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Transmute",
+        "type": "path",
+        "level": 70,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "Choose a single non-living object whose total Presence is no greater than the listed Presence. You convert the object into a completely different one with a similar Presence. If the target is supernatural, it can make a SR Check to resist the change."
+        ],
+        "degree": {
+            "base": {
+                "mana": 250,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "SR 12",
+                    "Presence 5"
+                ]
+            },
+            "intermediate": {
+                "mana": 350,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "SR 16",
+                    "Presence 10"
+                ]
+            },
+            "advanced": {
+                "mana": 500,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "SR 22",
+                    "Presence 150"
+                ]
+            },
+            "arcane": {
+                "mana": 800,
+                "int": 22,
+                "maint": 0,
+                "effect": [
+                    "SR 26",
+                    "Presence 20"
+                ]
+            }
+        }
+    }
+]

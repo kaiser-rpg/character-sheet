@@ -4,7 +4,7 @@ import {IEntry__thirdOrder} from "../core/CoreEntry";
 export class ChakraEntry extends IEntry__thirdOrder {
 
     constructor(color, defaultChar) {
-        super(color + " chakra", "martial", defaultChar, color);
+        super(color + " chakra", "martial", "xp", defaultChar, color);
     }
 
     get permanentTotal() {

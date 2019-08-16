@@ -50,7 +50,7 @@ export default class CharList {
             return this.willpower;
         }
 
-        console.log("found no proper characteristic for " + name);
+        console.log("found no proper characteristic for ", name);
         return null;
     }
 
@@ -58,11 +58,13 @@ export default class CharList {
         let char = this.lookupChar(name);
         if (!char) return 0;
         if (Array.isArray(char)) {
-            if (!char[0].hasOwnProperty(valueKey)) return 0;
-            return char.reduce((sum, curr) => sum + curr[valueKey]);
+            return char.reduce((sum, curr) => {
+                let value = curr[valueKey];
+                return sum + (typeof value === 'number' ? value : -1000);
+            });
         } else {
-            if (!char.hasOwnProperty(valueKey)) return 0;
-            return char[valueKey];
+            let value = char[valueKey];
+            return (typeof value === 'number' ? value : -1000);
         }
     }
 

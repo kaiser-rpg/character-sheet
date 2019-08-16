@@ -2,7 +2,7 @@ import {IEntry__secondOrder} from "../core/CoreEntry";
 
 export class Potential extends IEntry__secondOrder {
     constructor() {
-        super("potential", "manifest", "wp");
+        super("potential", "manifest", "pp", "wp");
     }
 
     get permanentTotal() {

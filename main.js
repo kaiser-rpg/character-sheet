@@ -91,8 +91,19 @@ function createMenu() {
             submenu: [
 
                 {
-                    label: 'Copy'
-                }
+                    label: 'Undo',
+                    click() {
+                        console.log("undo");
+                    },
+                    accelerator: 'CmdOrCtrl+z'
+                },
+                {
+                    label: 'Redo',
+                    click() {
+                        console.log("redo");
+                    },
+                    accelerator: 'CmdOrCtrl+y'
+                },
             ]
         }
     ]);

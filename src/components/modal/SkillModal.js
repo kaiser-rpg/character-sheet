@@ -30,19 +30,20 @@ export default class SkillModal extends React.Component {
         let baseRows = skill.baseValues.map(factor => <FactorRow key={factor._id} factor={factor} />);
 
         if (skill.isLowerTie) {
+            let tie = skill.tieSkill;
             let r = {
                 _id: 0,
-                type: "tied to",
+                type: "tied base",
                 value: skill.base,
-                source: skill.tiedTo.skill.title,
-                note: "behind by " + skill.tiedTo.behind + " points"
+                source: tie.title,
+                note: "behind by " + tie.lag + " points"
             };
             baseRows.push(<FactorRow key={r._id} factor={r} />);
         }
 
         if (baseRows.length === 0) baseRows.push(<tr key={0}>
             <td colSpan={8}>No base value</td>
-        </tr>)
+        </tr>);
 
 
         return (

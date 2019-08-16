@@ -12,7 +12,7 @@ export default class ColumnRight extends React.Component {
         skills.block.factorValues.forEach(factor => arr.push(<FactorBlock name={"block"} factor={factor}/>));
 
         return (
-            <div className="column-33-right">
+            <div className="column-40-right">
                 <SkillTable skillGroups={skills.secondarySkills}/>
             </div>
         )

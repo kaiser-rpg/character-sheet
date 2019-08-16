@@ -3,7 +3,6 @@ import SkillModal from "./modal/SkillModal";
 
 export default class SkillTable extends React.Component {
     render() {
-        console.log(this.props)
         let groupRenders = this.props.skillGroups.map((group) => {
             return <SkillGroupBody key={group[0].group} skillGroup={group}/>
         });

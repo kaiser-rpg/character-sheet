@@ -6,7 +6,7 @@ import {setBaseValueChar} from "../../../actions/char-actions";
 export class Presence extends IEntry__firstOrder {
 
     constructor() {
-        super("presence", "general", "PrR");
+        super("presence", "general", null, "PrR");
         this.baseValues = [setBaseValueChar(this.key, 2, "start")];
         this.rollingInnate = [new innateBonusClass("ability.general", "presence", 1, 2, "start")];
     }
@@ -15,7 +15,7 @@ export class Presence extends IEntry__firstOrder {
 export class ResistanceEntry extends IEntry__secondOrder {
 
     constructor(name, defaultChar, shortName) {
-        super(name, "general", defaultChar, shortName);
+        super(name, "general", null, defaultChar, shortName);
         this.multiplier = 1;
     }
 

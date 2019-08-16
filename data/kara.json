@@ -28,15 +28,17 @@
         ]
     },
     "class": {
-        "name": "knight",
+        "name": "knight-alpha",
         "level": 2,
+        "xpInvest": [
+        ],
         "generalInvest": [
         ],
         "martialInvest": [
             {
                 "superType": "skill",
                 "key": "dodge",
-                "value": 20
+                "value": 5
             }
         ],
         "magicInvest": [
@@ -72,7 +74,15 @@
         "miscInvest": [
         ]
     },
-    "natural": [
+    "skInvest": [
+    ],
+    "mkInvest": [
+    ],
+    "pkInvest": [
+    ],
+    "ppInvest": [
+    ],
+    "factors": [
     ],
     "characterFeatures": [
         {

@@ -1,0 +1,133 @@
+{
+    "key": "hedge knight",
+    "subKey": "beta",
+    "archetype": [
+        "fighter",
+        "conjurer"
+    ],
+    "general": {
+        "lifePoints": 3,
+        "innate": [
+            {
+                "superType": "ability.general",
+                "key": "lifePoints",
+                "level": 1,
+                "value": 15
+            },
+            {
+                "superType": "skill",
+                "key": "initiative",
+                "level": 2,
+                "value": 1
+            }
+        ]
+    },
+    "martial": {
+        "limit": 60,
+        "strike": 4,
+        "block": 4,
+        "dodge": 4,
+        "wearArmor": 4,
+        "kiReserve": 2,
+        "chakra": 2,
+        "innate": [
+            {
+                "superType": "ability.martial",
+                "key": "spiritKnowledge",
+                "level": 1,
+                "value": 2
+            },
+            {
+                "superType": "skill",
+                "key": "strike",
+                "level": 2,
+                "value": 1,
+                "max": 5
+            },
+            {
+                "superType": "skill",
+                "key": "wearArmor",
+                "level": 2,
+                "value": 1
+            }
+        ]
+    },
+    "magic": {
+        "limit": 50,
+        "manaPool": 2,
+        "manaAccumulation": 6,
+        "manaRecovery": 2,
+        "spellProjection": 5,
+        "summon": 5,
+        "control": 3,
+        "banish": 5
+    },
+    "manifest": {
+        "limit": 50,
+        "phenomStock": 2,
+        "phenomProjection": 5,
+        "innate": [
+            {
+                "superType": "ability.manifest",
+                "key": "phenomStock",
+                "level": 3,
+                "value": 1
+            }
+        ]
+    },
+    "secondary": {
+        "exertion": 4,
+        "social": 3,
+        "perception": 4,
+        "intellectual": 4,
+        "vigor": 4,
+        "subterfuge": 4,
+        "creative": 4,
+        "trade": 4,
+        "innate": [
+            {
+                "superType": "skill",
+                "key": "intimidate",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "composure",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "withstandPain",
+                "level": 1,
+                "value": 1
+            },
+            {
+                "superType": "skill",
+                "key": "style",
+                "level": 1,
+                "value": 2
+            },
+            {
+                "superType": "skill",
+                "key": "persuasion",
+                "level": 1,
+                "value": 2
+            }
+        ],
+        "reduced": [
+            {
+                "superType": "skill",
+                "key": "composure",
+                "cost": 3,
+                "value": 1
+            }
+        ]
+    },
+    "special": {
+        "entries": [
+            "You can exchange innate factor to Control and Mana Pool for a +1 Withstand Pain per level."
+        ]
+    }
+}

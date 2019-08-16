@@ -3,7 +3,7 @@ import {IEntry__thirdOrder} from "../core/CoreEntry";
 class PoolEntry extends IEntry__thirdOrder {
 
     constructor(name, group, defaultChar, ...altNames) {
-        super(name, group, defaultChar, ...altNames);
+        super(name, group, "xp", defaultChar, ...altNames);
 
         this.normalDamage = 0;
         this.sacrificeDamage = 0;
@@ -13,12 +13,12 @@ class PoolEntry extends IEntry__thirdOrder {
         return this.total - this.sacrificeDamage - this.normalDamage;
     }
 
-    heal(value) {
-        this.normalDamage = Math.max(0, this.normalDamage - value);
+    heal(value = 0) {
+        this.normalDamage = Math.max(0, this.normalDamage - Math.ceil(value));
     }
 
-    healSacrifice(value) {
-        this.sacrificeDamage = Math.max(0, this.sacrificeDamage - value);
+    healSacrifice(value = 0) {
+        this.sacrificeDamage = Math.max(0, this.sacrificeDamage - Math.ceil(value));
     }
 }
 
@@ -100,7 +100,7 @@ export class ManaPool extends PoolEntry {
         return baseMana + modMana + this.factors.permanent;
     }
 
-    get permanentTotal() {
+    get total() {
         let baseMana = this.freeBase + this.base * 50;
         let modMana = this.freeBase * this.charTotal;
 
@@ -120,7 +120,7 @@ export class PhenomStock extends PoolEntry {
         return this.base + this.charPermanentTotal + this.factors.permanent;
     }
 
-    get permanentTotal() {
+    get total() {
         return this.base + this.charPermanentTotal + this.factors.total;
     }
 }

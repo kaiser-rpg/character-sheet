@@ -5,9 +5,10 @@ import {REDUCE_DEV_COST, SET_DEV_COST} from "../../../actions/dev-cost-actions";
 import {add2Innate} from "../../../actions/factor-actions";
 
 export class IEntry__core {
-    constructor(name = "", group = "", altNames = []) {
+    constructor(name = "", group = "", expenseKey = "xp", ...altNames) {
         this.name = name;
         this.group = group;
+        this.expenseKey = expenseKey;
         this.altNames = altNames;
         this.baseValues = [];
         this.factorValues = [];
@@ -37,6 +38,10 @@ export class IEntry__core {
         return this.base + this.factors.total;
     }
 
+    get maximum() {
+        return this.permanentTotal + this.factors.invest;
+    }
+
     get investBase() {
         return this.base;
     }
@@ -46,10 +51,11 @@ export class IEntry__core {
     }
 
     isName(check) {
-        return check === this.name
-            || check === this.key
-            || check === this.title
-            || this.altNames.includes(check);
+        let check2 = check.toLowerCase();
+        return check === this.name || check2 === this.name
+            || check === this.key || check2 === this.key
+            || check === this.title || check2 === this.title
+            || this.altNames.includes(check) || this.altNames.includes(check2);
     }
 
     removeBySource(sourceName) {
@@ -64,8 +70,8 @@ export class IEntry__core {
 }
 
 export class IEntry__firstOrder extends IEntry__core {
-    constructor(name, group, ...altNames) {
-        super(name, group, altNames);
+    constructor(name, group, expenseKey, ...altNames) {
+        super(name, group, expenseKey, altNames);
         this.rollingInnate = [];
         this.lastInnateLevel = 0;
     }
@@ -99,8 +105,8 @@ export class IEntry__firstOrder extends IEntry__core {
 }
 
 export class IEntry__secondOrder extends IEntry__firstOrder {
-    constructor(name, group, defaultChar, ...altNames) {
-        super(name, group, altNames);
+    constructor(name, group, expenseKey, defaultChar, ...altNames) {
+        super(name, group, expenseKey, altNames);
         this.char = defaultChar;
     }
 
@@ -131,8 +137,8 @@ export class IEntry__secondOrder extends IEntry__firstOrder {
 
 export class IEntry__thirdOrder extends IEntry__secondOrder {
 
-    constructor(name, group, defaultChar, ...altNames) {
-        super(name, group, defaultChar, altNames);
+    constructor(name, group, expenseKey, defaultChar, ...altNames) {
+        super(name, group, expenseKey, defaultChar, altNames);
         this.devCostMod = [];
 
         this.devCostMin = 3;
@@ -170,10 +176,9 @@ export class IEntry__thirdOrder extends IEntry__secondOrder {
 }
 
 export class IEntry_fourthOrder extends IEntry__thirdOrder {
-    constructor(name, group, defaultChar, ...altNames) {
-        super(name, group, defaultChar, altNames);
-        this.tiedSkillKey = "";
-        this.tiedSkillLag = 0;
+    constructor(name, group, expenseKey, defaultChar, ...altNames) {
+        super(name, group, expenseKey, defaultChar, altNames);
+        this.tieValues = [];
     }
 
     get isUntrained() {
@@ -181,26 +186,48 @@ export class IEntry_fourthOrder extends IEntry__thirdOrder {
         return this.base === 0 && f.innate === 0 && f.natural === 0;
     }
 
-    get tiedBase() {
-        if (!presentSheet.skills.hasOwnProperty(this.tiedSkillKey)) return 0;
-        return Math.max(presentSheet.skills[this.tiedSkillKey].base - this.tiedSkillLag, 0);
+    get tieSkill() {
+        if (this.tieValues.length === 0) return null;
+        return this.tieValues.reduce((best, curr) => {
+            //Make sure tie key exists
+            if (!presentSheet.skills.hasOwnProperty(curr.tieKey)) return best;
+            // Get tie skill
+            let currSkill = presentSheet.skills[curr.tieKey];
+            // Return curr if better than best or if no best exists
+            if (!best || best.b < (currSkill.base - curr.value)) return {
+                name: curr.tieKey,
+                title: currSkill.title,
+                b: currSkill.base - curr.value,
+                lag: curr.value
+            };
+            //otherwise return the best
+            return best;
+        }, null);
     }
 
-    get isLowerTied() {
-        if (!this.tiedSkillKey) return false;
-        return this.base === 0 && this.tiedBase > 0;
+    get tieBase() {
+        return Math.max(this.tieSkill.b, 0);
+    }
+
+    get isLowerTie() {
+        return this.tieValues.length > 0 && this.base === 0;
     }
 
     get permanentTotal() {
-        return (this.isLowerTied ? this.tiedBase : this.base) + (this.isUntrained ? -3 : 0) + this.charPermanentModifier + this.factors.permanent;
+        return (this.isLowerTie ? this.tieBase : this.base) + (this.isUntrained ? -3 : 0) + this.charPermanentModifier + this.factors.permanent;
     }
 
     get total() {
-        return (this.isLowerTied ? this.tiedBase : this.base) + (this.isUntrained ? -3 : 0) + this.charModifier + this.factors.total;
+        return (this.isLowerTie ? this.tieBase : this.base) + (this.isUntrained ? -3 : 0) + this.charModifier + this.factors.total;
     }
 
-    setTiedSkill(skillKey, lag) {
-        this.tiedSkillKey = skillKey;
-        this.tiedSkillLag = lag;
+    removeBySource(sourceName) {
+        super.removeBySource(sourceName);
+        this.tieValues = this.tieValues.filter(item => item.source !== sourceName);
+    }
+
+    removeById(id) {
+        super.removeById(id);
+        this.tieValues = this.tieValues.filter(item => item._id && item._id !== id);
     }
 }

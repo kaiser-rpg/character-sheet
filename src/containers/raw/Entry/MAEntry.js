@@ -5,7 +5,7 @@ import {IEntry__thirdOrder} from "../core/CoreEntry";
 export class ManaAccumulation extends IEntry__thirdOrder {
 
     constructor() {
-        super("mana accumulation", "magic", "pow", "ma");
+        super("mana accumulation", "magic", "xp", "pow", "ma");
     }
 
     static lookupModifier(value) {
@@ -37,9 +37,9 @@ export class ManaAccumulation extends IEntry__thirdOrder {
     }
 }
 
-export class ManaRecovery extends ManaAccumulation {
+export class ManaRecovery extends IEntry__thirdOrder {
     constructor() {
-        super("mana recovery", "magic", "pow", "mr");
+        super("mana recovery", "magic", "xp", "pow", "mr");
         this.multiplier = 1;
     }
 

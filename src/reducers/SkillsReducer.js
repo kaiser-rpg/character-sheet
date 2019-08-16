@@ -44,7 +44,6 @@ export function skills(state = new SkillList(), action) {
             case ADD_DEED_FACTOR:
             case ADD_QUALITY_FACTOR:
             case ADD_POWER_FACTOR:
-                console.log(skill);
                 skill.factorValues.push(action);
                 break;
             case INNATE_BONUS_CLASS:
