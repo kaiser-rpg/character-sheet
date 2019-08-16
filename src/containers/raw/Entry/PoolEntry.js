@@ -44,7 +44,7 @@ export class LifePoints extends PoolEntry {
     }
 
     get total() {
-        let baseLP = (this.base + this.freeBase) * this.charTotal;
+        let baseLP = (this.base + this.freeBase) * this.charPermanentTotal;
 
         return Math.floor(this.rex === 0 ? 1 : this.rex * (
             this.freeBase
@@ -117,10 +117,10 @@ export class PhenomStock extends PoolEntry {
     }
 
     get permanentTotal() {
-        return this.base + this.charTotal + this.factors.permanent;
+        return this.base + this.charPermanentTotal + this.factors.permanent;
     }
 
     get permanentTotal() {
-        return this.base + this.charTotal + this.factors.total;
+        return this.base + this.charPermanentTotal + this.factors.total;
     }
 }

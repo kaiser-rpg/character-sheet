@@ -44,7 +44,7 @@ class LifePoints extends React.Component {
                     </tr>
                     <tr style={styles.row}>
                         <td colSpan={2}>
-                            20+({lp.freeBase}+{lp.base})&times;{lp.multiplier}
+                            20+({lp.freeBase}+{lp.base})&times;{lp.charPermanentTotal}
                         </td>
                     </tr>
                     <tr style={styles.row}>
@@ -52,7 +52,7 @@ class LifePoints extends React.Component {
                             Bonus
                         </td>
                         <td>
-                            {lp.innate}
+                            {lp.factors.permanent}
                         </td>
                     </tr>
                     <tr style={styles.row}>
@@ -122,19 +122,13 @@ class Resistance extends React.Component {
                             +
                         </td>
                         <td className='skill-row-modifier'>
-                            {phr.modifier}
+                            {phr.charModifier}
                         </td>
                         <td>
                             +
                         </td>
-                        <td className='skill-row-innate'>
-                            {phr.innate}
-                        </td>
-                        <td>
-                            +
-                        </td>
-                        <td className='skill-row-natural'>
-                            {phr.natural}
+                        <td className='skill-row-factor'>
+                            {phr.factors.permanent}
                         </td>
                     </tr>
                     <tr style={styles.row}>
@@ -154,19 +148,13 @@ class Resistance extends React.Component {
                             +
                         </td>
                         <td className='skill-row-modifier'>
-                            {sr.modifier}
+                            {sr.charModifier}
                         </td>
                         <td>
                             +
                         </td>
-                        <td className='skill-row-innate'>
-                            {sr.innate}
-                        </td>
-                        <td>
-                            +
-                        </td>
-                        <td className='skill-row-natural'>
-                            {sr.natural}
+                        <td className='skill-row-factor'>
+                            {sr.factors.permanent}
                         </td>
                     </tr>
                     <tr style={styles.row}>
@@ -191,14 +179,8 @@ class Resistance extends React.Component {
                         <td>
                             +
                         </td>
-                        <td className='skill-row-innate'>
-                            {mr.innate}
-                        </td>
-                        <td>
-                            +
-                        </td>
-                        <td className='skill-row-natural'>
-                            {mr.natural}
+                        <td className='skill-row-factor'>
+                            {mr.factors.permanent}
                         </td>
                     </tr>
                     </tbody>

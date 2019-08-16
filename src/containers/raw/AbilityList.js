@@ -1,8 +1,18 @@
-import {KiReserve, LifePoints, ManaPool, PhenomStock} from "./Entry/PoolEntry";
-import {ManaKnowledge, PhenomKnowledge, SpiritKnowledge} from "./Entry/KnowEntry";
-import {Presence, ResistanceEntry} from "./Entry/ResistanceEntry";
-import ChakraEntry from "./Entry/ChakraEntry";
-import {ManaAccumulation, ManaRecovery} from "./Entry/MAEntry";
+import {
+    ChakraEntry,
+    KiReserve,
+    LifePoints,
+    ManaAccumulation,
+    ManaKnowledge,
+    ManaPool,
+    ManaRecovery,
+    PhenomKnowledge,
+    PhenomStock,
+    Potential,
+    Presence,
+    ResistanceEntry,
+    SpiritKnowledge
+} from "./Entry";
 
 export default class AbilityList {
 
@@ -74,10 +84,9 @@ export class MartialAbilities {
     constructor() {
         this.kiReserve = new KiReserve();
         this.spiritKnowledge = new SpiritKnowledge();
-        this.redChakra = new ChakraEntry("red chakra", ["str", "con"]);
-        this.greenChakra = new ChakraEntry("green chakra", ["dex", "agi"]);
-        this.blueChakra = new ChakraEntry("blue chakra", ["foc", "wp"]);
-
+        this.redChakra = new ChakraEntry("red", ["str", "con"]);
+        this.greenChakra = new ChakraEntry("green", ["dex", "agi"]);
+        this.blueChakra = new ChakraEntry("blue", ["foc", "wp"]);
     }
 
     updateRollingInnate(newLevel) {
@@ -137,20 +146,24 @@ export class ManifestAbilities {
     constructor() {
         this.phenomStock = new PhenomStock();
         this.phenomKnowledge = new PhenomKnowledge();
+        this.potential = new Potential();
     }
 
     updateRollingInnate(newLevel) {
         this.phenomStock.updateRollingInnate(newLevel);
         this.phenomKnowledge.updateRollingInnate(newLevel);
+        this.potential.updateRollingInnate(newLevel);
     }
 
     removeBySource(sourceName) {
         this.phenomStock.removeBySource(sourceName);
         this.phenomKnowledge.removeBySource(sourceName);
+        this.potential.removeBySource(sourceName)
     }
 
     removeById(id) {
         this.phenomStock.removeById(id);
         this.phenomKnowledge.removeById(id);
+        this.potential.removeById(id);
     }
 }

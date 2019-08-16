@@ -10,6 +10,7 @@ import {
     ADD_NATURAL_FACTOR,
     ADD_POWER_FACTOR,
     ADD_QUALITY_FACTOR,
+    SET_BASE_VALUE,
     SUPER_TYPE_SKILL
 } from "../actions/super-types";
 
@@ -30,6 +31,9 @@ export function skills(state = new SkillList(), action) {
 
     targetGroup.forEach(skill => {
         switch (action.type) {
+            case SET_BASE_VALUE:
+                skill.baseValues = [action];
+                break;
             case ADD_BASE_VALUE:
                 skill.baseValues.push(action);
                 break;
@@ -41,7 +45,7 @@ export function skills(state = new SkillList(), action) {
             case ADD_QUALITY_FACTOR:
             case ADD_POWER_FACTOR:
                 console.log(skill);
-                skill.factors.push(action);
+                skill.factorValues.push(action);
                 break;
             case INNATE_BONUS_CLASS:
             case INNATE_BONUS_FEATURE:

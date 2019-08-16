@@ -40,7 +40,9 @@ export default class SkillModal extends React.Component {
             baseRows.push(<FactorRow key={r._id} factor={r} />);
         }
 
-        if(baseRows.length === 0) baseRows.push(<tr><td colSpan={8}>No base value</td></tr>)
+        if (baseRows.length === 0) baseRows.push(<tr key={0}>
+            <td colSpan={8}>No base value</td>
+        </tr>)
 
 
         return (
@@ -76,7 +78,9 @@ export default class SkillModal extends React.Component {
             factorRows.push(<FactorRow key={r._id} factor={r} />);
         }
 
-        if(factorRows.length === 0) factorRows.push(<tr><td colSpan={5}>No factors</td></tr>)
+        if (factorRows.length === 0) factorRows.push(<tr key={0}>
+            <td colSpan={5}>No factors</td>
+        </tr>)
 
         return (
             <table className='modal-table'>

@@ -1,7 +1,7 @@
 import {IEntry__thirdOrder} from "../core/CoreEntry";
 
 
-export default class ChakraEntry extends IEntry__thirdOrder {
+export class ChakraEntry extends IEntry__thirdOrder {
 
     constructor(color, defaultChar) {
         super(color + " chakra", "martial", defaultChar, color);

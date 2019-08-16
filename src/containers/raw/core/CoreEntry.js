@@ -7,7 +7,7 @@ import {add2Innate} from "../../../actions/factor-actions";
 export class IEntry__core {
     constructor(name = "", group = "", altNames = []) {
         this.name = name;
-        this.group = "";
+        this.group = group;
         this.altNames = altNames;
         this.baseValues = [];
         this.factorValues = [];
@@ -64,7 +64,7 @@ export class IEntry__core {
 }
 
 export class IEntry__firstOrder extends IEntry__core {
-    constructor(name, group, defaultChar, ...altNames) {
+    constructor(name, group, ...altNames) {
         super(name, group, altNames);
         this.rollingInnate = [];
         this.lastInnateLevel = 0;
@@ -78,7 +78,7 @@ export class IEntry__firstOrder extends IEntry__core {
                 .filter((innate) => (currLevel - 1) % innate.level === 0)
                 .forEach((innate) => {
                     console.log("increase innate", this.name, innate.value);
-                    this.factors.push(
+                    this.factorValues.push(
                         new add2Innate("skill", innate.key, innate.value, innate.source, ["level " + currLevel, innate.note])
                     );
                 });
@@ -132,7 +132,7 @@ export class IEntry__secondOrder extends IEntry__firstOrder {
 export class IEntry__thirdOrder extends IEntry__secondOrder {
 
     constructor(name, group, defaultChar, ...altNames) {
-        super(name, group, altNames);
+        super(name, group, defaultChar, altNames);
         this.devCostMod = [];
 
         this.devCostMin = 3;
@@ -192,11 +192,11 @@ export class IEntry_fourthOrder extends IEntry__thirdOrder {
     }
 
     get permanentTotal() {
-        return this.isLowerTied ? this.tiedBase : this.base + this.isUntrained ? -3 : 0 + this.charPermanentModifier + this.factors.permanent;
+        return (this.isLowerTied ? this.tiedBase : this.base) + (this.isUntrained ? -3 : 0) + this.charPermanentModifier + this.factors.permanent;
     }
 
     get total() {
-        return this.isLowerTied ? this.tiedBase : this.base + this.isUntrained ? -3 : 0 + this.charModifier + this.factors.total;
+        return (this.isLowerTied ? this.tiedBase : this.base) + (this.isUntrained ? -3 : 0) + this.charModifier + this.factors.total;
     }
 
     setTiedSkill(skillKey, lag) {

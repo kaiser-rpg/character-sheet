@@ -3,6 +3,7 @@ import SkillModal from "./modal/SkillModal";
 
 export default class SkillTable extends React.Component {
     render() {
+        console.log(this.props)
         let groupRenders = this.props.skillGroups.map((group) => {
             return <SkillGroupBody key={group[0].group} skillGroup={group}/>
         });
@@ -73,16 +74,16 @@ class SkillRow extends React.Component {
                     +
                 </td>
                 <td className='skill-row-modifier'>
-                    {skill.modifier}
+                    {skill.charModifier}
                 </td>
                 <td>
                     +
                 </td>
                 <td className='skill-row-factor'>
-                    {skill.innate + skill.natural}
+                    {skill.factors.permanent}
                 </td>
                 <td className='skill-row-xp-cost'>
-                    [{skill.xpCost}]
+                    [{skill.cost}]
                 </td>
                 <td className='skill-row-dev-cost'>
                     {skill.devCost}

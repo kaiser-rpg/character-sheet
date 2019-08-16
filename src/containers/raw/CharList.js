@@ -1,4 +1,4 @@
-import {Agility, Aptitude, Constitution, Dexterity, Focus, Perception, Strength, Willpower} from "./Entry/CharEntry";
+import {Agility, Aptitude, Constitution, Dexterity, Focus, Perception, Strength, Willpower} from "./Entry";
 
 export default class CharList {
     constructor(str = 5, con = 5, dex = 5, agi = 5, per = 5, apt = 5, foc = 5, wp = 5) {

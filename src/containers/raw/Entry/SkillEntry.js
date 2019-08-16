@@ -2,7 +2,7 @@ import {presentSheet} from "../../../reducers/SheetApp";
 import {IEntry__firstOrder, IEntry__secondOrder, IEntry_fourthOrder} from "../core/CoreEntry";
 import {setBaseValueChar} from "../../../actions/char-actions";
 
-export default class SkillEntry extends IEntry_fourthOrder {
+export class SkillEntry extends IEntry_fourthOrder {
     constructor(name, group, defaultChar, ...altNames) {
         super(name, group, defaultChar, altNames);
     }

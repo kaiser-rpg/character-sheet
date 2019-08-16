@@ -13,43 +13,43 @@ class CharEntry extends IEntry__core {
         if (value <= 1)
             return -3;
 
-        if (total <= 3)
+        if (value <= 3)
             return -2;
 
-        if (total <= 4)
+        if (value <= 4)
             return -1;
 
-        if (total <= 5)
+        if (value <= 5)
             return 0;
 
-        if (total <= 7)
+        if (value <= 7)
             return 1;
 
-        if (total <= 9)
+        if (value <= 9)
             return 2;
 
-        if (total <= 12)
+        if (value <= 12)
             return 3;
 
-        if (total <= 15)
+        if (value <= 15)
             return 4;
 
-        if (total <= 19)
+        if (value <= 19)
             return 5;
 
-        if (total <= 20)
+        if (value <= 20)
             return 6;
 
-        if (total <= 22)
+        if (value <= 22)
             return 7;
 
-        if (total <= 25)
+        if (value <= 25)
             return 8;
 
-        if (total <= 29)
+        if (value <= 29)
             return 9;
 
-        if (total <= 30)
+        if (value <= 30)
             return 10;
 
         return -5;

@@ -1,4 +1,4 @@
-import SkillEntry, {Initiative, SpiritSkillEntry} from "./Entry/SkillEntry";
+import {Initiative, SkillEntry, SpiritSkillEntry} from "./Entry";
 
 export function martialSkills() {
     return [
@@ -118,14 +118,12 @@ export function skillList() {
 export default class ClassSkills {
 
     constructor() {
-        let skills = skillList();
-        for (let i in skills) {
-            const skill = skills[i];
-            this[skill.key] = skill;
-        }
+        skillList().forEach(skill => this[skill.key] = skill);
 
-        this.block.tiedTo = {skill: this.dodge, behind: 6};
-        this.dodge.tiedTo = {skill: this.block, behind: 6};
+        if (this.hasOwnProperty("block") && this.hasOwnProperty("dodge")) {
+            this.block.setTiedSkill("dodge", 6);
+            this.dodge.setTiedSkill("block", 6);
+        }
     }
 
     getSkillGroup(name = "all") {
