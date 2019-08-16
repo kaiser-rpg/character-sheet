@@ -1,24 +1,107 @@
-import {SUPER_TYPE_SKILL} from "./super-types";
+import {
+    SUPER_TYPE_GENERAL,
+    SUPER_TYPE_MAGIC,
+    SUPER_TYPE_MANIFEST,
+    SUPER_TYPE_MARTIAL,
+    SUPER_TYPE_SKILL
+} from "./super-types";
 import {shortid} from "../reducers/SheetApp";
 
-export const INVEST_XP_SKILL = "invest-xp-skill";
-export const INVEST_XP_ABILITY = "invest-xp-ability";
+export const INVEST_XP = "invest-xp";
 
-export const INVEST_SK_TALENT = "invest-sk-talent";
-export const INVEST_SK_TECH = "invest-sk-tech";
+export const INVEST_SK = "invest-sk";
 
-export const INVEST_MK_SPELL = "invest-mk-spell";
-export const INVEST_MK_PRINCIPLE = "invest-mk-principle";
+export const INVEST_MK = "invest-mk";
 
-export const INVEST_PP_DISCIPLINE = "invest-pp-discipline";
-export const INVEST_PP_DEGREE = "invest-pp-degree";
+export const INVEST_PK = "invest-pk";
+
+export const INVEST_PP = "invest-pp";
 
 
-export const investXpSkill = (className, key, value, source = "", note = "") => ({
+export const investXpSkill = (key, value, source = "", note = "") => ({
     _id: shortid.generate(),
     superType: SUPER_TYPE_SKILL,
-    type: INVEST_XP_SKILL,
-    className,
+    type: INVEST_XP,
+    key,
+    value,
+    source,
+    note
+});
+
+export const investXpGeneral = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
+    superType: SUPER_TYPE_GENERAL,
+    type: INVEST_XP,
+    key,
+    value,
+    source,
+    note
+});
+
+export const investXpMartial = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
+    superType: SUPER_TYPE_GENERAL,
+    type: INVEST_XP,
+    key,
+    value,
+    source,
+    note
+});
+
+export const investXpMagic = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
+    superType: SUPER_TYPE_GENERAL,
+    type: INVEST_XP,
+    key,
+    value,
+    source,
+    note
+});
+
+export const investXpManifest = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
+    superType: SUPER_TYPE_GENERAL,
+    type: INVEST_XP,
+    key,
+    value,
+    source,
+    note
+});
+
+export const investSk = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
+    superType: SUPER_TYPE_MARTIAL,
+    type: INVEST_SK,
+    key,
+    value,
+    source,
+    note
+});
+
+export const investMk = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
+    superType: SUPER_TYPE_MAGIC,
+    type: INVEST_MK,
+    key,
+    value,
+    source,
+    note
+});
+
+export const investPk = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
+    superType: SUPER_TYPE_MANIFEST,
+    type: INVEST_PK,
+    key,
+    value,
+    source,
+    note
+});
+
+export const investPp = (key, value, source = "", note = "") => ({
+    _id: shortid.generate(),
+    superType: SUPER_TYPE_MANIFEST,
+    type: INVEST_PP,
     key,
     value,
     source,

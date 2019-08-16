@@ -45,13 +45,13 @@ export class ManaRecovery extends IEntry__thirdOrder {
 
     get permanentTotal() {
         let mod = ManaAccumulation.lookupModifier(this.charPermanentTotal);
-        let base = presentSheet.abilities.magicAbilities.manaAccumulation.permanentTotal + this.base * mod + this.factors.permanent;
+        let base = presentSheet().abilities.magicAbilities.manaAccumulation.permanentTotal + this.base * mod + this.factors.permanent;
         return Math.floor(base * Math.max(this.multiplier, 0.5));
     }
 
     get total() {
         let mod = ManaAccumulation.lookupModifier(this.charPermanentTotal);
-        let base = presentSheet.abilities.magicAbilities.manaAccumulation.total + this.base * mod + this.factors.total;
+        let base = presentSheet().abilities.magicAbilities.manaAccumulation.total + this.base * mod + this.factors.total;
         return Math.floor(base * Math.max(this.multiplier, 0.5));
     }
 

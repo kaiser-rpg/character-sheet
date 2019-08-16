@@ -25,9 +25,9 @@ export class SpiritSkillEntry extends IEntry__firstOrder {
     }
 
     get base() {
-        let sk = presentSheet.abilities.martialAbilities.spiritKnowledge.maximum;
-        if (presentSheet.skills.hasOwnProperty(this.skill)) {
-            let si = presentSheet.skills[this.skill].permanentTotal();
+        let sk = presentSheet().abilities.martialAbilities.spiritKnowledge.maximum;
+        if (presentSheet().skills.hasOwnProperty(this.skill)) {
+            let si = presentSheet().skills[this.skill].permanentTotal();
             return Math.floor((sk + si) / 2);
         }
         return Math.floor(sk / 2);

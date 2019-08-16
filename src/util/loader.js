@@ -41,6 +41,7 @@ export default function loadCharacterData(err, fileData) {
 
     loadFeatures(rawJson.characterFeatures, rawJson.creatureFeatures);
 
+    sheet.dispatch(increaseLevel(5, className));
 }
 
 const loadCharacteristics = (charData) => {
@@ -58,7 +59,7 @@ const loadClassData = (fileName) => {
     let classData = JSON.parse(fs.readFileSync("data/class/" + fileName + ".json"));
     let className = classData.name;
 
-    sheet.dispatch(setClassName(classData.name));
+    sheet.dispatch(setClassName(classData.key));
 
 
     /* Load Secondary */
@@ -132,32 +133,28 @@ const loadClassData = (fileName) => {
     manifest.innate.forEach((e) => {
         sheet.dispatch(innateBonusClass(e.superType, e.key, e.value, e.level, className));
     });
-
-
-    sheet.dispatch(increaseLevel(3, className, "creation"))
-
 };
 
 const loadCharacterClass = (classData) => {
 
     // Load Martial
     classData.martialInvest.forEach((c) => {
-        sheet.dispatch(add2Base(c.superType, c.key, c.value, c.source, c.note));
+        sheet.dispatch(add2Base(c.superType, c.key, c.value, classData.name, c.note));
     });
 
     // Load Magic
     classData.magicInvest.forEach((c) => {
-        sheet.dispatch(add2Base(c.superType, c.key, c.value, c.source, c.note));
+        sheet.dispatch(add2Base(c.superType, c.key, c.value, classData.name, c.note));
     });
 
     // Load Manifest
     classData.manifestInvest.forEach((c) => {
-        sheet.dispatch(add2Base(c.superType, c.key, c.value, c.source, c.note));
+        sheet.dispatch(add2Base(c.superType, c.key, c.value, classData.name, c.note));
     });
 
     // Load Secondary
     classData.secondaryInvest.forEach((c) => {
-        sheet.dispatch(add2Base(c.superType, c.key, c.value, c.source, c.note));
+        sheet.dispatch(add2Base(c.superType, c.key, c.value, classData.name, c.note));
     });
 
 };

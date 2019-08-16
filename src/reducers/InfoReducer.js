@@ -13,20 +13,22 @@ export function info(state = new Info(), action) {
 
     switch (action.type) {
         case SET_CHARACTER_NAME:
+            console.log("set name", action.name, action);
             newState.name = action.name;
             break;
         case SET_CLASS_NAME:
+            console.log("set class", action.name, action);
             newState.className = action.name;
             break;
         case SET_MARTIAL_LIMIT:
             newState.martialLimit = action.percent < 1 ? action.percent * 100 : action.percent;
-            return newState;
+            break;
         case SET_MAGIC_LIMIT:
             newState.magicLimit = action.percent < 1 ? action.percent * 100 : action.percent;
-            return newState;
+            break;
         case SET_MANIFEST_LIMIT:
             newState.manifestLimit = action.percent < 1 ? action.percent * 100 : action.percent;
-            return newState;
+            break;
         default:
             break;
     }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { presentSheet, sheet } from "./reducers/SheetApp";
+import {presentSheet, sheet} from "./reducers/SheetApp";
 import * as ReactDOM from "react-dom";
 import loadCharacterData from "./util/loader";
 import ColumnLeft from "./components/ColumnLeft";
@@ -12,7 +12,7 @@ const fs = window.require('fs');
 
 Modal.setAppElement(document.getElementById('app'));
 
-sheet.subscribe(() => ReactDOM.render(<App sheet={presentSheet} />, document.getElementById('app')));
+sheet.subscribe(() => ReactDOM.render(<App sheet={presentSheet()}/>, document.getElementById('app')));
 
 
 fs.readFile('data/kara.json', loadCharacterData);
@@ -24,7 +24,7 @@ class App extends React.Component {
             <div >
                 <div className="container">
                     <h1>
-                        {this.props.sheet.info.name}
+                        {this.props.sheet.info.name} &ndash; {this.props.sheet.info.currentLevel}
                     </h1>
                     <GeneralGroup generalAbilities={abilities.generalAbilities} />
                 </div>

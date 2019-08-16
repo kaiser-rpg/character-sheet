@@ -1,4 +1,4 @@
-import {combineReducers, createStore} from "redux";
+import {createStore} from "redux";
 import Makeup from "../containers/Makeup";
 import {characteristics} from "./CharacteristicsReducer";
 import {skills} from "./SkillsReducer";
@@ -43,29 +43,27 @@ function sheetReducer(state = new Makeup(), action) {
     switch (action.superType) {
         case SUPER_TYPE_CHAR:
             newState.characteristics = characteristics(newState.characteristics, action);
+            break;
         case SUPER_TYPE_SKILL:
             newState.skills = skills(newState.skills, action);
+            break;
         case SUPER_TYPE_GENERAL:
         case SUPER_TYPE_MARTIAL:
         case SUPER_TYPE_MAGIC:
         case SUPER_TYPE_MANIFEST:
             newState.abilities = abilities(newState.abilities, action);
-            return newState;
+            break;
         default:
-            return state;
+            break;
     }
+
+    return newState;
 }
 
-const sheetApp = combineReducers({
-    info,
-    skills,
-    characteristics,
-    abilities
-    // classes
+const undoableApp = undoable(sheetReducer, {
+    limit: 10
 });
 
-const undoableApp = undoable(sheetReducer);
-
 export const sheet = createStore(undoableApp, new Makeup());
-export const presentSheet = sheet.getState().present;
-sheet.subscribe(() => console.log(presentSheet, sheet.getState()));
+export const presentSheet = () => sheet.getState().present;
+sheet.subscribe(() => console.log(presentSheet(), sheet.getState()));

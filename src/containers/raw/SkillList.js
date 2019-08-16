@@ -1,5 +1,6 @@
 import {Initiative, SkillEntry, SpiritSkillEntry} from "./Entry";
 import {addTie2Skill} from "../../actions/tied-actions";
+import {investXpSkill} from "../../actions/invest-actions";
 
 export function martialSkills() {
     return [
@@ -127,32 +128,6 @@ export default class ClassSkills {
         }
     }
 
-    getSkillGroup(name = "all") {
-        if (name === "primary") return this.primarySkills.map((arr, curr) => arr.concat(curr), []);
-        if (name === "secondary") return this.secondarySkills.reduce((arr, curr) => arr.concat(curr), []);
-
-        let arr = [];
-        for (let skill in this) {
-            if (this.hasOwnProperty(skill) && (this[skill].group === name || name === "all")) {
-                arr.push(this[skill])
-            }
-        }
-
-        return arr;
-    }
-
-    updateRollingInnate(newLevel) {
-        this.getSkillGroup().forEach((skill) => skill.updateRollingInnate(newLevel));
-    }
-
-    removeBySource(sourceName) {
-        this.getSkillGroup().forEach(skill => skill.removeBySource(sourceName));
-    }
-
-    removeById(id) {
-        this.getSkillGroup().forEach(skill => skill.removeById(id));
-    }
-
     get primarySkills() {
         return [
             this.getSkillGroup("martial"),
@@ -179,5 +154,40 @@ export default class ClassSkills {
             this.concealSpirit,
             this.detectSpirit
         ]
+    }
+
+    get xp() {
+        return {
+            general: this.getSkillGroup("secondary").map(skill => investXpSkill(skill.key, skill.cost, "skill")),
+            martial: this.getSkillGroup("martial").map(skill => investXpSkill(skill.key, skill.cost, "skill")),
+            magic: this.getSkillGroup("magic").map(skill => investXpSkill(skill.key, skill.cost, "skill")),
+            manifest: this.getSkillGroup("manifest").map(skill => investXpSkill(skill.key, skill.cost, "skill"))
+        };
+    }
+
+    getSkillGroup(name = "all") {
+        if (name === "primary") return this.primarySkills.map((arr, curr) => arr.concat(curr), []);
+        if (name === "secondary") return this.secondarySkills.reduce((arr, curr) => arr.concat(curr), []);
+
+        let arr = [];
+        for (let skill in this) {
+            if (this.hasOwnProperty(skill) && (this[skill].group === name || name === "all")) {
+                arr.push(this[skill])
+            }
+        }
+
+        return arr;
+    }
+
+    updateRollingInnate(newLevel) {
+        this.getSkillGroup().forEach((skill) => skill.updateRollingInnate(newLevel));
+    }
+
+    removeBySource(sourceName) {
+        this.getSkillGroup().forEach(skill => skill.removeBySource(sourceName));
+    }
+
+    removeById(id) {
+        this.getSkillGroup().forEach(skill => skill.removeById(id));
     }
 }

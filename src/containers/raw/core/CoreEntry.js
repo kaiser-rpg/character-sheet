@@ -42,12 +42,8 @@ export class IEntry__core {
         return this.permanentTotal + this.factors.invest;
     }
 
-    get investBase() {
-        return this.base;
-    }
-
     get cost() {
-        return this.investBase;
+        return this.base;
     }
 
     isName(check) {
@@ -111,19 +107,19 @@ export class IEntry__secondOrder extends IEntry__firstOrder {
     }
 
     get charPermanentModifier() {
-        return presentSheet.characteristics.lookupCharValue(this.char, "permanentModifier");
+        return presentSheet().characteristics.lookupCharValue(this.char, "permanentModifier");
     }
 
     get charModifier() {
-        return presentSheet.characteristics.lookupCharValue(this.char, "modifier");
+        return presentSheet().characteristics.lookupCharValue(this.char, "modifier");
     }
 
     get charPermanentTotal() {
-        return presentSheet.characteristics.lookupCharValue(this.char, "permanentTotal");
+        return presentSheet().characteristics.lookupCharValue(this.char, "permanentTotal");
     }
 
     get charTotal() {
-        return presentSheet.characteristics.lookupCharValue(this.char, "total");
+        return presentSheet().characteristics.lookupCharValue(this.char, "total");
     }
 
     get permanentTotal() {
@@ -155,12 +151,8 @@ export class IEntry__thirdOrder extends IEntry__secondOrder {
         return Math.max(this.devCostMin, baseCost - reduction);
     }
 
-    get investBase() {
-        return this.base;
-    }
-
     get cost() {
-        return this.investBase * this.devCost;
+        return this.base * this.devCost;
     }
 
     removeBySource(sourceName) {
@@ -190,9 +182,9 @@ export class IEntry_fourthOrder extends IEntry__thirdOrder {
         if (this.tieValues.length === 0) return null;
         return this.tieValues.reduce((best, curr) => {
             //Make sure tie key exists
-            if (!presentSheet.skills.hasOwnProperty(curr.tieKey)) return best;
+            if (!presentSheet().skills.hasOwnProperty(curr.tieKey)) return best;
             // Get tie skill
-            let currSkill = presentSheet.skills[curr.tieKey];
+            let currSkill = presentSheet().skills[curr.tieKey];
             // Return curr if better than best or if no best exists
             if (!best || best.b < (currSkill.base - curr.value)) return {
                 name: curr.tieKey,

@@ -13,6 +13,13 @@ import {
     ResistanceEntry,
     SpiritKnowledge
 } from "./Entry";
+import {
+    investPp,
+    investXpGeneral,
+    investXpMagic,
+    investXpManifest,
+    investXpMartial
+} from "../../actions/invest-actions";
 
 export default class AbilityList {
 
@@ -21,6 +28,15 @@ export default class AbilityList {
         this.martialAbilities = new MartialAbilities();
         this.magicAbilities = new MagicAbilities();
         this.manifestAbilities = new ManifestAbilities();
+    }
+
+    get xp() {
+        return {
+            general: this.generalAbilities.xp,
+            martial: this.martialAbilities.xp,
+            magic: this.magicAbilities.xp,
+            manifest: this.manifestAbilities.xp
+        }
     }
 
     updateRollingInnate(newLevel) {
@@ -56,6 +72,12 @@ export class GeneralAbilities {
         this.mentalResistance = new ResistanceEntry("mental resistance", "foc", "MR");
     }
 
+    get xp() {
+        return [
+            investXpGeneral(this.lifePoints.key, this.lifePoints.cost, this.lifePoints.key)
+        ];
+    }
+
     updateRollingInnate(newLevel) {
         this.lifePoints.updateRollingInnate(newLevel);
         this.presence.updateRollingInnate(newLevel);
@@ -87,6 +109,16 @@ export class MartialAbilities {
         this.redChakra = new ChakraEntry("red", ["str", "con"]);
         this.greenChakra = new ChakraEntry("green", ["dex", "agi"]);
         this.blueChakra = new ChakraEntry("blue", ["foc", "wp"]);
+    }
+
+    get xp() {
+        return [
+            investXpMartial(this.kiReserve.key, this.kiReserve.cost, this.kiReserve.key),
+            investXpMartial(this.spiritKnowledge.key, this.spiritKnowledge.cost, this.spiritKnowledge.key),
+            investXpMartial(this.redChakra.key, this.redChakra.cost, this.redChakra.key),
+            investXpMartial(this.greenChakra.key, this.greenChakra.cost, this.greenChakra.key),
+            investXpMartial(this.blueChakra.key, this.blueChakra.cost, this.blueChakra.key)
+        ];
     }
 
     updateRollingInnate(newLevel) {
@@ -124,6 +156,15 @@ export class MagicAbilities {
         this.manaRecovery = new ManaRecovery();
     }
 
+    get xp() {
+        return [
+            investXpMagic(this.manaPool.key, this.manaPool.cost, this.manaPool.key),
+            investXpMagic(this.manaKnowledge.key, this.manaKnowledge.cost, this.manaKnowledge.key),
+            investXpMagic(this.manaAccumulation.key, this.manaAccumulation.cost, this.manaAccumulation.key),
+            investXpMagic(this.manaRecovery.key, this.manaRecovery.cost, this.manaRecovery.key)
+        ];
+    }
+
     updateRollingInnate(newLevel) {
         this.manaPool.updateRollingInnate(newLevel);
         this.manaKnowledge.updateRollingInnate(newLevel);
@@ -147,6 +188,19 @@ export class ManifestAbilities {
         this.phenomStock = new PhenomStock();
         this.phenomKnowledge = new PhenomKnowledge();
         this.potential = new Potential();
+    }
+
+    get xp() {
+        return [
+            investXpManifest(this.phenomStock.key, this.phenomStock.cost, this.phenomStock.key),
+            investXpManifest(this.phenomKnowledge.key, this.phenomKnowledge.cost, this.phenomKnowledge.key),
+        ];
+    }
+
+    get pp() {
+        return [
+            investPp(this.potential.key, this.potential.cost, this.potential.key)
+        ];
     }
 
     updateRollingInnate(newLevel) {

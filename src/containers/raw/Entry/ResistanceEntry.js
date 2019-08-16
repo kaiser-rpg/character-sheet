@@ -20,7 +20,7 @@ export class ResistanceEntry extends IEntry__secondOrder {
     }
 
     get base() {
-        return Math.floor(presentSheet.abilities.generalAbilities.presence.total / Math.max(this.multiplier, 0.5));
+        return Math.floor(presentSheet().abilities.generalAbilities.presence.total / Math.max(this.multiplier, 0.5));
     }
 
 }
