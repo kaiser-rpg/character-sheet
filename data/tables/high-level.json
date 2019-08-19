@@ -1,0 +1,136 @@
+[
+    {
+        "title": "Tectonic Smash",
+        "index": "100",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Strength",
+                "Radius",
+                "Agi Check",
+                "Duration",
+                "Effect"
+            ],
+            "colStyles": [
+                "col-1",
+                "col-1",
+                "col-1",
+                "col-1",
+                "col-8"
+            ],
+            "rows": [
+                [
+                    "16",
+                    "100 feet",
+                    "6",
+                    "1 Round",
+                    "No structure is damaged"
+                ],
+                [
+                    "17",
+                    "1000 feet",
+                    "7",
+                    "2 Rounds",
+                    "Structures with Damage Null of 4 or less are destroyed. Stronger Structures take no damage."
+                ],
+                [
+                    "18",
+                    "1 mi",
+                    "8",
+                    "3 Rounds",
+                    "Structures with Damage Null of 6 or less are destroyed. Remaining structures take damage as if the Earthquake spell was cast."
+                ],
+                [
+                    "19",
+                    "2 mi",
+                    "9",
+                    "5 Rounds",
+                    "Structures with Damage Null of 8 or less are destroyed. Remaining structures take damage as if the Earthquake spell was cast."
+                ],
+                [
+                    "20",
+                    "4 mi",
+                    "10",
+                    "1 minute",
+                    "Structures with Damage Null of 10 or less are destroyed. Remaining structures take damage as if the Earthquake spell was cast."
+                ],
+                [
+                    "22",
+                    "8 mi",
+                    "12",
+                    "5 minutes",
+                    "Structures with Damage Null of 11 or less are destroyed. Remaining structures take damage as if the Earthquake spell was cast, with a maximum Damage Null 16."
+                ],
+                [
+                    "24",
+                    "15 mi",
+                    "14",
+                    "10 minutes",
+                    "Structures with Damage Null of 12 or less are destroyed. Remaining structures take damage as if the Earthquake spell was cast, with a maximum Damage Null 17."
+                ],
+                [
+                    "26",
+                    "30 mi",
+                    "16",
+                    "30 minutes",
+                    "Structures with Damage Null of 13 or less are destroyed. Remaining structures take damage as if the Earthquake spell was cast, with a maximum Damage Null 18."
+                ],
+                [
+                    "28",
+                    "50 mi",
+                    "18",
+                    "1 hour",
+                    "Structures with Damage Null of 14 or less are destroyed. Remaining structures take damage as if the Earthquake spell was cast, with a maximum Damage Null 19."
+                ],
+                [
+                    "30",
+                    "100 mi",
+                    "20",
+                    "6 hours",
+                    "Structures with Damage Null of 15 or less are destroyed. Remaining structures take damage as if the Earthquake spell was cast, with a maximum Damage Null 20."
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Expanded Perception",
+        "index": "500",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Perception",
+                "Benefit"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-4"
+            ],
+            "rows": [
+                [
+                    "12",
+                    "True Instinct"
+                ],
+                [
+                    "16",
+                    "Sense Surroundings"
+                ],
+                [
+                    "20",
+                    "Radial Perception"
+                ],
+                [
+                    "24",
+                    "Absolute Perception"
+                ],
+                [
+                    "28",
+                    "Supernatural Sight"
+                ],
+                [
+                    "30",
+                    "Sight of Destiny"
+                ]
+            ]
+        }
+    }
+]

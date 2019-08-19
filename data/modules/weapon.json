@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Single Weapon",
+        "effect":[
+            "Choose one weapon. You gain training with it."
+        ],
+        "cost": 1
+    },
+    {
+        "name": "Class of Weapons",
+        "effect":[
+            "Choose one class of weapon. You gain training with all weapons that are purely that class. Mixed class weapons are only trained if you buy this module for both weapon classes."
+        ],
+        "cost": 5
+    },
+    {
+        "name": "Thrown Weapons",
+        "effect":[
+            "You gain training in using all thrown weapons. You are trained with throwing any weapon with the [@trait Throwable @] trait or from the Throwing class, but using it as a hand-to-hand weapon is not covered by this module nor is throwing a weapon not designed to be thrown."
+        ],
+        "cost": 4
+    },
+    {
+        "name": "Improvised Weapons",
+        "effect":[
+            "You gain training in using Improvised weapons. You can use any object as Improvised, but you use the weapon profile most similar to one of the Improvised weapons."
+        ],
+        "cost": 4
+    },
+    {
+        "name": "Collection of Weapons",
+        "effect":[
+            "Choose five weapons that fulfill a theme, like a knight, ninja, or gladiator. You gain training with all five weapons."
+        ],
+        "cost": 4
+    }
+]

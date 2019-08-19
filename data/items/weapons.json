@@ -1,0 +1,5354 @@
+[
+    {
+        "name": "Bastard Sword",
+        "damage": 7,
+        "initPen": 5,
+        "primeStr": 7,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 15,
+        "breakage": 5,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 9,
+        "ap": 3,
+        "description": [
+            "null",
+            "null2"
+        ]
+    },
+    {
+        "name": "Battle Axe",
+        "damage": 7,
+        "initPen": 5,
+        "primeStr": 7,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Axe"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 15,
+        "breakage": 5,
+        "presence": 3,
+        "rot": 10,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 2,
+        "range": 15,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Broadsword",
+        "damage": 5,
+        "initPen": 3,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 15,
+        "breakage": 3,
+        "presence": 3,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Calvary Lance",
+        "damage": 8,
+        "initPen": 5,
+        "primeStr": 8,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 12,
+        "breakage": 7,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Cestus",
+        "damage": 3,
+        "initPen": 1,
+        "primeStr": 3,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "fortitude": 11,
+        "breakage": -2,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Chain",
+        "damage": 3,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "special": [
+            "Complex",
+            "Trapping (8)"
+        ],
+        "fortitude": 13,
+        "breakage": -2,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Club",
+        "damage": 3,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "fortitude": 11,
+        "breakage": -2,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Dagger",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Throwable",
+            "Precision"
+        ],
+        "fortitude": 10,
+        "breakage": -2,
+        "presence": 2,
+        "rot": 5,
+        "weaponSize": "Small",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 1,
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Flail",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Cord"
+        ],
+        "special": [
+            "Complex"
+        ],
+        "fortitude": 13,
+        "breakage": 4,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Foil",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 9,
+        "breakage": -2,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Gladiator's Net",
+        "damage": 0,
+        "initPen": 2,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "special": [
+            "Throwable",
+            "Trapping (10)",
+            "Special"
+        ],
+        "fortitude": 13,
+        "breakage": -4,
+        "presence": 2,
+        "rot": 10,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 2,
+        "range": 15,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Great Warhammer",
+        "damage": 7,
+        "initPen": 6,
+        "primeStr": 7,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 16,
+        "breakage": 6,
+        "presence": 2,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 10,
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Halberd",
+        "damage": 6,
+        "initPen": 4,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole",
+            "Two-handed"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 15,
+        "breakage": 4,
+        "presence": 2,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 11,
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Hand Axe",
+        "damage": 5,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Axe"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 13,
+        "breakage": 4,
+        "presence": 2,
+        "rot": 8,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 2,
+        "range": 30,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Harpoon",
+        "damage": 4,
+        "initPen": 3,
+        "primeStr": 5,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Throwable",
+            "Versatile"
+        ],
+        "fortitude": 11,
+        "breakage": 0,
+        "presence": 2,
+        "rot": 10,
+        "weaponSize": "Large",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 3,
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Heavy Battle Mace",
+        "damage": 6,
+        "initPen": 4,
+        "primeStr": 6,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Two-handed"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 16,
+        "breakage": 5,
+        "presence": 2,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 10,
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Hook",
+        "damage": 3,
+        "initPen": 3,
+        "primeStr": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "fortitude": 11,
+        "breakage": -2,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Javelin",
+        "damage": 4,
+        "initPen": 3,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 10,
+        "breakage": -2,
+        "presence": 2,
+        "rot": 8,
+        "weaponSize": "Large",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 3,
+        "range": 100,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Lance",
+        "damage": 4,
+        "initPen": 3,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Throwable",
+            "Versatile"
+        ],
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 3,
+        "rot": 8,
+        "weaponSize": "Large",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "secondStr": 6,
+        "rangeType": "thrown",
+        "ap": 3,
+        "range": 100,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Large Multi-Headed Flail",
+        "damage": 8,
+        "initPen": 7,
+        "primeStr": 8,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Two-handed"
+        ],
+        "special": [
+            "Complex"
+        ],
+        "fortitude": 14,
+        "breakage": 6,
+        "presence": 2,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 10,
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Lasso",
+        "damage": 0,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "special": [
+            "Complex",
+            "Trapping (9)"
+        ],
+        "fortitude": 9,
+        "breakage": -4,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Long Sword",
+        "damage": 5,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 13,
+        "breakage": 3,
+        "presence": 3,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Mace",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "fortitude": 14,
+        "breakage": 4,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Parrying Dagger",
+        "damage": 3,
+        "initPen": 1,
+        "primeStr": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Disarming",
+            "Throwable",
+            "Precision"
+        ],
+        "fortitude": 12,
+        "breakage": 0,
+        "presence": 2,
+        "rot": 5,
+        "weaponSize": "Small",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 1,
+        "range": 50,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Quarterstaff",
+        "damage": 3,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 11,
+        "breakage": 0,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 6,
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Rapier",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 11,
+        "breakage": 2,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Saber",
+        "damage": 5,
+        "initPen": 1,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 12,
+        "breakage": 3,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Scimitar",
+        "damage": 5,
+        "initPen": 3,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 13,
+        "breakage": 4,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Scythe",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole",
+            "Two-handed"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 9,
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Short Sword",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 12,
+        "breakage": 1,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Stiletto",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Throwable",
+            "Precision"
+        ],
+        "fortitude": 8,
+        "breakage": -3,
+        "presence": 2,
+        "rot": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 1,
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Trident",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Throwable",
+            "Versatile"
+        ],
+        "fortitude": 12,
+        "breakage": 3,
+        "presence": 2,
+        "rot": 10,
+        "weaponSize": "Large",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ap": 3,
+        "range": 50,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Two-handed Axe",
+        "damage": 10,
+        "initPen": 9,
+        "primeStr": 9,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Axe",
+            "Two-handed"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 17,
+        "breakage": 7,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 11,
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Two-handed Sword",
+        "damage": 9,
+        "initPen": 8,
+        "primeStr": 8,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 18,
+        "breakage": 6,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 10,
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Unarmed Combat",
+        "damage": 1,
+        "initPen": 0,
+        "primeStr": 1,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Unarmed"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 0,
+        "breakage": 0,
+        "presence": 0,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Warhammer",
+        "damage": 5,
+        "initPen": 3,
+        "primeStr": 6,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "fortitude": 15,
+        "breakage": 4,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Whip",
+        "damage": 4,
+        "initPen": 4,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "special": [
+            "Complex",
+            "Trapping (8)"
+        ],
+        "fortitude": 9,
+        "breakage": -3,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Boomerang",
+        "damage": 3,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Throwable",
+            "Special"
+        ],
+        "fortitude": 10,
+        "breakage": 0,
+        "presence": 2,
+        "rot": 6,
+        "weaponSize": "Small",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Claws",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Three-section Glaive",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Complex",
+            "Two-handed",
+            "Special"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Katana",
+        "damage": 5,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 11,
+        "breakage": 3,
+        "presence": 4,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 6,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Katar",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 8,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Complex",
+            "Special"
+        ],
+        "fortitude": 13,
+        "breakage": 3,
+        "presence": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kusari-Gama",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Short Arm",
+            "Cord"
+        ],
+        "special": [
+            "Two-handed",
+            "Trapping (8)",
+            "Special"
+        ],
+        "fortitude": 12,
+        "breakage": 4,
+        "presence": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Nodachi",
+        "damage": 8,
+        "initPen": 3,
+        "primeStr": 8,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Two-handed",
+            "Sword"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 14,
+        "breakage": 4,
+        "presence": 4,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 10,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Nunchakus",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "fortitude": 11,
+        "breakage": 0,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Raven",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Complex",
+            "Precision",
+            "Special"
+        ],
+        "fortitude": 11,
+        "breakage": 2,
+        "presence": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sai",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Disarming",
+            "Precision"
+        ],
+        "fortitude": 12,
+        "breakage": 0,
+        "presence": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Shuko",
+        "damage": 2,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 9,
+        "breakage": -2,
+        "presence": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Shuriken",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 10,
+        "breakage": 1,
+        "presence": 2,
+        "rot": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sword Breaker",
+        "damage": 5,
+        "initPen": 3,
+        "primeStr": 8,
+        "primeDamage": [
+            "Impact"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Two-handed",
+            "Sword"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 16,
+        "breakage": 8,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 10,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Tanto",
+        "damage": 4,
+        "initPen": 0,
+        "primeStr": 3,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 9,
+        "breakage": 1,
+        "presence": 4,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Tessen",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision",
+            "Throwable"
+        ],
+        "fortitude": 8,
+        "breakage": 0,
+        "presence": 3,
+        "rot": 4,
+        "weaponSize": "Small",
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Tonfa",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 13,
+        "breakage": 0,
+        "presence": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Two-bladed Katana",
+        "damage": 6,
+        "initPen": 2,
+        "primeStr": 8,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 11,
+        "breakage": 3,
+        "presence": 4,
+        "weaponSize": "Large",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Buckler",
+        "damage": 1,
+        "initPen": 4,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Shield"
+        ],
+        "special": [
+            "Block +1"
+        ],
+        "fortitude": 14,
+        "breakage": 0,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Shield",
+            "Classic"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Shield",
+        "damage": 2,
+        "initPen": 5,
+        "primeStr": 7,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Shield"
+        ],
+        "special": [
+            "Block +2"
+        ],
+        "fortitude": 16,
+        "breakage": 0,
+        "presence": 3,
+        "weaponSize": "Medium",
+        "ap": 2,
+        "description": [
+            "null"
+        ],
+        "group": [
+            "Shield",
+            "Classic"
+        ]
+    },
+    {
+        "name": "Full Shield",
+        "damage": 3,
+        "initPen": 6,
+        "primeStr": 10,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Shield"
+        ],
+        "special": [
+            "Block +3"
+        ],
+        "fortitude": 18,
+        "breakage": 1,
+        "presence": 3,
+        "weaponSize": "Large",
+        "ap": 3,
+        "description": [
+            "null"
+        ],
+        "group": [
+            "Shield",
+            "Classic"
+        ]
+    },
+    {
+        "name": "Arquebus",
+        "initPen": 4,
+        "primeStr": 6,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Strength 11",
+            "Complex",
+            "Special"
+        ],
+        "fortitude": 9,
+        "breakage": -3,
+        "presence": 2,
+        "reload": 4,
+        "weaponSize": "Large",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recdGm0fBF1oPIkIW"
+        ],
+        "range": 250,
+        "ammo": "Black Powder Shot",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Black Powder Shot",
+        "damage": 60,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 11,
+        "breakage": 5,
+        "presence": 2,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Bolas",
+        "damage": 3,
+        "initPen": 3,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Throwing"
+        ],
+        "special": [
+            "Trapping (10)"
+        ],
+        "fortitude": 6,
+        "breakage": 2,
+        "presence": 2,
+        "rot": 8,
+        "weaponSize": "Small",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "thrown",
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Blowgun",
+        "initPen": 3,
+        "primeStr": 4,
+        "weaponClass": [
+            "Firing"
+        ],
+        "fortitude": 3,
+        "breakage": -3,
+        "presence": 2,
+        "reload": 1,
+        "weaponSize": "Small",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recSQ2VkrxPuwSaxV"
+        ],
+        "range": 150,
+        "ammo": "Blowgun Dart",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Blowgun Dart",
+        "damage": 0,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 2,
+        "breakage": -4,
+        "presence": 2,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Chakram",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Throwing"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 9,
+        "breakage": 2,
+        "presence": 2,
+        "rot": 8,
+        "weaponSize": "Medium",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "thrown",
+        "range": 100,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Composite Bow",
+        "initPen": 5,
+        "primeStr": 7,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 8,
+        "breakage": -2,
+        "presence": 3,
+        "reload": 1,
+        "weaponSize": "Large",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recjziIZ3mxKV60h7",
+            "recVCWYuqWqnFw29l",
+            "rec4Td4PQBk13XPQa"
+        ],
+        "range": 300,
+        "ammo": "Arrow, Flight Arrow, Armor-piercing Arrow",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Flight Arrow",
+        "damage": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 3,
+        "breakage": 0,
+        "presence": 2,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Arrow",
+        "damage": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 4,
+        "breakage": 1,
+        "presence": 2,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Armor-piercing Arrow",
+        "damage": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 3,
+        "breakage": 0,
+        "presence": 2,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Crossbow",
+        "initPen": 2,
+        "primeStr": 4,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Strength 8",
+            "Versatile",
+            "Special"
+        ],
+        "fortitude": 8,
+        "breakage": -2,
+        "presence": 2,
+        "reload": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "secondStr": 8,
+        "rangeType": "fired",
+        "ammoRel": [
+            "reclYAD5eZlTvQXEv"
+        ],
+        "range": 200,
+        "ammo": "Bolt",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Bolt",
+        "damage": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 3,
+        "breakage": 0,
+        "presence": 2,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Hand Darts",
+        "initPen": 0,
+        "primeStr": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Throwing"
+        ],
+        "fortitude": 3,
+        "breakage": -4,
+        "presence": 2,
+        "rot": 4,
+        "weaponSize": "Small",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "thrown",
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Repeating Crossbow",
+        "initPen": 2,
+        "primeStr": 5,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Strength 8",
+            "Versatile",
+            "Special"
+        ],
+        "fortitude": 6,
+        "breakage": -2,
+        "presence": 2,
+        "reload": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "secondStr": 8,
+        "rangeType": "fired",
+        "ammoRel": [
+            "reclYAD5eZlTvQXEv"
+        ],
+        "range": 200,
+        "ammo": "Bolt",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Heavy Crossbow",
+        "initPen": 2,
+        "primeStr": 7,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 8,
+        "breakage": -1,
+        "presence": 2,
+        "reload": 2,
+        "weaponSize": "Large",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "secondStr": 10,
+        "rangeType": "fired",
+        "ammoRel": [
+            "recdb7GKcNrudWTgz"
+        ],
+        "range": 250,
+        "ammo": "Heavy Bolt",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Heavy Bolt",
+        "damage": 6,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 4,
+        "breakage": 1,
+        "presence": 2,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Miniature Crossbow",
+        "initPen": 1,
+        "primeStr": 3,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Strength 6",
+            "Special"
+        ],
+        "fortitude": 5,
+        "breakage": -4,
+        "presence": 2,
+        "reload": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recYvGhfgGwXvqjMe"
+        ],
+        "range": 100,
+        "ammo": "Light Bolt",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Light Bolt",
+        "damage": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 2,
+        "breakage": -1,
+        "presence": 2,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Short Bow",
+        "initPen": 2,
+        "primeStr": 4,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 7,
+        "breakage": -3,
+        "presence": 2,
+        "reload": 1,
+        "weaponSize": "Small",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "fired",
+        "range": 120,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Longbow",
+        "initPen": 5,
+        "primeStr": 7,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 8,
+        "breakage": -2,
+        "presence": 2,
+        "reload": 1,
+        "weaponSize": "Medium",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recjziIZ3mxKV60h7",
+            "recVCWYuqWqnFw29l",
+            "rec4Td4PQBk13XPQa"
+        ],
+        "range": 200,
+        "ammo": "Arrow, Flight Arrow, Armor-piercing Arrow",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Matchlock Pistol",
+        "initPen": 2,
+        "primeStr": 4,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Strength 9",
+            "Complex",
+            "Special"
+        ],
+        "fortitude": 8,
+        "breakage": -3,
+        "presence": 2,
+        "reload": 4,
+        "weaponSize": "Small",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recdGm0fBF1oPIkIW"
+        ],
+        "range": 150,
+        "ammo": "Black Powder Shot",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sling",
+        "initPen": 6,
+        "primeStr": 4,
+        "weaponClass": [
+            "Firing"
+        ],
+        "fortitude": 3,
+        "breakage": -6,
+        "presence": 1,
+        "reload": 1,
+        "weaponSize": "Small",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recKS0rUOMNztoZyi"
+        ],
+        "range": 150,
+        "ammo": "Sling Stone",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sling Stone",
+        "damage": 1,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 7,
+        "breakage": 2,
+        "presence": 1,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Spiked Ball",
+        "damage": 2,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Throwing"
+        ],
+        "fortitude": 10,
+        "breakage": 2,
+        "presence": 2,
+        "rot": 5,
+        "weaponSize": "Small",
+        "group": [
+            "Projectile",
+            "Classic"
+        ],
+        "rangeType": "thrown",
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Ballista",
+        "initPen": 10,
+        "primeStr": 1,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Complex"
+        ],
+        "fortitude": 18,
+        "presence": 3,
+        "reload": 10,
+        "group": [
+            "Siege"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "rec5AQkoyW4MswitN"
+        ],
+        "range": 500,
+        "ammo": "Quarrel",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Quarrel",
+        "damage": 12,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 16,
+        "breakage": 8,
+        "presence": 2,
+        "group": [
+            "Siege",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Heavy Ballista",
+        "initPen": 12,
+        "primeStr": 1,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Complex"
+        ],
+        "fortitude": 20,
+        "presence": 3,
+        "rot": 12,
+        "group": [
+            "Siege"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recfAkKyozFVdjZqx"
+        ],
+        "range": 750,
+        "ammo": "Heavy Quarrel",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Heavy Quarrel",
+        "damage": 15,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 18,
+        "breakage": 12,
+        "presence": 2,
+        "group": [
+            "Siege",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Cannon",
+        "initPen": 12,
+        "primeStr": 1,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Complex"
+        ],
+        "fortitude": 24,
+        "presence": 3,
+        "rot": 12,
+        "group": [
+            "Siege"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recGcSjftCMZFgPQl"
+        ],
+        "range": 1000,
+        "ammo": "Cannonball",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Cannonball",
+        "damage": 15,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 20,
+        "breakage": 14,
+        "presence": 2,
+        "group": [
+            "Siege",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Broken Bottle",
+        "damage": 2,
+        "initPen": 1,
+        "primeStr": 3,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Short Arm",
+            "Improvised"
+        ],
+        "fortitude": 5,
+        "breakage": -3,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Chair",
+        "damage": 3,
+        "initPen": 4,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Two-handed",
+            "Improvised"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 9,
+        "breakage": 0,
+        "presence": 2,
+        "weaponSize": "Large",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kitchen Knife",
+        "damage": 3,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm",
+            "Improvised"
+        ],
+        "fortitude": 9,
+        "breakage": -1,
+        "presence": 1,
+        "weaponSize": "Small",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Hammer",
+        "damage": 3,
+        "initPen": 4,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Improvised"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 1,
+        "weaponSize": "Small",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Hoe",
+        "damage": 3,
+        "initPen": 4,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Axe",
+            "Improvised"
+        ],
+        "fortitude": 10,
+        "breakage": 1,
+        "presence": 2,
+        "weaponSize": "Large",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Metal Bar",
+        "damage": 3,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Improvised"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Pick",
+        "damage": 4,
+        "initPen": 4,
+        "primeStr": 5,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm",
+            "Improvised"
+        ],
+        "fortitude": 10,
+        "breakage": 3,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sickle",
+        "damage": 4,
+        "initPen": 3,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm",
+            "Improvised"
+        ],
+        "fortitude": 8,
+        "breakage": 0,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Torch",
+        "damage": 2,
+        "initPen": 3,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "secondDamage": [
+            "Heat"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Improvised"
+        ],
+        "fortitude": 10,
+        "breakage": -2,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Vase",
+        "damage": 2,
+        "initPen": 3,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Improvised"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 6,
+        "breakage": -2,
+        "presence": 2,
+        "rot": 50,
+        "weaponSize": "Small",
+        "group": [
+            "Improvised"
+        ],
+        "rangeType": "thrown",
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Wooden Pole",
+        "damage": 2,
+        "initPen": 2,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Improvised"
+        ],
+        "fortitude": 8,
+        "breakage": -1,
+        "presence": 1,
+        "weaponSize": "Medium",
+        "group": [
+            "Improvised"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Woodcutter Axe",
+        "damage": 4,
+        "initPen": 3,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Axe",
+            "Improvised"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 12,
+        "breakage": 3,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Improvised"
+        ],
+        "secondStr": 7,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Battle Cane",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "fortitude": 10,
+        "breakage": -1,
+        "presence": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Bec de Corbin",
+        "damage": 5,
+        "initPen": 3,
+        "primeStr": 6,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole",
+            "Mace"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Berdiche",
+        "damage": 5,
+        "initPen": 4,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 12,
+        "breakage": 4,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Bracamarte",
+        "damage": 6,
+        "initPen": 3,
+        "primeStr": 7,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 16,
+        "breakage": 4,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Brandistock",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Two-handed",
+            "Special"
+        ],
+        "fortitude": 9,
+        "breakage": 3,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Chui ",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 6,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "fortitude": 13,
+        "breakage": 3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Cinquedea",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 12,
+        "breakage": 0,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Claymore",
+        "damage": 7,
+        "initPen": 4,
+        "primeStr": 7,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 16,
+        "breakage": 5,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Dirk",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 5,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 10,
+        "breakage": -2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Scramasax",
+        "damage": 5,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "fortitude": 14,
+        "breakage": 4,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Falcata",
+        "damage": 6,
+        "initPen": 3,
+        "primeStr": 7,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Axe"
+        ],
+        "fortitude": 12,
+        "breakage": 5,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Glavius",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 12,
+        "breakage": 1,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 7,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Goedendag",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Versatile",
+            "Special"
+        ],
+        "fortitude": 10,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 6,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Grosse Messer",
+        "damage": 8,
+        "initPen": 5,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 12,
+        "breakage": 3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 9,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Guandao",
+        "damage": 7,
+        "initPen": 4,
+        "primeStr": 7,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 13,
+        "breakage": 3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 11,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Hu Die Dao",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision",
+            "Special"
+        ],
+        "fortitude": 10,
+        "breakage": -2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Katzbalger",
+        "damage": 5,
+        "initPen": 1,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kerambit",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision",
+            "Special"
+        ],
+        "fortitude": 10,
+        "breakage": -2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Koncerz",
+        "damage": 6,
+        "initPen": 5,
+        "primeStr": 8,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 9,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kukri",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "fortitude": 12,
+        "breakage": 3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Liu Xing Chui",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "special": [
+            "Two-handed",
+            "Trapping (8)",
+            "Complex"
+        ],
+        "fortitude": 8,
+        "breakage": 1,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Lujiaodao",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Disarming"
+        ],
+        "fortitude": 12,
+        "breakage": 5,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Mace Bar",
+        "damage": 5,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 14,
+        "breakage": 4,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 7,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Montante",
+        "damage": 8,
+        "initPen": 7,
+        "primeStr": 8,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 18,
+        "breakage": 5,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 11,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Pata",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Pike",
+        "damage": 6,
+        "initPen": 5,
+        "primeStr": 6,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Two-handed",
+            "Special"
+        ],
+        "fortitude": 12,
+        "breakage": 4,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Pudao",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 7,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Shang Gou",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "special": [
+            "Complex",
+            "Disarming",
+            "Special"
+        ],
+        "fortitude": 12,
+        "breakage": 1,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Spatha",
+        "damage": 5,
+        "initPen": 5,
+        "primeStr": 6,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 14,
+        "breakage": 3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Urumi",
+        "damage": 3,
+        "initPen": 3,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "special": [
+            "Complex",
+            "Special"
+        ],
+        "fortitude": 7,
+        "breakage": -3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Valaska",
+        "damage": 4,
+        "initPen": 4,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole",
+            "Axe"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 11,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 8,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Atlatl",
+        "initPen": 2,
+        "primeStr": 5,
+        "weaponClass": [
+            "Throwing"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 8,
+        "breakage": -4,
+        "presence": 1,
+        "reload": 1,
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "ammoRel": [
+            "recUrgb8SDRIklqCK"
+        ],
+        "range": 150,
+        "ammo": "Javelin",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Bullet Bow",
+        "initPen": 3,
+        "primeStr": 4,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Two-handed",
+            "Special"
+        ],
+        "fortitude": 6,
+        "breakage": -3,
+        "presence": 2,
+        "reload": 1,
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "rec06zuXVMqu19z9O",
+            "recKS0rUOMNztoZyi"
+        ],
+        "range": 120,
+        "ammo": "Pellet, Sling Stone",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Pellet",
+        "damage": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 6,
+        "breakage": 1,
+        "presence": 1,
+        "group": [
+            "Classic",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Daikyu",
+        "initPen": 5,
+        "primeStr": 7,
+        "weaponClass": [
+            "Firing"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 8,
+        "breakage": -2,
+        "presence": 2,
+        "reload": 1,
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "fired",
+        "ammoRel": [
+            "recjziIZ3mxKV60h7",
+            "recVCWYuqWqnFw29l",
+            "rec4Td4PQBk13XPQa"
+        ],
+        "range": 300,
+        "ammo": "Arrow, Flight Arrow, Armor-piercing Arrow",
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kunai",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 10,
+        "breakage": 2,
+        "presence": 2,
+        "rot": 4,
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Boku-to",
+        "damage": 3,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "special": [
+            "Versatile",
+            "Special"
+        ],
+        "fortitude": 8,
+        "breakage": -1,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 6,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Jutte",
+        "damage": 2,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Disarming"
+        ],
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kama",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "fortitude": 12,
+        "breakage": 1,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kau Sin Ke",
+        "damage": 3,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "special": [
+            "Complex",
+            "Trapping (8)"
+        ],
+        "fortitude": 13,
+        "breakage": 3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kiseru",
+        "damage": 2,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "fortitude": 13,
+        "breakage": 3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kris",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 11,
+        "breakage": 1,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kumade",
+        "damage": 4,
+        "initPen": 3,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Kyoketsu-shogui",
+        "damage": 3,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm",
+            "Cord"
+        ],
+        "special": [
+            "Trapping (7)",
+            "Special"
+        ],
+        "fortitude": 9,
+        "breakage": -3,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Lajatang",
+        "damage": 4,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Complex",
+            "Two-handed",
+            "Special"
+        ],
+        "fortitude": 13,
+        "breakage": 3,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Nagimaki",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Naginata",
+        "damage": 6,
+        "initPen": 3,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 13,
+        "breakage": 3,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 8,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Ninja-to",
+        "damage": 5,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 12,
+        "breakage": 1,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Ram Dao",
+        "damage": 6,
+        "initPen": 3,
+        "primeStr": 7,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 16,
+        "breakage": 7,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 9,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sode Garami",
+        "damage": 2,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Two-handed",
+            "Trapping (7)",
+            "Special"
+        ],
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 2,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Tetsubo",
+        "damage": 8,
+        "initPen": 7,
+        "primeStr": 8,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 13,
+        "breakage": 4,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "secondStr": 10,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Uchi-ne",
+        "damage": 3,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 10,
+        "breakage": -3,
+        "presence": 2,
+        "rot": 10,
+        "group": [
+            "Classic",
+            "Projectile"
+        ],
+        "rangeType": "thrown",
+        "range": 100,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sang Kauw",
+        "damage": 5,
+        "initPen": 3,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "special": [
+            "Special"
+        ],
+        "fortitude": 10,
+        "breakage": 2,
+        "presence": 3,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Wakizasi",
+        "damage": 5,
+        "initPen": 2,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 11,
+        "breakage": 3,
+        "presence": 4,
+        "group": [
+            "Classic"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Mouse (Smooth)",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 4,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord",
+            "Mace"
+        ],
+        "special": [
+            "Trapping",
+            "Complex",
+            "Reach (15)"
+        ],
+        "fortitude": 8,
+        "breakage": -2,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Mouse (Spiked)",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord",
+            "Mace"
+        ],
+        "special": [
+            "Trapping",
+            "Reach (15)"
+        ],
+        "fortitude": 8,
+        "breakage": -2,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Ox",
+        "damage": 16,
+        "initPen": 10,
+        "primeStr": 11,
+        "primeDamage": [
+            "Variable"
+        ],
+        "secondDamage": [
+            "Impact",
+            "Variable"
+        ],
+        "fortitude": 26,
+        "breakage": 13,
+        "presence": 3,
+        "weaponSize": "Huge",
+        "group": [
+            "Art"
+        ],
+        "secondStr": 13,
+        "ap": 3,
+        "weaponClass": [
+            "Two-handed"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Rabbit",
+        "damage": 5,
+        "initPen": 2,
+        "primeStr": 7,
+        "primeDamage": [
+            "Impact"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Unarmed"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 11,
+        "breakage": 3,
+        "presence": 3,
+        "weaponSize": "Medium",
+        "group": [
+            "Art"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Dragon",
+        "damage": 1,
+        "initPen": 0,
+        "primeStr": 2,
+        "primeDamage": [
+            "Force"
+        ],
+        "weaponClass": [
+            "Two-handed"
+        ],
+        "fortitude": 5,
+        "breakage": 0,
+        "presence": 4,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Snake",
+        "damage": 1,
+        "initPen": 0,
+        "primeStr": 1,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "special": [
+            "Precision"
+        ],
+        "fortitude": 10,
+        "breakage": -4,
+        "presence": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Horse",
+        "damage": 4,
+        "initPen": 4,
+        "primeStr": 7,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Shield",
+            "Mace"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 16,
+        "breakage": 3,
+        "presence": 3,
+        "rot": 8,
+        "weaponSize": "Medium",
+        "group": [
+            "Art"
+        ],
+        "rangeType": "thrown",
+        "ap": 2,
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Goat",
+        "damage": 5,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 1,
+        "breakage": 4,
+        "presence": 2,
+        "group": [
+            "Art",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Monkey",
+        "damage": 4,
+        "initPen": 1,
+        "primeStr": 10,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Pole",
+            "Two-handed"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Art"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Rooster",
+        "damage": 7,
+        "initPen": 2,
+        "primeStr": 8,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Two-handed",
+            "Complex",
+            "Disarming"
+        ],
+        "fortitude": 17,
+        "breakage": 7,
+        "presence": 3,
+        "weaponSize": "Large",
+        "group": [
+            "Art"
+        ],
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Dog",
+        "damage": 3,
+        "initPen": 3,
+        "primeStr": 1,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "breakage": 2,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Boar",
+        "damage": 5,
+        "initPen": 4,
+        "primeStr": 10,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Unarmed"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 35,
+        "breakage": 3,
+        "presence": 4,
+        "weaponSize": "Large",
+        "group": [
+            "Art"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Cat",
+        "damage": 3,
+        "initPen": 0,
+        "primeStr": 1,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "special": [
+            "Two-handed"
+        ],
+        "breakage": 5,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sun",
+        "damage": 13,
+        "initPen": 1,
+        "primeStr": 1,
+        "primeDamage": [
+            "Light"
+        ],
+        "secondDamage": [
+            "Variable"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "fortitude": 35,
+        "breakage": 15,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Terra",
+        "damage": 3,
+        "initPen": 1,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace"
+        ],
+        "fortitude": 20,
+        "breakage": 0,
+        "presence": 3,
+        "rot": 5,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "rangeType": "thrown",
+        "ap": 1,
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Luna",
+        "damage": 2,
+        "initPen": 0,
+        "primeStr": 3,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Improvised"
+        ],
+        "special": [
+            "Shield"
+        ],
+        "fortitude": 20,
+        "breakage": 0,
+        "presence": 3,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "ap": 1,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Mars",
+        "damage": 5,
+        "initPen": 3,
+        "primeStr": 10,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Unarmed"
+        ],
+        "fortitude": 20,
+        "breakage": 4,
+        "presence": 4,
+        "weaponSize": "Medium",
+        "group": [
+            "Art"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Asteroid",
+        "damage": 6,
+        "initPen": 1,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "breakage": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Art"
+        ],
+        "ap": 2,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Jupiter",
+        "damage": 4,
+        "initPen": 4,
+        "primeStr": 10,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Mace",
+            "Unarmed"
+        ],
+        "fortitude": 55,
+        "breakage": 4,
+        "presence": 6,
+        "weaponSize": "Medium",
+        "group": [
+            "Art"
+        ],
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Saturn",
+        "damage": 6,
+        "initPen": 2,
+        "primeStr": 6,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Two-handed"
+        ],
+        "special": [
+            "Two-handed",
+            "Throwable"
+        ],
+        "fortitude": 30,
+        "breakage": 4,
+        "presence": 4,
+        "weaponSize": "Medium",
+        "group": [
+            "Art"
+        ],
+        "ap": 3,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Uranus",
+        "damage": 6,
+        "initPen": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Impact"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "special": [
+            "Two-handed",
+            "Double"
+        ],
+        "fortitude": 20,
+        "breakage": 5,
+        "presence": 4,
+        "weaponSize": "Large",
+        "group": [
+            "Art"
+        ],
+        "ap": 3,
+        "weaponClass": [
+            "Mace"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Pluto",
+        "damage": 7,
+        "initPen": 1,
+        "primeStr": 1,
+        "primeDamage": [
+            "Force"
+        ],
+        "secondDamage": [
+            "Cold",
+            "Cut",
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "breakage": 2,
+        "weaponSize": "Medium",
+        "group": [
+            "Art"
+        ],
+        "ap": 2,
+        "special": [
+            "Immaterial"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Halley",
+        "damage": 2,
+        "initPen": 1,
+        "primeStr": 1,
+        "primeDamage": [
+            "Cold"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "special": [
+            "Throwable"
+        ],
+        "fortitude": 10,
+        "breakage": 0,
+        "rot": 4,
+        "weaponSize": "Small",
+        "group": [
+            "Art"
+        ],
+        "rangeType": "thrown",
+        "ap": 1,
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Umbra",
+        "initPen": 0,
+        "ap": 2,
+        "primeStr": 1,
+        "primeDamage": [
+            "Cut",
+            "Thrust",
+            "Impact"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "weaponSize": "Large",
+        "special": [
+            "Imbued"
+        ],
+        "fortitude": 10,
+        "breakage": 0,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Aries",
+        "damage": 10,
+        "initPen": 4,
+        "ap": 3,
+        "primeStr": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Variable"
+        ],
+        "weaponSize": "Large",
+        "special": [
+            "Two-handed",
+            "Complex",
+            "Trapping (10)",
+            "Reach (15)"
+        ],
+        "fortitude": 16,
+        "breakage": 6,
+        "presence": 3,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Taurus",
+        "damage": 12,
+        "initPen": 10,
+        "ap": 3,
+        "primeStr": 10,
+        "secondStr": 12,
+        "primeDamage": [
+            "Variable"
+        ],
+        "secondDamage": [
+            "Variable"
+        ],
+        "weaponClass": [
+            "Two-handed",
+            "Variable"
+        ],
+        "weaponSize": "Huge",
+        "special": [
+            "Two-handed",
+            "Throwable"
+        ],
+        "fortitude": 16,
+        "breakage": 8,
+        "presence": 3,
+        "group": [
+            "Art"
+        ],
+        "rangeType": "thrown",
+        "rot": 12,
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Cancer",
+        "damage": 6,
+        "initPen": 0,
+        "ap": 3,
+        "primeStr": 4,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Two-handed",
+            "Cord"
+        ],
+        "weaponSize": "Small",
+        "special": [
+            "Two-handed",
+            "Complex",
+            "Trapping (12)",
+            "Reach (15)"
+        ],
+        "fortitude": 20,
+        "breakage": 2,
+        "presence": 8,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Leo Sword-Pistol (Sword)",
+        "damage": 7,
+        "initPen": 5,
+        "ap": 2,
+        "primeStr": 8,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "weaponSize": "Medium",
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 13,
+        "breakage": 4,
+        "presence": 4,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "ammo": "Leo Bullet",
+        "name": "Leo Sword-Pistol (Pistol)",
+        "initPen": 2,
+        "ap": 2,
+        "primeStr": 8,
+        "weaponClass": [
+            "Firing"
+        ],
+        "weaponSize": "Medium",
+        "fortitude": 13,
+        "presence": 4,
+        "group": [
+            "Art"
+        ],
+        "rangeType": "fired",
+        "reload": 2,
+        "range": 150,
+        "ammoRel": [
+            "recDKKSaaXKPVUAuc"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Leo Spear-Rifle (Spear)",
+        "damage": 4,
+        "initPen": 4,
+        "ap": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Pole"
+        ],
+        "weaponSize": "Medium",
+        "special": [
+            "Versatile"
+        ],
+        "fortitude": 12,
+        "breakage": 2,
+        "presence": 4,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "ammo": "Leo Bullet",
+        "name": "Leo Spear-Rifle (Rifle)",
+        "initPen": 2,
+        "ap": 2,
+        "primeStr": 5,
+        "weaponClass": [
+            "Firing"
+        ],
+        "weaponSize": "Medium",
+        "fortitude": 12,
+        "presence": 4,
+        "group": [
+            "Art"
+        ],
+        "rangeType": "fired",
+        "reload": 2,
+        "range": 250,
+        "ammoRel": [
+            "recDKKSaaXKPVUAuc"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Leo Mace-Cannon (Mace)",
+        "damage": 6,
+        "initPen": 4,
+        "ap": 3,
+        "primeStr": 7,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Two-handed",
+            "Mace"
+        ],
+        "weaponSize": "Large",
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 15,
+        "breakage": 5,
+        "presence": 4,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "ammo": "Leo Cannon Charge",
+        "name": "Leo Mace-Cannon (Cannon)",
+        "ammoRel": [
+            "rec7jZroLmDBzEpfd"
+        ],
+        "initPen": 6,
+        "ap": 3,
+        "primeStr": 7,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Two-handed",
+            "Firing"
+        ],
+        "weaponSize": "Large",
+        "special": [
+            "Two-handed"
+        ],
+        "fortitude": 15,
+        "presence": 4,
+        "group": [
+            "Art"
+        ],
+        "rangeType": "fired",
+        "reload": 10,
+        "range": 500,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Leo Bullet",
+        "damage": 5,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 11,
+        "breakage": 5,
+        "presence": 2,
+        "group": [
+            "Art",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Leo Cannon Charge",
+        "damage": 12,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Ammo"
+        ],
+        "fortitude": 15,
+        "breakage": 5,
+        "presence": 2,
+        "group": [
+            "Art",
+            "Ammo"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Virgo (Small Wind)",
+        "damage": 5,
+        "initPen": 3,
+        "ap": 2,
+        "primeStr": 1,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "weaponSize": "Medium",
+        "breakage": 2,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Virgo (Large Wind)",
+        "damage": 7,
+        "initPen": 3,
+        "ap": 2,
+        "primeStr": 1,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "weaponSize": "Medium",
+        "breakage": 2,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Virgo (Stringed)",
+        "damage": 5,
+        "initPen": 3,
+        "ap": 2,
+        "primeStr": 1,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "weaponSize": "Medium",
+        "breakage": 2,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Virgo (Percussion)",
+        "damage": 5,
+        "initPen": 3,
+        "ap": 2,
+        "primeStr": 1,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Power"
+        ],
+        "weaponSize": "Medium",
+        "special": [
+            "Impact (12)"
+        ],
+        "breakage": 2,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Libra",
+        "damage": 5,
+        "initPen": 2,
+        "ap": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Variable"
+        ],
+        "weaponClass": [
+            "Variable"
+        ],
+        "weaponSize": "Variable",
+        "fortitude": 15,
+        "breakage": 2,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Scorpio (Sword)",
+        "damage": 5,
+        "initPen": 2,
+        "ap": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponSize": "Medium",
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 3,
+        "group": [
+            "Art"
+        ],
+        "weaponClass": [
+            "Sword"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Scorpio (Whip)",
+        "damage": 4,
+        "initPen": 3,
+        "ap": 2,
+        "primeStr": 5,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Cord"
+        ],
+        "weaponSize": "Medium",
+        "special": [
+            "Reach (30)",
+            "Trapping (10)"
+        ],
+        "fortitude": 13,
+        "breakage": 2,
+        "presence": 3,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Sagittarius",
+        "damage": 4,
+        "initPen": 1,
+        "ap": 1,
+        "primeStr": 4,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Firing",
+            "Throwing"
+        ],
+        "weaponSize": "Small",
+        "breakage": 0,
+        "group": [
+            "Art"
+        ],
+        "rangeType": "fired",
+        "rot": 10,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Capricorn",
+        "damage": 10,
+        "initPen": 0,
+        "ap": 1,
+        "primeStr": 3,
+        "primeDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Short Arm"
+        ],
+        "weaponSize": "Tiny",
+        "special": [
+            "Precision",
+            "Throwable"
+        ],
+        "fortitude": 8,
+        "breakage": -5,
+        "presence": 2,
+        "group": [
+            "Art"
+        ],
+        "rangeType": "thrown",
+        "rot": 3,
+        "range": 60,
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Aquarius (Weapon)",
+        "damage": 6,
+        "initPen": 1,
+        "ap": 2,
+        "primeStr": 3,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Shield",
+            "Cord"
+        ],
+        "weaponSize": "Medium",
+        "special": [
+            "Trapping (8)",
+            "Shield"
+        ],
+        "fortitude": 20,
+        "breakage": 5,
+        "presence": 3,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Aquarius (Shield)",
+        "damage": 6,
+        "initPen": 3,
+        "ap": 2,
+        "primeStr": 3,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Shield",
+            "Cord"
+        ],
+        "weaponSize": "Medium",
+        "special": [
+            "Trapping (8)",
+            "Shield",
+            "Block +2"
+        ],
+        "fortitude": 20,
+        "breakage": 5,
+        "presence": 3,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Pisces (Smooth)",
+        "damage": 3,
+        "initPen": 0,
+        "ap": 1,
+        "primeStr": 3,
+        "primeDamage": [
+            "Impact"
+        ],
+        "weaponClass": [
+            "Cord",
+            "Mace"
+        ],
+        "weaponSize": "Small",
+        "special": [
+            "Trapping (8)",
+            "Reach (15)"
+        ],
+        "fortitude": 8,
+        "breakage": -2,
+        "presence": 2,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Pisces (Bladed)",
+        "damage": 4,
+        "initPen": 0,
+        "ap": 1,
+        "primeStr": 3,
+        "primeDamage": [
+            "Cut"
+        ],
+        "weaponClass": [
+            "Cord",
+            "Mace"
+        ],
+        "weaponSize": "Small",
+        "special": [
+            "Trapping (8)",
+            "Complex",
+            "Reach (15)"
+        ],
+        "fortitude": 8,
+        "breakage": -2,
+        "presence": 2,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    },
+    {
+        "name": "Ophiucos",
+        "damage": 8,
+        "initPen": 1,
+        "ap": 3,
+        "primeStr": 1,
+        "primeDamage": [
+            "Cut"
+        ],
+        "secondDamage": [
+            "Thrust"
+        ],
+        "weaponClass": [
+            "Sword",
+            "Power"
+        ],
+        "fortitude": 30,
+        "breakage": 15,
+        "presence": 4,
+        "group": [
+            "Art"
+        ],
+        "description": [
+            "null"
+        ]
+    }
+]

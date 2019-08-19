@@ -1,0 +1,132 @@
+[
+    {
+        "title": "Chakra Accumulation",
+        "index": "100",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Characteristic Sum",
+                "Base CA"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "1 to 4",
+                    "1"
+                ],
+                [
+                    "5 to 9",
+                    "2"
+                ],
+                [
+                    "10 to 11",
+                    "3"
+                ],
+                [
+                    "12 to 13",
+                    "4"
+                ],
+                [
+                    "14 to 15",
+                    "5"
+                ],
+                [
+                    "16 to 18",
+                    "6"
+                ],
+                [
+                    "19 to 20",
+                    "8"
+                ],
+                [
+                    "21 to 25",
+                    "9"
+                ],
+                [
+                    "26 to 30",
+                    "10"
+                ],
+                [
+                    "31 to 40",
+                    "12"
+                ],
+                [
+                    "41 to 50",
+                    "13"
+                ],
+                [
+                    "51+",
+                    "15"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Detect Spirit Distance",
+        "index": "200",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Detect Spirit Value",
+                "Distance"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "Less than 4",
+                    "Touch"
+                ],
+                [
+                    "Easy (4)",
+                    "5 feet"
+                ],
+                [
+                    "Medium (8)",
+                    "20 feet"
+                ],
+                [
+                    "Difficult (12)",
+                    "60 feet"
+                ],
+                [
+                    "Very Difficult (16)",
+                    "240 feet"
+                ],
+                [
+                    "Absurd (20)",
+                    "800 feet"
+                ],
+                [
+                    "Almost Impossible (24)",
+                    "2000 feet"
+                ],
+                [
+                    "Impossible (28)",
+                    "3000 feet"
+                ],
+                [
+                    "Inhuman (32)",
+                    "1 mile"
+                ],
+                [
+                    "Zen (44)",
+                    "10 miles"
+                ],
+                [
+                    "Legendary (60)",
+                    "1,000 miles"
+                ],
+                [
+                    "Divine (80)",
+                    "1 au"
+                ]
+            ]
+        }
+    }
+]

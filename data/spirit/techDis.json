@@ -1,0 +1,471 @@
+[
+    {
+        "name": "Exhaustion",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "-2"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "-4"
+            },
+            {
+                "spiritPower": -15,
+                "lv": 2,
+                "name": "-6"
+            }
+        ]
+    },
+    {
+        "name": "Elemental Binding",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "Single Element"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Two Elements"
+            }
+        ]
+    },
+    {
+        "name": "Specialized Attack",
+        "actionType": "Attack",
+        "effect": [
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Only Against Block"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Only Against Dodge"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Only Against Damage Resistance"
+            }
+        ]
+    },
+    {
+        "name": "Tied to a Weapon",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Tied to a Weapon Type"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Tied to a Specific Weapon"
+            }
+        ]
+    },
+    {
+        "name": "Limited Circumstance",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Suffers Damage"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Half of Life Points"
+            },
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "Quarter of Life Points"
+            },
+            {
+                "spiritPower": -25,
+                "lv": 2,
+                "name": "Negative Life Points"
+            }
+        ]
+    },
+    {
+        "name": "Combat Circumstance",
+        "actionType": "Attack",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Circumstance"
+            }
+        ]
+    },
+    {
+        "name": "Complex",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 2,
+                "name": "Comples"
+            }
+        ]
+    },
+    {
+        "name": "Conditions",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Unsheathe"
+            },
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Flying"
+            },
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Charging"
+            },
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Mounted"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Day"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Night"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Certain Terrain"
+            },
+            {
+                "spiritPower": -20,
+                "lv": 2,
+                "name": "Certain Time"
+            }
+        ]
+    },
+    {
+        "name": "Reduced Damage",
+        "actionType": "Attack",
+        "effect": [
+            {
+                "spiritPower": -20,
+                "lv": 1,
+                "name": "No Damage"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Half Damage"
+            }
+        ]
+    },
+    {
+        "name": "Specialized Defense",
+        "actionType": "Defense",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Only Physical Attacks"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Only Projectiles"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Only Ki Techniques"
+            },
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "Only Spells"
+            },
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "Only Phenom"
+            }
+        ]
+    },
+    {
+        "name": "Exterminator",
+        "actionType": "Attack",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Against Humanoids"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Against a Type of Being"
+            },
+            {
+                "spiritPower": -30,
+                "lv": 2,
+                "name": "Against a Specific Being"
+            }
+        ]
+    },
+    {
+        "name": "Excessive Energy Use",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "Excessive Energy Use"
+            }
+        ]
+    },
+    {
+        "name": "Weapon Loss",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Weapon Loss"
+            }
+        ]
+    },
+    {
+        "name": "Action Penalty",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "-5"
+            },
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "-7"
+            },
+            {
+                "spiritPower": -20,
+                "lv": 2,
+                "name": "-10"
+            },
+            {
+                "spiritPower": -25,
+                "lv": 2,
+                "name": "-12"
+            },
+            {
+                "spiritPower": -30,
+                "lv": 3,
+                "name": "-15"
+            }
+        ]
+    },
+    {
+        "name": "Predetermination",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -20,
+                "lv": 2,
+                "name": "Predetermination"
+            }
+        ]
+    },
+    {
+        "name": "Advanced Preparation",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Minute"
+            },
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "Hour"
+            },
+            {
+                "spiritPower": -25,
+                "lv": 2,
+                "name": "Day"
+            }
+        ]
+    },
+    {
+        "name": "Elemental Requirements",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Lesser Intensity"
+            },
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Greater Intensity"
+            }
+        ]
+    },
+    {
+        "name": "Vital Sacrifice",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "-25"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "-50"
+            },
+            {
+                "spiritPower": -15,
+                "lv": 2,
+                "name": "-75"
+            },
+            {
+                "spiritPower": -20,
+                "lv": 2,
+                "name": "-100"
+            },
+            {
+                "spiritPower": -25,
+                "lv": 3,
+                "name": "All Life Points"
+            }
+        ]
+    },
+    {
+        "name": "Characteristic Sacrifice",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -20,
+                "lv": 1,
+                "name": "Characteristic Sacrifice"
+            }
+        ]
+    },
+    {
+        "name": "Defenseless",
+        "actionType": "Attack",
+        "effect": [
+            {
+                "spiritPower": -15,
+                "lv": 1,
+                "name": "Defenseless"
+            }
+        ]
+    },
+    {
+        "name": "Overload",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Delay of 5 Turns"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "Delay of 10 Turns"
+            }
+        ]
+    },
+    {
+        "name": "Final Technique",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -55,
+                "lv": 2,
+                "name": "Final Technique"
+            }
+        ]
+    },
+    {
+        "name": "Maintained Technique",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -5,
+                "lv": 1,
+                "name": "Level 1 Technique"
+            },
+            {
+                "spiritPower": -10,
+                "lv": 2,
+                "name": "Level 2 Technique"
+            },
+            {
+                "spiritPower": -15,
+                "lv": 3,
+                "name": "Level 3 Technique"
+            }
+        ]
+    },
+    {
+        "name": "Limited Uses",
+        "actionType": "Variable",
+        "effect": [
+            {
+                "spiritPower": -10,
+                "lv": 1,
+                "name": "20 Uses"
+            },
+            {
+                "spiritPower": -20,
+                "lv": 1,
+                "name": "10 Uses"
+            },
+            {
+                "spiritPower": -25,
+                "lv": 2,
+                "name": "5 Uses"
+            },
+            {
+                "spiritPower": -30,
+                "lv": 2,
+                "name": "3 Uses"
+            },
+            {
+                "spiritPower": -40,
+                "lv": 3,
+                "name": "1 Uses"
+            }
+        ]
+    }
+]

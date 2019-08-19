@@ -1,0 +1,606 @@
+[
+    {
+        "title": "Base Mana Accumulation",
+        "index": "100",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Focus",
+                "MA"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "0 to 4",
+                    "0"
+                ],
+                [
+                    "5 to 7",
+                    "5"
+                ],
+                [
+                    "8 to 11",
+                    "10"
+                ],
+                [
+                    "12 to 14",
+                    "15"
+                ],
+                [
+                    "15 to 18",
+                    "20"
+                ],
+                [
+                    "19 to 21",
+                    "25"
+                ],
+                [
+                    "22 to 24",
+                    "30"
+                ],
+                [
+                    "25 to 28",
+                    "35"
+                ],
+                [
+                    "29",
+                    "40"
+                ],
+                [
+                    "30",
+                    "50"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Innate Mana",
+        "index": "300",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "MA",
+                "Innate Mana"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "0 to 10",
+                    "0 mana"
+                ],
+                [
+                    "11 to 50",
+                    "10 mana"
+                ],
+                [
+                    "51 to 70",
+                    "20 mana"
+                ],
+                [
+                    "71 to 90",
+                    "30 mana"
+                ],
+                [
+                    "91 to 110",
+                    "40 mana"
+                ],
+                [
+                    "111 to 130",
+                    "50 mana"
+                ],
+                [
+                    "131 to 150",
+                    "60 mana"
+                ],
+                [
+                    "151 to 180",
+                    "70 mana"
+                ],
+                [
+                    "181 to 210",
+                    "80 mana"
+                ],
+                [
+                    "211 to 240",
+                    "90 mana"
+                ],
+                [
+                    "241 to 270",
+                    "100 mana"
+                ],
+                [
+                    "271 to 300",
+                    "110 mana"
+                ],
+                [
+                    "for every 30 points after 300",
+                    "+10 mana"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Mana Knowledge",
+        "index": "200",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Aptitude",
+                "Maximum Mana Knowledge"
+            ],
+            "colStyles": [
+                "col-5",
+                "col-7"
+            ],
+            "rows": [
+                [
+                    "1 to 5",
+                    "0"
+                ],
+                [
+                    "6",
+                    "10"
+                ],
+                [
+                    "7",
+                    "20"
+                ],
+                [
+                    "8",
+                    "30"
+                ],
+                [
+                    "9",
+                    "40"
+                ],
+                [
+                    "10",
+                    "50"
+                ],
+                [
+                    "11",
+                    "75"
+                ],
+                [
+                    "12",
+                    "100"
+                ],
+                [
+                    "13",
+                    "150"
+                ],
+                [
+                    "14",
+                    "200"
+                ],
+                [
+                    "15",
+                    "300"
+                ],
+                [
+                    "16",
+                    "400"
+                ],
+                [
+                    "17",
+                    "600"
+                ],
+                [
+                    "18",
+                    "800"
+                ],
+                [
+                    "19",
+                    "1100"
+                ],
+                [
+                    "20",
+                    "1500"
+                ],
+                [
+                    "21",
+                    "2000"
+                ],
+                [
+                    "22",
+                    "2600"
+                ],
+                [
+                    "23",
+                    "3300"
+                ],
+                [
+                    "24",
+                    "4100"
+                ],
+                [
+                    "25",
+                    "5000"
+                ],
+                [
+                    "26",
+                    "6000"
+                ],
+                [
+                    "27",
+                    "7500"
+                ],
+                [
+                    "28",
+                    "10000"
+                ],
+                [
+                    "29",
+                    "12500"
+                ],
+                [
+                    "30",
+                    "15000"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Choosing Spells",
+        "index": "210",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Spell Level",
+                "Mana Knowledge Cost"
+            ],
+            "colStyles": [
+                "col-6",
+                "col-6"
+            ],
+            "rows": [
+                [
+                    "1 to 10",
+                    "2"
+                ],
+                [
+                    "11 to 20",
+                    "4"
+                ],
+                [
+                    "21 to 30",
+                    "6"
+                ],
+                [
+                    "31 to 40",
+                    "8"
+                ],
+                [
+                    "41 to 50",
+                    "10"
+                ],
+                [
+                    "51 to 60",
+                    "12"
+                ],
+                [
+                    "61 to 70",
+                    "14"
+                ],
+                [
+                    "71 to 80",
+                    "16"
+                ],
+                [
+                    "81 to 90",
+                    "20"
+                ],
+                [
+                    "91 to 100",
+                    "30"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Ritual Time",
+        "index": "400",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Time Spent",
+                "Deed Factor"
+            ],
+            "colStyles": [
+                "col-8",
+                "col-4"
+            ],
+            "rows": [
+                [
+                    "Same round",
+                    "`-15`"
+                ],
+                [
+                    "1 round",
+                    "`-10`"
+                ],
+                [
+                    "2 rounds",
+                    "`-5`"
+                ],
+                [
+                    "3 rounds",
+                    "`-1`"
+                ],
+                [
+                    "5 rounds",
+                    "`+0`"
+                ],
+                [
+                    "1 minute (10 rounds)",
+                    "`+1`"
+                ],
+                [
+                    "5 minutes",
+                    "`+2`"
+                ],
+                [
+                    "15 minutes",
+                    "`+3`"
+                ],
+                [
+                    "1 hour",
+                    "`+4`"
+                ],
+                [
+                    "3 hours",
+                    "`+5`"
+                ],
+                [
+                    "6 hours",
+                    "`+6`"
+                ],
+                [
+                    "12 hours",
+                    "`+7`"
+                ],
+                [
+                    "1 week",
+                    "`+10`"
+                ],
+                [
+                    "1 month",
+                    "`+12`"
+                ],
+                [
+                    "6 months",
+                    "`+15`"
+                ],
+                [
+                    "1 year",
+                    "`+20`"
+                ],
+                [
+                    "5 years",
+                    "`+30`"
+                ],
+                [
+                    "10 years",
+                    "`+40`"
+                ],
+                [
+                    "50 years",
+                    "`+50`"
+                ]
+            ]
+        },
+        "postEntries": [
+            "One day of ritual is actually only 12 hours. But, you cannot spend more than 12 hours each day on Conjuration. Rituals that take longer than a day are suspended for 12 hours to allow you to sleep."
+        ]
+    },
+    {
+        "title": "Totem Modifiers",
+        "index": "500",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Totem",
+                "Deed Bonus"
+            ],
+            "colStyles": [
+                "col-8",
+                "col-4"
+            ],
+            "rows": [
+                [
+                    "Totem contains the creature's true name",
+                    "`+8`"
+                ],
+                [
+                    "Totem contains the creature's legendary name",
+                    "`+3`"
+                ],
+                [
+                    "Totem contains the creature's common name",
+                    "`+2`"
+                ],
+                [
+                    "Totem contains an object that belonged to the creature",
+                    "`+2`"
+                ],
+                [
+                    "Totem contains an object that the creature made",
+                    "`+1`"
+                ],
+                [
+                    "Totem contains a part of the exact creature",
+                    "`+5`"
+                ],
+                [
+                    "Totem contains a piece of the same species",
+                    "`+2`"
+                ],
+                [
+                    "Totem contains detailed knowledge of the creature",
+                    "`+3`"
+                ],
+                [
+                    "Totem contains a description of the creature",
+                    "`+1`"
+                ],
+                [
+                    "Totem contains the complete stories about the creature",
+                    "`+2`"
+                ],
+                [
+                    "Totem contains the incomplete stories about the creature",
+                    "`+1`"
+                ],
+                [
+                    "Totem's level is higher than the creatures",
+                    "Bonus equal to half DoD"
+                ],
+                [
+                    "Totem's level is less than the creatures",
+                    "Penalty equal to DoD"
+                ],
+                [
+                    "Totem for the same type of creature",
+                    "`+0`"
+                ],
+                [
+                    "Totem for a different type of creature",
+                    "`-5`"
+                ],
+                [
+                    "Un-attuned Totem",
+                    "`-5`"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Failure to Summon",
+        "index": "510",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Degree of Failure",
+                "Result"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-9"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Summoning has no effect, but you do not lose mana. You do not lose the ritual."
+                ],
+                [
+                    "2 to 3",
+                    "Summoning has no effect, and you lose the mana it would have cost for a successful summon. You do not lose the ritual."
+                ],
+                [
+                    "4 to 5",
+                    "Summoning has no effect, and you lose twice the mana it would have cost for a successful summon. You lose the ritual."
+                ],
+                [
+                    "6 to 8",
+                    "The summoning has the opposite effect to what you desired. You summon a creature of similar level but opposite in nature. The summoned creature is immune to your conjuring abilities. The creature is sent back after five minutes. You lose twice the mana it would have cost for a successful summon. You lose the ritual."
+                ],
+                [
+                    "9 to 10",
+                    "The summoning has the opposite effect to what you desired. You summon four creatures of similar level but opposite in nature. The summoned creatures are immune to your conjuring abilities. The creatures are sent back after an hour. You lose four times the mana it would have cost for a successful summon. You lose the ritual."
+                ],
+                [
+                    "11 or greater",
+                    "If the creature is not legendary, you suffer ten times your DoF Sacrifice Damage. If the creature being summoned is of legendary status, it can instead chose to cause you to be summoned in front of it. This can cause you to enter the Veil. Either way, you lose all your mana."
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Failure to Control",
+        "index": "520",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Degree of Failure",
+                "Result"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-9"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Control has no effect, but you do not lose mana. You do not lose the ritual."
+                ],
+                [
+                    "2 to 3",
+                    "Control has no effect, and you lose the mana it would have cost for a successful control. You do not lose the ritual."
+                ],
+                [
+                    "4 to 5",
+                    "Control has no effect, and you lose twice the mana it would have cost for a successful control. You lose the ritual."
+                ],
+                [
+                    "6 to 8",
+                    "The control has no effect, and the creature is completely immune to your conjuring abilities for two weeks. You lose twice the mana it would have cost for a successful control. You lose the ritual."
+                ],
+                [
+                    "9 to 10",
+                    "The control is reversed, and the creature takes control of you. The creature can control you, and maintain that control, as if you were a creature being controlled. But, the mana used to maintain the control comes from your Mana Pool. You lose four times the mana it would have cost for a successful control. You lose the ritual."
+                ],
+                [
+                    "11 or greater",
+                    "Your spirit turned into a puppet that the creature you once tried to control dominates. The only way to break this control is if the creature's or your spirit return to the Beyond."
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Failure to Banish",
+        "index": "530",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Degree of Failure",
+                "Result"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-9"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Banish has no effect, but you do not lose mana. You do not lose the ritual."
+                ],
+                [
+                    "2 to 3",
+                    "Banish has no effect, and you lose the mana it would have cost for a successful banish. You do not lose the ritual."
+                ],
+                [
+                    "4 to 5",
+                    "Banish has no effect, and you lose twice the mana it would have cost for a successful banish. You lose the ritual."
+                ],
+                [
+                    "6 to 8",
+                    "The banish has no effect, and the creature is completely immune to your conjuring abilities for two weeks. You lose twice the mana it would have cost for a successful banish. You lose the ritual."
+                ],
+                [
+                    "9 to 10",
+                    "The banishing has the opposite effect to what you desired. You summon a creature of similar level. The target creature and the summoned creature are immune to your conjuring abilities for two weeks. You lose four times the mana it would have cost for a successful summon. You lose the ritual."
+                ],
+                [
+                    "11 or greater",
+                    "If the creature is not legendary, you suffer ten times your DoF Sacrifice Damage. If the creature being banished is of legendary status, it can instead chose to use you to summon a legion of lesser creatures. Being used as a portal causes you to enter the Veil. Either way, you lose all your mana."
+                ]
+            ]
+        }
+    }
+]

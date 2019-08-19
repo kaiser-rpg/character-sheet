@@ -1,0 +1,280 @@
+[
+    {
+        "name": "Human",
+        "fluff": [
+
+        ],
+        "mix": {
+            "cost": "0 XP",
+            "abilities": [
+                {
+                    "name": "Unbound Ambition",
+                    "type": "entries",
+                    "entries": [
+                        "Every level, choose one physical Secondary Skill and one mental Secondary Skill to gain a `+1` natural bonus. This bonus cannot exceed a `+10` bonus."
+                    ]
+                }
+            ]
+        },
+        "single": {
+            "cost": "0 XP",
+            "abilities": [
+                {
+                    "name": "Unbound Ambition",
+                    "type": "entries",
+                    "entries": [
+                        "Every level, choose two physical Secondary Skills and two mental Secondary Skills to gain a `+1` natural bonus. This bonus cannot exceed a `+10` bonus."
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Haruw",
+        "fluff": [
+
+        ],
+        "mix": {
+            "cost": "8 XP or 2 XP every level, until level 4",
+            "abilities": [
+                {
+                    "name": "Reincarnation of Kings",
+                    "type": "entries",
+                    "entries": [
+                        "Kings of ancient civilizations, whose names have been lost to time, are reincarnated with the spirit of a Haruw. This gives you a natural ability to lead. You gain a `+3` natural bonus to [@skill Leadership @]."
+                    ]
+                },
+                {
+                    "name": "Gate of the Hundred Kings",
+                    "type": "entries",
+                    "entries": [
+                        "The process to discover the true name of your lost kingdom is similar to gaining Elan, but you automatically gain the abilities as your Elan grows. Every level you gain 5 Elan towards the true name. The Game Master should also prepare some additional actions that will grant you additional Elan."
+                    ]
+                },
+                {
+                    "name": "Name of a Dead Kingdom",
+                    "type": "entries",
+                    "entries": [
+                        "The name of your lost civilization and its citizens holds great power when they are spoken by you. As you gain Elan toward your Kingdom, you gain the following abilities.",
+                        {
+                            "name": "Mark of the Lost Land (5 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "**Intention**: 0 AP",
+                                "You speak the first name of your lost land and a symbol appears somewhere on your body that is related to your Kingdom. The mark at the start of the End Phase."
+                            ]
+                        },
+                        {
+                            "name": "Shield of the Forgotten (15 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "**Intention**: 1 AP",
+                                "While the Mark of the Lost Land is active, you speak the second name of your lost land and you gain a `+8` power bonus to prevent yourself from forgetting what you have learned about your Kingdom or to be emotionally manipulated from not fulfilling your goal."
+                            ]
+                        },
+                        {
+                            "name": "Wings of Faith (30 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "**Intention**: Complete AP",
+                                "You speak the third names of lost land and create a pair of spectral wings that grant you a Flight Value of 8 and produce 10 intensities of light. The wings last for a number of minutes equal to your [@stat Willpower @]."
+                            ]
+                        },
+                        {
+                            "name": "Greater Wings of Faith (50 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "Your Wings of Faith now have a Flight Value of 12."
+                            ]
+                        },
+                        {
+                            "name": "King of this Ancient Land (75 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "While you are in the territory of your lost land, you gain a Base Damage Negate of 10 against attacks that do not possess the [@trait Imbued @] trait."
+                            ]
+                        },
+                        {
+                            "name": "Crown of the Gate of Kings (100 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "You have discovered the complete name of your Kingdom. Once you speak it all out loud, taking about 1 minute, you are transformed into a greater being. All of the previous abilities can be activated as a Swift Action and last until you dismiss them."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "single": {
+            "cost": "20 XP or 2 XP every level, until level 10",
+            "abilities": [
+                {
+                    "name": "Reincarnation of Kings",
+                    "type": "entries",
+                    "entries": [
+                        "Kings of ancient civilizations, whose names have been lost to time, are reincarnated with the spirit of a Haruw. This gives you a natural ability to lead. You gain a `+3` natural bonus to [@skill Leadership @]."
+                    ]
+                },
+                {
+                    "name": "Dreams of a Lost Land",
+                    "type": "entries",
+                    "entries": [
+                        "Every night that you dream, you find yourself in your ancient kingdom. If you find yourself within the Veil, you also start to influence the area around you to make it look like that of your dream. For the purpose of Veil Influence, you possess a Nornir of 25 and a Willpower of 12 (or your [@stat Willpower @] if it is higher). You have no control over what this looks like and do not gain any other benefit from having a Nornir of 25 or changed Willpower."
+                    ]
+                },
+                {
+                    "name": "Cloak of the King",
+                    "type": "entries",
+                    "entries": [
+                        "On your back is a pair of real wings that grant you a Flight Value of 12. You can increase and decrease their size to easily hide them on your back or make them appear as a cloak made of hawk feathers. Additionally, these wings can be used as natural weapons with the following profile. You cannot use them to attack while flying. Due to their size and the nature of their attacks, if you declare that you will attack with them, then you are unable to use any other weapon. Your wings can be used as a shield to defend against projectiles if you declared their use.",
+                        "Weapon Damage: 6 -- Initiative Penalty: 0 - Weapon Cost: 2 -- Damage Type: Cut -- Fortitude: 20 -- Breakage: 5"
+                    ]
+                },
+                {
+                    "name": "Gate of the Hundred Kings",
+                    "type": "entries",
+                    "entries": [
+                        "The process to discover the true name of your lost kingdom is similar to gaining Elan, but you automatically gain the abilities as your Elan grows. Every level you gain 5 Elan towards the true name. The Game Master should also prepare some additional actions that will grant you additional Elan."
+                    ]
+                },
+                {
+                    "name": "Name of a Dead Kingdom",
+                    "type": "entries",
+                    "entries": [
+                        "The name of your lost civilization and its citizens holds great power when they are spoken by you. As you gain Elan toward your Kingdom, you gain the following abilities.",
+                        {
+                            "name": "Mark of the Lost Land (5 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "**Intention**: 0 AP",
+                                "You speak the first name of your lost land and a symbol appears somewhere on your body that is related to your Kingdom. The mark at the start of the End Phase."
+                            ]
+                        },
+                        {
+                            "name": "Shield of the Forgotten (15 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "**Intention**: 1 AP",
+                                "While the Mark of the Lost Land is active, you speak the second name of your lost land and you gain a `+16` power bonus to prevent yourself from forgetting what you have learned about your Kingdom or to be emotionally manipulated from not fulfilling your goal."
+                            ]
+                        },
+                        {
+                            "name": "Light of Forgotten Knowledge (30 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "**Action**: 2 AP",
+                                "You speak the third name of your lost land while holding your wings up high. They produce a pulse of bright light that causes all objects that contain knowledge that one no alive knows to have a glowing outline for 1 minute. An unwilling object can make a [@skill SR @] 12 Check to prevent this. This power costs 1 Stamina Point to activate."
+                            ]
+                        },
+                        {
+                            "name": "Cloak of Steel (50 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "Your wings gain the Secondary Damage Type of Thrust and they gain `+10` Fortitude and `+2` Breakage. While the wings are disguised as a cloak, you can use it to shield yourself from projectiles."
+                            ]
+                        },
+                        {
+                            "name": "King of this Ancient Land (75 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "While you are in the territory of your lost land, you gain a Base Damage Negate of 20 against attacks that do not possess the [@trait Imbued @] trait."
+                            ]
+                        },
+                        {
+                            "name": "Crown of the Gate of Kings (100 Elan)",
+                            "type": "entries",
+                            "outline": 1,
+                            "entries": [
+                                "You have discovered the complete name of your Kingdom. Once you speak it all out loud, taking about 1 minute, the world will remember your Kingdom once again. You can choose to stay on the this plane or return to the Veil to rule your now remembered Kingdom as a Nornir 35 creature. If you choose to stay, your wings become made of pure mana and their Primary Damage Type becomes Light. Their Weapon Damage also increases to 12."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": "Baset",
+        "fluff": [
+
+        ],
+        "mix": {
+            "cost": "4 XP or 2 XP every level, until level 2",
+            "abilities": [
+                {
+                    "name": "Cat-like",
+                    "type": "entries",
+                    "entries": [
+                        "Your body shares many aspects with cats. Your Size is one lower and you naturally halve the damage from falling."
+                    ]
+                },
+                {
+                    "name": "Guard Against Vermin and Disease",
+                    "type": "entries",
+                    "entries": [
+                        "You have a natural resistance to natural toxins and diseases. Your have a `+4` power bonus to any [@skill IR @] Check against completely natural sources, if it is a substance derived from a natural source you do not gain the bonus. Any creature within 60-feet of you gain as `+2` power bonus to similar [@skill IR @] Checks. Additionally, vermin will naturally avoid you."
+                    ]
+                },
+                {
+                    "name": "Soothing Nature",
+                    "type": "entries",
+                    "entries": [
+                        "Any creature within 60-feet that makes a Resistance Check to avoid being calmed has the Resistance Check increased by 1 points. If you are the one who activated the calming power, the Resistance Check increases by 2 points. Similarly, any creature who is trying to resist an angering power has a `+1` to their Resistance Check."
+                    ]
+                },
+                {
+                    "name": "Soul of the Festival",
+                    "type": "entries",
+                    "entries": [
+                        "You love to celebrate, even minor things. While you are celebrating you gain the following effects. You have `A2` on all Social, Dance, and Music Skill Checks and any Resistance check to ignore the negative effects of anything consumed. Your Regeneration Value increases by 2 points. The Game Master will decide what is considered celebrating, but in general it requires at least 20 people."
+                    ]
+                }
+            ]
+        },
+        "single": {
+            "cost": "12 XP or 2 XP every level, until level 6",
+            "abilities": [
+                {
+                    "name": "Cat-like",
+                    "type": "entries",
+                    "entries": [
+                        "Your body shares many aspects with cats. For starters, you have a `+1` to [@stat Dexterity @], [@stat Agility @], and [@stat Perception @] and a `-1` to [@stat Constitution @] and [@stat Willpower @]. Additionally, your Size is one lower and you naturally halve the damage from falling. You also have retractable claws. If you gain training with them, you can use them as a natural weapon with the following profile.",
+                        "Weapon Damage: 3 -- Init Penalty: 0 -- Weapon Cost: 1"
+                    ]
+                },
+                {
+                    "name": "Guard Against Vermin and Disease",
+                    "type": "entries",
+                    "entries": [
+                        "You have a natural resistance to natural toxins and diseases. Your have a `+4` power bonus to any [@skill IR @] Check against completely natural sources, if it is a substance derived from a natural source you do not gain the bonus. Any creature within 60-feet of you gain as `+2` power bonus to similar [@skill IR @] Checks. Additionally, vermin will naturally avoid you."
+                    ]
+                },
+                {
+                    "name": "Soothing Nature",
+                    "type": "entries",
+                    "entries": [
+                        "Any creature within 100-feet that makes a Resistance Check to avoid being calmed has the Resistance Check increased by 2 points. If you are the one who activated the calming power, the Resistance Check increases by 4 points. Similarly, any creature who is trying to resist an angering power has a `+2` to their Resistance Check."
+                    ]
+                },
+                {
+                    "name": "Soul of the Festival",
+                    "type": "entries",
+                    "entries": [
+                        "You love to celebrate, even minor things. While you are celebrating you gain the following effects. You have `A4` on all Social, Dance, and Music Skill Checks and any Resistance check to ignore the negative effects of anything consumed. Your Regeneration Value is 8 or increases by 4 points, which ever is better. The Game Master will decide what is considered celebrating, but in general it requires at least 20 people."
+                    ]
+                }
+            ]
+        }
+    }
+]

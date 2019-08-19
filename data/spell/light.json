@@ -1,0 +1,2267 @@
+[
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 4,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 14,
+        "slot": "20"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 24,
+        "slot": "30"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 34,
+        "slot": "40"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 44,
+        "slot": "50"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 54,
+        "slot": "60"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 64,
+        "slot": "70"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 74,
+        "slot": "80"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 84,
+        "slot": "90"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 94,
+        "slot": "100"
+    },
+    {
+        "name": "Orb of Light",
+        "type": "path",
+        "level": 2,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [
+            "You create a small orb of light."
+        ],
+        "description": [
+            "You create material orb gives off the listed intensities of natural light."
+        ],
+        "degree": {
+            "base": {
+                "mana": 20,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "2 intensities"
+                ]
+            },
+            "intermediate": {
+                "mana": 50,
+                "int": 8,
+                "maint": 5,
+                "effect": [
+                    "10 intensities"
+                ]
+            },
+            "advanced": {
+                "mana": 100,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "20 intensities"
+                ]
+            },
+            "arcane": {
+                "mana": 200,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "50 intensities"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Calm Emotions",
+        "type": "path",
+        "level": 6,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [
+            "You calm the emotional state of creatures."
+        ],
+        "description": [
+            "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check suppress the any negative emotional state, such as [@state Anger @] and [@state Rage @]. The exception to this is the [@state Fear @] state, which is reduced by one degree. This does not stop actions done in cold blood.",
+            "The effects of this spell last until the End Phase. If the target has a negative emotional state by a power, the state returns. Natural emotions can return if the target so chooses."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 8",
+                    "30-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 10",
+                    "60-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 12",
+                    "120-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 14",
+                    "250-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Flare",
+        "type": "path",
+        "level": 8,
+        "power": [
+            "trigger",
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [
+            "You create a blinding flash of light."
+        ],
+        "description": [
+            "All entities in an area centered on a point of your choice must make a SR Check; a target gains a `+4` deed bonus to the Check if they are looking away or have their eyes covered -- closed eyes are not sufficient to count as cover.",
+            "A target that fails the Resistance Check gains the Partially Blind state. The state lasts for a number of rounds equal to their Degree of Failure. If the target has 10 or more Degrees of Failure, they instead gain the Totally Blind state until they have less than 10 rounds remaining."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "[@skill PhR @] 14",
+                    "30-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "[@skill PhR @] 14",
+                    "60-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "[@skill PhR @] 14",
+                    "120-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 200,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "[@skill PhR @] 14",
+                    "250-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Light Screen",
+        "type": "path",
+        "level": 10,
+        "power": [
+            "defense"
+        ],
+        "action": "swift",
+        "maintTime": "turn",
+        "tags": [
+            "barrier",
+            "imbued"
+        ],
+        "flavor": [
+            "A barrier of light forms to protect you."
+        ],
+        "description": [
+            "You create a supernatural barrier with the listed Life Points. This barrier possess the Imbued trait. Attacks using the Darkness Damage Type deal twice as much damage to the barrier."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "300 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "1000 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 180,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "1800 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "3000 Life Points",
+                    "The barrier is immune to attacks using the Physical Damage Group that do not have the [@trait Imbued @] trait."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Perceive",
+        "type": "path",
+        "level": 12,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [
+            "Your eyes fill with a powerful light, that enhances all your senses."
+        ],
+        "description": [
+            "You gain a power bonus to Notice and Search Checks. This power bonus also applies to Magic Appraisal Checks make to sense and measure mana."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "`+4` bonus"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 9,
+                "maint": 15,
+                "effect": [
+                    "`+8` bonus"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 12,
+                "maint": 20,
+                "effect": [
+                    "`+12` bonus"
+                ]
+            },
+            "arcane": {
+                "mana": 250,
+                "int": 15,
+                "maint": 25,
+                "effect": [
+                    "`+16` bonus"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Armor of Light",
+        "type": "path",
+        "level": 16,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [
+            "Particles of light solidify into a protective suit of armor."
+        ],
+        "description": [
+            "You gain a natural AV against Force and Light Damage Types and half as much against the Physical and Elemental Damage Groups."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "Force & Light 2 AV",
+                    "Physical & Elemental 1 AV"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "Force & Light 2 AV",
+                    "Physical & Elemental 1 AV"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Force & Light 2 AV",
+                    "Physical & Elemental 1 AV"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 20,
+                "effect": [
+                    "Force & Light 2 AV",
+                    "Physical & Elemental 1 AV"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Rebuke Darkness",
+        "type": "path",
+        "level": 18,
+        "power": [
+            "effect",
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [
+            "The creatures of shadow are harmed by this spell."
+        ],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. All darkness elementals or creatures composed of negative emotions within the zone must make a SR Check",
+            "A target that fails the Resistance Check takes 20 points of Force Damage per Degree of Failure. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] 14",
+                    "30-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 9,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] 18",
+                    "300-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 180,
+                "int": 12,
+                "maint": 20,
+                "effect": [
+                    "[@skill SR @] 22",
+                    "800-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 240,
+                "int": 15,
+                "maint": 25,
+                "effect": [
+                    "[@skill SR @] 26",
+                    "1500-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Detect Negative Emotions",
+        "type": "path",
+        "level": 20,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [
+            "Using the light, you are able to sense the negative threads of energy around you."
+        ],
+        "description": [
+            "You create a stationary zone centered on you. You detect the negative emotions of all entities within the zone. This sense informs you of the type and intensity of negative emotion but not its location. You can also detect creatures composed of negative emotions, and sense their location.",
+            "A target can resist the detection by making a SR Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 8",
+                    "60-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 12",
+                    "300-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 12,
+                "maint": 20,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 16",
+                    "1000-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 20",
+                    "3000-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Light Beam",
+        "type": "path",
+        "level": 22,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [
+            "A beam of intense light flies forth."
+        ],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, the target takes Light Damage with the listed Base Damage."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 6"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 9"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 12"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 15"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Hologram",
+        "type": "path",
+        "level": 26,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [
+            "active figment illusion"
+        ],
+        "flavor": [
+            "This spell creates the image of an entity."
+        ],
+        "description": [
+            "You create a visual active figment that is no larger than the listed size. The illusion is composed of light; it cannot interact with any entity and it disappears when it is hit by an attack with the Imbued trait.",
+            "A creature can determine the nature of the illusion by making an Almost Impossible (24) Notice Check or a Very Difficult (16) [@skill Search @] Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "3 cubic feet or about a Medium sized creature"
+                ]
+            },
+            "intermediate": {
+                "mana": 150,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "50 cubic feet or about a Large sized creature"
+                ]
+            },
+            "advanced": {
+                "mana": 250,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "150 cubic feet or about a Huge sized creature"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "300 cubic feet or about a Gargantuan sized creature"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Chains of Light",
+        "type": "path",
+        "level": 28,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [
+            "trapping"
+        ],
+        "flavor": [
+            "Chains of light latch onto a creature."
+        ],
+        "description": [
+            "You make an Trap maneuver against an entity. The Opposed Characteristic Check uses the listed Strength.",
+            "The chains are material and have the Imbued trait and a Fortitude of 25 but can only be broken by an object with the Imbued trait."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "[@stat Strength @] 8"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "[@stat Strength @] 10"
+                ]
+            },
+            "advanced": {
+                "mana": 140,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "[@stat Strength @] 12",
+                    "Fortitude 30"
+                ]
+            },
+            "arcane": {
+                "mana": 180,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "[@stat Strength @] 16",
+                    "Fortitude 35"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Control Light",
+        "type": "path",
+        "level": 30,
+        "power": [
+            "effect",
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [
+            "control"
+        ],
+        "flavor": [
+            "This spell gives you control over the light around you."
+        ],
+        "description": [
+            "You create a zone centered on you. You gain the following actions:",
+            {
+                "name": "Control Creature of Light",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 2 AP",
+                    "You can gain control over a light elemental within the zone. A target must make a SR Check. A target that succeeds is immune to the control from this spell for a number of rounds equal to their Degree of Success.",
+                    "Failure means the target falls under your control. This control is active, meaning you must spend AP to make the target perform actions.",
+                    "A target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check. If the target ever leaves the zone or the spell ends, your control ends."
+                ]
+            },
+            {
+                "name": "Modify Light",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 1 AP",
+                    "You can change the shape, color, and intensity of a source of light within the zone. You cannot increase the intensity to more than twice its original value."
+                ]
+            },
+            {
+                "name": "Redirect Light",
+                "type": "entries",
+                "entries": [
+                    "**Reaction**: 0 AP",
+                    "You can take this reaction when an attack using Light Damage passes through the zone suffers `D2` on the Offensive Roll."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "[@skill SR @] 8",
+                    "30-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 150,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "[@skill SR @] 14",
+                    "150-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 250,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "[@skill SR @] 18",
+                    "300-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 16,
+                "maint": 30,
+                "effect": [
+                    "[@skill SR @] 22",
+                    "500-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Detect Life",
+        "type": "path",
+        "level": 32,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [
+            "The light allows you to sense the life around you."
+        ],
+        "description": [
+            "You create a zone centered on you. You detect the life of creatures within the zone. This sense informs you of the location of creatures but not their strength.",
+            "A target can resist the detection by making a SR Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "[@skill SR @] 14",
+                    "60-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] 18",
+                    "150-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] 22",
+                    "500-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "[@skill SR @] 28",
+                    "1000-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Spy of Light",
+        "type": "path",
+        "level": 36,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [
+            "An eye of light appears before you."
+        ],
+        "description": [
+            "You must actively control the spy. The spy is material but only visible on the material plane. It is immune to damage that does not have the Imbued trait. The spy also have a Flight Value of 14; if it even flies farther than the listed distance it disappears. You gain the following actions:",
+            {
+                "name": "See Through Spy",
+                "type": "entries",
+                "entries": [
+                    "**Intention**: 0 AP",
+                    "This intention allows you to project your sight through the spy. The spy has the listed Final Skill Value for the Notice and Search Skills."
+                ]
+            },
+            "While you can see the spy or are seeing through it, you can use your Spell Projection to perform Defensive Rolls for the spy."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 6,
+                "maint": 20,
+                "effect": [
+                    "Final Skill Value 10",
+                    "Maximum distance 1 mile"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 9,
+                "maint": 40,
+                "effect": [
+                    "Final Skill Value 15",
+                    "Maximum distance 10 miles"
+                ]
+            },
+            "advanced": {
+                "mana": 300,
+                "int": 12,
+                "maint": 60,
+                "effect": [
+                    "Final Skill Value 20",
+                    "Maximum distance 50 miles"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 16,
+                "maint": 80,
+                "effect": [
+                    "Final Skill Value 25",
+                    "Maximum distance 500 miles"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Imbue with Positive Feeling",
+        "type": "path",
+        "level": 38,
+        "power": [
+            "effect",
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [
+            "This spell imbues creatures with a feeling of ecstasy."
+        ],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check feels an overwhelmingly pleasurable sensation, causing a `-2` all-action penalty and they ignore the Pain state caused by exhaustion and Criticals."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] 8",
+                    "30-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] 10",
+                    "100-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] 12",
+                    "300-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] 16",
+                    "1000-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Banish Negative Emotions",
+        "type": "path",
+        "level": 40,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [
+            "area effect"
+        ],
+        "description": [
+            "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR or MR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check suppress the any negative emotional state, such as [@state Anger @] and [@state Rage @]. The exception to this is the [@state Fear @] state, which is reduced by one degree. This does not stop actions done in cold blood.",
+            "The effects of this spell last one minute per Degree of Failure. A target can repeat the Resistance Check when they take damage, this new Check does not change the number of minutes remaining. The effects of this spell do not require maintaince."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 10",
+                    "300-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 14",
+                    "1000-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 18",
+                    "1-mile radius"
+                ]
+            },
+            "arcane": {
+                "mana": 360,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 22",
+                    "5-mile radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Healing Light",
+        "type": "path",
+        "level": 42,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [
+            "healing"
+        ],
+        "description": [
+            "An entity of your choice recovers Life Points. This spell cannot restore damaged limbs or eliminate Pain."
+        ],
+        "degree": {
+            "base": {
+                "mana": 70,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "40 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "80 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "120 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 200,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "250 Life Points"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Seeking Light",
+        "type": "path",
+        "level": 46,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target takes Light Damage with the listed Base Damage and disappears.",
+            "If the target dodges, the spell can make another Offensive Roll on your turn next round by taking the [@action Use an Active Power action @]. If the target blocks, the sphere disappears.",
+            "You can choose to stop controlling the sphere. It will then act on its own Final Initiative Roll of 0 and any Offensive Roll the sphere makes uses the listed Final Roll Value.",
+            "If you stop maintaining the spell, the sphere disappears."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 6,
+                "maint": 15,
+                "effect": [
+                    "Base Damage 10",
+                    "Final Offensive Roll 12"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "Base Damage 12",
+                    "Final Offensive Roll 16"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "Base Damage 16",
+                    "Final Offensive Roll 20"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "Base Damage 20",
+                    "Final Offensive Roll 24"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Zone of Detection",
+        "type": "path",
+        "level": 48,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. You detect any living creature within the zone. This sense informs you of each creatures location.",
+            "A target can resist the detection by making a SR Check.",
+            "The spell also informs you of any other detection spell that overlaps with this one. The caster can make a SR Check to prevent this."
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 7,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] 18",
+                    "60-foot radius sphere"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] 24",
+                    "240-foot radius sphere"
+                ]
+            },
+            "advanced": {
+                "mana": 280,
+                "int": 13,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] 28",
+                    "500-foot radius sphere"
+                ]
+            },
+            "arcane": {
+                "mana": 360,
+                "int": 16,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] 32",
+                    "1000-foot radius sphere"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Enter Another's Dream",
+        "type": "path",
+        "level": 50,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You make an Offensive Roll against a dreaming entity. On a hit, a target must make a SR or MR Check.",
+            "A target that fails the Resistance Check has their dream invaded by you.",
+            "You physically enter the dream of a creature within the listed range. You have no control over the dream and anything that happens there will be real for you.",
+            "A target must have a peaceful dream to be affect by this spell. When you stop maintaining the spell or the target wakes up, dies, or has their dream become a nightmare you are returned to the material plane next to the target.",
+            "While you are in a dream, you can jump to the dream of another creature within the listed range of the target. The new target must make a SR or MR Check. If they succeed, you stay in your current dream.",
+            "Once a target succeeds the Resistance Check, they are immune to the spell until they wake up and fall asleep again. If you enter a dream that overlaps with the Veil, you do not return to the material plane when the spell ends."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 12",
+                    "Jump distance 30 feet"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 16",
+                    "Jump distance 240 feet"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 20",
+                    "Jump distance 500 feet"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 24",
+                    "Jump distance 1500 feet"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Light Form",
+        "type": "path",
+        "level": 52,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "An entity of your choice transforms into pure light. The target gains the Immaterial and Imbued traits and can choose to interact with material entities at will. The target also gains a power bonus Notice and Search Checks and half that to Resistance Checks against light-based powers but doubles the Final Damage from any attack using the Darkness Damage Type."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "[@skill Notice @] and [@skill Search @] Checks `+4`",
+                    "Resistance Checks `+2`"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 10,
+                "maint": 15,
+                "effect": [
+                    "[@skill Notice @] and [@skill Search @] Checks `+6`",
+                    "Resistance Checks `+3`"
+                ]
+            },
+            "advanced": {
+                "mana": 140,
+                "int": 14,
+                "maint": 15,
+                "effect": [
+                    "As intermediate degree but the Resistance Check bonus applies to all Resistance Checks not against darkness-based powers"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 18,
+                "maint": 20,
+                "effect": [
+                    "As advanced degree but the target does not take additional damage from Darkness Damage"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Blessing",
+        "type": "path",
+        "level": 56,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You create a zone centered on you. All entities of your choice within the zone gain Advantage on their Skill and Resistance Checks. A target cannot be affected by more than one Blessing spell."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 8,
+                "maint": 5,
+                "effect": [
+                    "`A1`",
+                    "15-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "`A2`",
+                    "60-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 15,
+                "effect": [
+                    "`A3`",
+                    "120-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 17,
+                "maint": 15,
+                "effect": [
+                    "`A4`",
+                    "500-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create Positive Feeling",
+        "type": "path",
+        "level": 58,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check is filled with positive feelings, such as love and friendship.",
+            "A target can repeat the Resistance Check after one day has passed or when they take damage."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 12",
+                    "60-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 16",
+                    "300-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 18",
+                    "750-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 18,
+                "maint": 30,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 22",
+                    "1500-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "See Truth",
+        "type": "path",
+        "level": 60,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "An entity of your choice gains the ability to see beyond the material plane. The target also gains a power bonus to Resistance Checks against phantasmal illusions."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "The target can see mana, phenom, and spirits",
+                    "`+3` against phantasms"
+                ]
+            },
+            "intermediate": {
+                "mana": 0,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "As base, but the target can see invisible beings"
+                ]
+            },
+            "advanced": {
+                "mana": 0,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "As intermediate, but `+5` against phantasms"
+                ]
+            },
+            "arcane": {
+                "mana": 0,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "As advanced, but `+8` against phantasms"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Shield from Negative Emotions",
+        "type": "path",
+        "level": 62,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. All darkness elementals and entities composed of negative emotions within the zone must make a SR Check.",
+            "A target that fails the Resistance Check takes 10 points of Atomic Damage per Degree of Failure and gains the [@state Pain (4) @] state. The Pain state lasts until a target leaves the zone. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier.",
+            "The Resistance Check is only made the first time a target enters the zone each round or if it starts the Action Phase in the zone. A target can only be subject to [@state Pain (4) @] once from any Shield from Negative spell"
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] 12",
+                    "60-foot radius sphere"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "[@skill SR @] 14",
+                    "300-foot radius sphere"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "[@skill SR @] 16",
+                    "1000-foot radius sphere"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 18,
+                "maint": 30,
+                "effect": [
+                    "[@skill SR @] 18",
+                    "1500-foot radius sphere"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Find",
+        "type": "path",
+        "level": 66,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "description": [
+            "Choose a single person, place, or thing that you wish to find. The target must make a SR Check.",
+            "You learn the exact location of a target that fails the Resistance Check. If the target succeeds, the spell will try to find the next closest entity that matches the target or it will fail if it is unable to find a suitable match.",
+            "The target can be selected with a vague description or set of conditions. As per the normal rules for spells, if the object is within an [@trait Imbued @] zone, the spell cannot find it."
+        ],
+        "degree": {
+            "base": {
+                "mana": 160,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] 14"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] 18"
+                ]
+            },
+            "advanced": {
+                "mana": 260,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] 22"
+                ]
+            },
+            "arcane": {
+                "mana": 320,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "[@skill SR @] 26"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Restore",
+        "type": "path",
+        "level": 68,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "description": [
+            "An entity of your choice removes a number of degrees of [@state Pain @] that have been caused by low Stamina, hunger, non-Critical Damage, or a power. ",
+            "This spell only removes the [@state Pain @], it does not prevent it from returning."
+        ],
+        "degree": {
+            "base": {
+                "mana": 150,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "Remove 4 degrees of [@state Pain @]"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "Remove 8 degrees of [@state Pain @]"
+                ]
+            },
+            "advanced": {
+                "mana": 250,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "Remove 12 degrees of [@state Pain @]"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "Remove all degrees of [@state Pain @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Hypnotic Display",
+        "type": "path",
+        "level": 70,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You create a stationary hypnotic pattern. All entities that looks at it while in the area of its effect must make a SR or MR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check gains the Fascinated state. A target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check. A target can also repeat the Resistance Check when they take damage with a +2 deed bonus, this new Check does not change the number of minutes remaining.",
+            "Once a target has passed the Resistance Check, they cannot be affected until a new Hypnotic Pattern spell is cast."
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 10,
+                "maint": 5,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 12",
+                    "1 mile"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 12,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 14",
+                    "3 miles"
+                ]
+            },
+            "advanced": {
+                "mana": 280,
+                "int": 16,
+                "maint": 10,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 18",
+                    "10 miles"
+                ]
+            },
+            "arcane": {
+                "mana": 360,
+                "int": 20,
+                "maint": 15,
+                "effect": [
+                    "[@skill SR @] or [@skill MR @] 22",
+                    "15 miles"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Catastrophic Light",
+        "type": "path",
+        "level": 72,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [
+            "area attack"
+        ],
+        "description": [
+            "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target takes Light Damage with the listed Base Damage."
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 12",
+                    "20-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 15",
+                    "60-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 20",
+                    "120-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 25",
+                    "240-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Luminous Material",
+        "type": "path",
+        "level": 76,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [
+            "creation"
+        ],
+        "description": [
+            "You create an object whose Presence is no greater than the listed value. The object has the listed Quality."
+        ],
+        "degree": {
+            "base": {
+                "mana": 150,
+                "int": 10,
+                "maint": 15,
+                "effect": [
+                    "Presence 6",
+                    "Quality +0"
+                ]
+            },
+            "intermediate": {
+                "mana": 0,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Presence 10",
+                    "Quality +1"
+                ]
+            },
+            "advanced": {
+                "mana": 0,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "Presence 14",
+                    "Quality +1"
+                ]
+            },
+            "arcane": {
+                "mana": 0,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "Presence 18",
+                    "Quality +2"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Travel by Light",
+        "type": "path",
+        "level": 76,
+        "power": [
+            "effect",
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [
+            "teleport",
+            "affected presence"
+        ],
+        "description": [
+            "Choose a number of entities whose total Presence is no greater than the listed value. A target must make a SR Check; a target can choose to fail.",
+            "All targets that fails the Resistance Check are transport from one source of light to another, up to the listed distance away.",
+            "This spell fails if there is no source of light near you at the time of casting or if there is no light source where you intend to end up."
+        ],
+        "degree": {
+            "base": {
+                "mana": 250,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "Max distance 500 miles",
+                    "Max presence 25",
+                    "[@skill SR @] 4"
+                ]
+            },
+            "intermediate": {
+                "mana": 360,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Max distance 1000 miles",
+                    "Max presence 50",
+                    "[@skill SR @] 8"
+                ]
+            },
+            "advanced": {
+                "mana": 450,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "Max distance 5000 miles",
+                    "Max presence 100",
+                    "[@skill SR @] 12"
+                ]
+            },
+            "arcane": {
+                "mana": 600,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "Max distance 15,000 miles",
+                    "Max presence 200",
+                    "[@skill SR @] 16"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Lord of Dreams",
+        "type": "path",
+        "level": 80,
+        "power": [
+            "effect",
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [
+            "veil"
+        ],
+        "description": [
+            "The entity whose dream you are in must make a SR Check; a target can choose to fail. On a failure, you gain control over the dream. You can modify the dream as if you were a Nornir 45 entity -- all other benefits of Nornir do not apply. If the dream becomes a nightmare, you instead have Nornir 30.",
+            "A target can repeat the Resistance Check on the End Phase after a number of hours have passed equal to their Degree of Failure on the previous Check.",
+            "The spell ends when the target passes the SR Check or you leave the dream."
+        ],
+        "degree": {
+            "base": {
+                "mana": 300,
+                "int": 12,
+                "maint": 60,
+                "effect": [
+                    "[@skill SR @] 14"
+                ]
+            },
+            "intermediate": {
+                "mana": 400,
+                "int": 14,
+                "maint": 65,
+                "effect": [
+                    "[@skill SR @] 14",
+                    "If you are in the Veil and in an area of positive energy, you can control your surroundings as if it were a dream. Neutral areas and areas of negative energy use the reduced Nornir. This does not work if there is a creature with similar or greater levels of Nornir."
+                ]
+            },
+            "advanced": {
+                "mana": 500,
+                "int": 18,
+                "maint": 70,
+                "effect": [
+                    "[@skill SR @] 16"
+                ]
+            },
+            "arcane": {
+                "mana": 750,
+                "int": 22,
+                "maint": 80,
+                "effect": [
+                    "[@skill SR @] 18"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create Creature of Light",
+        "type": "path",
+        "level": 82,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [
+            "monad"
+        ],
+        "description": [
+            "You create a monad creature. The creature's level can be no greater than the listed value and must follow the rules for monad creatures. The creature is created with the following rules:",
+            {
+                "type": "list",
+                "items": [
+                    "The creature is a light elemental with Nornir 20."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 250,
+                "int": 12,
+                "maint": 50,
+                "effect": [
+                    "Level 2"
+                ]
+            },
+            "intermediate": {
+                "mana": 350,
+                "int": 14,
+                "maint": 70,
+                "effect": [
+                    "Level 4"
+                ]
+            },
+            "advanced": {
+                "mana": 500,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "Level 8"
+                ]
+            },
+            "arcane": {
+                "mana": 700,
+                "int": 22,
+                "maint": 140,
+                "effect": [
+                    "Level 12"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Reflecting Prism",
+        "type": "path",
+        "level": 86,
+        "power": [
+            "defense"
+        ],
+        "action": "swift",
+        "maintTime": "day",
+        "tags": [
+            "barrier"
+        ],
+        "description": [
+            "You create a supernatural barrier with the listed Life Points. You also gain the Reflect Power action.",
+            {
+                "name":"Reflect Power",
+                "type":"entries",
+                "entries":[
+                    "**Reaction**: 1 AP",
+                    "You can take this reaction when you obtain at least 1 Degree of Success on a Defensive Roll with a Reflecting Prism against an attack power. You can make a Power Collision using the listed Base Damage. On a failure, the attacking power dissipates into nothing.",
+                    "On a success, you can make an Offensive Roll using your Spell Projection and gain a Counter bonus equal to half your Degree of Success on the Defensive Roll. The attack has the same Base Damage, effects, and traits as the original attack.",
+                    "You can use this to reflect an area attack, but you only reflect the part that hits you."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 160,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "800 Life Points",
+                    "Collision using Base Damage 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 250,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "1500 Life Points",
+                    "Collision using Base Damage 12"
+                ]
+            },
+            "advanced": {
+                "mana": 300,
+                "int": 16,
+                "maint": 30,
+                "effect": [
+                    "3000 Life Points",
+                    "Collision using Base Damage 14"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 20,
+                "maint": 40,
+                "effect": [
+                    "6000 Life Points",
+                    "Collision using Base Damage 18"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Omniscience",
+        "type": "path",
+        "level": 88,
+        "power": [
+            "automatic"
+        ],
+        "action": "swift",
+        "maintTime": "turn",
+        "tags": [],
+        "description": [
+            "You create a zone centered on you. You can see and hear all actions and understand the thoughts of all entities in the zone whose Presence is less than your and the listed value.",
+            "This spell is not a detection spell and no Resistance Check is possible."
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 10,
+                "maint": 40,
+                "effect": [
+                    "Presence 6",
+                    "500-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 250,
+                "int": 12,
+                "maint": 50,
+                "effect": [
+                    "Presence 8",
+                    "1-mile radius"
+                ]
+            },
+            "advanced": {
+                "mana": 400,
+                "int": 16,
+                "maint": 60,
+                "effect": [
+                    "Presence 10",
+                    "3-mile radius"
+                ]
+            },
+            "arcane": {
+                "mana": 800,
+                "int": 20,
+                "maint": 65,
+                "effect": [
+                    "Presence 12",
+                    "10-mile radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Predict",
+        "type": "path",
+        "level": 90,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "description": [
+            "You make an Offensive Roll against an person, place, or thing. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "On a failure, you foresee the future events that will occur to the target. You see detailed information about the most probable outcome."
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "Up to 1 year"
+                ]
+            },
+            "intermediate": {
+                "mana": 300,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Up to 5 years"
+                ]
+            },
+            "advanced": {
+                "mana": 450,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "Up to 50 years",
+                    "A prediction that is one day away will be very accurate"
+                ]
+            },
+            "arcane": {
+                "mana": 600,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "Up to 100 years",
+                    "A prediction that is one year away will be very accurate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Prison of Light",
+        "type": "path",
+        "level": 92,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check is trapped in a pocket dimension which takes the form of a glass bead.",
+            "While the target is in the bead, they have no knowledge of what occurs outside. The effects of this spell do not allow for another Resistance Check. But the target can escape by attacking the world. The world uses the Rex Damage Role -- it has Absorption 10 and Regeneration 19 as well as the listed Life Points.",
+            "An entity outside the pocket dimension has no knowledge about what is within. An entity can attack the bead, which has the same characteristics as the world inside pocket dimension. The bead is immune to attacks that do not have the Imbued (18) trait. Like the target trapped within, an entity can attack the bead"
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 14,
+                "maint": 40,
+                "effect": [
+                    "[@skill SR @] 14",
+                    "10,000 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 350,
+                "int": 16,
+                "maint": 70,
+                "effect": [
+                    "[@skill SR @] 18",
+                    "250,000 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 500,
+                "int": 20,
+                "maint": 100,
+                "effect": [
+                    "[@skill SR @] 20",
+                    "500,000 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 800,
+                "int": 24,
+                "maint": 160,
+                "effect": [
+                    "[@skill SR @] 22",
+                    "500,000 Life Points",
+                    "The prison cannot be broken from the inside"
+                ]
+            }
+        }
+    },
+    {
+        "name": "One with the Light",
+        "type": "path",
+        "level": 96,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "description": [
+            "You enter a state of meditation in which your body becomes one with the light. You leave this world and travel to the Nexus to nourish yourself with the energies found there. While there, you are only aware of your own body; the passage of time is meaningless. Your Mana Recovery is multiplied by 10 and you gain a physical and spiritual Regeneration Value of 16. While there is no maintenance cost, you can remain in the nexus for the listed time, you can try to leave early but there is a 50% chance it will take you the entire time."
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "One day"
+                ]
+            },
+            "intermediate": {
+                "mana": 400,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "One week"
+                ]
+            },
+            "advanced": {
+                "mana": 600,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "One month"
+                ]
+            },
+            "arcane": {
+                "mana": 800,
+                "int": 22,
+                "maint": 0,
+                "effect": [
+                    "One year"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Pure Ascension",
+        "type": "path",
+        "level": 98,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "description": [
+            "An entity of your choice gains the listed Nornir value and they gain the Divine feature."
+        ],
+        "degree": {
+            "base": {
+                "mana": 500,
+                "int": 14,
+                "maint": 30,
+                "effect": [
+                    "Nornir 30"
+                ]
+            },
+            "intermediate": {
+                "mana": 1000,
+                "int": 16,
+                "maint": 40,
+                "effect": [
+                    "Nornir 35"
+                ]
+            },
+            "advanced": {
+                "mana": 2000,
+                "int": 20,
+                "maint": 45,
+                "effect": [
+                    "Nornir 40"
+                ]
+            },
+            "arcane": {
+                "mana": 5000,
+                "int": 24,
+                "maint": 50,
+                "effect": [
+                    "Nornir 45"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Lumen Onslaught",
+        "type": "path",
+        "level": 100,
+        "power": [
+            "attack",
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [
+            "area attack",
+            "flowing",
+            "immaterial"
+        ],
+        "description": [
+            "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. This attack has the [@state Flowing @] and [@state Immaterial (20) @] traits. On a hit, a target takes Light Damage with the listed Base Damage. If a target takes any damage, they must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check has its body and soul destroyed completely.",
+            "This spell cannot select targets, even if another power would allow you to; everyone in the area, but you, is equally affected."
+        ],
+        "degree": {
+            "base": {
+                "mana": 600,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 35",
+                    "300-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 1000,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 50",
+                    "100-mile radius"
+                ]
+            },
+            "advanced": {
+                "mana": 2500,
+                "int": 24,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 80",
+                    "10,000-mile radius"
+                ]
+            },
+            "arcane": {
+                "mana": 5000,
+                "int": 30,
+                "maint": 0,
+                "effect": [
+                    "Base Damage 100",
+                    "1-au radius"
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,54 @@
+{
+    "name": "template",
+    "type": "path",
+    "level": 0,
+    "power": [
+        "attack",
+        "defense",
+        "effect",
+        "automatic",
+        "trigger",
+        "detection"
+    ],
+    "action": "active",
+    "maintTime": "turn",
+    "tags": [],
+    "flavor":[],
+    "description": [
+        "something"
+    ],
+    "degree": {
+        "base": {
+            "mana": 0,
+            "int": 6,
+            "maint": 0,
+            "effect": [
+                "something"
+            ]
+        },
+        "intermediate": {
+            "mana": 0,
+            "int": 9,
+            "maint": 0,
+            "effect": [
+                "something"
+            ]
+        },
+        "advanced": {
+            "mana": 0,
+            "int": 12,
+            "maint": 0,
+            "effect": [
+                "something"
+            ]
+        },
+        "arcane": {
+            "mana": 0,
+            "int": 15,
+            "maint": 0,
+            "effect": [
+                "something"
+            ]
+        }
+    }
+}

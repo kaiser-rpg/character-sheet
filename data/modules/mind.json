@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Phenom Projection as Strike",
+        "effect":[
+            "The Base Value of your offensive [@skill Phenom Projection @] is the same as your Base [@skill Strike @] Value."
+        ],
+        "cost": 6
+    },
+    {
+        "name": "Phenom Projection as Block or Dodge",
+        "effect":[
+            "The Base Value of your defensive [@skill Phenom Projection @] is the same as your Base [@skill Block @] or [@skill Dodge @] Value."
+        ],
+        "cost": 5
+    },
+    {
+        "name": "Phenom Projection as Spell Projection",
+        "effect":[
+            "The Base Value of [@skill Phenom Projection @] is the same as your Base [@skill Spell Projection @] Value."
+        ],
+        "requirements":[
+            "The Gift feature",
+            "Access to Phenom feature"
+        ],
+        "cost": 12
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "title": "Directed Attack",
+        "index": "100",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Body Part",
+                "Deed Penalty"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "Neck",
+                    "`-8`"
+                ],
+                [
+                    "Head",
+                    "`-6`"
+                ],
+                [
+                    "Elbow",
+                    "`-6`"
+                ],
+                [
+                    "Heart",
+                    "`-6`"
+                ],
+                [
+                    "Groin",
+                    "`-6`"
+                ],
+                [
+                    "Foot",
+                    "`-5`"
+                ],
+                [
+                    "Hand",
+                    "`-4`"
+                ],
+                [
+                    "Knee",
+                    "`-4`"
+                ],
+                [
+                    "Abdomen",
+                    "`-2`"
+                ],
+                [
+                    "Arm",
+                    "`-2`"
+                ],
+                [
+                    "Thigh",
+                    "`-2`"
+                ],
+                [
+                    "Calf",
+                    "`-1`"
+                ],
+                [
+                    "Torso",
+                    "`-1`"
+                ],
+                [
+                    "Eye",
+                    "`-10`"
+                ],
+                [
+                    "Wrist",
+                    "`-4`"
+                ],
+                [
+                    "Shoulder",
+                    "`-3`"
+                ]
+            ]
+        },
+        "postEntries": [
+            "This table only contains humanoid penalties."
+        ]
+    },
+    {
+        "title": "Trap Result",
+        "index": "200",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Degrees of Success",
+                "Result"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "1 to 2",
+                    "Partially Restrained"
+                ],
+                [
+                    "3 to 10",
+                    "Mostly Restrained"
+                ],
+                [
+                    "11+",
+                    "Fully Restrained"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Impact Base Distance",
+        "index": "300",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Strength",
+                "Base Distance"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "5",
+                    "5 feet"
+                ],
+                [
+                    "6 to 7",
+                    "10 feet"
+                ],
+                [
+                    "8 to 10",
+                    "15 feet"
+                ],
+                [
+                    "11 to 13",
+                    "20 feet"
+                ],
+                [
+                    "14 to 16",
+                    "25 feet"
+                ],
+                [
+                    "17 to 19",
+                    "30 feet"
+                ],
+                [
+                    "20 to 23",
+                    "35 feet"
+                ],
+                [
+                    "24 to 27",
+                    "40 feet"
+                ],
+                [
+                    "28 to 29",
+                    "45 feet"
+                ],
+                [
+                    "30",
+                    "50 feet"
+                ]
+            ],
+            "postEntries": [
+                "Final Distance = DoS × Base Distance"
+            ]
+        }
+    },
+    {
+        "title": "Impact Base Distance",
+        "index": "301",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Severity",
+                "Distance Traveled",
+                "Collision",
+                "Final Damage"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-4",
+                "col-4",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "Level 1",
+                    "5 to 60 feet",
+                    "bed of hay",
+                    "0 to 10"
+                ],
+                [
+                    "Level 2",
+                    "30 to 150 feet",
+                    "collapsing structure",
+                    "5 to 50"
+                ],
+                [
+                    "Level 3",
+                    "100 to 400 feet",
+                    "sand or dirt",
+                    "10 to 100"
+                ],
+                [
+                    "Level 4",
+                    "300 feet to 1 mile ",
+                    "rigid structure",
+                    "50 to 500"
+                ],
+                [
+                    "Level 5",
+                    "more than 1 mile ",
+                    "solid metal or stone",
+                    "250 to 2,500"
+                ]
+            ]
+        }
+    }
+]

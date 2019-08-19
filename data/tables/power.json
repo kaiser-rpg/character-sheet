@@ -1,0 +1,141 @@
+[
+    {
+        "title": "Power Collision",
+        "index": "100",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "DoD",
+                "Effect"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "0 to 5",
+                    "Both powers cancel each other out."
+                ],
+                [
+                    "6 to 10",
+                    "The wining power passes through the other; but its Base Damage is halved."
+                ],
+                [
+                    "11+",
+                    "The wining power passes through the other completely."
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Power Action Usage",
+        "index": "200",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Action Requirement",
+                "How to Activate"
+            ],
+            "colStyles": [
+                "col-5",
+                "col-7"
+            ],
+            "rows": [
+                [
+                    "Active",
+                    "Use the action [@action Use an Active Power @]."
+                ],
+                [
+                    "Reaction",
+                    "Use the action [@action Use an Reaction Power @]."
+                ],
+                [
+                    "Swift",
+                    "Use the action [@action Use an Swift Power @]."
+                ],
+                [
+                    "Attack",
+                    "The power is activated as part of [@action Attack Action @], but instead of making an Offensive Roll with a weapon, the power will list what to use. This counts towards and is affected by the multiple attack penalty."
+                ],
+                [
+                    "Defend",
+                    "Use the action [@action Defend with a Barrier @]. Some powers with this requirement are instead activated as part of the [@action Defend with Block or Dodge Action @]."
+                ],
+                [
+                    "Counterattack",
+                    "The power is activated as part of [@action Counter @] action, but instead of making an Offensive Roll with a weapon, the power will list what to use. This counts towards and is affected by the multiple attack penalty."
+                ],
+                [
+                    "Complete Round",
+                    "Use the action [@action Use a Complete Power @]. The effects of the power do not occur until the End Phase."
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Power Distance",
+        "index": "300",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Projection Value",
+                "Distance"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "Less than 4",
+                    "Powers you activate can only target you or you must be in contact with the target."
+                ],
+                [
+                    "Easy (4)",
+                    "20 feet"
+                ],
+                [
+                    "Medium (8)",
+                    "80 feet"
+                ],
+                [
+                    "Difficult (12)",
+                    "150 feet"
+                ],
+                [
+                    "Very Difficult (16)",
+                    "300 feet"
+                ],
+                [
+                    "Absurd (20)",
+                    "600 feet"
+                ],
+                [
+                    "Almost Impossible (24)",
+                    "1,500 feet"
+                ],
+                [
+                    "Impossible (28)",
+                    "3,000 feet"
+                ],
+                [
+                    "Inhuman (32)",
+                    "1 mile"
+                ],
+                [
+                    "Zen (44)",
+                    "3 miles"
+                ],
+                [
+                    "Legendary (60)",
+                    "10 miles"
+                ],
+                [
+                    "Divine (80)",
+                    "50 miles"
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,1522 @@
+[
+    {
+        "title": "Fumble Result",
+        "index": "100",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Fumble Result",
+                "Difficulty Check",
+                "Opposed Check"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-5",
+                "col-5"
+            ],
+            "rows": [
+                [
+                    "2 to 5",
+                    "The attempt simply does not work.",
+                    "The die roll is 0. You can still add your skill value."
+                ],
+                [
+                    "6 to 11",
+                    "The attempt has a negative effect on the character.",
+                    "The die roll is a -5. You can still add your skill value. You cannot go below 0."
+                ],
+                [
+                    "12+",
+                    "The attempt has a disastrous effect on the character.",
+                    "The die roll is -10. You can still add your skill value. You cannot go below 0."
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Fumble Chance",
+        "index": "110",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Fumble Degree",
+                "How to Fumble"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-7"
+            ],
+            "rows": [
+                [
+                    "-3",
+                    "Fumble on five ones (must have D3 or higher)"
+                ],
+                [
+                    "-2",
+                    "Fumble on four ones (must have D2 or higher)"
+                ],
+                [
+                    "-1",
+                    "Fumble on three ones (must have D1 or higher)"
+                ],
+                [
+                    "0",
+                    "Fumble on double 1"
+                ],
+                [
+                    "+1",
+                    "Fumble on double 1, 2"
+                ],
+                [
+                    "+2",
+                    "Fumble on double 1, 2, 3"
+                ],
+                [
+                    "+3",
+                    "Fumble on double 1, 2, 3, 4"
+                ],
+                [
+                    "+4",
+                    "Fumble on double 1, 2, 3, 4, 5"
+                ],
+                [
+                    "+5",
+                    "Fumble on any double, cannot gain an Open Roll"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Characteristic Modifiers",
+        "index": "200",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Characteristic",
+                "Modifier"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "`-3`"
+                ],
+                [
+                    "2 - 3",
+                    "`-2`"
+                ],
+                [
+                    "4",
+                    "`-1`"
+                ],
+                [
+                    "5",
+                    "`+0`"
+                ],
+                [
+                    "6 - 7",
+                    "`+1`"
+                ],
+                [
+                    "8 - 9",
+                    "`+2`"
+                ],
+                [
+                    "10 - 12",
+                    "`+3`"
+                ],
+                [
+                    "13 - 15",
+                    "`+4`"
+                ],
+                [
+                    "16 - 19",
+                    "`+5`"
+                ],
+                [
+                    "20",
+                    "`+6`"
+                ],
+                [
+                    "21 - 22",
+                    "`+7`"
+                ],
+                [
+                    "23 - 25",
+                    "`+8`"
+                ],
+                [
+                    "26 - 29",
+                    "`+9`"
+                ],
+                [
+                    "30",
+                    "`+10`"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Healing",
+        "index": "300",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Regeneration Value",
+                "LP Recovered",
+                "Reducing Pain",
+                "Physical Capabilities",
+                "Mystical Capabilities"
+            ],
+            "colStyles": [
+                "col-1",
+                "col-1",
+                "col-1",
+                "col-5",
+                "col-5"
+            ],
+            "rows": [
+                [
+                    "2",
+                    "10 per day",
+                    "-1 per 6 days",
+                    "-",
+                    "-"
+                ],
+                [
+                    "3",
+                    "15 per day",
+                    "-1 per 5 days",
+                    "-",
+                    "-"
+                ],
+                [
+                    "4",
+                    "20 per day",
+                    "-1 per 4 days",
+                    "-",
+                    "-"
+                ],
+                [
+                    "5",
+                    "25 per day",
+                    "-1 per 2 days",
+                    "You do not sustain scars from physical injury.",
+                    "You do not sustain scars from physical injury."
+                ],
+                [
+                    "6",
+                    "30 per day",
+                    "-1 per day",
+                    "-",
+                    "-"
+                ],
+                [
+                    "7",
+                    "40 per day",
+                    "-2 per day",
+                    "-",
+                    "-"
+                ],
+                [
+                    "8",
+                    "50 per day",
+                    "-3 per day",
+                    "-",
+                    "-"
+                ],
+                [
+                    "9",
+                    "60 per day",
+                    "-4 per day",
+                    "-",
+                    "-"
+                ],
+                [
+                    "10",
+                    "70 per day",
+                    "-5 per day",
+                    "You do not suffer the effects of Bleeding Out. You body is able to clot the wound quickly.",
+                    "You do not suffer the effects of Bleeding Out. You wounds are sealed by mystical energies."
+                ],
+                [
+                    "11",
+                    "80 per day",
+                    "-6 per day",
+                    "-",
+                    "-"
+                ],
+                [
+                    "12",
+                    "90 per day",
+                    "-7 per day",
+                    "You can use an amputated limb that has been placed on the stump after leaving it there for a week.",
+                    "-"
+                ],
+                [
+                    "13",
+                    "100 per day",
+                    "-8 per day",
+                    "As above, but within five days.",
+                    "-"
+                ],
+                [
+                    "14",
+                    "125 per day",
+                    "-9 per day",
+                    "As above, but within three days.",
+                    "-"
+                ],
+                [
+                    "15",
+                    "150 per day",
+                    "-10 per day",
+                    "As above, but within one day. You only need to consume half the nutrition to restore stamina.",
+                    "You only need to consume half the nutrition to restore stamina."
+                ],
+                [
+                    "16",
+                    "175 per day",
+                    "-15 per day",
+                    "As above, but within one hour.",
+                    "-"
+                ],
+                [
+                    "17",
+                    "200 per day",
+                    "-20 per day",
+                    "As above, but within one round.",
+                    "-"
+                ],
+                [
+                    "18",
+                    "250 per day",
+                    "-25 per day",
+                    "You automatically stabilize when you fall below zero LP.",
+                    "You automatically stabilize when you fall below zero LP."
+                ],
+                [
+                    "19",
+                    "300 per day",
+                    "-30 per day",
+                    "You do not need to sleep or eat.",
+                    "You do not need to sleep or eat."
+                ],
+                [
+                    "20",
+                    "500 per day",
+                    "-35 per day",
+                    "-",
+                    "-"
+                ],
+                [
+                    "21",
+                    "700 per day",
+                    "-40 per day",
+                    "You can regenerate one amputated limb within seven days, except for the head.",
+                    "You can create a spectral limb as a swift action after losing any limb, except for the head. You can only have one spectral limb at a time."
+                ],
+                [
+                    "22",
+                    "1000 per day",
+                    "-50 per day",
+                    "As above, but within five days.",
+                    "As above, but a maximum of two spectral limbs."
+                ],
+                [
+                    "23",
+                    "1 per minute",
+                    "-75 per day",
+                    "As above, but within three days.",
+                    "As above, but a maximum of four spectral limbs."
+                ],
+                [
+                    "24",
+                    "5 per minute",
+                    "-100 per day",
+                    "As above, but within one day.",
+                    "As long as the soul is not taken beyond the veil, a new body will be created within 7 days even if the previous body is completely destroyed."
+                ],
+                [
+                    "25",
+                    "1 per round",
+                    "-150 per day",
+                    "As above, but within one hour.",
+                    "As above, but within five days."
+                ],
+                [
+                    "26",
+                    "5 per round",
+                    "-1 per round",
+                    "As above, but you can also regenerate after being decapitated.",
+                    "As above, but within three days."
+                ],
+                [
+                    "27",
+                    "10 per round",
+                    "-5 per round",
+                    "Your body can regenerate from a single cell as long as you are not killed by curse damage. It takes six hours to completely regenerate this way.",
+                    "As above, but within one day."
+                ],
+                [
+                    "28",
+                    "25 per round",
+                    "-10 per round",
+                    "As above, but within three hours.",
+                    "As above, but within one day."
+                ],
+                [
+                    "29",
+                    "50 per round",
+                    "-25 per round",
+                    "As above, but within one hour.",
+                    "As above, but within one hour."
+                ],
+                [
+                    "30",
+                    "100 per round",
+                    "All each round",
+                    "You ignore the effect of Criticals caused by physical damage.",
+                    "You ignore the effect of Criticals caused by supernatural damage."
+                ]
+            ]
+        },
+        "postEntries": [
+            "Regeneration of 21 or higher requires Nornir 35.",
+            "Regeneration of 25 or higher requires Nornir 40.",
+            "Regeneration of 29 or higher requires Nornir 45.",
+            "Regeneration of 30 or higher requires Nornir 50."
+        ]
+    },
+    {
+        "title": "Size to Height and Weight Recommendations",
+        "index": "400",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Size",
+                "Height",
+                "Weight"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-4",
+                "col-4"
+            ],
+            "rows": [
+                [
+                    "2",
+                    "8in. to 2ft.",
+                    "10 to 30 lb"
+                ],
+                [
+                    "3",
+                    "1ft. 4in. to 2ft. 8in.",
+                    "20 to 45 lb"
+                ],
+                [
+                    "4",
+                    "2ft. to 3ft. 4in.",
+                    "30 to 60 lb"
+                ],
+                [
+                    "5",
+                    "2ft. 8in. to 4ft.",
+                    "40 to 75 lb"
+                ],
+                [
+                    "6",
+                    "3ft. 4in. to 4ft. 8in.",
+                    "50 to 90 lb"
+                ],
+                [
+                    "7",
+                    "3ft. 8in. to 5ft.",
+                    "60 to 110 lb"
+                ],
+                [
+                    "8",
+                    "4ft. to 5ft. 4in.",
+                    "75 to 130 lb"
+                ],
+                [
+                    "9",
+                    "4ft. 4in. to 5ft. 8in.",
+                    "90 to 160 lb"
+                ],
+                [
+                    "10",
+                    "4ft. 8in. to 6ft.",
+                    "105 to 190 lb"
+                ],
+                [
+                    "11",
+                    "5ft. to 6ft. 4in.",
+                    "120 to 230 lb"
+                ],
+                [
+                    "12",
+                    "5ft. 4in. to 6ft. 8in.",
+                    "135 to 270 lb"
+                ],
+                [
+                    "13",
+                    "5ft. 8in. to 7ft.",
+                    "140 to 320 lb"
+                ],
+                [
+                    "14",
+                    "6ft. to 7ft. 4in.",
+                    "145 to 370 lb"
+                ],
+                [
+                    "15",
+                    "6ft. 2in. to 7ft. 8in.",
+                    "150 to 430 lb"
+                ],
+                [
+                    "16",
+                    "6ft. 4in. to 8ft.",
+                    "155 to 490 lb"
+                ],
+                [
+                    "17",
+                    "6ft. 6in. to 8ft. 4in.",
+                    "160 to 560 lb"
+                ],
+                [
+                    "18",
+                    "6ft. 8in. to 8ft. 8in.",
+                    "180 to 630 lb"
+                ],
+                [
+                    "19",
+                    "6ft. 9in. to 9ft.",
+                    "200 to 710 lb"
+                ],
+                [
+                    "20",
+                    "6ft. 10in. to 9ft. 4in.",
+                    "220 to 790 lb"
+                ],
+                [
+                    "21",
+                    "6ft. 11in. to 9ft. 8in.",
+                    "240 to 880 lb"
+                ],
+                [
+                    "22",
+                    "7ft. to 10ft.",
+                    "260 to 970 lb"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Experience Points at each Level",
+        "index": "500",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Level",
+                "Presence",
+                "Characteristic Increase",
+                "Total XP",
+                "20%",
+                "25%",
+                "40%",
+                "50%",
+                "60%"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2",
+                "col-3",
+                "col-2",
+                "col-1",
+                "col-1",
+                "col-1",
+                "col-1",
+                "col-1"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "3",
+                    "",
+                    "60",
+                    "12",
+                    "15",
+                    "24",
+                    "30",
+                    "36"
+                ],
+                [
+                    "2",
+                    "3",
+                    "Characteristic +1",
+                    "70",
+                    "14",
+                    "17",
+                    "28",
+                    "35",
+                    "42"
+                ],
+                [
+                    "3",
+                    "4",
+                    "",
+                    "80",
+                    "16",
+                    "20",
+                    "32",
+                    "40",
+                    "48"
+                ],
+                [
+                    "4",
+                    "4",
+                    "Characteristic +1",
+                    "90",
+                    "18",
+                    "22",
+                    "36",
+                    "45",
+                    "54"
+                ],
+                [
+                    "5",
+                    "5",
+                    "",
+                    "100",
+                    "20",
+                    "25",
+                    "40",
+                    "50",
+                    "60"
+                ],
+                [
+                    "6",
+                    "5",
+                    "Characteristic +1",
+                    "110",
+                    "22",
+                    "27",
+                    "44",
+                    "55",
+                    "66"
+                ],
+                [
+                    "7",
+                    "6",
+                    "",
+                    "120",
+                    "24",
+                    "30",
+                    "48",
+                    "60",
+                    "72"
+                ],
+                [
+                    "8",
+                    "6",
+                    "Characteristic +1",
+                    "130",
+                    "26",
+                    "32",
+                    "52",
+                    "65",
+                    "78"
+                ],
+                [
+                    "9",
+                    "7",
+                    "",
+                    "140",
+                    "28",
+                    "35",
+                    "56",
+                    "70",
+                    "84"
+                ],
+                [
+                    "10",
+                    "7",
+                    "Characteristic +1",
+                    "150",
+                    "30",
+                    "37",
+                    "60",
+                    "75",
+                    "90"
+                ],
+                [
+                    "11",
+                    "8",
+                    "",
+                    "160",
+                    "32",
+                    "40",
+                    "64",
+                    "80",
+                    "96"
+                ],
+                [
+                    "12",
+                    "8",
+                    "Characteristic +1",
+                    "170",
+                    "34",
+                    "42",
+                    "68",
+                    "85",
+                    "102"
+                ],
+                [
+                    "13",
+                    "9",
+                    "",
+                    "180",
+                    "36",
+                    "45",
+                    "72",
+                    "90",
+                    "108"
+                ],
+                [
+                    "14",
+                    "9",
+                    "Characteristic +1",
+                    "190",
+                    "38",
+                    "47",
+                    "76",
+                    "95",
+                    "114"
+                ],
+                [
+                    "15",
+                    "10",
+                    "",
+                    "200",
+                    "40",
+                    "50",
+                    "80",
+                    "100",
+                    "120"
+                ],
+                [
+                    "16",
+                    "10",
+                    "Characteristic +1",
+                    "210",
+                    "42",
+                    "52",
+                    "84",
+                    "105",
+                    "126"
+                ],
+                [
+                    "17",
+                    "11",
+                    "",
+                    "220",
+                    "44",
+                    "55",
+                    "88",
+                    "110",
+                    "132"
+                ],
+                [
+                    "18",
+                    "11",
+                    "Characteristic +1",
+                    "230",
+                    "46",
+                    "57",
+                    "92",
+                    "115",
+                    "138"
+                ],
+                [
+                    "19",
+                    "12",
+                    "",
+                    "240",
+                    "48",
+                    "60",
+                    "96",
+                    "120",
+                    "144"
+                ],
+                [
+                    "20",
+                    "12",
+                    "Characteristic +1",
+                    "250",
+                    "50",
+                    "62",
+                    "100",
+                    "125",
+                    "150"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Characteristic Generation",
+        "index": "600",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Characteristic",
+                "Modifier",
+                "Cost"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "3",
+                    "`-2`",
+                    "1"
+                ],
+                [
+                    "4",
+                    "`-1`",
+                    "3"
+                ],
+                [
+                    "5",
+                    "`+0`",
+                    "5"
+                ],
+                [
+                    "6",
+                    "`+1`",
+                    "7"
+                ],
+                [
+                    "7",
+                    "`+1`",
+                    "8"
+                ],
+                [
+                    "8",
+                    "`+2`",
+                    "10"
+                ],
+                [
+                    "9",
+                    "`+2`",
+                    "11"
+                ],
+                [
+                    "10",
+                    "`+3`",
+                    "13"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Movement Value to Distance",
+        "index": "700",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Movement Value",
+                "Dash",
+                "Run",
+                "Run (speed)",
+                "Sprint",
+                "Sprint (speed)"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "1",
+                    "20 feet",
+                    "30 feet",
+                    "3 mph",
+                    "40 feet",
+                    "5 mph"
+                ],
+                [
+                    "2",
+                    "25 feet",
+                    "35 feet",
+                    "4 mph",
+                    "50 feet",
+                    "6 mph"
+                ],
+                [
+                    "3",
+                    "30 feet",
+                    "40 feet",
+                    "5 mph",
+                    "60 feet",
+                    "7 mph"
+                ],
+                [
+                    "4",
+                    "35 feet",
+                    "50 feet",
+                    "6 mph",
+                    "70 feet",
+                    "8 mph"
+                ],
+                [
+                    "5",
+                    "40 feet",
+                    "60 feet",
+                    "7 mph",
+                    "80 feet",
+                    "9 mph"
+                ],
+                [
+                    "6",
+                    "55 feet",
+                    "70 feet",
+                    "8 mph",
+                    "110 feet",
+                    "13 mph"
+                ],
+                [
+                    "7",
+                    "70 feet",
+                    "80 feet",
+                    "9 mph",
+                    "140 feet",
+                    "16 mph"
+                ],
+                [
+                    "8",
+                    "85 feet",
+                    "110 feet",
+                    "13 mph",
+                    "170 feet",
+                    "19 mph"
+                ],
+                [
+                    "9",
+                    "100 feet",
+                    "140 feet",
+                    "16 mph",
+                    "200 feet",
+                    "23 mph"
+                ],
+                [
+                    "10",
+                    "125 feet",
+                    "170 feet",
+                    "19 mph",
+                    "250 feet",
+                    "28 mph"
+                ],
+                [
+                    "11",
+                    "150 feet",
+                    "200 feet",
+                    "23 mph",
+                    "300 feet",
+                    "34 mph"
+                ],
+                [
+                    "12",
+                    "175 feet",
+                    "250 feet",
+                    "28 mph",
+                    "350 feet",
+                    "40 mph"
+                ],
+                [
+                    "13",
+                    "200 feet",
+                    "300 feet",
+                    "34 mph",
+                    "400 feet",
+                    "45 mph"
+                ],
+                [
+                    "14",
+                    "250 feet",
+                    "350 feet",
+                    "40 mph",
+                    "500 feet",
+                    "57 mph"
+                ],
+                [
+                    "15",
+                    "300 feet",
+                    "400 feet",
+                    "45 mph",
+                    "600 feet",
+                    "68 mph"
+                ],
+                [
+                    "16",
+                    "375 feet",
+                    "500 feet",
+                    "57 mph",
+                    "750 feet",
+                    "85 mph"
+                ],
+                [
+                    "17",
+                    "450 feet",
+                    "600 feet",
+                    "68 mph",
+                    "900 feet",
+                    "102 mph"
+                ],
+                [
+                    "18",
+                    "525 feet",
+                    "750 feet",
+                    "85 mph",
+                    "1,050 feet",
+                    "119 mph"
+                ],
+                [
+                    "19",
+                    "600 feet",
+                    "900 feet",
+                    "102 mph",
+                    "1,200 feet",
+                    "136 mph"
+                ],
+                [
+                    "20",
+                    "700 feet",
+                    "1,050 feet",
+                    "119 mph",
+                    "1,400 feet",
+                    "159 mph"
+                ],
+                [
+                    "21",
+                    "800 feet",
+                    "1,200 feet",
+                    "136 mph",
+                    "1,600 feet",
+                    "182 mph"
+                ],
+                [
+                    "22",
+                    "900 feet",
+                    "1,400 feet",
+                    "159 mph",
+                    "1,800 feet",
+                    "205 mph"
+                ],
+                [
+                    "23",
+                    "1,000 feet",
+                    "1,600 feet",
+                    "182 mph",
+                    "2,000 feet",
+                    "227 mph"
+                ],
+                [
+                    "24",
+                    "1,150 feet",
+                    "1,800 feet",
+                    "205 mph",
+                    "2,300 feet",
+                    "261 mph"
+                ],
+                [
+                    "25",
+                    "1,300 feet",
+                    "2,000 feet",
+                    "227 mph",
+                    "2,600 feet",
+                    "295 mph"
+                ],
+                [
+                    "26",
+                    "1,450 feet",
+                    "2,300 feet",
+                    "261 mph",
+                    "2,900 feet",
+                    "330 mph"
+                ],
+                [
+                    "27",
+                    "1,600 feet",
+                    "2,600 feet",
+                    "295 mph",
+                    "3,200 feet",
+                    "364 mph"
+                ],
+                [
+                    "28",
+                    "1,750 feet",
+                    "2,900 feet",
+                    "330 mph",
+                    "3,500 feet",
+                    "398 mph"
+                ],
+                [
+                    "29",
+                    "1,900 feet",
+                    "3,200 feet",
+                    "364 mph",
+                    "3,800 feet",
+                    "432 mph"
+                ],
+                [
+                    "30",
+                    "2,100 feet",
+                    "3,500 feet",
+                    "398 mph",
+                    "4,200 feet",
+                    "477 mph"
+                ],
+                [
+                    "31",
+                    "2,300 feet",
+                    "3,800 feet",
+                    "432 mph",
+                    "4,600 feet",
+                    "523 mph"
+                ],
+                [
+                    "32",
+                    "2,500 feet",
+                    "4,200 feet",
+                    "477 mph",
+                    "5,000 feet",
+                    "568 mph"
+                ],
+                [
+                    "33",
+                    "2,700 feet",
+                    "4,600 feet",
+                    "523 mph",
+                    "5,400 feet",
+                    "614 mph"
+                ],
+                [
+                    "34",
+                    "3,000 feet",
+                    "5,000 feet",
+                    "568 mph",
+                    "6,000 feet",
+                    "682 mph"
+                ],
+                [
+                    "35",
+                    "3,300 feet",
+                    "5,400 feet",
+                    "614 mph",
+                    "6,600 feet",
+                    "750 mph"
+                ],
+                [
+                    "36",
+                    "3,600 feet",
+                    "6,000 feet",
+                    "682 mph",
+                    "7,200 feet",
+                    "818 mph"
+                ],
+                [
+                    "37",
+                    "4,000 feet",
+                    "6,600 feet",
+                    "750 mph",
+                    "8,000 feet",
+                    "909 mph"
+                ],
+                [
+                    "38",
+                    "4,500 feet",
+                    "7,200 feet",
+                    "818 mph",
+                    "9,000 feet",
+                    "1,023 mph"
+                ],
+                [
+                    "39",
+                    "5,000 feet",
+                    "8,000 feet",
+                    "909 mph",
+                    "10,000 feet",
+                    "1,136 mph"
+                ],
+                [
+                    "40",
+                    "6,000 feet",
+                    "9,000 feet",
+                    "1,023 mph",
+                    "12,000 feet",
+                    "1,364 mph"
+                ]
+            ]
+        },
+        "postEntries": [
+            "Movement of 10 or higher requires Inhuman",
+            "Movement of 20 or higher requires Zen",
+            "Movement of 30 or higher requires Nornir 35."
+        ]
+    },
+    {
+        "title": "Exhaustion Penalties",
+        "index": "800",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Stamina Points",
+                "All Action Penalty"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "4",
+                    "`-1`"
+                ],
+                [
+                    "3",
+                    "`-2`"
+                ],
+                [
+                    "2",
+                    "`-4`"
+                ],
+                [
+                    "1",
+                    "`-8`"
+                ],
+                [
+                    "0",
+                    "`-16`"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Difficulty Values",
+        "index": "900",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Difficulty",
+                "Target Value"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "Routine",
+                    "2"
+                ],
+                [
+                    "Easy",
+                    "4"
+                ],
+                [
+                    "Moderate",
+                    "8"
+                ],
+                [
+                    "Difficult",
+                    "12"
+                ],
+                [
+                    "Very Difficult",
+                    "16"
+                ],
+                [
+                    "Absurd",
+                    "20"
+                ],
+                [
+                    "Almost Impossible",
+                    "24"
+                ],
+                [
+                    "Impossible",
+                    "28"
+                ],
+                [
+                    "Inhuman",
+                    "32"
+                ],
+                [
+                    "Zen",
+                    "44"
+                ],
+                [
+                    "Legendary",
+                    "60"
+                ],
+                [
+                    "Divine",
+                    "80"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Size Chart",
+        "index": "410",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Size",
+                "Size Value",
+                "Base Initiative Value",
+                "Description"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-6"
+            ],
+            "rows": [
+                [
+                    "Tiny",
+                    "0 to 3",
+                    "30",
+                    "Less than 4 inches"
+                ],
+                [
+                    "Small",
+                    "4 to 6",
+                    "20",
+                    "About the size of a cat or small dog"
+                ],
+                [
+                    "Medium",
+                    "7 to 22",
+                    "10",
+                    "The range of human heights and weights"
+                ],
+                [
+                    "Large",
+                    "23 to 28",
+                    "0",
+                    "About double an average human"
+                ],
+                [
+                    "Huge",
+                    "29 to 34",
+                    "-10",
+                    "The size of a small house, large tree, or elephant"
+                ],
+                [
+                    "Giant",
+                    "35 to 40",
+                    "-30",
+                    "About the size of a tower or small castle"
+                ],
+                [
+                    "Colossal",
+                    "41 to 50",
+                    "-40",
+                    "The size of a small mountain"
+                ],
+                [
+                    "Titan",
+                    "51 or higher",
+                    "-50",
+                    "Larger than a mountain"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Size Combat",
+        "index": "420",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Size",
+                "Unarmed Weapon Damage",
+                "Natural Weapon Damage",
+                "Breakage",
+                "Fortitude",
+                "Action Area",
+                "Rex Multiplier",
+                "Armor"
+            ],
+            "colStyles": [
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-2",
+                "col-2"
+            ],
+            "rows": [
+                [
+                    "Tiny",
+                    "0",
+                    "2",
+                    "-4",
+                    "4",
+                    "-",
+                    "1.5",
+                    "1"
+                ],
+                [
+                    "Small",
+                    "1",
+                    "3",
+                    "-2",
+                    "8",
+                    "-",
+                    "2",
+                    "2"
+                ],
+                [
+                    "Medium",
+                    "1",
+                    "4",
+                    "0",
+                    "12",
+                    "-",
+                    "5",
+                    "3"
+                ],
+                [
+                    "Large",
+                    "2",
+                    "6",
+                    "4",
+                    "16",
+                    "-",
+                    "7",
+                    "4"
+                ],
+                [
+                    "Huge",
+                    "3",
+                    "10",
+                    "8",
+                    "20",
+                    "5 feet",
+                    "10",
+                    "6"
+                ],
+                [
+                    "Giant",
+                    "4",
+                    "12",
+                    "12",
+                    "24",
+                    "15 feet",
+                    "15",
+                    "8"
+                ],
+                [
+                    "Colossal",
+                    "6",
+                    "14",
+                    "16",
+                    "32",
+                    "60 feet",
+                    "20",
+                    "10"
+                ],
+                [
+                    "Titan",
+                    "12",
+                    "28",
+                    "32",
+                    "64",
+                    "250 feet",
+                    "40",
+                    "20"
+                ]
+            ]
+        }
+    },
+{
+        "title": "Open Roll Chance",
+        "index": "500",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Open Roll Degree",
+                "How to Open Roll"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-7"
+            ],
+            "rows": [
+                [
+                    "-3",
+                    "Open Roll on five sixes (must have A3 or higher)"
+                ],
+                [
+                    "-2",
+                    "Open Roll on four sixes (must have A2 or higher)"
+                ],
+                [
+                    "-1",
+                    "Open Roll on three sixes (must have A1 or higher)"
+                ],
+                [
+                    "0",
+                    "Open Roll on double 6"
+                ],
+                [
+                    "+1",
+                    "Open Roll on a 6 and a 6 or 5"
+                ],
+                [
+                    "+2",
+                    "Open Roll on a 6 and a 6, 5, or 4"
+                ],
+                [
+                    "+3",
+                    "Open Roll on a 6 and a 6, 5, 4, or 3"
+                ],
+                [
+                    "+4",
+                    "Open Roll on a 6 and a 6, 5, 4, 3, or 2"
+                ],
+                [
+                    "+5",
+                    "Open Roll if you get one 6"
+                ]
+            ]
+        }
+    },
+]   ]
+        }
+    },
+]

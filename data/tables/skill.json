@@ -1,0 +1,300 @@
+[
+    {
+        "title": "Running",
+        "index": "100",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Difficulty",
+                "Target Value",
+                "Movement Value"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "Absurd",
+                    "20",
+                    "`+1`"
+                ],
+                [
+                    "Almost Impossible",
+                    "24",
+                    "`+1`"
+                ],
+                [
+                    "Impossible",
+                    "28",
+                    "`+2`"
+                ],
+                [
+                    "Inhuman",
+                    "32",
+                    "`+2`"
+                ],
+                [
+                    "Zen",
+                    "44",
+                    "`+3`"
+                ],
+                [
+                    "Legendary",
+                    "60",
+                    "`+4`"
+                ],
+                [
+                    "Divine",
+                    "80",
+                    "`+5`"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Swim",
+        "index": "110",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Difficulty",
+                "Target Value",
+                "Movement Value"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "Worse than Easy",
+                    "<4",
+                    "`-8`"
+                ],
+                [
+                    "Easy",
+                    "4",
+                    "`-5`"
+                ],
+                [
+                    "Moderate",
+                    "8",
+                    "`-4`"
+                ],
+                [
+                    "Difficult",
+                    "12",
+                    "`-3`"
+                ],
+                [
+                    "Very Difficult",
+                    "16",
+                    "`-3`"
+                ],
+                [
+                    "Absurd",
+                    "20",
+                    "`-2`"
+                ],
+                [
+                    "Almost Impossible",
+                    "24",
+                    "`-2`"
+                ],
+                [
+                    "Impossible",
+                    "28",
+                    "`-1`"
+                ],
+                [
+                    "Inhuman",
+                    "32",
+                    "`+0`"
+                ],
+                [
+                    "Zen",
+                    "44",
+                    "`+1`"
+                ],
+                [
+                    "Legendary",
+                    "60",
+                    "`+2`"
+                ],
+                [
+                    "Divine",
+                    "80",
+                    "`+3`"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Swim Modifier",
+        "index": "111",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Description",
+                "Deed Penalty"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "Calm water",
+                    "`+0`"
+                ],
+                [
+                    "Rough water",
+                    "`-4`"
+                ],
+                [
+                    "Choppy water",
+                    "`-12`"
+                ],
+                [
+                    "Swimming against the current",
+                    "`-12`"
+                ],
+                [
+                    "Raging storm",
+                    "`-20`"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Jump",
+        "index": "120",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Difficulty",
+                "Target Value",
+                "Movement Value"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "Difficult",
+                    "12",
+                    "`+1`"
+                ],
+                [
+                    "Very Difficult",
+                    "16",
+                    "`+1`"
+                ],
+                [
+                    "Absurd",
+                    "20",
+                    "`+2`"
+                ],
+                [
+                    "Almost Impossible",
+                    "24",
+                    "`+2`"
+                ],
+                [
+                    "Impossible",
+                    "28",
+                    "`+3`"
+                ],
+                [
+                    "Inhuman",
+                    "32",
+                    "`+4`"
+                ],
+                [
+                    "Zen",
+                    "44",
+                    "`+5`"
+                ],
+                [
+                    "Legendary",
+                    "60",
+                    "`+6`"
+                ],
+                [
+                    "Divine",
+                    "80",
+                    "`+8`"
+                ]
+            ]
+        }
+    },
+    {
+        "title": "Feats of Strength",
+        "index": "130",
+        "table": {
+            "type": "table",
+            "colLabels": [
+                "Difficulty",
+                "Target Value",
+                "Strength Deed Bonus"
+            ],
+            "colStyles": [
+                "col-3",
+                "col-3",
+                "col-3"
+            ],
+            "rows": [
+                [
+                    "Difficult",
+                    "12",
+                    "`+1`"
+                ],
+                [
+                    "Very Difficult",
+                    "16",
+                    "`+1`"
+                ],
+                [
+                    "Absurd",
+                    "20",
+                    "`+2`"
+                ],
+                [
+                    "Almost Impossible",
+                    "24",
+                    "`+3`"
+                ],
+                [
+                    "Impossible",
+                    "28",
+                    "`+4`"
+                ],
+                [
+                    "Inhuman",
+                    "32",
+                    "`+5`"
+                ],
+                [
+                    "Zen",
+                    "44",
+                    "`+7`"
+                ],
+                [
+                    "Legendary",
+                    "60",
+                    "`+8`"
+                ],
+                [
+                    "Divine",
+                    "80",
+                    "`+10`"
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,2461 @@
+[
+    {
+        "name": "Drunken Fist",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can add your [@stat Agility @] Modifier as a power bonus to the Opposed Skill Check of the [@action Gain the Upper Hand @] and [@action Feint @] maneuvers."
+                ],
+                "damage": [
+                    "2 + [@stat Dexterity @] Modifier."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Style @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "none"
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "The bonus increases to double your [@stat Agility @] Modifier."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Style @] 8",
+                    "[@skill Dodge @] 10"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The bonus increases to triple your [@stat Agility @] Modifier."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Style @] 12",
+                    "[@skill Dodge @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Judo",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "When making a [@action Counter @] against a hand-to-hand weapon, you can add your opponent's [@stat Strength @] Modifier to the Offensive Roll as a power bonus. This bonus only applies for humanoid opponents."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You can perform the [@action Impact @] and [@action Take Down @] maneuvers during a [@action Counter @] at no AP cost."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 4",
+                    "[@skill Strike @] 10",
+                    "[@skill Defense @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You gain a `+2` power bonus to the Opposed Characteristic Check of the [@action Impact @] and [@action Take Down @] maneuver when performed as part of a [@action Counter @]."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 8",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Kalaripayat",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can add your [@stat Aptitude @] Modifier to the Base Damage of the [@action Disable @] and [@action Knock Out @] maneuvers as a power bonus."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Medicine (Anatomy) @] 6",
+                    "[@skill Athletics @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "The power bonus increases to double your [@stat Aptitude @] Modifier."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier."
+                ],
+                "req": [
+                    "[@skill Medicine (Anatomy) @] 8",
+                    "[@skill Athletics @] 4",
+                    "[@skill Strike @] 12",
+                    "[@skill Defense @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The power bonus increases to triple your [@stat Aptitude @] Modifier."
+                ],
+                "damage": [
+                    "3 + [@stat Strength @] Modifier."
+                ],
+                "req": [
+                    "[@skill Medicine (Anatomy) @] 12",
+                    "[@skill Athletics @] 10",
+                    "[@skill Strike @] 20",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Lucha Libre",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "The AP cost of the [@action Charging Attack @] intention is reduced by 2 points."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "If you took the [@action Charging Attack @] intention, have a structure at least waist height within Step Distance, and you have enough space to jump off of it an onto your opponent, you can move towards it and make an Absurd (20) [@skill Acrobatics @] Check. If you pass, you can move your Step Distance (without reducing your remaining Distance) toward your opponent and you count as having moved at least 20 feet for [@action Charging Attack @] bonus.",
+                    "If you gain at least 10 Degrees of Success, you gain a `+1` deed bonus to the Base Damage"
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Athletics @] 5",
+                    "[@skill Acrobatics @] 5",
+                    "[@skill Strike @] 11",
+                    "[@skill Defense @] 11"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "Any [@action Charging Attack @] or [@action Trap: Complete Attack @] gain a `+2` deed bonus to the Base Damage."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Acrobatics @] 12",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Ninjutsu",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You gain a `+1` deed bonus Base Damage when you perform the [@action Sneak Attack @] maneuver."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier."
+                ],
+                "damageType": [
+                    "impact",
+                    "cut",
+                    "thrust"
+                ],
+                "req": [
+                    "[@skill Stealth @] 4"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "The Base Damage deed bonus increases to `+2`."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier."
+                ],
+                "damageType": [
+                    "impact",
+                    "cut",
+                    "thrust"
+                ],
+                "req": [
+                    "[@skill Stealth @] 8",
+                    "[@skill Strike @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The Base Damage deed bonus increases to `+3`."
+                ],
+                "damage": [
+                    "As Intermediate Degree."
+                ],
+                "req": [
+                    "[@skill Stealth @] 12",
+                    "[@skill Conceal Spirit @] 12",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Initiative @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Takkyeon",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "When you make an unarmed Offensive Roll, your opponent suffers a `-2` deed penalty if they use [@skill Block @]. An opponent with Mastery in [@skill Block @] ignores this penalty."
+                ],
+                "damage": [
+                    "1 + [@stat Agility @] Modifier."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Dance @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You can perform the [@action Take Down @] maneuver with no AP cost. An opponent now must have a Final [@skill Block @] Value of 28 to ignore the deed penalty to Defensive Rolls."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Dance @] 4",
+                    "[@skill Strike @] 11",
+                    "[@skill Dodge @] 11"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The deed penalty to [@skill Block @] increases to a `-4` and an opponent must have a Final [@skill Block @] Value of 32 to ignore it."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Dance @] 12",
+                    "[@skill Dodge @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Aikido",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier.",
+                    "When making a [@action Counter @] against a hand-to-hand weapon, add twice the [@stat Strength @] Modifier of the target to the Base Damage as a deed bonus (minimum `+0`). This bonus only applies for humanoid opponents."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You can perform the [@action Trap @] or [@action Take Down @] maneuver during a [@action Counter @] and you suffer half the normal penalties for those maneuvers."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 4",
+                    "[@skill Strike @] 10",
+                    "[@skill Defense @] 10"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]",
+                    "`+1` [@skill Block @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You gain a `+2` power bonus to the Opposed Characteristic Check of the [@action Trap @] and [@action Take Down @] maneuvers when performed as part of a [@action Counter @]."
+                ],
+                "damage": [
+                    "As Base Degree",
+                    "When making a [@action Counter @], add four times the [@stat Strength @] Modifier of the target to the Base Damage as a deed bonus (minimum `+0`). This bonus only applies for humanoid opponents.",
+                    "When making a [@action Counter @] with any other martial art, you can add your target's [@stat Strength @] Modifier to the Base Damage."
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 8",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]",
+                    "`+1` [@skill Block @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Kung Fu",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Acrobatics @] 2",
+                    "[@skill Sleight of Hand @] 2",
+                    "[@skill Style @] 1"
+                ],
+                "sk": 0,
+                "bonus": []
+            },
+            "intermediate": {
+                "effect": [
+                    "When you declare you are using unarmed, you can choose to apply a `+1` deed bonus to [@skill Strike @], [@skill Block @], [@skill Dodge @], [@skill Initiative @], or unarmed Base Damage."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Acrobatics @] 4",
+                    "[@skill Sleight of Hand @] 4",
+                    "[@skill Style @] 2",
+                    "[@skill Strike @] 12",
+                    "[@skill Defense @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The bonus increases to `+2`."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact",
+                    "thrust"
+                ],
+                "req": [
+                    "[@skill Acrobatics @] 12",
+                    "[@skill Sleight of Hand @] 12",
+                    "[@skill Style @] 10",
+                    "[@skill Strike @] 20",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Pankration",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can perform the [@action Trap @] maneuver at half normal penalty."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Athletics @] 3",
+                    "[@skill Feats of Strength @] 3"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "When you are subject ot the [@state Partially Restrained @] state as a result of maintaining a [@action Trap @], you do not suffer any penalty to Offensive or Defensive Rolls. You still suffer Movement Value penalties."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Athletics @] 5",
+                    "[@skill Feats of Strength @] 5",
+                    "[@skill Strike @] 11",
+                    "[@skill Defense @] 11"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "A creature who is trapped by you suffers a `-5` deed penalty to the Opposed Characteristic Check to free themselves, instead of the normal `-3`."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 12",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]",
+                    "`+1` [@skill Block @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Shotokan",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "None."
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "3 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Strike @] 12",
+                    "[@skill Defense @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "5 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Boxing",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "1 + double [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 3"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You gain a `+1` natural bonus to unarmed [@skill Strike @] Checks"
+                ],
+                "damage": [
+                    "2 + double [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 6",
+                    "[@skill Strike @] 12",
+                    "[@skill Defense @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Initiative @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "3 + double [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 12",
+                    "[@skill Strike @] 20",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]",
+                    "`+1` [@skill Initiative @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Mauy Thai",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "2 + double [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 3"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "2 + triple [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 4",
+                    "[@skill Strike @] 13"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "Any Critical you cause with unarmed add `+2` power bonus to the Critical Level."
+                ],
+                "damage": [
+                    "2 + quadruple [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 16",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Capoeira",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "When you make an [@action Sweeping Attack @] with unarmed, you treat the weapon as Medium sized."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Dance @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "When you make an [@action Sweeping Attack @] with unarmed, you treat the weapon as Large sized."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Dance @] 4",
+                    "[@skill Dodge @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You can perform the [@action Sweeping Attack @] maneuver with only a `-1` to the Offensive Roll."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Dance @] 12",
+                    "[@skill Dodge @] 20"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Malla-yuddha",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You gain a `+10` deed bonus to Fortitude when blocking with unarmed."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You count as having Mastery in [@skill Block @] for ignoring Breakage Checks."
+                ],
+                "damage": [
+                    "3 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 4",
+                    "[@skill Defense @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You can perform the [@action Disarm @] maneuver as part of a [@action Counter @] with no penalty."
+                ],
+                "damage": [
+                    "4 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 10",
+                    "[@skill Block @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Block @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Sambo",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can perform the [@action Take Down @] and [@action Disarm @] maneuvers at half the normal penalty."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "None."
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You can perform the [@action Trap @] and [@action Sweeping Attack @] maneuvers at half the normal penalty."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Strike @] 13"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You can perform the [@action Directed Attack @] maneuver, and any maneuver based on it, at half the penalty. This is cumulative with the [@trait Precision @] trait that unarmed fighting already possesses. So, you only suffer one fourth the normal penalty, round up."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Strike @] 20",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Kempo",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "Each time you perform the [@action Attack Action @], you only apply a cumulative `-1` deed penalty to each additional attack, instead of a `-2` deed penalty for unarmed fighting being a small weapon."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You halve the penalty applied to your Offensive Roll from the additional attack penalty, round up. So the first attack is made with the following sequence: `+0`, `-1`, `-1`, `-2`, `-2`, `-3`, `-3`, and so on."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Strike @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You can perform one additional [@action Attack Action @] each round, as if you had 10 more points in your Final [@skill Strike @] Value."
+                ],
+                "damage": [
+                    "As Intermediate Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Tae Kwon Do",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "When you declare you are using unarmed, you can perform the [@action Offhand Attack @] action by kicking with your leg. This does not count as a readied offhand weapon so it cannot be used with any offhand module. This [@action Offhand Attack @] is performed with a `-3` deed penalty and does not benefit from the Ambidextrous feature.",
+                    "This kick always uses the Tae Kwon Do Base Damage."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "The penalty for the [@action Offhand Attack @] made with your kick is reduced to a `-2` deed penalty."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@action Strike @] 13",
+                    "[@action Defense @] 10"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The penalty for the [@action Offhand Attack @] made with your kick is reduced to zero."
+                ],
+                "damage": [
+                    "As Intermediate Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Lama",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Style @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "The first [@action Defend with Block or Dodge @] action you perform each turn does not count against the multiple defense penalty. So, the second defense counts as the first and the third counts as the second (applying the `-2` deed penalty)"
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Style @] 4",
+                    "[@skill Defense @] 13"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The first and second [@action Defend with Block or Dodge @] actions you perform each round do not count against the multiple defense penalty."
+                ],
+                "damage": [
+                    "As Intermediate Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Style @] 8",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Grappling",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can perform the [@action Trap @] and [@action Take Down @] maneuvers at half the normal penalty."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You can perform the [@action Trap @] and [@action Take Down @] maneuvers without penalty."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 4",
+                    "[@skill Strike @] 13"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "When you perform the [@action Trap @] or [@action Take Down @] maneuvers, you can choose to deal damage. The Final Damage halved but is otherwise calculated as a normal attack."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Feats of Strength @] 12",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Tai Chi",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "2 + [@stat Focus @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "Use of Ki talent"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "2 + double [@stat Focus @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "Gross Ki Control talent"
+                ],
+                "sk": 2,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "2 + triple [@stat Focus @] Modifier",
+                    "When using the Base Damage from any other martial art, you can add your [@stat Focus @] Modifier to the Base Damage as a power bonus."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "Reduce Needs talent",
+                    "[@skill Strike @] 18",
+                    "[@skill Defense @] 18"
+                ],
+                "sk": 3,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Kardad",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You gain a `+1` power bonus to any Opposed Characteristic Check to prevent the [@action Trap @] or [@action Take Down @] maneuver or to escape any [@action Trap @] you are current restrained by."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Athletics @] 2",
+                    "[@skill Sleight of Hand @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "The power bonus to prevent or escape with an Opposed Characteristic Check increases to `+3`."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Athletics @] 4",
+                    "[@skill Sleight of Hand @] 4"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "Once per round, you can reroll any failed Opposed Characteristic Check to prevent or escape from a [@action Trap @] or [@action Take Down @]."
+                ],
+                "damage": [
+                    "3 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Athletics @] 12",
+                    "[@skill Sleight of Hand @] 12 "
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Xing Quan",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "If you have not performed any actions this round, you can, as an Active Action, declare a creature you can see to focus your attacks on, marking the target. The mark lasts until the End Phase or until you perform any action that is not moving closer or directly attack, you cannot perform any maneuver. While marked, you gain a `+1` deed bonus to any unarmed Offensive or Defensive Roll you make against the marked target. Once you benefit from this bonus, you cannot attack any other creatures until next round."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Composure @] 2"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "The deed bonus increases to a `+2`."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Composure @] 5",
+                    "[@skill Initiative @] 10",
+                    "[@skill Strike @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The deed bonus increases to a `+3`."
+                ],
+                "damage": [
+                    "3 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 10",
+                    "[@skill Initiative @] 12",
+                    "[@skill Strike @] 12"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Kuan",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You halve penalty to [@skill Block @] or [@skill Dodge @] to defend against thrown projectiles."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 4"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You halve penalty to [@skill Block @] or [@skill Dodge @] fired projectiles."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 6",
+                    "[@skill Defense @] 12"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You gain the [@trait Shield @] trait when defending against projectiles."
+                ],
+                "damage": [
+                    "As Intermediate Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Sleight of Hand @] 14",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Soo Bahk",
+        "level": "basic",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "The [@state Flank @] state's defensive penalties are halved."
+                ],
+                "damage": [
+                    "1 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Notice @] 5"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "intermediate": {
+                "effect": [
+                    "You do not suffer any penalties from the [@state Flanked @] state. This means you can attack and defend against opponents on your flank as if they were in front of you."
+                ],
+                "damage": [
+                    "2 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Notice @] 9",
+                    "[@skill Defense @] 12"
+                ],
+                "sk": 0,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You do not suffer any penalty from the [@state Prone @] state. This does not prevent an opponent from having the [@state Higher Ground @] state over you."
+                ],
+                "damage": [
+                    "3 + [@stat Strength @] Modifier"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "[@skill Notice @] 12",
+                    "[@skill Acrobatics @] 6",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Emp",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can perform the [@action Disarm @] maneuver without any penalty and a `+3` power bonus to the Opposed Characteristic Check.",
+                    "If you have mastered Advanced Malla-yuddah and performing the [@action Disarm @] maneuver as part of the [@action Counter @], the power bonus increases to a `+4`."
+                ],
+                "req": [
+                    "Inter. Kempo, Inter. Kuan, or Inter. Malla-yuddha",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Strike @]",
+                    "`+1` [@skill Initiative @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "Whenever you successfully defend against a hand-to-hand weapon, you can automatically make an Opposed Characteristic Check to disarm your attacker. This Characteristic Check does not apply any deed or power factors to the you or your opponent for being a [@action Disarm @] Check. You do not get to add the power bonus from Base Emp."
+                ],
+                "req": [
+                    "Adv. Kempo, Adv. Kuan, or Adv. Malla-yuddha",
+                    "[@skill Strike @] 28",
+                    "[@skill Defense @] 26"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Selene",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You double any [@action Counter @] bonus you gain from defending with unarmed and then counterattacking with unarmed."
+                ],
+                "req": [
+                    "Inter. Aikido",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "When you gain the right to [@action Counter @] using unarmed, you do so without using any [@action Attack Action @] and your unarmed counterattacks do not count for the additional attack penalty. You cannot perform more than one [@action Counter @] per original [@action Attack Action @]. If you are [@state Flat-Footed @], you cannot perform a [@action Counter @], even if you have mastered Seraphite."
+                ],
+                "req": [
+                    "Adv. Aikido",
+                    "Inhumanity feature",
+                    "[@skill Defense @] 30"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Suyanta",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You gain a new maneuver called [@action Empty Strike @].",
+                    {
+                        "name": "Empty Strike",
+                        "type": "entries",
+                        "entries": [
+                            "**Attack**: 1 AP",
+                            "When you use this maneuver, you strike at the very spirit. This maneuver can only be performed with the Tai Chi Base Damage. Instead of dealing damage to your opponent's Life Points, you reduce their Ki Reserve by the Final Damage.",
+                            "An opponent with the Rex Damage Role divide the Final Damage by their Rex Multiplier.",
+                            "This maneuver cannot be combined with any other maneuver."
+                        ]
+                    }
+                ],
+                "req": [
+                    "Inter. Tai Chi",
+                    "Presence Extrusion talent",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 2,
+                "bonus": [
+                    "`+1` Strike"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You can now perform the [@action Empty Strike @] maneuver with every [@action Attack Action @] without spending any AP and still damaging the opponent's Life Points. As a result, [@action Empty Strike @] can now be combined with any maneuver."
+                ],
+                "req": [
+                    "Adv. Tai Chi",
+                    "Inhumanity feature",
+                    "[@skill Strike @] 30"
+                ],
+                "sk": 2,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Velez",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can choose to use the Force Damage Type when fighting unarmed. This does not grant you the [@trait Immaterial @] trait, your attacks can be stopped by anything that can stop a normal weapon."
+                ],
+                "req": [
+                    "Inter. Tai Chi or Inter. Kung Fu",
+                    "Presence Extrusion talent"
+                ],
+                "sk": 2,
+                "bonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "Your attacks come completely from your spirit. Your unarmed attacks gain the [@trait Immaterial @] trait and are only visible on the spirit plane. Additionally, You can use [@stat Willpower @] for Opposed Characteristic Check when performing maneuvers, such as [@action Take Down @], [@action Trap @], and [@action Disarm @].",
+                    "On the material plane, you appear to stand still as your opponent is struck by an invisible force."
+                ],
+                "req": [
+                    "Adv. Tai Chi or Adv. Kung Fu",
+                    "[@skill Strike @] 28"
+                ],
+                "sk": 2,
+                "masterBonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Asakusen",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You gain a `+1` deed bonus to [@skill Strike @], [@skill Block @], [@skill Dodge @], [@skill Initiative @], and Base Damage when fighting unarmed."
+                ],
+                "req": [
+                    "Inter. Kung Fu",
+                    "[@skill Strike @] 16",
+                    "[@skill Defense @] 16"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The floating deed bonus from Kung Fu increases to `+4` and you gain a `+2` deed bonus to any Critical Level that strikes a vital spot and are lethal."
+                ],
+                "req": [
+                    "Adv. Kung Fu",
+                    "Inhumanity",
+                    "[@skill Strike @] 28",
+                    "[@skill Defense @] 28"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+1` [@skill Strike @]",
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Lama Tsu",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can perform the [@action Defend with Block or Dodge @] action two additional times before counting against the multiple defense penalty.",
+                    "Depending on the degree of Lama you have mastered, this means you can defend yourself four or five times before suffering any penalty."
+                ],
+                "req": [
+                    "Inter. Lama",
+                    "[@skill Detect Spirit @] 10",
+                    "[@skill Style @] 12",
+                    "[@skill Defense @] 22"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ],
+                "masterBonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You do not suffer any penalty for using the [@action Defend with Block or Dodge @] multiple times each round."
+                ],
+                "req": [
+                    "Adv. Lama",
+                    "Erudition talent",
+                    "[@skill Style @] 14",
+                    "[@skill Defense @] 30"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Seraphite",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can use the [@action Seraphite @] stance.",
+                    {
+                        "name": "Stance: Seraphite",
+                        "type": "entries",
+                        "entries": [
+                            "**Intention**: 0 AP",
+                            "When you declare this intention, you enter an offensive stance. While in this stance, you gain a `+2` deed bonus to unarmed Offensive Rolls but you suffer a `-3` deed penalty to your Defensive Rolls."
+                        ]
+                    }
+                ],
+                "damage": [
+                    "Base Damage of Shotokan or Kempo `+1`"
+                ],
+                "req": [
+                    "Inter. Shotokan or Inter. Kempo",
+                    "Presence Extrusion talent",
+                    "[@skill Strike @] 18"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You can use the [@action Advanced Seraphite @] stance.",
+                    {
+                        "name": "Stance: Advanced Seraphite",
+                        "type": "entries",
+                        "entries": [
+                            "**Intention**: 0 AP",
+                            "When you declare this intention, you enter an offensive stance. While in this stance, you gain a `+3` deed bonus to unarmed Offensive Rolls but you suffer a `-5` deed penalty to your Defensive Rolls.",
+                            "Additionally, you can still perform the [@action Counter @] action when [@state Flat-Footed @].",
+                            "This stance cannot be combined with the [@action Seraphite @] stance."
+                        ]
+                    }
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "Adv. Shotokan or Adv. Kempo",
+                    "[@skill Strike @] 28"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Melkaiah",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You gain a `+3` power bonus to the Opposed Characteristic Check for [@stat Strength @] or [@stat Dexterity @] when you perform the [@action Take Down @] and [@action Trap @] maneuvers."
+                ],
+                "req": [
+                    "Inter. Grapple or Inter. Pankration",
+                    "Inhumanity feature",
+                    "[@skill Strike @] 16",
+                    "[@skill Defense @] 16"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "When you perform the [@action Trap: Full Attack @] maneuver, you gain a `+5` power bonus to the Offensive Roll. The [@action Trap: Crush @] and [@action Trap: Strangle @] maneuvers gain a `+3` power bonus to the Opposed Characteristic Check when you use [@stat Strength @]."
+                ],
+                "req": [
+                    "Adv. Grapple or Adv. Pankration",
+                    "[@skill Strike @] 26",
+                    "[@skill Defense @] 26"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+1` [@skill Strike @]",
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Dumah",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "Your can use the Cut or Thrust Damage Type. You can ignore 2 AV and gain a `+10` deed bonus to Breakage."
+                ],
+                "damage": [
+                    "Base Damage of Kempo and Capoeira `+1`"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "Inter. Kempo or Inter. Capoeira",
+                    "Presence Extrusion talent"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Strike @]"
+                ],
+                "masterBonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You can ignore 6 AV and gain a `+25` deed bonus to Breakage with unarmed attacks, this bonus replaces the bonus from the base degree."
+                ],
+                "damage": [
+                    "Base Damage of Kempo or Capoeira `+2`"
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "Adv. Kempo or Adv. Capoeira",
+                    "Inhumanity feature",
+                    "[@skill Strike @] 28"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Mushin",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You can use the [@action Pressure Point @] maneuver.",
+                    {
+                        "name": "Pressure Point",
+                        "type": "entries",
+                        "entries": [
+                            "**Attack**: 1 AP",
+                            "When you use this maneuver, you attack your opponent's pressure points. This attack does not cause direct damage, instead calculate the theoretical Final Damage. This maneuver forces your opponent to make a [@skill Physical Resistance @] Check equal to the theoretical damage divided by 10 plus two, with a maximum [@skill PhR @] of 22. If you opponent fails this check, they suffer the [@state Pain @] state equal to their Degree of Failure and lose Life Points equal to twice their DoF. The [@state Pain @] state is reduced by 1 point every End Phase.",
+                            "An opponent with the Rex Damage Role divide the theoretical Final Damage by their Rex Multiplier. Additionally, this maneuver can only be used against humanoids, and is useless against anything larger than Medium Size.",
+                            "This maneuver cannot be combined with any other maneuver."
+                        ]
+                    }
+                ],
+                "req": [
+                    "Inter. Kung Fu, Inter. Xing Quan, or Inter. Kalaripayat",
+                    "[@skill Medicine (Anatomy) @] 8",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The maximum [@skill PhR @] increases to 24 and you add an additional `+2` to the Resistance Difficulty. Additionally, you can choose to take a deed penalty to your Offensive Roll to add a special effect to the Resistance Check.",
+                    {
+                        "type": "table",
+                        "colLabels": [
+                            "Added State",
+                            "Deed Penalty"
+                        ],
+                        "colStyles": [
+                            "col-3",
+                            "col-3"
+                        ],
+                        "rows": [
+                            [
+                                "[@state Weakness (DoF) @]",
+                                "`-1`"
+                            ],
+                            [
+                                "[@state Partially Restrained @] (Paralyzed)",
+                                "`-2`"
+                            ],
+                            [
+                                "[@state Mostly Restrained @] (Paralyzed)",
+                                "`-3`"
+                            ],
+                            [
+                                "[@state Fully Restrained @] (Paralyzed)",
+                                "`-5`"
+                            ],
+                            [
+                                "[@state Unconscious @]",
+                                "`-6`"
+                            ],
+                            [
+                                "[@state Dead @]",
+                                "`-7`"
+                            ]
+                        ]
+                    },
+                    "These states last for a number of rounds equal to the Degree of Failure, or are permanent in the case of death."
+                ],
+                "req": [
+                    "Adv. Kung Fu or Adv. Xing Quan",
+                    "Inhumanity feature",
+                    "[@skill Medicine (Anatomy) @] 12",
+                    "[@skill Strike @] 30"
+                ],
+                "sk": 2,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Hakyoukuken",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "Any Critical you cause with unarmed add `+2` deed bonus to the Critical Level against biological opponents. Your unarmed ",
+                    "Additionally, you ignore 2 AV of soft armor."
+                ],
+                "damage": [
+                    "Base Damage of Shotokan or Muay Thai `+2`"
+                ],
+                "req": [
+                    "Inter. Shotokan or Inter. Muay Thai",
+                    "Reduce Needs talent",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Initiative @]",
+                    "`+1` [@skill Strike @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "Your Critical Level deed bonus increases to a `+4`.",
+                    "Additionally, you now ignore all AV from soft armor."
+                ],
+                "damage": [
+                    "Base Damage of Shotokan or Muay Thai `+3`"
+                ],
+                "req": [
+                    "Inter. Shotokan or Inter. Muay Thai",
+                    "Inhumanity feature",
+                    "[@skill Strike @] 30"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Shephon",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "When you use the [@action Total Defense @] stance, the deed bonus to Defensive Rolls becomes `+6`."
+                ],
+                "req": [
+                    "Inter. Aikido or Inter. Kuan",
+                    "Use of Ki talent",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ],
+                "masterBonus": [
+                    "None."
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "When you use the [@action Total Defense @] stance, the deed bonus to Defensive Rolls becomes `+10`."
+                ],
+                "damage": [
+                    "As Base Degree."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "Adv. Aikido or Adv. Kuan",
+                    "[@skill Defense @] 30"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Enuth",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "When you perform the [@action Knock Out @] maneuver, you gain a `+2` deed bonus to the Critical Level and you can reduce the Final Damage by any amount you wish. For example, you could choose to leave the opponent with 1 Life Point."
+                ],
+                "req": [
+                    "Inter. Sambo or Inter. Shotokan",
+                    "[@skill Strike @] 16",
+                    "[@skill Defense @] 16"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "Your [@action Knock Out @] maneuver is significantly improved. You now automatically cause a Critical and increase the [@skill PhR @] by `+5` to avoid being knocked out. Additionally, you can perform the [@action Knock Out @] maneuver with no AP cost and at no penalty. It can be combined with any other maneuver."
+                ],
+                "req": [
+                    "Adv. Sambo or Adv. Shotokan",
+                    "Inhumanity feature",
+                    "Cognition talent",
+                    "[@skill Strike @] 28",
+                    "[@skill Defense @] 28"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]",
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Hanja",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You do not suffer any penalties to your Offensive or Defensive Roll from the [@state Blind Side @] or [@state Narrow Space @] states. You can fight your opponents without having to directly face them."
+                ],
+                "req": [
+                    "Inter. Soo Bahk",
+                    "[@skill Detect Spirit @] 14",
+                    "[@skill Notice @] 20",
+                    "[@skill Defense @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You do not suffer any penalties to your Defensive Roll from the [@state Partially Restrained @], [@state Mostly Restrained @], or [@state Put at Weapon's Point @] states. You still suffer the Offensive Roll penalties from those states."
+                ],
+                "req": [
+                    "Adv. Soo Bahk",
+                    "Cognition talent",
+                    "[@skill Detect Spirit @] 20",
+                    "[@skill Notice @] 24",
+                    "[@skill Defense @] 30"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Godhand",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "If you reach the End Phase with at least one [@action Attack Action @] unused and you are not [@state Flat-Footed @], you gain a `+3` deed bonus to the Offensive Roll and `+5` deed bonus to Base Damage of the first [@action Attack Action @] you make next round."
+                ],
+                "req": [
+                    "Inter. Boxing or Inter. Shotokan",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The Offensive Roll deed bonus increases to `+6` and the Base Damage deed bonus increases to `+10`."
+                ],
+                "req": [
+                    "Adv. Boxing or Adv. Shotokan",
+                    "Inhumanity feature",
+                    "Presence Extrusion talent",
+                    "[@skill Strike @] 30"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Rex Frame",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "You gain a natural armor of 3 AV to all Damage Types, including Resistance. Additionally, you gain a Base Damage Negate 6 against the Physical Damage Type that can be overcome by an attack with the [@trait Imbued @] trait."
+                ],
+                "req": [
+                    "Inter. Malla-yuddha or Inter. Muay Thai",
+                    "[@skill Defense @] 20",
+                    "Inhumanity feature"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The natural armor increases to 6 AV and the Base Damage Negate increases to 20."
+                ],
+                "req": [
+                    "Adv. Malla-yuddha or Adv. Muay Thai",
+                    "[@skill Defense @] 300",
+                    "Zen feature"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Block @]",
+                    "`+2` [@skill Dodge @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Exelion",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "None."
+                ],
+                "damage": [
+                    "Double Presence + Focus Modifier. This Base Damage cannot be modified by deed or power factors."
+                ],
+                "damageType": [
+                    "impact"
+                ],
+                "req": [
+                    "Inter. Kardad or Inter. Tai Chi",
+                    "[@skill Strike @] 20",
+                    "Presence Extrusion talent"
+                ],
+                "sk": 2,
+                "bonus": [
+                    "`+1` [@skill Strike @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "None."
+                ],
+                "req": [
+                    "Adv. Kardad or Adv. Tai Chi",
+                    "Inhumanity feature",
+                    "[@skill Strike @] 30"
+                ],
+                "sk": 2,
+                "masterBonus": [
+                    "`+3` [@skill Strike @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Leminuse",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "The first [@action Attack Action @] you perform each round can perform the [@action Impact @] maneuver for no AP cost. This [@action Impact @] also does the full Final Damage, instead of none."
+                ],
+                "damage": [
+                    "Base Damage of Malla-yuddha or Boxing `+1`"
+                ],
+                "req": [
+                    "Inter. Malla-yuddha or Inter. Boxing",
+                    "[@skill Block @] 16",
+                    "[@skill Feats of Strength @] 10",
+                    "Presence Extrusion talent"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "When you perform a [@action Counter @], you can choose to perform the [@action Impact @] maneuver and deal Full Damage."
+                ],
+                "damage": [
+                    "Base Damage of Malla-yuddha and Boxing `+2`"
+                ],
+                "req": [
+                    "Adv. Malla-yuddha or Adv. Boxing",
+                    "[@skill Block @] 30",
+                    "[@skill Feats of Strength @] 16"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+1` [@skill Strike @]",
+                    "`+1` [@skill Block @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Olympus Mons",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "The damage done by the [@action Trap: Crush @] maneuver is doubled."
+                ],
+                "req": [
+                    "Inter. Pankration or Inter. Sambo",
+                    "[@skill Athletics @] 18",
+                    "[@skill Strick @] 18"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Block @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "The first [@action Attack Action @] you take against an opponent you have trapped can perform the [@action Directed Attack @] maneuver with no penalty. If this attack causes a Critical, you can add your [@stat Strength @] Modifier to the Critical Level as a deed bonus."
+                ],
+                "damage": [
+                    "Base Damage of Pankration or Sambo plus your [@stat Constitution @] Modifier"
+                ],
+                "req": [
+                    "Adv. Pankration or Adv. Sambo",
+                    "[@skill Athletics @] 20",
+                    "[@skill Strike @] 30",
+                    "Inhumanity feature"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Block @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Shadus",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "The first [@action Attack Action @] you make against an opponent who has not performed any actions this round and has a lower [@skill Initiative @] than you, you gain a special theoretical `+3` deed bonus to Base Damage. This bonus does not increase your actual damage, instead if the theoretical Final Damage would cause a Critical, you use the actual Final Damage to determine the Critical Level. The theoretical Final Damage is only used to determine if a Critical occurs."
+                ],
+                "req": [
+                    "Inter. Ninjutsu or Inter. Savate",
+                    "Presence Extrusion talent",
+                    "[@skill Sleight of Hand @] 10",
+                    "[@skill Strike @] 16"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "You can apply the theoretical deed bonus damage to all of your [@action Attack Actions @]. The deed bonus increases to `+5`."
+                ],
+                "req": [
+                    "Adv. Ninjutsu or Adv. Savate",
+                    "[@skill Athletics @] 20",
+                    "[@skill Strike @] 30",
+                    "Inhumanity feature"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+2` [@skill Block @]"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Valde Orbis",
+        "level": "arcane",
+        "description": [],
+        "complexity": 1,
+        "degree": {
+            "base": {
+                "effect": [
+                    "When you perform the [@action Sweeping Attack @] maneuver, you can select 2 additional opponents and you reduce the Offensive Roll penalty by half."
+                ],
+                "req": [
+                    "Inter. Takkeyeon or Inter. Capoeira",
+                    "[@skill Dance @] 16",
+                    "[@skill Strike @] 20"
+                ],
+                "sk": 1,
+                "bonus": [
+                    "`+1` [@skill Dodge @]"
+                ]
+            },
+            "advanced": {
+                "effect": [
+                    "Your [@action Sweeping Attack @] maneuver is no longer stopped by a successful [@skill Block @]. "
+                ],
+                "req": [
+                    "Adv. Takkeyeon or Adv. Capoeira",
+                    "[@skill Strike @] 28",
+                    "[@skill Dodge @] 28",
+                    "[@skill Dance @] 20"
+                ],
+                "sk": 1,
+                "masterBonus": [
+                    "`+1` [@skill Strike @]",
+                    "`+1` [@skill Dodge @]"
+                ]
+            }
+        }
+    }
+]

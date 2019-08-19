@@ -1,0 +1,1766 @@
+[
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 4,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 8,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 14,
+        "slot": "20"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 18,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 24,
+        "slot": "30"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 28,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 34,
+        "slot": "40"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 38,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 44,
+        "slot": "50"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 48,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 54,
+        "slot": "60"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 58,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 64,
+        "slot": "70"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 68,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 74,
+        "slot": "80"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 78,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 84,
+        "slot": "90"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 88,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 94,
+        "slot": "100"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 98,
+        "slot": "10"
+    },
+    {
+        "name": "Raise Wind",
+        "type": "path",
+        "level": 2,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You raise the wind speed of an open area. The width and maximum length of this wind is listed."
+        ],
+        "degree": {
+            "base": {
+                "mana": 30,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "2 intensities",
+                    "60-feet wide by 600-feet long"
+                ]
+            },
+            "intermediate": {
+                "mana": 60,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "4 intensities",
+                    "120-feet wide by 1200-feet long"
+                ]
+            },
+            "advanced": {
+                "mana": 90,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "8 intensities",
+                    "240-feet wide by 2400-feet long"
+                ]
+            },
+            "arcane": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "12 intensities",
+                    "300-feet wide by 3000-feet long"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Move",
+        "type": "path",
+        "level": 6,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You can move an unattended object of your choice as if it had a Flight Value of 10. The object cannot be used to attack and if the object is grabbed the spell ends."
+        ],
+        "degree": {
+            "base": {
+                "mana": 30,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "Max weight 20 lbf"
+                ]
+            },
+            "intermediate": {
+                "mana": 60,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "Max weight 100 lbf"
+                ]
+            },
+            "advanced": {
+                "mana": 90,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "Max weight 200 lbf"
+                ]
+            },
+            "arcane": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Max weight 500 lbf"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Weight Reduction",
+        "type": "path",
+        "level": 10,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice has its weight reduced."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "-50 lbf"
+                ]
+            },
+            "intermediate": {
+                "mana": 140,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "-300 lbf"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 10,
+                "maint": 25,
+                "effect": [
+                    "-600 lbf"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 12,
+                "maint": 35,
+                "effect": [
+                    "-1000 lbf"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Free Breath",
+        "type": "path",
+        "level": 12,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "A number of entities of your choice whose total Presence is no greater than the listed value no longer needs to breath air. This does not change the need for air to speak."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "Presence 8"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "Presence 16"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 10,
+                "effect": [
+                    "Presence 24"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "Presence 36"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Free Motion",
+        "type": "path",
+        "level": 16,
+        "power": [
+            "attack",
+            "defense",
+            "effect",
+            "automatic",
+            "trigger",
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "A number of entities of your choice whose total Presence is no greater than the listed value can move along any surface, such as over water or on a ceiling."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "Presence 8"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "Presence 12"
+                ]
+            },
+            "advanced": {
+                "mana": 110,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "Presence 16"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Presence 24"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Air Blow",
+        "type": "path",
+        "level": 20,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Impact maneuver against an entity.",
+            "As the attack is produced by air, the target must make an Absurd (20) Notice Check or have the ability to see on the mana plane to avoid the Totally Blind state.",
+            "The Impact can come from any direction."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "Strength 6"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "Strength 9"
+                ]
+            },
+            "advanced": {
+                "mana": 140,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Strength 12"
+                ]
+            },
+            "arcane": {
+                "mana": 200,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "Strength 14"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Air Screen",
+        "type": "path",
+        "level": 22,
+        "power": [
+            "defense"
+        ],
+        "action": "swift",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a supernatural barrier with the listed Life Points. The barrier does not protect from attacks using Electricity or Energy, but projectiles suffer a -5 deed penalty to the Offensive Roll."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "300 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 160,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "1500 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 200,
+                "int": 12,
+                "maint": 20,
+                "effect": [
+                    "2000 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 240,
+                "int": 15,
+                "maint": 25,
+                "effect": [
+                    "3500 Life Points"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Automatic Transport",
+        "type": "path",
+        "level": 26,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "Choose a number of entities whose total Presence is no greater than the listed value. A target must make a SR 12 Check; a target can choose to fail.",
+            "All targets that fails the Resistance Check are instantly transported to a point a distance away. You must have a general idea of where the point is, but you do not need to see it. This spell cannot transport you through Imbued objects; an Imbued object in the way can be circumvented if there is an opening you know of and some distance is used to reach that point.",
+            "An entity that would be transported into an unnatural position, such as in the air with no Flight Value, gains a +4 deed bonus to the Resistance Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "Presence 5",
+                    "Max distance 150 feet"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "Presence 9",
+                    "Max distance 600 feet"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Presence 12",
+                    "Max distance 1200 feet"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "Presence 15",
+                    "Max distance 3000 feet"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Fly",
+        "type": "path",
+        "level": 30,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice gains a Flight Value."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 15,
+                "effect": [
+                    "Flight Value 4"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "Flight Value 8"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "Flight Value 12"
+                ]
+            },
+            "arcane": {
+                "mana": 240,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "Flight Value 15"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Reaction Increase",
+        "type": "path",
+        "level": 32,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice gains a power bonus to Initiative."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "+3 bonus"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 5,
+                "effect": [
+                    "+6 bonus"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 10,
+                "effect": [
+                    "+9 bonus"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "+12 bonus"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Electrify",
+        "type": "path",
+        "level": 36,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice whose total Presence is no greater than the listed value and smaller than the listed size becomes electrified.",
+            "Any entity who comes in contact with the target must make a PhR Check or take 5 Electricity Damage per Degree of Failure.",
+            "An entity that remains in contact with the target at the beginning of the Action Phase must repeat the Resistance Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 7,
+                "maint": 10,
+                "effect": [
+                    "Presence 3",
+                    "3 foot length",
+                    "PhR 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 10,
+                "maint": 15,
+                "effect": [
+                    "Presence 4",
+                    "9 foot length",
+                    "PhR 12"
+                ]
+            },
+            "advanced": {
+                "mana": 160,
+                "int": 13,
+                "maint": 20,
+                "effect": [
+                    "Presence 6",
+                    "15 foot length",
+                    "PhR 14"
+                ]
+            },
+            "arcane": {
+                "mana": 240,
+                "int": 16,
+                "maint": 25,
+                "effect": [
+                    "Presence 8",
+                    "30 foot length",
+                    "PhR 16"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Air Cut",
+        "type": "path",
+        "level": 40,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "All entities in a line must make a Defensive Roll against your Offensive Roll. On a hit, a target takes Cut Damage with Base Damage 8 and it ignores 2 AV.",
+            "The attack can come from any direction."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "10 foot line"
+                ]
+            },
+            "intermediate": {
+                "mana": 150,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "30 foot line"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "90 foot line"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "150 foot line"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Velocity",
+        "type": "path",
+        "level": 42,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "A number of entities of your choice whose total Presence is no greater than the listed value double their Movement Distance from their Movement Value.",
+            "For Example, a target with Movement Value of 5 can normally Dash 40 feet and Run 60 feet, but with this spell they can Dash 80 feet and Run 120 feet."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "Presence 5"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "Presence 8"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 14,
+                "maint": 15,
+                "effect": [
+                    "Presence 12"
+                ]
+            },
+            "arcane": {
+                "mana": 140,
+                "int": 18,
+                "maint": 15,
+                "effect": [
+                    "Presence 16"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Lightning",
+        "type": "path",
+        "level": 46,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target takes Electricity Damage with Base Damage 10.",
+            "After hitting, the nearest entity within 15 feet is targeted, with the same Final Offensive Roll. An entity cannot be hit more than once due to bouncing lightning and if there are no valid entities or it has reached its maximum bounces, it harmlessly hits the ground. You cannot be targeted but you cannot choose targets after the first."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "1 bounce"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "10 bounces"
+                ]
+            },
+            "advanced": {
+                "mana": 280,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "15 bounces"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "25 bounces"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Whirlwind",
+        "type": "path",
+        "level": 50,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You create a whirlwind. Any entity in the zone of the whirlwind is subject to an Absurd (20) Offensive Roll. On a hit, a target takes Impact Damage with Base Damage 4. Any entity of size 30 or less and who is not tied down that takes damage from the attack must make an Opposed Characteristic Check with Strength or Agility against Strength 12. A target that fails the Check is sucked up into the whirlwind.",
+            "All entities inside the whirlwind suffers a -6 all-action penalty and when the whirlwind ends they fall up to 100 feet.",
+            "You can move the whirlwind as an Active Action as if it took the Dash 8 action."
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 7,
+                "maint": 30,
+                "effect": [
+                    "10-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 40,
+                "effect": [
+                    "20-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 13,
+                "maint": 50,
+                "effect": [
+                    "30-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 16,
+                "maint": 60,
+                "effect": [
+                    "90-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Ethereal Form",
+        "type": "path",
+        "level": 52,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "An entity of your choice transforms into air. The target gains the Immaterial traits but cannot move through solid surfaces unless there is a gap large enough for gas to pass through.",
+            "The target is only visible to entities that can see the mana plane or that pass an Almost Impossible (24) Notice Check or a Very Difficult (16) Search Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "As described"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 10,
+                "maint": 15,
+                "effect": [
+                    "The target gains a Flight Value equal to their Movement Value."
+                ]
+            },
+            "advanced": {
+                "mana": 140,
+                "int": 14,
+                "maint": 15,
+                "effect": [
+                    "As intermediate, but those who can see on the mana plane need to pass a Very Difficult (16) Notice Check or a Medium (8) Search Check to see the target."
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 18,
+                "maint": 20,
+                "effect": [
+                    "As advanced, but Cut and Pierce attacks produce half damage."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Air Control",
+        "type": "path",
+        "level": 56,
+        "power": [
+            "effect",
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You gain the following actions:",
+            {
+                "name": "Control Creature of Air",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 2 AP",
+                    "You can gain control over a air elemental. A target must make a SR Check. A target that succeeds is immune to the control from this spell for a number of rounds equal to their Degree of Success.",
+                    "Failure means the target falls under your control. This control is active, meaning you must spend AP to make the target perform actions.",
+                    "A target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check. If the target ever leaves the area or the spell ends, your control ends."
+                ]
+            },
+            {
+                "name": "Modify Air",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 1 AP",
+                    "You can change the wind currents, deprive an area of air, or change the direction of a natural tornado. You can increase or reduce the winds intensity by the listed value."
+                ]
+            },
+            {
+                "name": "Redirect Air",
+                "type": "entries",
+                "entries": [
+                    "**Reaction**: 0 AP",
+                    "You can take this reaction when an attack spell from the Air path passes through the area, it suffers `D2` on the Offensive Roll."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "150-foot radius",
+                    "SR 12",
+                    "5 intensities"
+                ]
+            },
+            "intermediate": {
+                "mana": 150,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "1000-foot radius",
+                    "SR 14",
+                    "15 intensities"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "1500-foot radius",
+                    "SR 18",
+                    "25 intensities"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 18,
+                "maint": 35,
+                "effect": [
+                    "3000-foot radius",
+                    "SR 22",
+                    "40 intensities"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Electricity Control",
+        "type": "path",
+        "level": 60,
+        "power": [
+            "effect",
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You gain the following actions:",
+            {
+                "name": "Control Creature of Electricity",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 2 AP",
+                    "You can gain control over a electricity elemental. A target must make a SR Check. A target that succeeds is immune to the control from this spell for a number of rounds equal to their Degree of Success.",
+                    "Failure means the target falls under your control. This control is active, meaning you must spend AP to make the target perform actions.",
+                    "A target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check. If the target ever leaves the area or the spell ends, your control ends."
+                ]
+            },
+            {
+                "name": "Modify Electricity",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 1 AP",
+                    "You can change the form and direction of electrical intensities."
+                ]
+            },
+            {
+                "name": "Redirect Electricity",
+                "type": "entries",
+                "entries": [
+                    "**Reaction**: 0 AP",
+                    "You can take this reaction when an attack using Electricity Damage passes through the zone suffers `D2` on the Offensive Roll."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "150-foot radius",
+                    "SR 12",
+                    "5 intensities"
+                ]
+            },
+            "intermediate": {
+                "mana": 150,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "1000-foot radius",
+                    "SR 14",
+                    "15 intensities"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "1500-foot radius",
+                    "SR 18",
+                    "25 intensities"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 18,
+                "maint": 35,
+                "effect": [
+                    "3000-foot radius",
+                    "SR 22",
+                    "40 intensities"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Defensive Movement",
+        "type": "path",
+        "level": 62,
+        "power": [
+            "defense"
+        ],
+        "action": "swift",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You gain the ability to use your Spell Projection to Dodge a number of times each round. When you defend against an area attack with this spell, your step distance is the listed value."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 7,
+                "maint": 15,
+                "effect": [
+                    "3 Dodges",
+                    "10 feet"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "9 Dodges",
+                    "25 feet"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 13,
+                "maint": 25,
+                "effect": [
+                    "15 Dodges",
+                    "50 feet"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 16,
+                "maint": 30,
+                "effect": [
+                    "Unlimited Dodges",
+                    "75 feet"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Teleport",
+        "type": "path",
+        "level": 66,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "A number of entities of your choice whose total Presence is no greater than the listed value are transported to a point a distance away. You must have a general idea of where the point is, but you do not need to see it. This spell cannot transport you through Imbued objects; an Imbued object in the way can be circumvented if there is an opening you know of and some distance is used to reach that point."
+        ],
+        "degree": {
+            "base": {
+                "mana": 180,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "Presence 8",
+                    "5 miles"
+                ]
+            },
+            "intermediate": {
+                "mana": 300,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Presence 15",
+                    "500 miles"
+                ]
+            },
+            "advanced": {
+                "mana": 450,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "Presence 24",
+                    "50,000 miles"
+                ]
+            },
+            "arcane": {
+                "mana": 600,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "Presence 35",
+                    "Any distance"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Immateriality",
+        "type": "path",
+        "level": 70,
+        "power": [
+            "effect",
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "Choose a number of entities whose total Presence is no greater than the listed value. A target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check becomes Immaterial. The target cannot be touched or touch material objects. A target can repeat the Resistance Check after one day has passed."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 6,
+                "maint": 15,
+                "effect": [
+                    "Presence 8",
+                    "SR 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "Presence 12",
+                    "SR 14"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "Presence 16",
+                    "SR 16"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "Presence 20",
+                    "SR 20"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Hurricane",
+        "type": "path",
+        "level": 72,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You create an extreme gale that fills a stationary zone. Any entity of size 30 or less in the zone of the gale must make an Opposed Characteristic Check against a Strength 12 or be picked up by the wind. A target picked up by the wind are carried up to 300 feet into the air, but you can choose to reduce the maximum height of the spell.",
+            "Once an entity passes the Check, they do not repeat the Check until the first time they move each round.",
+            "Structures with a Base Damage Negate of 6 or less shatter. Those with a BDN of 12 or less take 10 damage each round on the End Phase. Structures with BDN 13 or more are unaffected.  "
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "1500-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 300,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "3000-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 450,
+                "int": 16,
+                "maint": 20,
+                "effect": [
+                    "1-mi radius"
+                ]
+            },
+            "arcane": {
+                "mana": 600,
+                "int": 20,
+                "maint": 25,
+                "effect": [
+                    "3-mi radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Solid Air",
+        "type": "path",
+        "level": 76,
+        "power": [
+            "attack",
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You cause any amount of air to become solid in a stationary zone centered on a point of your choice. Any solid shape you make will remain in the air without support. Each cubic foot of solid air has 150 Life Points. The solid air can only be seen by passing an Inhuman (32) Notice Check or Absurd (20) Search Check.",
+            "You can use this spell to box in a creature or to trap them. Either way, a target can Dodge out of the zone as if it were an area attack. If the Trap maneuver hits, the spell has a Strength of 14."
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "90-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 12,
+                "maint": 10,
+                "effect": [
+                    "300-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 260,
+                "int": 16,
+                "maint": 15,
+                "effect": [
+                    "1000-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 350,
+                "int": 20,
+                "maint": 25,
+                "effect": [
+                    "1500-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Weather Control",
+        "type": "path",
+        "level": 80,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You gain control over the weather in a zone around you. Small changes take one turn. Larger changes, such as stopping rain or bringing rain to a desert, take longer change, up to 5 minutes."
+        ],
+        "degree": {
+            "base": {
+                "mana": 250,
+                "int": 10,
+                "maint": 50,
+                "effect": [
+                    "3-mi radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 300,
+                "int": 12,
+                "maint": 60,
+                "effect": [
+                    "30-mi radius"
+                ]
+            },
+            "advanced": {
+                "mana": 380,
+                "int": 16,
+                "maint": 80,
+                "effect": [
+                    "60-mi radius"
+                ]
+            },
+            "arcane": {
+                "mana": 500,
+                "int": 20,
+                "maint": 100,
+                "effect": [
+                    "600-mi radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create Air Elemental",
+        "type": "path",
+        "level": 82,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You create a monad creature. The creature's level can be no greater than the listed value and must follow the rules for monad creatures. The creature is created with the following rules:",
+            {
+                "type": "list",
+                "items": [
+                    "The creature is an air elemental with Nornir 20."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 250,
+                "int": 12,
+                "maint": 50,
+                "effect": [
+                    "Level 2"
+                ]
+            },
+            "intermediate": {
+                "mana": 350,
+                "int": 14,
+                "maint": 70,
+                "effect": [
+                    "Level 4"
+                ]
+            },
+            "advanced": {
+                "mana": 500,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "Level 8"
+                ]
+            },
+            "arcane": {
+                "mana": 700,
+                "int": 22,
+                "maint": 140,
+                "effect": [
+                    "Level 12"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Arcane Move",
+        "type": "path",
+        "level": 86,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You can move an entity of your choice as if it had a Flight Value of 10.",
+            "An entity can make a SR Check to prevent being moved."
+        ],
+        "degree": {
+            "base": {
+                "mana": 160,
+                "int": 10,
+                "maint": 15,
+                "effect": [
+                    "100 tons",
+                    "SR 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 280,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "10,000 tons",
+                    "SR 12"
+                ]
+            },
+            "advanced": {
+                "mana": 400,
+                "int": 16,
+                "maint": 40,
+                "effect": [
+                    "25,000 tons",
+                    "SR 14"
+                ]
+            },
+            "arcane": {
+                "mana": 550,
+                "int": 20,
+                "maint": 50,
+                "effect": [
+                    "150,000 tons",
+                    "SR 16"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Roar of the Storm",
+        "type": "path",
+        "level": 90,
+        "power": [
+            "attack",
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "All entities in an area centered on you must make a Defensive Roll against your Offensive Roll. This attack has the Immaterial trait and produces an automatic critical. On a hit, a target takes Electrical Damage with the listed Base Damage. "
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "3000-foot radius",
+                    "Base Damage 12"
+                ]
+            },
+            "intermediate": {
+                "mana": 300,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "3-mi radius",
+                    "Base Damage 16"
+                ]
+            },
+            "advanced": {
+                "mana": 400,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "6-mi radius",
+                    "Base Damage 20"
+                ]
+            },
+            "arcane": {
+                "mana": 500,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "10-mi radius",
+                    "Base Damage 24"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Passive Magic",
+        "type": "path",
+        "level": 92,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You can cast active action spells as a Swift Action."
+        ],
+        "degree": {
+            "base": {
+                "mana": 300,
+                "int": 12,
+                "maint": 30,
+                "effect": [
+                    "Affects base degree spells"
+                ]
+            },
+            "intermediate": {
+                "mana": 400,
+                "int": 14,
+                "maint": 40,
+                "effect": [
+                    "Affects intermediate degree spells"
+                ]
+            },
+            "advanced": {
+                "mana": 600,
+                "int": 18,
+                "maint": 60,
+                "effect": [
+                    "Affects advanced degree spells"
+                ]
+            },
+            "arcane": {
+                "mana": 800,
+                "int": 22,
+                "maint": 80,
+                "effect": [
+                    "Affects arcane degree spells"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Lord of Air",
+        "type": "path",
+        "level": 96,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You gain the following actions:",
+            {
+                "name": "Control Creature of Air and Lightning",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 2 AP",
+                    "You can gain control over an air or electricity elemental. A target must make a SR Check. A target that succeeds is immune to the control from this spell for a number of rounds equal to their Degree of Success.",
+                    "Failure means the target falls under your control. This control is sentient, meaning you can give the target commands without needing to take any yourself.",
+                    "A target cannot repeat the Resistance Check. If the target ever leaves the area or the spell ends, your control ends."
+                ]
+            },
+            {
+                "name": "Modify Air and Electricity",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 1 AP",
+                    "You can change the weather to create gale force winds, raging storms, and gusts of winds of any size up to 1000 intensities."
+                ]
+            },
+            {
+                "name": "Redirect Air",
+                "type": "entries",
+                "entries": [
+                    "**Reaction**: 0 AP",
+                    "You can take this reaction when an attack spell from the Air path or Electricity attack passes through the area, it suffers `D10` on the Offensive Roll."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 300,
+                "int": 10,
+                "maint": 30,
+                "effect": [
+                    "50-mi radius",
+                    "SR 14"
+                ]
+            },
+            "intermediate": {
+                "mana": 450,
+                "int": 9,
+                "maint": 45,
+                "effect": [
+                    "500-mi radius",
+                    "SR 18"
+                ]
+            },
+            "advanced": {
+                "mana": 600,
+                "int": 12,
+                "maint": 60,
+                "effect": [
+                    "5000-mi radius",
+                    "SR 20"
+                ]
+            },
+            "arcane": {
+                "mana": 1000,
+                "int": 15,
+                "maint": 100,
+                "effect": [
+                    "50,000-mi radius",
+                    "SR 24"
+                ]
+            }
+        }
+    },
+    {
+        "name": "A Place in the World",
+        "type": "path",
+        "level": 100,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor":[],
+        "description": [
+            "You gain the ability to rearrange the placement of all entities within a zone centered on you. A target can make a SR Check to avoid being moved.",
+            "There is no limit the the number of objects that can be moved each round. This spell can affect all types of entities, including cities and even land masses if they fit in the zone.",
+            "Any entity moved must be moved in its entirety and must be placed in a location that is within its nature.",
+            "Any object moved does not return when the spell ends, it is there until something else moves it."
+        ],
+        "degree": {
+            "base": {
+                "mana": 450,
+                "int": 16,
+                "maint": 45,
+                "effect": [
+                    "30-mi radius",
+                    "SR 14"
+                ]
+            },
+            "intermediate": {
+                "mana": 800,
+                "int": 20,
+                "maint": 80,
+                "effect": [
+                    "150-mi radius",
+                    "SR 14"
+                ]
+            },
+            "advanced": {
+                "mana": 1200,
+                "int": 24,
+                "maint": 120,
+                "effect": [
+                    "500-mi radius",
+                    "SR 14"
+                ]
+            },
+            "arcane": {
+                "mana": 2400,
+                "int": 30,
+                "maint": 200,
+                "effect": [
+                    "2000-mi radius",
+                    "SR 14"
+                ]
+            }
+        }
+    }
+]

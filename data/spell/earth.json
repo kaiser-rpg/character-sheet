@@ -1,0 +1,1738 @@
+[
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 4,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 8,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 14,
+        "slot": "20"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 18,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 24,
+        "slot": "30"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 28,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 34,
+        "slot": "40"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 38,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 44,
+        "slot": "50"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 48,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 54,
+        "slot": "60"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 58,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 64,
+        "slot": "70"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 68,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 74,
+        "slot": "80"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 78,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 84,
+        "slot": "90"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 88,
+        "slot": "10"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 94,
+        "slot": "100"
+    },
+    {
+        "name": "General Slot",
+        "type": "slot",
+        "level": 98,
+        "slot": "10"
+    },
+    {
+        "name": "Detect Minerals",
+        "type": "path",
+        "level": 2,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You detect the a mineral of your choice within the area. This sense informs you of the size and purity."
+        ],
+        "degree": {
+            "base": {
+                "mana": 20,
+                "int": 5,
+                "maint": 0,
+                "effect": [
+                    "30-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 0,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "150-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 0,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "500-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 0,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "1500-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Control Mineral",
+        "type": "path",
+        "level": 6,
+        "power": [
+            "effect",
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You can modify minerals whose Presence is less than the listed value that you are in contact with. You gain the following actions:",
+            {
+                "name": "Control Creature of Light",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 2 AP",
+                    "You can gain control over a mineral elemental you are touching. A target must make a SR Check. A target that succeeds is immune to the control from this spell for a number of rounds equal to their Degree of Success.",
+                    "Failure means the target falls under your control. This control is active, meaning you must spend AP to make the target perform actions.",
+                    "A target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check. If you lose contact with the target or the spell ends, your control ends."
+                ]
+            },
+            {
+                "name": "Modify Mineral",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 1 AP",
+                    "You can reshape minerals you are in contact with. For example, you can turn a pebble into an arrow head."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 30,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "Presence 3",
+                    "SR 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 60,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "Presence 6",
+                    "SR 12"
+                ]
+            },
+            "advanced": {
+                "mana": 100,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "Presence 9",
+                    "SR 14"
+                ]
+            },
+            "arcane": {
+                "mana": 140,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Presence 12",
+                    "SR 14"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Increase Weight",
+        "type": "path",
+        "level": 10,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice increases in weight. You cannot increase a target's weight to be more than twice its original weight."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "+50 lbf"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 8,
+                "maint": 25,
+                "effect": [
+                    "+250 lbf"
+                ]
+            },
+            "advanced": {
+                "mana": 200,
+                "int": 10,
+                "maint": 30,
+                "effect": [
+                    "+500 lbf"
+                ]
+            },
+            "arcane": {
+                "mana": 320,
+                "int": 12,
+                "maint": 40,
+                "effect": [
+                    "+600 lbf"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Transform Mineral",
+        "type": "path",
+        "level": 12,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "A mineral object whose total Presence is no greater than the listed value of your choice transforms from one mineral into another mineral. The mass of the object remains the same. For example, you could turn 10 lb. of lead into 10 lb. of gold.",
+            "The transformation ends when the spell ends."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "Presence 3",
+                    "Maximum 20 lb"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 9,
+                "maint": 5,
+                "effect": [
+                    "Presence 5",
+                    "Maximum 100 lb"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 5,
+                "effect": [
+                    "Presence 7",
+                    "Maximum 200 lb"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 15,
+                "maint": 10,
+                "effect": [
+                    "Presence 9",
+                    "Maximum 500 lb"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Firmness",
+        "type": "path",
+        "level": 16,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice gains a bonus bonus to PhR and Fortitude."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "+2 PhR",
+                    "+3 Fortitude"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "+3 PhR",
+                    "+5 Fortitude"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "+4 PhR",
+                    "+7 Fortitude"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 15,
+                "maint": 20,
+                "effect": [
+                    "+5 PhR",
+                    "+9 Fortitude"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Stone Barrier",
+        "type": "path",
+        "level": 20,
+        "power": [
+            "defense"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You raise the dirt and minerals around you to create a supernatural barrier with the listed Life Points. The barrier possess a Base Damage Negate which can be overcome with an Imbued attack. Note, the barrier does not possess the Imbue trait.",
+            "If you are not near a mineral that you can control, this spell fails."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "Base Damage Negate 6",
+                    "600 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 160,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "Base Damage Negate 10",
+                    "1600 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "Base Damage Negate 15",
+                    "3000 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "Base Damage Negate 20",
+                    "5000 Life Points"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Slow",
+        "type": "path",
+        "level": 22,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check suffers a power penalty to their Initiative and Movement Value."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "SR 12",
+                    "-5 Initiative",
+                    "-2 Movement Value"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "SR 14",
+                    "-7 Initiative",
+                    "-4 Movement Value"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "SR 16",
+                    "-9 Initiative",
+                    "-6 Movement Value"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "SR 18",
+                    "-12 Initiative",
+                    "-10 Movement Value"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Shell",
+        "type": "path",
+        "level": 26,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice gains a natural AV against the Physical and Elemental Damage Groups."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 8,
+                "maint": 5,
+                "effect": [
+                    "2 AV"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 10,
+                "maint": 5,
+                "effect": [
+                    "4 AV"
+                ]
+            },
+            "advanced": {
+                "mana": 140,
+                "int": 14,
+                "maint": 10,
+                "effect": [
+                    "6 AV"
+                ]
+            },
+            "arcane": {
+                "mana": 180,
+                "int": 18,
+                "maint": 10,
+                "effect": [
+                    "8 AV"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Magnetic Shield",
+        "type": "path",
+        "level": 30,
+        "power": [
+            "defense"
+        ],
+        "action": "swift",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a supernatural barrier with the listed Life Points that can only protect from physical attacks with some amount of metal in them or attacks using the Electricity Damage Type. The barrier is immune to Physical Damage that do not have the [@trait Imbued @] trait.",
+            "Any attack made against the barrier using metal suffers D2 to the Offensive Roll."
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "300 Life Points"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "600 Life Points"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 10,
+                "effect": [
+                    "900 Life Points"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 15,
+                "maint": 20,
+                "effect": [
+                    "1200 Life Points"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Pass Through Solid Matter",
+        "type": "path",
+        "level": 32,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "A number of entities of your choice can pass through solid objects at will, meaning they can only be damaged by attacks with the Imbued trait. This does not grant the Immaterial trait, since a target does not gain the ability to interact with other immaterial entities."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 7,
+                "maint": 5,
+                "effect": [
+                    "Presence 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 100,
+                "int": 10,
+                "maint": 5,
+                "effect": [
+                    "Presence 14"
+                ]
+            },
+            "advanced": {
+                "mana": 130,
+                "int": 13,
+                "maint": 10,
+                "effect": [
+                    "Presence 18"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 16,
+                "maint": 10,
+                "effect": [
+                    "Presence 24"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Earth Spike",
+        "type": "path",
+        "level": 36,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a number of earth spikes. You make an Offensive Roll against an entity for each spike. On a hit, a target takes Thrust Damage with 6 Base Damage.",
+            "You must choose all targets before making any roll. You can have all spikes target the same entity.",
+            "The spikes are unable to hit a target that is more than 30 feet away from solid ground."
+        ],
+        "degree": {
+            "base": {
+                "mana": 80,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "2 spikes"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "4 spikes"
+                ]
+            },
+            "advanced": {
+                "mana": 150,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "6 spikes"
+                ]
+            },
+            "arcane": {
+                "mana": 200,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "8 spikes"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Breakage",
+        "type": "path",
+        "level": 40,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice gains a power bonus to Breakage."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "+4 bonus"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "+8 bonus"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "+12 bonus"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "+16 bonus"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Telemetry",
+        "type": "path",
+        "level": 42,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You can detect major landmarks within an area around you. This sense informs you of the listed landmark types. A hidden landmark can resist the detection by make a SR 12 Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "5-mi radius",
+                    "You can sense cities and roads"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "50-mi radius",
+                    "As base, but you can also sense towns and mountains"
+                ]
+            },
+            "advanced": {
+                "mana": 160,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "200-mi radius",
+                    "As intermediate, but you can also sense caves and structures that are frequently used"
+                ]
+            },
+            "arcane": {
+                "mana": 200,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "500-mi radius",
+                    "As advanced, but you can also sense abandoned structures"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Magnetic Control",
+        "type": "path",
+        "level": 46,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a zone centered on you. You gain the following actions:",
+            {
+                "name": "Manipulate Metal",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 2 AP",
+                    "You can manipulate metal within the zone as if you had Strength 10.",
+                    "This control lets you perform the Opposed Characteristic Check of the Disarm and Trap maneuvers, with no penalty or bonus from an Offensive Roll.",
+                    "You can use this control to manipulate impure metal or metal with the Imbued trait, but at a -4 deed penalty to your Strength.",
+                    "You can only take this action once each round but you can affect all metal in the area at once."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "Strength 10",
+                    "100-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "Strength 12",
+                    "500-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "Strength 13",
+                    "1000-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 320,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "Strength 14",
+                    "1500-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Forge",
+        "type": "path",
+        "level": 50,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You instantly complete a crafting project involving metal if the amount of effort needed is no greater than the listed value.",
+            "If you cast this spell more than once per day, the amount of effort it can complete is halved."
+        ],
+        "degree": {
+            "base": {
+                "mana": 160,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "80 effort"
+                ]
+            },
+            "intermediate": {
+                "mana": 300,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "150 effort"
+                ]
+            },
+            "advanced": {
+                "mana": 400,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "200 effort"
+                ]
+            },
+            "arcane": {
+                "mana": 500,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "250 effort"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Solid Body",
+        "type": "path",
+        "level": 52,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice gains a natural AV against Physical and Elemental Damage Groups and a Base Damage Negate equal to twice a target's Presence which can be overcome by an Imbued attack. A target also gains a power bonus to Strength and a -2 power penalty to Movement Value."
+        ],
+        "degree": {
+            "base": {
+                "mana": 100,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "6 AV",
+                    "+1 Strength"
+                ]
+            },
+            "intermediate": {
+                "mana": 120,
+                "int": 10,
+                "maint": 15,
+                "effect": [
+                    "8 AV",
+                    "+2 Strength"
+                ]
+            },
+            "advanced": {
+                "mana": 140,
+                "int": 14,
+                "maint": 15,
+                "effect": [
+                    "10 AV",
+                    "+3 Strength",
+                    "You are immune to Physical and Elemental Damage that do not have the Imbued trait"
+                ]
+            },
+            "arcane": {
+                "mana": 160,
+                "int": 18,
+                "maint": 20,
+                "effect": [
+                    "12 AV",
+                    "+4 Strength",
+                    "As advanced and you halve the Final Damage from Physical and Elemental Damage that have the Imbued trait."
+                ]
+            }
+        }
+    },
+    {
+        "name": "Rex Terra",
+        "type": "path",
+        "level": 56,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice uses the the Rex Damage Role but does not gain a Rex Multiplier. Instead, the target gains a power bonus to their maximum Life Points and they regain the same number Life Points. When the spell ends, the target's current and maximum Life Points are reduced by the amount gained."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "Life Point max +500"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "Life Point max +1000"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "Life Point max +2000"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 18,
+                "maint": 30,
+                "effect": [
+                    "Life Point max +3000"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Petrify",
+        "type": "path",
+        "level": 60,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check cannot move and has no awareness of their surroundings. The target does not age while the spell lasts. Any damage inflicted can result in death or lasting damage.",
+            "A target can repeat the Resistance Check after one day has passed, and then after one week."
+        ],
+        "degree": {
+            "base": {
+                "mana": 140,
+                "int": 7,
+                "maint": 10,
+                "effect": [
+                    "SR 12"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "SR 14"
+                ]
+            },
+            "advanced": {
+                "mana": 260,
+                "int": 13,
+                "maint": 15,
+                "effect": [
+                    "SR 16"
+                ]
+            },
+            "arcane": {
+                "mana": 320,
+                "int": 16,
+                "maint": 20,
+                "effect": [
+                    "SR 18"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Fissure",
+        "type": "path",
+        "level": 62,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a fissure in the earth, about 60 to 150 feet deep. Any creature in the area of the fissure must make a Dodge Check to avoid falling in, as if attacked by an area attack.",
+            "Structures in the area are destroyed if their Base Damage Negate is not greater than the listed value."
+        ],
+        "degree": {
+            "base": {
+                "mana": 150,
+                "int": 8,
+                "maint": 0,
+                "effect": [
+                    "10-feet wide by 30-feet long",
+                    "Structure BDN 4 are destroyed"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "20-feet wide by 60-feet long",
+                    "Structure BDN 6 are destroyed"
+                ]
+            },
+            "advanced": {
+                "mana": 250,
+                "int": 14,
+                "maint": 0,
+                "effect": [
+                    "40-feet wide by 100-feet long",
+                    "Structure BDN 8 are destroyed"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "50-feet wide by 150-feet long",
+                    "Structure BDN 10 are destroyed"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Reverse Gravity",
+        "type": "path",
+        "level": 66,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check;a target can choose to fail.",
+            "A target that fails the Resistance Check feels the effects of gravity reserve for them. A target cannot repeat the Resistance Check. The affects of the spell only end when you stop maintaining it or they leave the zone.",
+            "You can set some limits to the zone, such as only affecting entities within a structure."
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 10,
+                "maint": 40,
+                "effect": [
+                    "90-foot radius",
+                    "SR 12"
+                ]
+            },
+            "intermediate": {
+                "mana": 240,
+                "int": 12,
+                "maint": 50,
+                "effect": [
+                    "150-foot radius",
+                    "SR 14"
+                ]
+            },
+            "advanced": {
+                "mana": 280,
+                "int": 16,
+                "maint": 60,
+                "effect": [
+                    "300-foot radius",
+                    "SR 16"
+                ]
+            },
+            "arcane": {
+                "mana": 320,
+                "int": 20,
+                "maint": 70,
+                "effect": [
+                    "500-foot radius",
+                    "SR 18"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Mineral Creation",
+        "type": "path",
+        "level": 70,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create an object composed of metal or stone whose total Presence is no greater than the listed value or twice your Presence. The object must appear in a location that is logical for it, according to its nature. For example, you could not create a boulder in mid air, but a cloud could appear in the sky."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "Presence 4"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "Presence 8"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "Presence 12"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 18,
+                "maint": 30,
+                "effect": [
+                    "Presence 16"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Terra Cognition",
+        "type": "path",
+        "level": 72,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You detect all entities and structures that are in contact with the ground within the area centered on you. A target with the Imbued trait can resist the detection by making a SR Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 7,
+                "maint": 0,
+                "effect": [
+                    "1,500-foot radius",
+                    "SR 8"
+                ]
+            },
+            "intermediate": {
+                "mana": 270,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "3-mi radius",
+                    "SR 10"
+                ]
+            },
+            "advanced": {
+                "mana": 360,
+                "int": 13,
+                "maint": 0,
+                "effect": [
+                    "6-mi radius",
+                    "SR 12"
+                ]
+            },
+            "arcane": {
+                "mana": 450,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "10-mi radius",
+                    "SR 14"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Earthquake",
+        "type": "path",
+        "level": 76,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. Structures with a Base Damage Negate 4 or less are instantly destroyed. Structures with BDN 14 or less suffer 5 points of Force damage the first round and twice as much each subsequent round -- 5, 10, 20, 40 -- up to 14."
+        ],
+        "degree": {
+            "base": {
+                "mana": 150,
+                "int": 8,
+                "maint": 15,
+                "effect": [
+                    "1,500-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "3-mi radius"
+                ]
+            },
+            "advanced": {
+                "mana": 300,
+                "int": 14,
+                "maint": 25,
+                "effect": [
+                    "6-mi radius"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 18,
+                "maint": 30,
+                "effect": [
+                    "10-mi radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Extreme Crush",
+        "type": "path",
+        "level": 80,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a PhR 20 Check; a target can add their Impact AV to the Check.",
+            "A target that fails the Resistance Check takes 5 points of Impact Damage per Degree of Failure. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier. An affected target cannot move within the zone unless they make a Strength 16 Check.",
+            "All entities in the zone must repeat the Resistance Check at the beginning of the Action Phase each round until they leave the zone or the spell ends.",
+            "Immaterial entities are also affected by this spell, but they gain a +5 deed bonus to the PhR and Strength Check."
+        ],
+        "degree": {
+            "base": {
+                "mana": 180,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "60-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 250,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "150-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 320,
+                "int": 16,
+                "maint": 35,
+                "effect": [
+                    "300-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 400,
+                "int": 20,
+                "maint": 40,
+                "effect": [
+                    "500-foot radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Create Mineral Elemental",
+        "type": "path",
+        "level": 82,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a monad creature. The creature's level can be no greater than the listed value and must follow the rules for monad creatures. The creature is created with the following rules:",
+            {
+                "type": "list",
+                "items": [
+                    "The creature is a mineral elemental with Nornir 20."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 250,
+                "int": 12,
+                "maint": 50,
+                "effect": [
+                    "Level 2"
+                ]
+            },
+            "intermediate": {
+                "mana": 350,
+                "int": 14,
+                "maint": 70,
+                "effect": [
+                    "Level 4"
+                ]
+            },
+            "advanced": {
+                "mana": 500,
+                "int": 18,
+                "maint": 0,
+                "effect": [
+                    "Level 8"
+                ]
+            },
+            "arcane": {
+                "mana": 700,
+                "int": 22,
+                "maint": 140,
+                "effect": [
+                    "Level 12"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Gravity Increase",
+        "type": "path",
+        "level": 86,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a stationary zone centered on a point of your choice. The force of gravity is increased within the zone."
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 10,
+                "maint": 20,
+                "effect": [
+                    "300-foot radius",
+                    "Gravity &times; 2"
+                ]
+            },
+            "intermediate": {
+                "mana": 240,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "500-foot radius",
+                    "Gravity &times; 3"
+                ]
+            },
+            "advanced": {
+                "mana": 280,
+                "int": 16,
+                "maint": 30,
+                "effect": [
+                    "1000-foot radius",
+                    "Gravity &times; 5"
+                ]
+            },
+            "arcane": {
+                "mana": 320,
+                "int": 20,
+                "maint": 35,
+                "effect": [
+                    "1500-foot radius",
+                    "Gravity &times; 10"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Meteor",
+        "type": "path",
+        "level": 90,
+        "power": [
+            "attack"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "Choose a number of points that you can see. You call down a meteor which will appear in 2d6 rounds on the End Phase. When the meteor impacts, All entities in a 150-foot radius centered on the point of impact must make a Defensive Roll against your Offensive Roll.",
+            "A target that takes a direct hit from the meteor takes 15 Heat and Impact Base Damage. A target within a 30-foot radius takes 10 Heat and Impact Base Damage. A target more than 30 feet away takes 5 Impact Base.",
+            "On a hit, a target also suffers an Impact maneuver as if hit with a Strength of 14.",
+            "A meteor will impact any structure or landmass in the way. This could change its trajectory."
+        ],
+        "degree": {
+            "base": {
+                "mana": 200,
+                "int": 10,
+                "maint": 0,
+                "effect": [
+                    "1 meteor"
+                ]
+            },
+            "intermediate": {
+                "mana": 250,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "5 meteors"
+                ]
+            },
+            "advanced": {
+                "mana": 350,
+                "int": 16,
+                "maint": 0,
+                "effect": [
+                    "10 meteors"
+                ]
+            },
+            "arcane": {
+                "mana": 450,
+                "int": 20,
+                "maint": 0,
+                "effect": [
+                    "15 meteors"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Control Gravity",
+        "type": "path",
+        "level": 92,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a zone centered on you. You have control over gravity within the zone. You can increase it to 10 times its original value or reverse it. All entities in the zone are equally affected.",
+            "Your control is such that you can cause different effects to specific parts of the zone."
+        ],
+        "degree": {
+            "base": {
+                "mana": 350,
+                "int": 14,
+                "maint": 70,
+                "effect": [
+                    "50-mi radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 500,
+                "int": 16,
+                "maint": 100,
+                "effect": [
+                    "500-mi radius"
+                ]
+            },
+            "advanced": {
+                "mana": 650,
+                "int": 20,
+                "maint": 130,
+                "effect": [
+                    "1000-mi radius"
+                ]
+            },
+            "arcane": {
+                "mana": 800,
+                "int": 24,
+                "maint": 160,
+                "effect": [
+                    "3000-mi radius"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Kingdom of Stone",
+        "type": "path",
+        "level": 96,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You gain the following actions:",
+            {
+                "name": "Control Creature of Mineral",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 2 AP",
+                    "You can gain control over a mineral elemental. A target must make a SR Check. A target that succeeds is immune to the control from this spell for a number of rounds equal to their Degree of Success.",
+                    "Failure means the target falls under your control. This control is sentient, meaning you can give the target commands without needing to take any yourself.",
+                    "A target cannot repeat the Resistance Check. If the target ever leaves the area or the spell ends, your control ends."
+                ]
+            },
+            {
+                "name": "Modify Mineral",
+                "type": "entries",
+                "entries": [
+                    "**Action**: 1 AP",
+                    "You can cause mountains to rise and redirect rivers within the zone."
+                ]
+            },
+            {
+                "name": "Redirect Mineral",
+                "type": "entries",
+                "entries": [
+                    "**Reaction**: 0 AP",
+                    "You can take this reaction when an attack made with a metal weapon or a spell from the Earth path passes through the area, it suffers `D10` on the Offensive Roll."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 300,
+                "int": 10,
+                "maint": 30,
+                "effect": [
+                    "50-mi radius",
+                    "SR 14"
+                ]
+            },
+            "intermediate": {
+                "mana": 450,
+                "int": 9,
+                "maint": 45,
+                "effect": [
+                    "500-mi radius",
+                    "SR 18"
+                ]
+            },
+            "advanced": {
+                "mana": 600,
+                "int": 12,
+                "maint": 60,
+                "effect": [
+                    "5000-mi radius",
+                    "SR 20"
+                ]
+            },
+            "arcane": {
+                "mana": 1000,
+                "int": 15,
+                "maint": 100,
+                "effect": [
+                    "50,000-mi radius",
+                    "SR 24"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Atomic Control",
+        "type": "path",
+        "level": 100,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a zone centered on you. All material entities within the zone must make a PhR or SR Check.",
+            "A target that fails the Resistance Check falls under your control. You have complete control over their atomic structure. The Game Master can require a certain degree in a trade skill or a scientific understanding in order to make the change. A target does not gain a new Resistance Check, any changes made are permanent.",
+            "For example, you could turn lead into gold if you understand that both are basic elements. You could also form a soulless human being if you possess an inhuman understanding of biology.",
+            "As this spell only grants control over atoms, it has no affect on Immaterial entities or spirits."
+        ],
+        "degree": {
+            "base": {
+                "mana": 450,
+                "int": 16,
+                "maint": 45,
+                "effect": [
+                    "PhR or SR 14",
+                    "300-foot radius"
+                ]
+            },
+            "intermediate": {
+                "mana": 800,
+                "int": 20,
+                "maint": 80,
+                "effect": [
+                    "PhR or SR 16",
+                    "600-foot radius"
+                ]
+            },
+            "advanced": {
+                "mana": 1200,
+                "int": 24,
+                "maint": 120,
+                "effect": [
+                    "PhR or SR 20",
+                    "1500-foot radius"
+                ]
+            },
+            "arcane": {
+                "mana": 1600,
+                "int": 30,
+                "maint": 160,
+                "effect": [
+                    "PhR or SR 24",
+                    "3000-foot radius"
+                ]
+            }
+        }
+    }
+]
