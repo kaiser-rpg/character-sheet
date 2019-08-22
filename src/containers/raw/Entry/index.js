@@ -6,3 +6,4 @@ export * from './PoolEntry';
 export * from './PotentialEntry';
 export * from './ResistanceEntry';
 export {SkillEntry, Initiative, SpiritSkillEntry} from './SkillEntry';
+export {MovementEntry} from './MovementEntry';

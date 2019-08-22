@@ -9,7 +9,7 @@ import {
     ADD_QUALITY_FACTOR,
     SET_BASE_VALUE,
 } from "./super-types";
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 
 export const setBase = (superType, key, value, source = "", note = "") => ({
     _id: shortid.generate(),

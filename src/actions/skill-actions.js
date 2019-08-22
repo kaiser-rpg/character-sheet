@@ -9,7 +9,7 @@ import {
     ADD_QUALITY_FACTOR,
     SUPER_TYPE_SKILL
 } from "./super-types";
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 
 export const addBaseValue2Skill = (key, value, source = "", note = "") => ({
     _id: shortid.generate(),

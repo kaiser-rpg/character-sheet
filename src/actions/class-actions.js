@@ -1,4 +1,4 @@
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 
 export const ADD_CLASS = "add-class";
 

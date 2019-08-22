@@ -1,4 +1,4 @@
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 
 export const SET_DEV_COST = "set-dev-cost";
 export const REDUCE_DEV_COST = "reduce-dev-cost";

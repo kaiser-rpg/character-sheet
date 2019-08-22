@@ -1,4 +1,4 @@
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 import {SUPER_TYPE_SKILL} from "./super-types";
 
 export const ADD_TIED_SKILL = "tied-skill";

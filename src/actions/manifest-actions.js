@@ -5,7 +5,7 @@ import {
     ADD_NATURAL_FACTOR,
     SUPER_TYPE_MANIFEST
 } from "./super-types";
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 
 export const add2BasePhenomStock = (value, source = "", note = "") => ({
     _id: shortid.generate(),

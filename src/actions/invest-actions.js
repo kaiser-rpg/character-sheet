@@ -5,7 +5,7 @@ import {
     SUPER_TYPE_MARTIAL,
     SUPER_TYPE_SKILL
 } from "./super-types";
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 
 export const INVEST_XP = "invest-xp";
 

@@ -1,28 +1,29 @@
 import React from "react";
+import Grid from "@material-ui/core/Grid";
+import CharTable from "./display/CharTable";
+import ResistanceTable from "./display/ResistanceTable";
 
+const GeneralGroup = () => {
 
-export default class GeneralGroup extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+    return (
+        <div>
+            <Grid container spacing={1}>
+                <Grid item xs={4}>
+                    <CharTable/>
+                </Grid>
+                <Grid item xs={8}>
+                    <Grid container spacing={0}>
+                        <Grid item xs={4}>
+                            <ResistanceTable/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </div>
+    );
+};
 
-    render() {
-        let {lifePoints, presence, physicalResistance, spiritResistance, mentalResistance} = this.props.generalAbilities;
-        let resistance = {
-            prr: presence,
-            phr: physicalResistance,
-            sr: spiritResistance,
-            mr: mentalResistance
-        };
-
-        return (
-            <div>
-                <LifePoints lifePoints={lifePoints}/>
-                <Resistance resistance={resistance}/>
-            </div>
-        )
-    }
-}
+export default GeneralGroup;
 
 class LifePoints extends React.Component {
     constructor(props) {

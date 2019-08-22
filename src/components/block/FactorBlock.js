@@ -1,5 +1,5 @@
 import React from "react";
-import {sheet} from "../../reducers/SheetApp";
+import {sheet} from "../../reducers";
 import {deleteId} from "../../actions/sheet-actions";
 
 

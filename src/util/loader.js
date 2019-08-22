@@ -1,4 +1,4 @@
-import {sheet} from "../reducers/SheetApp";
+import {sheet} from "../reducers";
 import {addNaturalFactor2Char, setBaseValueChar} from "../actions/char-actions";
 import {increaseLevel} from "../actions/level-actions";
 import {setDevCost} from "../actions/dev-cost-actions";

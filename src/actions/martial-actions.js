@@ -5,7 +5,7 @@ import {
     ADD_NATURAL_FACTOR,
     SUPER_TYPE_MARTIAL
 } from "./super-types";
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 
 export const add2BaseKiReserve = (value, source = "", note = "") => ({
     _id: shortid.generate(),

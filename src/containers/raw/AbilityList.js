@@ -1,17 +1,18 @@
 import {
-    ChakraEntry,
     KiReserve,
     LifePoints,
     ManaAccumulation,
     ManaKnowledge,
     ManaPool,
     ManaRecovery,
+    MovementEntry,
     PhenomKnowledge,
     PhenomStock,
     Potential,
     Presence,
     ResistanceEntry,
-    SpiritKnowledge
+    SpiritKnowledge,
+    StaminaPoints
 } from "./Entry";
 import {
     investPp,
@@ -68,8 +69,15 @@ export class GeneralAbilities {
         this.lifePoints = new LifePoints();
         this.presence = new Presence();
         this.physicalResistance = new ResistanceEntry("physical resistance", "con", "PhR");
+        this.immuneResistance = new ResistanceEntry("immune resistance", "con", "IR");
         this.spiritResistance = new ResistanceEntry("spirit resistance", "wp", "SR");
         this.mentalResistance = new ResistanceEntry("mental resistance", "foc", "MR");
+        this.stamina = new StaminaPoints();
+        this.groundMovement = new MovementEntry("ground");
+        this.flightMovement = new MovementEntry("flight");
+        this.swimMovement = new MovementEntry("swim");
+        this.burrowMovement = new MovementEntry("burrow");
+
     }
 
     get xp() {
@@ -89,6 +97,11 @@ export class GeneralAbilities {
         this.physicalResistance.removeBySource(sourceName);
         this.spiritResistance.removeBySource(sourceName);
         this.mentalResistance.removeBySource(sourceName);
+        this.stamina.removeBySource(sourceName);
+        this.groundMovement.removeBySource(sourceName);
+        this.flightMovement.removeBySource(sourceName);
+        this.swimMovement.removeBySource(sourceName);
+        this.burrowMovement.removeBySource(sourceName);
     }
 
     removeById(id) {
@@ -97,52 +110,56 @@ export class GeneralAbilities {
         this.physicalResistance.removeById(id);
         this.spiritResistance.removeById(id);
         this.mentalResistance.removeById(id);
+        this.stamina.removeById(id);
+        this.groundMovement.removeById(id);
+        this.flightMovement.removeById(id);
+        this.swimMovement.removeById(id);
+        this.burrowMovement.removeById(id);
     }
 }
-
 
 export class MartialAbilities {
 
     constructor() {
         this.kiReserve = new KiReserve();
         this.spiritKnowledge = new SpiritKnowledge();
-        this.redChakra = new ChakraEntry("red", ["str", "con"]);
-        this.greenChakra = new ChakraEntry("green", ["dex", "agi"]);
-        this.blueChakra = new ChakraEntry("blue", ["foc", "wp"]);
+        // this.redChakra = new ChakraEntry("red", ["str", "con"]);
+        // this.greenChakra = new ChakraEntry("green", ["dex", "agi"]);
+        // this.blueChakra = new ChakraEntry("blue", ["foc", "wp"]);
     }
 
     get xp() {
         return [
             investXpMartial(this.kiReserve.key, this.kiReserve.cost, this.kiReserve.key),
             investXpMartial(this.spiritKnowledge.key, this.spiritKnowledge.cost, this.spiritKnowledge.key),
-            investXpMartial(this.redChakra.key, this.redChakra.cost, this.redChakra.key),
-            investXpMartial(this.greenChakra.key, this.greenChakra.cost, this.greenChakra.key),
-            investXpMartial(this.blueChakra.key, this.blueChakra.cost, this.blueChakra.key)
+            // investXpMartial(this.redChakra.key, this.redChakra.cost, this.redChakra.key),
+            // investXpMartial(this.greenChakra.key, this.greenChakra.cost, this.greenChakra.key),
+            // investXpMartial(this.blueChakra.key, this.blueChakra.cost, this.blueChakra.key)
         ];
     }
 
     updateRollingInnate(newLevel) {
         this.kiReserve.updateRollingInnate(newLevel);
         this.spiritKnowledge.updateRollingInnate(newLevel);
-        this.redChakra.updateRollingInnate(newLevel);
-        this.greenChakra.updateRollingInnate(newLevel);
-        this.blueChakra.updateRollingInnate(newLevel);
+        // this.redChakra.updateRollingInnate(newLevel);
+        // this.greenChakra.updateRollingInnate(newLevel);
+        // this.blueChakra.updateRollingInnate(newLevel);
     }
 
     removeBySource(sourceName) {
         this.kiReserve.removeBySource(sourceName);
         this.spiritKnowledge.removeBySource(sourceName);
-        this.redChakra.removeBySource(sourceName);
-        this.greenChakra.removeBySource(sourceName);
-        this.blueChakra.removeBySource(sourceName);
+        // this.redChakra.removeBySource(sourceName);
+        // this.greenChakra.removeBySource(sourceName);
+        // this.blueChakra.removeBySource(sourceName);
     }
 
     removeById(id) {
         this.kiReserve.removeById(id);
         this.spiritKnowledge.removeById(id);
-        this.redChakra.removeById(id);
-        this.greenChakra.removeById(id);
-        this.blueChakra.removeById(id);
+        // this.redChakra.removeById(id);
+        // this.greenChakra.removeById(id);
+        // this.blueChakra.removeById(id);
     }
 
 }

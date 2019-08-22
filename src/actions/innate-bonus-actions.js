@@ -1,4 +1,4 @@
-import {shortid} from "../reducers/SheetApp";
+import {shortid} from "../reducers";
 
 export const INNATE_BONUS_CLASS = "innate-bonus-class";
 export const INNATE_BONUS_FEATURE = "innate-bonus-feature";

@@ -1,10 +1,9 @@
-import CharList from "./raw/CharList";
 import SkillList from "./raw/SkillList";
 import Info from "./raw/Info";
 import AbilityList from "./raw/AbilityList";
+import CharList from "./raw/CharList";
 
 export default class Makeup {
-
     constructor() {
         this.info = new Info();
 

@@ -10,7 +10,6 @@ export default class CharList {
         this.aptitude = new Aptitude(apt);
         this.focus = new Focus(foc);
         this.willpower = new Willpower(wp);
-
     }
 
     lookupChar(name) {

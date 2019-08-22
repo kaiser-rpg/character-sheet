@@ -1,5 +1,4 @@
 import {toCamelCase, toTitleCase} from "../../../util/StringHelper";
-import {presentSheet} from "../../../reducers/SheetApp";
 import {sumFactors} from "../../../util/Factor";
 import {REDUCE_DEV_COST, SET_DEV_COST} from "../../../actions/dev-cost-actions";
 import {add2Innate} from "../../../actions/factor-actions";
@@ -107,19 +106,19 @@ export class IEntry__secondOrder extends IEntry__firstOrder {
     }
 
     get charPermanentModifier() {
-        return presentSheet().characteristics.lookupCharValue(this.char, "permanentModifier");
+        return present().characteristics.lookupCharValue(this.char, "permanentModifier");
     }
 
     get charModifier() {
-        return presentSheet().characteristics.lookupCharValue(this.char, "modifier");
+        return present().characteristics.lookupCharValue(this.char, "modifier");
     }
 
     get charPermanentTotal() {
-        return presentSheet().characteristics.lookupCharValue(this.char, "permanentTotal");
+        return present().characteristics.lookupCharValue(this.char, "permanentTotal");
     }
 
     get charTotal() {
-        return presentSheet().characteristics.lookupCharValue(this.char, "total");
+        return present().characteristics.lookupCharValue(this.char, "total");
     }
 
     get permanentTotal() {
@@ -132,7 +131,6 @@ export class IEntry__secondOrder extends IEntry__firstOrder {
 }
 
 export class IEntry__thirdOrder extends IEntry__secondOrder {
-
     constructor(name, group, expenseKey, defaultChar, ...altNames) {
         super(name, group, expenseKey, defaultChar, altNames);
         this.devCostMod = [];
@@ -182,9 +180,9 @@ export class IEntry_fourthOrder extends IEntry__thirdOrder {
         if (this.tieValues.length === 0) return null;
         return this.tieValues.reduce((best, curr) => {
             //Make sure tie key exists
-            if (!presentSheet().skills.hasOwnProperty(curr.tieKey)) return best;
+            if (!present().skills.hasOwnProperty(curr.tieKey)) return best;
             // Get tie skill
-            let currSkill = presentSheet().skills[curr.tieKey];
+            let currSkill = present().skills[curr.tieKey];
             // Return curr if better than best or if no best exists
             if (!best || best.b < (currSkill.base - curr.value)) return {
                 name: curr.tieKey,

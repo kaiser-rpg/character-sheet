@@ -43,16 +43,16 @@ export function sumFactors(factorList) {
                 break;
             case ADD_QUALITY_FACTOR:
                 if (factor.value > 0) {
-                    qualityBonus = qualityBonus > factor.value ? qualityBonus : factor.value;
+                    qualityBonus = Math.max(qualityBonus, factor.value);
                 } else {
-                    qualityPenalty = qualityPenalty < factor.value ? qualityPenalty : factor.value;
+                    qualityPenalty = Math.min(qualityPenalty, factor.value);
                 }
                 break;
             case ADD_POWER_FACTOR:
                 if (factor.value > 0) {
-                    powerBonus = powerBonus > factor.value ? powerBonus : factor.value;
+                    powerBonus = Math.max(powerBonus, factor.value);
                 } else {
-                    powerPenalty = powerPenalty < factor.value ? powerPenalty : factor.value;
+                    powerPenalty = Math.min(powerPenalty, factor.value);
                 }
                 break;
             default:

@@ -37,7 +37,7 @@ export class LifePoints extends PoolEntry {
         let baseLP = (this.base + this.freeBase) * this.charPermanentTotal;
 
         return Math.floor(this.rex === 0 ? 1 : this.rex * (
-            this.freeBase
+            this.freeValue
             + baseLP
             + this.factors.permanent
         ));
@@ -47,10 +47,27 @@ export class LifePoints extends PoolEntry {
         let baseLP = (this.base + this.freeBase) * this.charPermanentTotal;
 
         return Math.floor(this.rex === 0 ? 1 : this.rex * (
-            this.freeBase
+            this.freeValue
             + baseLP
             + this.factors.total
         ));
+    }
+}
+
+export class StaminaPoints extends PoolEntry {
+    constructor() {
+        super("stamina points", "general", "con");
+        this.expenseKey = "";
+        this.devCostMin = 0;
+        this.devCostMax = 0;
+    }
+
+    get permanentTotal() {
+        return this.base + this.charPermanentTotal + this.factors.permanent;
+    }
+
+    get total() {
+        return this.base + this.charPermanentTotal + this.factors.total;
     }
 }
 
@@ -94,14 +111,14 @@ export class ManaPool extends PoolEntry {
     }
 
     get permanentTotal() {
-        let baseMana = this.freeBase + this.base * 50;
+        let baseMana = this.freeValue + this.base * 50;
         let modMana = this.freeBase * this.charPermanentTotal;
 
         return baseMana + modMana + this.factors.permanent;
     }
 
     get total() {
-        let baseMana = this.freeBase + this.base * 50;
+        let baseMana = this.freeValue + this.base * 50;
         let modMana = this.freeBase * this.charTotal;
 
         return baseMana + modMana + this.factors.total;

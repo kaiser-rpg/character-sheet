@@ -1,7 +1,7 @@
-import {presentSheet} from "../../../reducers/SheetApp";
 import {innateBonusClass} from "../../../actions/innate-bonus-actions";
 import {IEntry__firstOrder, IEntry__secondOrder} from "../core/CoreEntry";
 import {setBaseValueChar} from "../../../actions/char-actions";
+import {present} from "../../../store";
 
 export class Presence extends IEntry__firstOrder {
 
@@ -20,7 +20,7 @@ export class ResistanceEntry extends IEntry__secondOrder {
     }
 
     get base() {
-        return Math.floor(presentSheet().abilities.generalAbilities.presence.total / Math.max(this.multiplier, 0.5));
+        return Math.floor(present().abilities.generalAbilities.presence.total / Math.max(this.multiplier, 0.5));
     }
 
 }

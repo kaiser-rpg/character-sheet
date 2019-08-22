@@ -1,10 +1,7 @@
-import {createStore} from "redux";
-import Makeup from "../containers/Makeup";
 import {characteristics} from "./CharacteristicsReducer";
 import {skills} from "./SkillsReducer";
 import {info} from "./InfoReducer";
 import {abilities} from "./AbilitiesReducer";
-import undoable from 'redux-undo';
 import {
     SUPER_TYPE_CHAR,
     SUPER_TYPE_GENERAL,
@@ -15,10 +12,11 @@ import {
 } from "../actions/super-types";
 import {LEVEL_UP} from "../actions/level-actions";
 import {DELETE_ID} from "../actions/sheet-actions";
+import Makeup from "../containers/Makeup";
 
 export const shortid = require('shortid');
 
-function sheetReducer(state = new Makeup(), action) {
+function rootReducer(state = {}, action) {
     let newState = Object.assign(new Makeup(), state);
 
     newState.info = info(newState.info, action);
@@ -60,10 +58,4 @@ function sheetReducer(state = new Makeup(), action) {
     return newState;
 }
 
-const undoableApp = undoable(sheetReducer, {
-    limit: 10
-});
-
-export const sheet = createStore(undoableApp, new Makeup());
-export const presentSheet = () => sheet.getState().present;
-sheet.subscribe(() => console.log(presentSheet(), sheet.getState()));
+export default rootReducer;

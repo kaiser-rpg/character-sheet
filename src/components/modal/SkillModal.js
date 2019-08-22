@@ -1,4 +1,4 @@
-import {sheet} from "../../reducers/SheetApp";
+import {sheet} from "../../reducers";
 import {deleteId} from "../../actions/sheet-actions";
 import React from "react";
 import Modal from 'react-modal';
@@ -133,6 +133,8 @@ export default class SkillModal extends React.Component {
                         <h3>Total</h3>
                         <div>{skill.total}</div>
                     </div>
+
+
                 </Modal>
             </div>
         )

@@ -1,6 +1,8 @@
 import {
     SET_CHARACTER_NAME,
     SET_CLASS_NAME,
+    SET_HERITAGE_PRIME,
+    SET_HERITAGE_SECONDARY,
     SET_MAGIC_LIMIT,
     SET_MANIFEST_LIMIT,
     SET_MARTIAL_LIMIT
@@ -19,6 +21,18 @@ export function info(state = new Info(), action) {
         case SET_CLASS_NAME:
             console.log("set class", action.name, action);
             newState.className = action.name;
+            break;
+        case SET_HERITAGE_PRIME:
+            if (newState.heritageSecondary === action.value) {
+                newState.heritageSecondary = "";
+            }
+            console.log("set heritage prime", action.value, action);
+            newState.heritagePrime = action.value;
+            break;
+        case SET_HERITAGE_SECONDARY:
+            if (newState.heritagePrime === action.value) break;
+            console.log("set heritage secondary", action.value, action);
+            newState.heritageSecondary = action.value;
             break;
         case SET_MARTIAL_LIMIT:
             newState.martialLimit = action.percent < 1 ? action.percent * 100 : action.percent;

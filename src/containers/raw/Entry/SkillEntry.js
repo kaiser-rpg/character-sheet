@@ -1,6 +1,6 @@
-import {presentSheet} from "../../../reducers/SheetApp";
 import {IEntry__firstOrder, IEntry__secondOrder, IEntry_fourthOrder} from "../core/CoreEntry";
 import {setBaseValueChar} from "../../../actions/char-actions";
+import {present} from "../../../store";
 
 export class SkillEntry extends IEntry_fourthOrder {
     constructor(name, group, defaultChar, ...altNames) {
@@ -25,9 +25,9 @@ export class SpiritSkillEntry extends IEntry__firstOrder {
     }
 
     get base() {
-        let sk = presentSheet().abilities.martialAbilities.spiritKnowledge.maximum;
-        if (presentSheet().skills.hasOwnProperty(this.skill)) {
-            let si = presentSheet().skills[this.skill].permanentTotal();
+        let sk = present().abilities.martialAbilities.spiritKnowledge.maximum;
+        if (present().skills.hasOwnProperty(this.skill)) {
+            let si = present().skills[this.skill].permanentTotal();
             return Math.floor((sk + si) / 2);
         }
         return Math.floor(sk / 2);
