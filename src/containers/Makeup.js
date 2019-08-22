@@ -1,7 +1,7 @@
-import SkillList from "./raw/SkillList";
-import Info from "./raw/Info";
-import AbilityList from "./raw/AbilityList";
-import CharList from "./raw/CharList";
+import SkillList from "./SkillList";
+import Info from "./Info";
+import AbilityList from "./AbilityList";
+import CharList from "./CharList";
 
 export default class Makeup {
     constructor() {

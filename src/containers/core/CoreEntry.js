@@ -1,7 +1,8 @@
-import {toCamelCase, toTitleCase} from "../../../util/StringHelper";
-import {sumFactors} from "../../../util/Factor";
-import {REDUCE_DEV_COST, SET_DEV_COST} from "../../../actions/dev-cost-actions";
-import {add2Innate} from "../../../actions/factor-actions";
+import {toCamelCase, toTitleCase} from "../../util/StringHelper";
+import {sumFactors} from "../../util/Factor";
+import {REDUCE_DEV_COST, SET_DEV_COST} from "../../actions/dev-cost-actions";
+import {add2Innate} from "../../actions/factor-actions";
+import {present} from "../../reducers";
 
 export class IEntry__core {
     constructor(name = "", group = "", expenseKey = "xp", ...altNames) {

@@ -3,7 +3,7 @@ import AbilityList, {
     MagicAbilities,
     ManifestAbilities,
     MartialAbilities
-} from "../containers/raw/AbilityList";
+} from "../containers/AbilityList";
 import {
     ADD_ALL_ACTION_FACTOR,
     ADD_BASE_VALUE,

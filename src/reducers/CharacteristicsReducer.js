@@ -1,4 +1,4 @@
-import CharList from "../containers/raw/CharList";
+import CharList from "../containers/CharList";
 import {
     ADD_ALL_ACTION_FACTOR,
     ADD_DEED_FACTOR,

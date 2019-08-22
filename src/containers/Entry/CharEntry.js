@@ -1,5 +1,5 @@
 import {IEntry__core} from "../core/CoreEntry";
-import {setBaseValueChar} from "../../../actions/char-actions";
+import {setBaseValueChar} from "../../actions/char-actions";
 
 class CharEntry extends IEntry__core {
     constructor(name, baseValue = 5, ...altNames) {

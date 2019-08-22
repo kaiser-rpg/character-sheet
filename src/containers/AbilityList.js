@@ -14,13 +14,7 @@ import {
     SpiritKnowledge,
     StaminaPoints
 } from "./Entry";
-import {
-    investPp,
-    investXpGeneral,
-    investXpMagic,
-    investXpManifest,
-    investXpMartial
-} from "../../actions/invest-actions";
+import {investPp, investXpGeneral, investXpMagic, investXpManifest, investXpMartial} from "../actions/invest-actions";
 
 export default class AbilityList {
 

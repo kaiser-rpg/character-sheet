@@ -1,7 +1,7 @@
-import {innateBonusClass} from "../../../actions/innate-bonus-actions";
+import {innateBonusClass} from "../../actions/innate-bonus-actions";
 import {IEntry__firstOrder, IEntry__secondOrder} from "../core/CoreEntry";
-import {setBaseValueChar} from "../../../actions/char-actions";
-import {present} from "../../../store";
+import {setBaseValueChar} from "../../actions/char-actions";
+import {present} from "../../reducers";
 
 export class Presence extends IEntry__firstOrder {
 

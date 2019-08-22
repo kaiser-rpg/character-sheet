@@ -7,7 +7,7 @@ import {
     SET_MANIFEST_LIMIT,
     SET_MARTIAL_LIMIT
 } from "../actions/info-actions";
-import Info from "../containers/raw/Info";
+import Info from "../containers/Info";
 
 
 export function info(state = new Info(), action) {

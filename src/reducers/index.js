@@ -13,10 +13,12 @@ import {
 import {LEVEL_UP} from "../actions/level-actions";
 import {DELETE_ID} from "../actions/sheet-actions";
 import Makeup from "../containers/Makeup";
+import undoable from "redux-undo";
+import {createStore} from "redux";
 
 export const shortid = require('shortid');
 
-function rootReducer(state = {}, action) {
+export const rootReducer = (state = {}, action) => {
     let newState = Object.assign(new Makeup(), state);
 
     newState.info = info(newState.info, action);
@@ -58,4 +60,14 @@ function rootReducer(state = {}, action) {
     return newState;
 }
 
-export default rootReducer;
+const undoableApp = undoable(rootReducer, {
+    limit: 10
+});
+
+export const store = createStore(undoableApp);
+store.subscribe(() => console.log(store.getState().present, store.getState()));
+window.store = store;
+
+export const present = () => {
+    return store.getState().present;
+}

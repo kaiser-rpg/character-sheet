@@ -1,6 +1,6 @@
 import {IEntry__firstOrder, IEntry__secondOrder, IEntry_fourthOrder} from "../core/CoreEntry";
-import {setBaseValueChar} from "../../../actions/char-actions";
-import {present} from "../../../store";
+import {setBaseValueChar} from "../../actions/char-actions";
+import {present} from "../../reducers";
 
 export class SkillEntry extends IEntry_fourthOrder {
     constructor(name, group, defaultChar, ...altNames) {

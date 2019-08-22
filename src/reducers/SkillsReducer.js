@@ -1,4 +1,4 @@
-import SkillList from "../containers/raw/SkillList";
+import SkillList from "../containers/SkillList";
 import {INNATE_BONUS_CLASS, INNATE_BONUS_FEATURE} from "../actions/innate-bonus-actions";
 import {REDUCE_DEV_COST, SET_DEV_COST} from "../actions/dev-cost-actions";
 import {

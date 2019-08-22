@@ -1,5 +1,5 @@
 import {IEntry__thirdOrder} from "../core/CoreEntry";
-import {present} from "../../../store";
+import {present} from "../../reducers";
 
 
 export class ManaAccumulation extends IEntry__thirdOrder {

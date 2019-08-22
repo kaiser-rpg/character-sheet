@@ -1,6 +1,6 @@
 import {Initiative, SkillEntry, SpiritSkillEntry} from "./Entry";
-import {addTie2Skill} from "../../actions/tied-actions";
-import {investXpSkill} from "../../actions/invest-actions";
+import {addTie2Skill} from "../actions/tied-actions";
+import {investXpSkill} from "../actions/invest-actions";
 
 export function martialSkills() {
     return [
