@@ -15,7 +15,6 @@ const useStyles = makeStyles(theme => ({
         overflowX: 'auto',
     },
     table: {
-        minWidth: 200,
     },
 }));
 
@@ -40,16 +39,11 @@ const ResistanceTable = () => {
 
     const makeResistRow = (resist) => {
         return (
-            <TableRow key={resist.title}>
+            <TableRow key={resist.shortName}>
                 <TableCell component="th" scope="row">
-                    {resist.title}
+                    {resist.shortName}
                 </TableCell>
                 <TableCell align="center">{resist.total}</TableCell>
-                <TableCell align="center">=</TableCell>
-                <TableCell align="center">{resist.base}</TableCell>
-                <TableCell align="center">{resist.charModifier}</TableCell>
-                <TableCell align="center">{resist.factors.permanent}</TableCell>
-                <TableCell align="center">{resist.factors.temporary}</TableCell>
             </TableRow>
         )
     };
@@ -61,11 +55,6 @@ const ResistanceTable = () => {
                     <TableRow>
                         <TableCell></TableCell>
                         <TableCell align="center">Total</TableCell>
-                        <TableCell align="center"/>
-                        <TableCell align="center">Base</TableCell>
-                        <TableCell align="center">Mod</TableCell>
-                        <TableCell align="center">Perm</TableCell>
-                        <TableCell align="center">Temp</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>

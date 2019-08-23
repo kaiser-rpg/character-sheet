@@ -7,16 +7,18 @@ const GeneralGroup = () => {
 
     return (
         <div>
-            <Grid container spacing={1}>
-                <Grid item xs={4}>
-                    <CharTable/>
+            <Grid
+                container
+                direction="row"
+                justify="flex-start"
+                alignItems="flex-start"
+                spacing={1}
+            >
+                <Grid item xs={8} sm={5} md={4} lg={4} xl={4}>
+                    <CharTable />
                 </Grid>
-                <Grid item xs={8}>
-                    <Grid container spacing={0}>
-                        <Grid item xs={4}>
-                            <ResistanceTable/>
-                        </Grid>
-                    </Grid>
+                <Grid item xs={4} sm={4} md={4} lg={2} xl={2}>
+                    <ResistanceTable />
                 </Grid>
             </Grid>
         </div>
@@ -38,44 +40,44 @@ class LifePoints extends React.Component {
                 <h3>{lp.title}</h3>
                 <table style={styles.table}>
                     <tbody>
-                    <tr style={styles.row}>
-                        <td colSpan={2}>
-                            Base
+                        <tr style={styles.row}>
+                            <td colSpan={2}>
+                                Base
                         </td>
-                    </tr>
-                    <tr style={styles.row}>
-                        <td colSpan={2}>
-                            20+({lp.freeBase}+{lp.base})&times;{lp.charPermanentTotal}
+                        </tr>
+                        <tr style={styles.row}>
+                            <td colSpan={2}>
+                                20+({lp.freeBase}+{lp.base})&times;{lp.charPermanentTotal}
+                            </td>
+                        </tr>
+                        <tr style={styles.row}>
+                            <td>
+                                Bonus
                         </td>
-                    </tr>
-                    <tr style={styles.row}>
-                        <td>
-                            Bonus
+                            <td>
+                                {lp.factors.permanent}
+                            </td>
+                        </tr>
+                        <tr style={styles.row}>
+                            <td>
+                                Total
                         </td>
-                        <td>
-                            {lp.factors.permanent}
-                        </td>
-                    </tr>
-                    <tr style={styles.row}>
-                        <td>
-                            Total
-                        </td>
-                        <td>
-                            {lp.total}
-                        </td>
-                    </tr>
+                            <td>
+                                {lp.total}
+                            </td>
+                        </tr>
                     </tbody>
                     <tbody>
-                    <tr style={styles.row}>
-                        <td colSpan={2}>
-                            Current
+                        <tr style={styles.row}>
+                            <td colSpan={2}>
+                                Current
                         </td>
-                    </tr>
-                    <tr style={styles.row}>
-                        <td colSpan={2}>
-                            {lp.currentTotal}
-                        </td>
-                    </tr>
+                        </tr>
+                        <tr style={styles.row}>
+                            <td colSpan={2}>
+                                {lp.currentTotal}
+                            </td>
+                        </tr>
                     </tbody>
 
                 </table>
@@ -91,99 +93,99 @@ class Resistance extends React.Component {
     }
 
     render() {
-        let {prr, phr, sr, mr} = this.props.resistance;
+        let { prr, phr, sr, mr } = this.props.resistance;
 
         return (
             <div className="column">
                 <h3>Resistance</h3>
                 <table style={styles.table}>
                     <tbody>
-                    <tr style={styles.row}>
-                        <td className='skill-row-name'>
-                            {prr.title}
+                        <tr style={styles.row}>
+                            <td className='skill-row-name'>
+                                {prr.title}
+                            </td>
+                            <td className='skill-row-final'>
+                                {prr.permanentTotal}
+                            </td>
+                        </tr>
+                        <tr style={styles.row}>
+                            <td className='skill-row-name'>
+                                {phr.title}
+                            </td>
+                            <td className='skill-row-final'>
+                                {phr.permanentTotal}
+                            </td>
+                            <td>
+                                =
                         </td>
-                        <td className='skill-row-final'>
-                            {prr.permanentTotal}
+                            <td className='skill-row-base'>
+                                {phr.base}
+                            </td>
+                            <td>
+                                +
                         </td>
-                    </tr>
-                    <tr style={styles.row}>
-                        <td className='skill-row-name'>
-                            {phr.title}
+                            <td className='skill-row-modifier'>
+                                {phr.charModifier}
+                            </td>
+                            <td>
+                                +
                         </td>
-                        <td className='skill-row-final'>
-                            {phr.permanentTotal}
+                            <td className='skill-row-factor'>
+                                {phr.factors.permanent}
+                            </td>
+                        </tr>
+                        <tr style={styles.row}>
+                            <td className='skill-row-name'>
+                                {sr.title}
+                            </td>
+                            <td className='skill-row-final'>
+                                {sr.permanentTotal}
+                            </td>
+                            <td>
+                                =
                         </td>
-                        <td>
-                            =
+                            <td className='skill-row-base'>
+                                {sr.base}
+                            </td>
+                            <td>
+                                +
                         </td>
-                        <td className='skill-row-base'>
-                            {phr.base}
+                            <td className='skill-row-modifier'>
+                                {sr.charModifier}
+                            </td>
+                            <td>
+                                +
                         </td>
-                        <td>
-                            +
+                            <td className='skill-row-factor'>
+                                {sr.factors.permanent}
+                            </td>
+                        </tr>
+                        <tr style={styles.row}>
+                            <td className='skill-row-name'>
+                                {mr.title}
+                            </td>
+                            <td className='skill-row-final'>
+                                {mr.permanentTotal}
+                            </td>
+                            <td>
+                                =
                         </td>
-                        <td className='skill-row-modifier'>
-                            {phr.charModifier}
+                            <td className='skill-row-base'>
+                                {mr.base}
+                            </td>
+                            <td>
+                                +
                         </td>
-                        <td>
-                            +
+                            <td className='skill-row-modifier'>
+                                {mr.modifier}
+                            </td>
+                            <td>
+                                +
                         </td>
-                        <td className='skill-row-factor'>
-                            {phr.factors.permanent}
-                        </td>
-                    </tr>
-                    <tr style={styles.row}>
-                        <td className='skill-row-name'>
-                            {sr.title}
-                        </td>
-                        <td className='skill-row-final'>
-                            {sr.permanentTotal}
-                        </td>
-                        <td>
-                            =
-                        </td>
-                        <td className='skill-row-base'>
-                            {sr.base}
-                        </td>
-                        <td>
-                            +
-                        </td>
-                        <td className='skill-row-modifier'>
-                            {sr.charModifier}
-                        </td>
-                        <td>
-                            +
-                        </td>
-                        <td className='skill-row-factor'>
-                            {sr.factors.permanent}
-                        </td>
-                    </tr>
-                    <tr style={styles.row}>
-                        <td className='skill-row-name'>
-                            {mr.title}
-                        </td>
-                        <td className='skill-row-final'>
-                            {mr.permanentTotal}
-                        </td>
-                        <td>
-                            =
-                        </td>
-                        <td className='skill-row-base'>
-                            {mr.base}
-                        </td>
-                        <td>
-                            +
-                        </td>
-                        <td className='skill-row-modifier'>
-                            {mr.modifier}
-                        </td>
-                        <td>
-                            +
-                        </td>
-                        <td className='skill-row-factor'>
-                            {mr.factors.permanent}
-                        </td>
-                    </tr>
+                            <td className='skill-row-factor'>
+                                {mr.factors.permanent}
+                            </td>
+                        </tr>
                     </tbody>
 
                 </table>

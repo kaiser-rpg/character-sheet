@@ -2,6 +2,7 @@ import {innateBonusClass} from "../../actions/innate-bonus-actions";
 import {IEntry__firstOrder, IEntry__secondOrder} from "../core/CoreEntry";
 import {setBaseValueChar} from "../../actions/char-actions";
 import {present} from "../../reducers";
+import {toTitleCase} from "../../util/StringHelper";
 
 export class Presence extends IEntry__firstOrder {
 
@@ -16,6 +17,7 @@ export class ResistanceEntry extends IEntry__secondOrder {
 
     constructor(name, defaultChar, shortName) {
         super(name, "general", null, defaultChar, shortName);
+        this.shortName = shortName;
         this.multiplier = 1;
     }
 
