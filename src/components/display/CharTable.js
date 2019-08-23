@@ -11,9 +11,8 @@ import {useSelector} from "react-redux";
 const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
-        marginTop: theme.spacing(3),
         overflowX: 'auto',
-        
+        marginTop: theme.spacing(1),
     },
     table: {
     },
