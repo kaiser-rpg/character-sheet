@@ -2,6 +2,8 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import CharTable from "./display/CharTable";
 import ResistanceTable from "./display/ResistanceTable";
+import StaminaTable from "./display/StaminaTable";
+import MovementTable from "./display/MovementTable";
 
 const GeneralGroup = () => {
 
@@ -19,6 +21,10 @@ const GeneralGroup = () => {
                 </Grid>
                 <Grid item xs={4} sm={4} md={4} lg={2} xl={2}>
                     <ResistanceTable />
+                    <StaminaTable/>
+                </Grid>
+                <Grid item xs={4} sm={4} md={4} lg={2} xl={2}>
+                    <MovementTable/>
                 </Grid>
             </Grid>
         </div>
