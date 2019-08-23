@@ -1,0 +1,77 @@
+{
+    "name": "template",
+    "type": "discipline",
+    "level": 1,
+    "power": [
+        "attack",
+        "defense",
+        "effect",
+        "automatic",
+        "trigger",
+        "detection"
+    ],
+    "action": "active",
+    "maintTime": "turn",
+    "tags": [],
+    "flavor": [],
+    "description": [
+        "something"
+    ],
+    "degree": {
+        "4": {
+            "effect": [
+                "something"
+            ]
+        },
+        "8": {
+            "effect": [
+                "something"
+            ]
+        },
+        "12": {
+            "effect": [
+                "something"
+            ]
+        },
+        "16": {
+            "effect": [
+                "something"
+            ]
+        },
+        "20": {
+            "effect": [
+                "something"
+            ]
+        },
+        "24": {
+            "effect": [
+                "something"
+            ]
+        },
+        "28": {
+            "effect": [
+                "something"
+            ]
+        },
+        "32": {
+            "effect": [
+                "something"
+            ]
+        },
+        "44": {
+            "effect": [
+                "something"
+            ]
+        },
+        "60": {
+            "effect": [
+                "something"
+            ]
+        },
+        "80": {
+            "effect": [
+                "something"
+            ]
+        }
+    }
+}

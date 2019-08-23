@@ -1,0 +1,985 @@
+[
+    {
+        "name": "Scan",
+        "type": "discipline",
+        "level": 1,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a zone centered on you. You detect the psyche of creatures within the zone. This sense informs you of the complexity of their psyche -- animals have a more simple mind than a human. You are unable to determine the exact location of any mind in the zone. A target can resist the detection by making a MR Check."
+        ],
+        "degree": {
+            "8": {
+                "effect": [
+                    "10 m radius",
+                    "MR 10"
+                ]
+            },
+            "12": {
+                "effect": [
+                    "50 m radius",
+                    "MR 12"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "10 m radius",
+                    "MR 14"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "500 m radius",
+                    "MR 16"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "1 km radius",
+                    "MR 18"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "4 km radius",
+                    "MR 20"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "10 km radius",
+                    "MR 22"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "100 km radius",
+                    "MR 24"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "1000 km radius",
+                    "MR 26"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "10,000 km radius",
+                    "MR 30"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Forbid",
+        "type": "discipline",
+        "level": 1,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a MR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check is unable to perform some action of your choice. The action you choose must be something they consciously choose to do, it must be an Active Action if it is specific. A target can repeat the Resistance Check the first time they attempt the forbidden action each round.",
+            "A generic action, such as attacking, jumping, or dancing, reduces the Resistance Check by 2 or more, as determined by the Game Master."
+        ],
+        "degree": {
+            "8": {
+                "effect": [
+                    "MR 8"
+                ]
+            },
+            "12": {
+                "effect": [
+                    "MR 10"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "MR 12"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "MR 14"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "MR 16"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "MR 18"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "MR 20"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "MR 22"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "MR 24"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "MR 28"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Read Thoughts",
+        "type": "discipline",
+        "level": 1,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check has its active thoughts open to you. A target that is aware of the phenom can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check. Otherwise, they can repeat the Resistance Check after one hour has passed. The phenom also ends when the target goes beyond the maximum range of your Phenom Projection.",
+            "While you are reading a target's thoughts, you gain a +3 deed bonus on any Opposed Check."
+        ],
+        "degree": {
+            "8": {
+                "effect": [
+                    "MR 10"
+                ]
+            },
+            "12": {
+                "effect": [
+                    "MR 12"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "MR 14"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "MR 16"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "MR 18"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "MR 20"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "MR 22"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "MR 24"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "MR 26"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "MR 30"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Mental Link",
+        "type": "discipline",
+        "level": 1,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a zone centered on you. All entities of your choice within the zone can choose to converse with you and all other targets. In order to choose a target, you must know their approximate location.",
+            "A target can end the communication at any time."
+        ],
+        "degree": {
+            "8": {
+                "effect": [
+                    "100 m radius"
+                ]
+            },
+            "12": {
+                "effect": [
+                    "500 m radius"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "2 km radius"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "10 km radius"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "100 km radius"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "1000 km radius"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "5000 km radius"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "10,000 km radius"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "1 au radius",
+                    "can choose unknown targets"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "Any distance",
+                    "can choose unknown targets"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Mental Barrier",
+        "type": "discipline",
+        "level": 1,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "An entity of your choice gains a power bonus to MR Checks. If you choose yourself, the power bonus is doubled."
+        ],
+        "degree": {
+            "12": {
+                "effect": [
+                    "+1 bonus"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "+2 bonus"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "+4 bonus"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "+6 bonus"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "+8 bonus"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "+10 bonus"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "+12 bonus"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "+14 bonus"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "+18 bonus"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Phantasmal Sensation",
+        "type": "discipline",
+        "level": 1,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a MR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check is subject to a phantasmal illusion using any senses you choose. Any Opposed Check involving the phantasm uses your Phenom Projection and the Base Damage of any phantasmal damage it deals is listed.",
+            "A target can repeat the Resistance Check each time it takes damage from the phantasm or, once they are aware of the illusory nature, on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check."
+        ],
+        "degree": {
+            "8": {
+                "effect": [
+                    "MR 8",
+                    "Maximum Base Damage 4"
+                ]
+            },
+            "12": {
+                "effect": [
+                    "MR 10",
+                    "Maximum Base Damage 5"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "MR 12",
+                    "Maximum Base Damage 6"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "MR 14",
+                    "Maximum Base Damage 7"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "MR 16",
+                    "Maximum Base Damage 8"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "MR 18",
+                    "Maximum Base Damage 9"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "MR 20",
+                    "Maximum Base Damage 10"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "MR 22",
+                    "Maximum Base Damage 12"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "MR 24",
+                    "Maximum Base Damage 14"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "MR 28",
+                    "Maximum Base Damage 20"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Mental Research",
+        "type": "discipline",
+        "level": 2,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check has their memories opened to you. The time required to find what you need should be determined by the Game Master based on the depth of the memory and the Focus of the target. You do not have the ability to determine real memories from altered ones.",
+            "A target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check."
+        ],
+        "degree": {
+            "12": {
+                "effect": [
+                    "MR 10"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "MR 12"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "MR 14"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "MR 16"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "MR 18"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "MR 20"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "MR 22"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "MR 24"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "MR 28"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Mental Assault",
+        "type": "discipline",
+        "level": 2,
+        "power": [
+            "attack",
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check suffers a power penalty to their MR Checks equal to their Degree of Failure. The penalty is reduced by one point every hour. The effects of this phenom do not require maintaince.",
+            " If an entity is targeted to this phenom before the power penalty disappears, they ignore the penalty."
+        ],
+        "degree": {
+            "12": {
+                "effect": [
+                    "MR 12"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "MR 14"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "MR 16"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "MR 18"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "MR 20"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "MR 22"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "MR 24"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "MR 26"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "MR 30"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Cohabitant",
+        "type": "discipline",
+        "level": 2,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "A willing entity of your choice within range can use your body to perform actions and vice versa. This only allows you and the target to control the actions of the other. The mental Characteristics, Base Skill Value, and any natural and innate factors of the visiting mind are used to perform any action done by the visiting mind. The host body maintains its physical Characteristics and any ability that is not a skill, like Stamina, Mana Pool, or Phenom Points.",
+            "If both bodies have the Gift, the visiting mind can cast spells they know through the host body. The host body always uses their mana pool and accumulation. Spell Projection and conjuring skills use the visiting minds Base Value and any natural or innate factors it possesses.",
+            "Techniques that the visiting mind has mastered can be used by the host body only if the host body has mastered the talents required to use techniques. The host body always uses their ki reserve and chakras.",
+            "Martial Arts and Master Arts that the visiting mind has mastered can be used by the host body as long any talent required has been mastered by the host body.",
+            "If both bodies have access to the same phenom disciplines, then the visiting mind can use that phenom with its Potential.",
+            "Initiative is rolled for each body using its original mind. Action Points are tied to the body, not the mind and the body must have the Initiative to use any Active Actions.",
+            "If no mind is controlling a body, it goes limp and falls to the ground. Moving a mind from one body to another must be declared during the Intention Phase. A target cannot be prevented from returning to its body. The phenom ends when the bodies are separated by a distance greater than the listed range; you and the target return to your original bodies. If one of the bodies dies, the phenom ends and the orphaned mind can remain in the other body if it was there at the time of the phenom ending. Two minds cohabiting the same body for prolonged periods of time causes degradation in the minds. Every 24 hours that two minds cohabit, they each lose one point in one of their mental Characteristics. These points only recover once the cohabitation has ended, they then recover one point each day."
+        ],
+        "degree": {
+            "12": {
+                "effect": [
+                    "100 m"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "500 m"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "2 km"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "10 km"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "100 km"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "1000 km"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "10,000 km"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "1 au"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "Any distance",
+                    "Cohabitation does not cause mental reduction"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Alter Memory",
+        "type": "discipline",
+        "level": 2,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a MR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check can have its memory modified by you. The modification can be an addition, alteration, or a deletetion and can be no longer than one hour per Degree of Failure. Any memory that is part of a target's nature grants them a second Resistance Check with a +8 deed bonus.",
+            "A target can repeat the Resistance Check if they witness something related to the original memory."
+        ],
+        "degree": {
+            "16": {
+                "effect": [
+                    "MR 10"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "MR 12"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "MR 14"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "MR 16"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "MR 18"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "MR 20"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "MR 22"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "MR 26"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Astral Projection",
+        "type": "discipline",
+        "level": 2,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You project your mind into the phenom plane. While you maintain this phenom your astral shape is immaterial, has a Flight Value equal to your Willpower, and can only be seen on the phenom plane. Since your body is left behind, you cannot use most powers. Without a body or spirit, you cannot use spirit or mana based abilities. You can still manifest phenom, but attack phenom cannot affect the material plane.",
+            "You astral shape is unable to travel beyond the listed range. If your body is destroyed while projecting, you become trapped in astral shape until the end of time."
+        ],
+        "degree": {
+            "12": {
+                "effect": [
+                    "10 km"
+                ]
+            },
+            "16": {
+                "effect": [
+                    "100 km"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "500 km"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "1000 km"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "2000 km"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "5000 km"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "10,000 km"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "1 au"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "Any distance",
+                    "Attack phenom can be used"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Arcane Scan",
+        "type": "discipline",
+        "level": 2,
+        "power": [
+            "detection"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You detect the exact location of one entity whose mental pattern you know within the zone. A target can resist the detection by making a MR Check. A target that is aware of the phenom can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check."
+        ],
+        "degree": {
+            "16": {
+                "effect": [
+                    "10 km radius",
+                    "MR 14"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "100 km radius",
+                    "MR 14"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "500 km radius",
+                    "MR 14"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "1000 km radius",
+                    "MR 14"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "5000 km radius",
+                    "MR 14"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "10,000 km radius",
+                    "MR 14"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "1 au radius",
+                    "MR 14"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "Any distance",
+                    "MR 14"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Mental Domination",
+        "type": "discipline",
+        "level": 3,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a MR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check falls under your active control."
+        ],
+        "degree": {
+            "16": {
+                "effect": [
+                    "MR 10"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "MR 12"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "MR 14"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "MR 16"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "MR 18"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "MR 20"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "MR 22"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "MR 26"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Coma",
+        "type": "discipline",
+        "level": 3,
+        "power": [
+            "attack",
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
+            "A target that fails the Resistance Check loses 1 point in Aptitude and Willpower per Degree of Failure. If either Characteristic is reduced to zero, a target's mind is lost and they become a hollow body. The hollow body can be controlled by Mental Domination, Cohabitation, or Astral Projection's astral shape.",
+            "A target that is not hollowed by this phenom recovers 1 point each hour. If a target still has damage from a previous Coma attack, only the greater of the previous and new damage is done."
+        ],
+        "degree": {
+            "20": {
+                "effect": [
+                    "MR 14"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "MR 16"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "MR 18"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "MR 20"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "MR 22"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "MR 24"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "MR 28",
+                    "You also damage Focus"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Psychic Zone",
+        "type": "discipline",
+        "level": 3,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "description": [
+            "You create a zone centered on you. When you use one of the listed phenom, you can target all entities you choose within the zone. If the phenom uses a Phenom Projection roll, it is an area attack."
+        ],
+        "degree": {
+            "16": {
+                "effect": [
+                    "10 m radius"
+                ]
+            },
+            "20": {
+                "effect": [
+                    "100 m radius"
+                ]
+            },
+            "24": {
+                "effect": [
+                    "1 km radius"
+                ]
+            },
+            "28": {
+                "effect": [
+                    "10 km radius"
+                ]
+            },
+            "32": {
+                "effect": [
+                    "100 km radius"
+                ]
+            },
+            "44": {
+                "effect": [
+                    "500 km radius"
+                ]
+            },
+            "60": {
+                "effect": [
+                    "1000 km radius"
+                ]
+            },
+            "80": {
+                "effect": [
+                    "5000 km radius"
+                ]
+            }
+        }
+    }
+]
