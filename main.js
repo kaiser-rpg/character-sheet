@@ -3,6 +3,7 @@ const electron = require('electron');
 const app = electron.app;
 const Menu = electron.Menu;
 const BrowserWindow = electron.BrowserWindow;
+const {powerSaveBlocker} = require('electron');
 
 const path = require('path');
 const url = require('url');
@@ -11,6 +12,7 @@ const url = require('url');
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 let menu;
+let powersaveId;
 
 function createWindow() {
     // Create the browser window.
@@ -24,8 +26,8 @@ function createWindow() {
         slashes: true
     }));
 
-    //Create the menu
-
+    powersaveId = powerSaveBlocker.start('prevent-display-sleep');
+    console.log(powerSaveBlocker.isStarted(powersaveId));
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
@@ -33,6 +35,7 @@ function createWindow() {
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {
         mainWindow = null
+        powerSaveBlocker.stop(powersaveId)
     })
 }
 
