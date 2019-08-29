@@ -43,9 +43,6 @@ const MainPageGrid = () => {
                 <Grid item xs={3}>
                     <Paper square className={classes.paper}>xs=3</Paper>
                 </Grid>
-                <Grid item xs={3}>
-                    <Paper square className={classes.paper}>xs=3</Paper>
-                </Grid>
             </Grid>
         </div>
     );
