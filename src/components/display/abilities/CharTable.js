@@ -7,6 +7,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import {useSelector} from "react-redux";
+import withWidth, {isWidthUp} from '@material-ui/core/withWidth';
+import {toTitleCase} from "../../../util/StringHelper";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -18,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const CharTable = () => {
+const CharTable = ({width}) => {
     const classes = useStyles();
     const str = useSelector(state => state.present.characteristics.strength);
     const con = useSelector(state => state.present.characteristics.constitution);
@@ -33,7 +35,7 @@ const CharTable = () => {
         return (
             <TableRow key={char.title}>
                 <TableCell component="th" scope="row">
-                    {char.title}
+                    {isWidthUp('md', width) ? char.title : toTitleCase(char.shortName)}
                 </TableCell>
                 <TableCell align="center">{char.permanentTotal}</TableCell>
                 <TableCell align="center">{char.permanentModifier}</TableCell>
@@ -41,12 +43,13 @@ const CharTable = () => {
         )
     };
 
+
     return (
         <Paper className={classes.root}>
             <Table className={classes.table} size="small">
                 <TableHead>
                     <TableRow>
-                        <TableCell></TableCell>
+                        <TableCell>{width}</TableCell>
                         <TableCell align="center">Total</TableCell>
                         <TableCell align="center">Mod</TableCell>
                     </TableRow>
@@ -66,4 +69,4 @@ const CharTable = () => {
     );
 };
 
-export default CharTable;
+export default withWidth()(CharTable);
