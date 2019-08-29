@@ -3,8 +3,9 @@ import {setBaseValueChar} from "../../actions/char-actions";
 
 class CharEntry extends IEntry__core {
     constructor(name, baseValue = 5, ...altNames) {
-        super(name, "general", "cp", altNames);
+        super(name, "general", "cp", ...altNames);
         this.name = name;
+        this.shortName = altNames[0];
         this.altNames = altNames;
         this.baseValues = [setBaseValueChar(this.key, baseValue, "start")];
     }
