@@ -1,9 +1,10 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import CharTable from "./display/abilities/CharTable";
-import ResistanceTable from "./display/abilities/ResistanceTable";
-import StaminaTable from "./display/abilities/StaminaTable";
-import MovementTable from "./display/abilities/MovementTable";
+import CharTable from "./display/abilities/CharCard";
+import ResistanceCard from "./display/abilities/ResistanceCard";
+import StaminaCard from "./display/abilities/StaminaCard";
+import MovementCard from "./display/abilities/MovementCard";
+import LifePointsCard from "./display/abilities/LifePointsCard";
 
 const GeneralGroup = () => {
 
@@ -26,14 +27,17 @@ const GeneralGroup = () => {
                       alignItems="flex-start"
                       spacing={1}>
                     <Grid item>
-                        <ResistanceTable/>
+                        <ResistanceCard/>
                     </Grid>
                     <Grid item>
-                        <StaminaTable/>
+                        <StaminaCard/>
+                    </Grid>
+                    <Grid item>
+                        <LifePointsCard/>
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <MovementTable/>
+                    <MovementCard/>
                 </Grid>
             </Grid>
         </div>

@@ -20,7 +20,24 @@ const theme = createMuiTheme({
             lg: 800,
             xl: 1000,
         }
+    },
+    typography: {
+        body1: {
+            fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+            fontSize: "1rem",
+            fontWeight: 400,
+            letterSpacing: "0.00938em",
+            lineHeight: 1.5,
+        },
+        body2: {
+            fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+            fontSize: "0.875rem",
+            fontWeight: 400,
+            letterSpacing: "0.01071em",
+            lineHeight: 1.43,
+        }
     }
+
 });
 
 

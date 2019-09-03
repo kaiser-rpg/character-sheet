@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const ResistanceTable = () => {
+const ResistanceCard = () => {
     const classes = useStyles();
     const prr = useSelector(state => state.present.abilities.generalAbilities.presence);
     const phr = useSelector(state => state.present.abilities.generalAbilities.physicalResistance);
@@ -69,4 +69,4 @@ const ResistanceTable = () => {
     );
 };
 
-export default ResistanceTable;
+export default ResistanceCard;

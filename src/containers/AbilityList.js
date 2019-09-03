@@ -1,4 +1,5 @@
 import {
+    ChakraEntry,
     KiReserve,
     LifePoints,
     ManaAccumulation,
@@ -117,43 +118,43 @@ export class MartialAbilities {
     constructor() {
         this.kiReserve = new KiReserve();
         this.spiritKnowledge = new SpiritKnowledge();
-        // this.redChakra = new ChakraEntry("red", ["str", "con"]);
-        // this.greenChakra = new ChakraEntry("green", ["dex", "agi"]);
-        // this.blueChakra = new ChakraEntry("blue", ["foc", "wp"]);
+        this.redChakra = new ChakraEntry("red", ["str", "con"]);
+        this.greenChakra = new ChakraEntry("green", ["dex", "agi"]);
+        this.blueChakra = new ChakraEntry("blue", ["foc", "wp"]);
     }
 
     get xp() {
         return [
             investXpMartial(this.kiReserve.key, this.kiReserve.cost, this.kiReserve.key),
             investXpMartial(this.spiritKnowledge.key, this.spiritKnowledge.cost, this.spiritKnowledge.key),
-            // investXpMartial(this.redChakra.key, this.redChakra.cost, this.redChakra.key),
-            // investXpMartial(this.greenChakra.key, this.greenChakra.cost, this.greenChakra.key),
-            // investXpMartial(this.blueChakra.key, this.blueChakra.cost, this.blueChakra.key)
+            investXpMartial(this.redChakra.key, this.redChakra.cost, this.redChakra.key),
+            investXpMartial(this.greenChakra.key, this.greenChakra.cost, this.greenChakra.key),
+            investXpMartial(this.blueChakra.key, this.blueChakra.cost, this.blueChakra.key)
         ];
     }
 
     updateRollingInnate(newLevel) {
         this.kiReserve.updateRollingInnate(newLevel);
         this.spiritKnowledge.updateRollingInnate(newLevel);
-        // this.redChakra.updateRollingInnate(newLevel);
-        // this.greenChakra.updateRollingInnate(newLevel);
-        // this.blueChakra.updateRollingInnate(newLevel);
+        this.redChakra.updateRollingInnate(newLevel);
+        this.greenChakra.updateRollingInnate(newLevel);
+        this.blueChakra.updateRollingInnate(newLevel);
     }
 
     removeBySource(sourceName) {
         this.kiReserve.removeBySource(sourceName);
         this.spiritKnowledge.removeBySource(sourceName);
-        // this.redChakra.removeBySource(sourceName);
-        // this.greenChakra.removeBySource(sourceName);
-        // this.blueChakra.removeBySource(sourceName);
+        this.redChakra.removeBySource(sourceName);
+        this.greenChakra.removeBySource(sourceName);
+        this.blueChakra.removeBySource(sourceName);
     }
 
     removeById(id) {
         this.kiReserve.removeById(id);
         this.spiritKnowledge.removeById(id);
-        // this.redChakra.removeById(id);
-        // this.greenChakra.removeById(id);
-        // this.blueChakra.removeById(id);
+        this.redChakra.removeById(id);
+        this.greenChakra.removeById(id);
+        this.blueChakra.removeById(id);
     }
 
 }

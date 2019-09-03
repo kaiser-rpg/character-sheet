@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     table: {},
 }));
 
-const MovementTable = (props = {movement: "ground"}) => {
+const MovementCard = (props = {movement: "ground"}) => {
     const classes = useStyles();
     let movement;
 
@@ -79,4 +79,4 @@ const MovementTable = (props = {movement: "ground"}) => {
     );
 };
 
-export default MovementTable;
+export default MovementCard;

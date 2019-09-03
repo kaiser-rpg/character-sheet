@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const CharTable = ({width}) => {
+const CharCard = ({width}) => {
     const classes = useStyles();
     const str = useSelector(state => state.present.characteristics.strength);
     const con = useSelector(state => state.present.characteristics.constitution);
@@ -69,4 +69,4 @@ const CharTable = ({width}) => {
     );
 };
 
-export default withWidth()(CharTable);
+export default withWidth()(CharCard);
