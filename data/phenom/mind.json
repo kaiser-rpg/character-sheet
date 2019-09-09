@@ -503,7 +503,7 @@
         "flavor": [],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check suffers a power penalty to their MR Checks equal to their Degree of Failure. The penalty is reduced by one point every hour. The effects of this phenom do not require maintaince.",
+            "A target that fails the Resistance Check suffers a power penalty to their MR Checks equal to their Degree of Failure. The penalty is reduced by one point every hour. The effects of this phenom do not require maintenance.",
             " If an entity is targeted to this phenom before the power penalty disappears, they ignore the penalty."
         ],
         "degree": {

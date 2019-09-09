@@ -34,7 +34,7 @@ function createWindow() {
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {
-        mainWindow = null
+        mainWindow = null;
         powerSaveBlocker.stop(powersaveId)
     })
 }
@@ -98,6 +98,7 @@ function createMenu() {
                     label: 'Undo',
                     click() {
                         console.log("undo");
+                        //TODO
                     },
                     accelerator: 'CmdOrCtrl+z'
                 },
@@ -105,6 +106,7 @@ function createMenu() {
                     label: 'Redo',
                     click() {
                         console.log("redo");
+                        //TODO
                     },
                     accelerator: 'CmdOrCtrl+y'
                 },

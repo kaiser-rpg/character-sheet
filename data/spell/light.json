@@ -936,7 +936,7 @@
         "description": [
             "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR or MR Check; a target can choose to fail.",
             "A target that fails the Resistance Check suppress the any negative emotional state, such as [@state Anger @] and [@state Rage @]. The exception to this is the [@state Fear @] state, which is reduced by one degree. This does not stop actions done in cold blood.",
-            "The effects of this spell last one minute per Degree of Failure. A target can repeat the Resistance Check when they take damage, this new Check does not change the number of minutes remaining. The effects of this spell do not require maintaince."
+            "The effects of this spell last one minute per Degree of Failure. A target can repeat the Resistance Check when they take damage, this new Check does not change the number of minutes remaining. The effects of this spell do not require maintenance."
         ],
         "degree": {
             "base": {

@@ -5,6 +5,7 @@ import App from "./components/App";
 import {store} from "./reducers";
 import {createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 
+
 const fs = window.require('fs');
 // fs.readFile('data/kara.json', loadCharacterData);
 
@@ -49,7 +50,4 @@ ReactDOM.render(
     </MuiThemeProvider>
     , document.getElementById('app')
 );
-
-
-
 

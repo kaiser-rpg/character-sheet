@@ -35,7 +35,7 @@ The spell ends when ...
 
 A target can repeat the Resistance Check when they take damage, this new Check does not change the number of minutes remaining. 
 
-The effects of this spell do not require maintaince.
+The effects of this spell do not require maintenance.
 
 You detect the ... within the zone.
 This sense informs you of ...

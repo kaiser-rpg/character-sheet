@@ -1,65 +1,5 @@
 [
     {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 4,
-        "slot": "10"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 14,
-        "slot": "20"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 24,
-        "slot": "30"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 34,
-        "slot": "40"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 44,
-        "slot": "50"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 54,
-        "slot": "60"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 64,
-        "slot": "70"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 74,
-        "slot": "80"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 84,
-        "slot": "90"
-    },
-    {
-        "name": "General Slot",
-        "type": "slot",
-        "level": 94,
-        "slot": "100"
-    },
-    {
         "name": "Create Darkness",
         "type": "path",
         "level": 2,
@@ -69,8 +9,21 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one point",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
-            "You remove all intensities of natural light in an area centered on a point of your choice."
+            "You remove all intensities of natural light in the targeted zone."
         ],
         "degree": {
             "base": {
@@ -118,7 +71,35 @@
         "action": "active",
         "maintTime": "no",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
+            "All entities within the area must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected!!!!!!!!!!!."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target is unable to harm any entity within the zone. The target can repeat the Resistance Check after one day has passed. The spell does not stop affecting an entity if it leaves the zone, but remember that the spell only prevents harm to other entities within the zone. For example, a target could not break down a door or step on a spider within the zone. Similarly, an arrow that fails the Resistance Check cannot harm anything in the zone.",
+                    "The one exception is an entity can continue to cook and consume food and drink that has already been harvested or prepared."
+                ]
+            },
             "All entities in an area centered on you must make a SR or MR Check; a target can choose to fail.",
             "A target that fails the Resistance Check gains the Fear: Shaken state, with you as the object of fear. This Fear state does not stack with any other Fear.",
             "The effects of this spell last until the End Phase."
@@ -172,6 +153,15 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one or more entities",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
         "description": [
             "Choose a number of entities whose total Presence is no greater than the listed value. A target gains Natural Dark Vision feature."
         ],
@@ -224,6 +214,12 @@
             "barrier",
             "imbued"
         ],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You create a supernatural barrier with the listed Life Points. This barrier possess the Imbued trait. Attacks using the Light Damage Type deal twice as much damage to the barrier."
         ],
@@ -273,6 +269,12 @@
         "action": "active",
         "maintTime": "turn",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
+        ],
         "description": [
             "You gain a power bonus to Stealth Checks. This power bonus also applies to Magic Appraisal Checks make to hide your mana."
         ],
@@ -321,6 +323,12 @@
         "action": "active",
         "maintTime": "turn",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
+        ],
         "description": [
             "You gain a natural AV against Force and Darkness Damage Types and half as much against the Physical and Elemental Damage Groups."
         ],
@@ -374,6 +382,18 @@
         "action": "active",
         "maintTime": "turn",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "All light elementals in an area centered on a point of your choice must make a SR Check.",
             "A target that fails the Resistance Check takes 20 points of Force Damage per Degree of Failure. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier.",
@@ -428,6 +448,12 @@
         "action": "swift",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one spell"
+            }
+        ],
         "description": [
             "Choose a spell or a supernatural quality of an entity. Any Magic Appraisal Check made to detect or measure the target suffers a power penalty. Attempts to detect this spell also suffer the power penalty."
         ],
@@ -476,6 +502,12 @@
         "action": "active",
         "maintTime": "no",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, the target takes Darkness Damage with the listed Base Damage."
         ],
@@ -524,6 +556,19 @@
         "action": "active",
         "maintTime": "turn",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. All entities within the zone increase the difficulty of any Detect Spirit or sight based Difficulty Skill check by two degrees. Perception Checks suffer a -4 deed penalty. Detection powers affecting an entity within the zone reduce the Resistance Check by 4."
         ],
@@ -573,6 +618,12 @@
         "maintTime": "turn",
         "tags": [
             "trapping"
+        ],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
         ],
         "description": [
             "You make a Trap maneuver against an entity. The Opposed Characteristic Check uses the listed Strength.",
@@ -626,6 +677,19 @@
         "action": "active",
         "maintTime": "turn",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self",
+                    "move": "self"
+                }
+            }
+        ],
         "description": [
             "You gain the following actions:",
             {
@@ -704,6 +768,12 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice gains a power bonus to Resistance Checks against detection powers and to Conceal Spirit Checks."
         ],
@@ -753,6 +823,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice can use the listed Final Skill Value for Stealth and Conceal Spirit Checks."
         ],
@@ -802,6 +877,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check gains a +1 deed bonus to Offensive Rolls but suffers a -3 deed penalty to all other Skill Checks."
@@ -858,6 +938,17 @@
         "flavor": [
             "area effect"
         ],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR or MR Check; a target can choose to fail.",
             "A target that fails the Resistance Check suppress the any positive emotions, such as joy, friendship, and inner peace.",
@@ -913,6 +1004,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. The zone is filled with natural darkness. All entities, except you, looking through the darkness apply the Totally Blind state unless they make an Inhuman (32) Notice Check or Almost Impossible (24) Search Check, in which case a target applies the Partially Blind state until the End Phase.",
             "You are not affected"
@@ -962,6 +1065,12 @@
         "action": "active",
         "maintTime": "turn",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target takes Darkness Damage with the listed Base Damage and disappears.",
             "If the target dodges, the spell can make another Offensive Roll on your turn next round by taking the [@action Use an Active Power action @]. If the target blocks, the sphere disappears.",
@@ -1018,6 +1127,18 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. Any entity within the zone gains a deed bonus to Resistance Checks against detection powers. Any Skill Check make with Detect Spirit or Magic Appraisal Check to locate magic suffers a deed penalty."
         ],
@@ -1074,6 +1195,12 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against a dreaming entity. On a hit, a target must make a SR or MR Check.",
             "A target that fails the Resistance Check has their nightmare invaded by you.",
@@ -1131,6 +1258,12 @@
         "action": "active",
         "maintTime": "turn",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice transforms into pure shadow. The target gains the Immaterial and Imbued traits and can choose to interact with material entities at will. The target also gains a power bonus Stealth Checks and half that to Resistance Checks against darkness-based powers but doubles the Final Damage from any attack using the Light Damage Type."
         ],
@@ -1183,6 +1316,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self",
+                    "move": "self"
+                }
+            }
+        ],
         "description": [
             "You create a zone centered on you. All entities within the zone must make a SR Check; a target can choose to fail",
             "A target that fails the Resistance Check suffers Disadvantage on their Skill and Resistance Checks; a target cannot be affected by more than one Bane spell."
@@ -1240,6 +1385,19 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check is filled with negative feelings, such as hatred and fear. This does not apply any state by itself, but a target making a Resistance Check to prevent a Fear state suffers `D1`.",
@@ -1295,6 +1453,20 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            },
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "An entity of your choice has any trace that it was in the area erased. This eliminates any natural and unnatural sign that the target was here. This does not erase traces from time until cast at the advanced degree."
         ],
@@ -1345,6 +1517,19 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. All light elementals and entities composed of positive emotions within the zone must make a SR Check.",
             "A target that fails the Resistance Check takes 10 points of Atomic Damage per Degree of Failure and gains the [@state Pain (4) @] state. The Pain state lasts until a target leaves the zone. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier.",
@@ -1400,6 +1585,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You create a supernatural barrier with the listed Life Points. You also gain the Gate of Mana action.",
             {
@@ -1462,6 +1652,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check gain one degree of Pain per Degree of Failure.",
@@ -1513,6 +1708,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one point"
+            }
+        ],
         "description": [
             "You create a stationary terrifying pattern. All entities that looks at it while in the area of its effect must make a SR or MR Check; a target can choose to fail.",
             "A target that fails the Resistance Check gains the Fear: Terror state, with the pattern being the object of fear. A target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check.",
@@ -1569,6 +1769,18 @@
         "tags": [
             "area attack"
         ],
+        "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target takes Darkness Damage with the listed Base Damage."
         ],
@@ -1622,6 +1834,12 @@
         "maintTime": "turn",
         "tags": [
             "creation"
+        ],
+        "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
         ],
         "description": [
             "You create an object whose Presence is no greater than the listed value. The object has the listed Quality."
@@ -1678,6 +1896,15 @@
         "tags": [
             "teleport",
             "affected presence"
+        ],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one or more entities",
+                "limit": [
+                    "presence"
+                ]
+            }
         ],
         "description": [
             "Choose a number of entities whose total Presence is no greater than the listed value. A target must make a SR Check; a target can choose to fail.",
@@ -1740,6 +1967,12 @@
         "tags": [
             "veil"
         ],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "The entity whose nightmare you are in must make a SR Check; a target can choose to fail. On a failure, you gain control over the nightmare. You can modify the nightmare as if you were a Nornir 45 entity -- all other benefits of Nornir do not apply. If the nightmare becomes a dream, you instead have Nornir 30.",
             "A target can repeat the Resistance Check on the End Phase after a number of hours have passed equal to their Degree of Failure on the previous Check.",
@@ -1792,6 +2025,12 @@
         "maintTime": "day",
         "tags": [
             "monad"
+        ],
+        "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
         ],
         "description": [
             "You create a monad creature. The creature's level can be no greater than the listed value and must follow the rules for monad creatures. The creature is created with the following rules:",
@@ -1848,6 +2087,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice cannot be targeted by trigger spells of the listed degree unless the caster is in control of the spell, in which case treat it as an effect spell.",
             "For example, you cannot be targeted by the Mark of Fear since the caster has no control over it. But a Flare spell can affect you if the caster makes an Offensive Roll against you."
@@ -1898,6 +2142,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. The zone is filled with natural darkness. While you are in the zone, you gain a +4 deed bonus to Resistance Checks against detection powers and any attempt to locate you requires an Inhuman (32) Notice Check, Inhuman (32) Detect Spirit Check, or Impossible (28) Search Check. If you perform the Accumulate For A Prepared Spell for a Darkness spell, you gain a +20 power bonus to your Mana Accumulation.",
             "All entities, other than you, in the zone lose 10 mana and 1 ki each turn on the End Phase. Light elementals lose twice as much.",
@@ -1950,6 +2206,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice is completely immune to certain detection powers and abilities."
         ],
@@ -1998,6 +2259,12 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check is trapped in a pocket dimension which takes the form of a glass bead.",
@@ -2054,6 +2321,12 @@
         "action": "active",
         "maintTime": "no",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
+        ],
         "description": [
             "You enter a state of meditation in which your body becomes one with the darkness. You leave this world and travel to the Nexus to nourish yourself with the energies found there. While there, you are only aware of your own body; the passage of time is meaningless. Your Mana Recovery is multiplied by 10 and you gain a physical and spiritual Regeneration Value of 16. While there is no maintenance cost, you can remain in the nexus for the listed time, you can try to leave early but there is a 50% chance it will take you the entire time."
         ],
@@ -2102,6 +2375,12 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice gains the listed Nornir value and they gain the Divine feature."
         ],
@@ -2154,6 +2433,18 @@
             "area attack",
             "flowing",
             "immaterial"
+        ],
+        "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
         ],
         "description": [
             "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. This attack has the [@state Flowing @] and [@state Immaterial (20) @] traits. On a hit, a target takes Light Damage with the listed Base Damage. If a target takes any damage, they must make a SR Check; a target can choose to fail.",

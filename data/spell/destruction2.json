@@ -10,6 +10,14 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one object",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
         "description": [
             "An object of your choice whose total Presence is no greater than the listed value loses its Base Damage Negate and suffers a power penalty to its Fortitude."
         ],
@@ -63,6 +71,14 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one object",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
         "description": [
             "An entity of your choice whose total Presence is no greater than the listed value begins to disassemble. Once the spell is cast, the deconstruction takes a 1 minute per point of Presence."
         ],
@@ -112,6 +128,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check loses intensities of Heat, Cold, or Electricity. If the target is an elemental, it loses 5 Life Points per intensity destroyed.",
@@ -167,6 +188,14 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one object",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
         "description": [
             "You make an Offensive Roll against a lifeless object. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check loses one point of quality, as it is failed a Breakage Check, if its Presence is no greater than the listed value."
@@ -217,6 +246,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one or more entities"
+            }
+        ],
         "description": [
             "You create a number of spheres of energy. You make an Offensive Roll against an entity for each sphere. On a hit, a target takes Force Damage with 3 Base Damage.",
             "You must choose all targets before making any roll. You can have all spheres target the same entity."
@@ -267,6 +301,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check doubles any Damage Vulnerability or weakness it possess. For example, a light elemental that suffers double damage from Darkness Damage now suffers quadruple.",
@@ -318,6 +357,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one spell configuration"
+            }
+        ],
         "description": [
             "You can cast this spell when another spell is cast but before any dice are rolled. You reduce the mana available to the triggering spell. If this reduces the spell's accumulated mana below the Mana Cost, the spell fizzles and the mana is lost.",
             "The caster can choose to reallocate mana as the following:",
@@ -376,6 +420,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one attack"
+            }
+        ],
         "description": [
             "You can cast this spell when an attack is declared but before any dice are rolled. The triggering attack gains a deed bonus to its Base Damage."
         ],
@@ -425,6 +474,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one phenom"
+            }
+        ],
         "description": [
             "You can cast this spell when a phenom is manifested but before Phenom Projection is rolled are rolled. You nullify a phenom whose Final Potential Roll is no greater than the listed degree."
         ],
@@ -474,6 +528,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check takes atomic damage equal to a percent of their current Life Points, round down. This percent is not their total."
@@ -528,6 +587,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check.",
             "A target that fails the Resistance Check loses 10 ki points per Degree of Failure from their Ki Reserve."
@@ -578,6 +642,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check.",
             "A target that fails the Resistance Check takes Atomic Damage with the listed Final Damage. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier."
@@ -632,6 +701,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check loses a sense of your choice."
@@ -682,6 +756,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target takes Force Damage with the listed Base Damage."
         ],
@@ -731,6 +810,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one conjurer or conjured creature"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an that is a conjurer or a creature controlled by a conjurer. On a hit, the conjurer must make a SR Check.",
             "Conjurer that fails the Resistance Check loses control over the creature. If you directly targeted the conjurer, break one control for every Degree of Failure on the Resistance Check."
@@ -781,6 +865,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check.",
             "A target that fails the Resistance Check suffers a power penalty equal to their Degree of Failure."
@@ -832,6 +921,14 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one or more entities",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
         "description": [
             "All entities of your choice whose total Presence is no greater than the listed value must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check removes all of the following states:",
@@ -894,6 +991,17 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target takes Force Damage with the listed Base Damage."
         ],
@@ -947,6 +1055,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check on the End Phase.",
             "A target that fails the Resistance Check takes atomic damage equal to 10% of their total Life Points, round down. A target must repeat the Resistance Check every round while they remain in the zone."
@@ -1001,6 +1121,23 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one object",
+                "boolean": "or"
+            },
+            {
+                "target": "zone",
+                "boolean": "or",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You enchant an object whose total Presence is no greater than the listed or a stationary zone centered on a point of your choice. Any entity who touches the object or enters the zone must make a SR Check.",
             "A target that fails the Resistance Check takes 10 points of Atomic Damage per Degree of Failure. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier.",
@@ -1060,6 +1197,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR or MR Check; a target can choose to fail.",
             "A target that fails the Resistance Check has some of its memory destroyed. The effects of this spell do not require maintenance.",
@@ -1111,6 +1253,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check cannot invest Experience Points or Phenom Points. A target can repeat the Resistance Check after one day has passed."
@@ -1161,6 +1308,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check is unable to perform an Active Action of your choice. If the forbidden action is general, like moving or attacking, a target can add a +3 deed bonus."
@@ -1211,6 +1363,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check is unable to use any power or supernatural feature."
@@ -1251,7 +1408,7 @@
         }
     },
     {
-        "name": "Greater ",
+        "name": "Greater Mystic Bolt",
         "type": "path",
         "level": 62,
         "power": [
@@ -1261,6 +1418,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target takes Force Damage with the listed Base Damage."
         ],
@@ -1310,6 +1472,17 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check is unable to take Active Actions unless they are done as part of instinct. For example, a creature would move to avoid a collapsing building but would otherwise not move."
@@ -1364,6 +1537,18 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check.",
             "A target that fails the Resistance Check becomes fragile. Any damage suffered is doubled and their entire body counts as a vulnerable point. Structures lose their Base Damage Negate. Objects suffer a -5 deed penalty to Fortitude. A target can repeat the Resistance Check after one day has passed."
@@ -1418,6 +1603,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice transforms into pure destructive energy. A target gain a Base Damage Negate 100 that can be overcome with the Imbued trait. Any entity that comes into contact with a target must make a SR Check or take 10 Atomic Damage per Degree of Failure."
         ],
@@ -1467,6 +1657,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a PrR or SR Check.",
             "A target that fails the Resistance Check dies, separating its body and spirit and a Psychopomp is called. If the target beats the Psychopomp, their spirit returns to their body. As this death is not true, it does not increase Death's desire."
@@ -1517,6 +1712,18 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. All entities within the zone must make a PhR or SR Check.",
             "A target that fails the Resistance Check reduces their Presence by half a point and suffers a -1 all-action penalty. A target must repeat the Resistance Check after one day has passed while they remain in the zone.",
@@ -1573,6 +1780,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check.",
             "A target that fails the Resistance Check has the listed number of XP uninvested from a Primary or Secondary Skill. You can choose from where the XP is uninvested, although no single investment can lose more than half of the listed value."
@@ -1629,6 +1841,11 @@
             "linear"
         ],
         "flavor": [],
+        "target": [
+            {
+                "target": "line"
+            }
+        ],
         "description": [
             "All entities in line must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR Check.",
             "A target that fails the Resistance Check ceases to exist. A Psychopomp is not called and their spirit does not return to the Nexus, it simple stops existing.",
@@ -1685,6 +1902,17 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "All entities of your choice in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target takes Force Damage with the listed Base Damage. If a target takes any damage, they must make a SR Check.",
             "A target that fails the Resistance Check takes 10 points of Force Damage per Degree of Failure."
@@ -1743,6 +1971,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one maintained spell configuration"
+            }
+        ],
         "description": [
             "A maintained spell of your choice loses an amount of mana. The spell first loses principles that increase the Mana Cost and then reduces the degree. If the mana available is still not enough to meet the Mana Cost, the spell is destroyed."
         ],
@@ -1796,6 +2029,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check reduces it Nornir by the listed value. A target cannot repeat the Resistance Check."
@@ -1850,6 +2088,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary orb centered on a point of your choice. The orb has its own Initiative Roll 15 each round. On its turn, the orb makes an Opposed Characteristic Check with Strength 14 against the Strength or Agility Characteristic against all entities within an area around it. A target is pulled 30-feet per Degree of Failure toward the orb.",
             "Any entity in contact with the orb on its turn must make a PhR Check and a SR Check.",
@@ -1908,7 +2158,15 @@
         "action": "active",
         "maintTime": "no",
         "tags": [],
-        "flavor":[],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one or more objects",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
         "description": [
             "A number of objects of your choice whose total Presence is no greater than the listed value are destroyed."
         ],
@@ -1957,7 +2215,18 @@
         "action": "active",
         "maintTime": "no",
         "tags": [],
-        "flavor":[],
+        "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "All entities in an area centered on a point of your choice must make a SR Check.",
             "A target that fails the Resistance Check has its spirit destroyed. Their spirit is not collected by a Psychopomp and it does not return to the Nexus."
@@ -2011,7 +2280,19 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
-        "flavor":[],
+        "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. Reality within the zone is shaken; chaos is the only thing that holds. You can choose to alter a specific aspect of reality or allow the spell to take control. The follow list are examples of what can happen within the zone of Entropy.",
             {
@@ -2042,7 +2323,8 @@
                 "maint": 80,
                 "effect": [
                     "500-mi radius",
-                    "Affects entities with Nornir 20 or less"                ]
+                    "Affects entities with Nornir 20 or less"
+                ]
             },
             "advanced": {
                 "mana": 2000,
@@ -2050,7 +2332,8 @@
                 "maint": 90,
                 "effect": [
                     "5000-mi radius",
-                    "Affects entities with Nornir 30 or less"                ]
+                    "Affects entities with Nornir 30 or less"
+                ]
             },
             "arcane": {
                 "mana": 5000,
@@ -2058,7 +2341,8 @@
                 "maint": 100,
                 "effect": [
                     "All of reality",
-                    "Affects entities with Nornir 40 or less"                ]
+                    "Affects entities with Nornir 40 or less"
+                ]
             }
         }
     },
@@ -2072,7 +2356,12 @@
         "action": "active",
         "maintTime": "no",
         "tags": [],
-        "flavor":[],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice must make a SR Check. The entity can be anything, such as an entire city, a species, or a single individual.",
             "A target that fails the Resistance Check is deleted, so that it had never existed. Any death caused by the existence of a target returns to life if the spirit still exists. All entities forget a target existed unless the entity has Nornir 40."

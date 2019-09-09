@@ -130,6 +130,17 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self"
+                }
+            }
+        ],
         "description": [
             "You detect the a mineral of your choice within the area. This sense informs you of the size and purity."
         ],
@@ -180,10 +191,18 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "touch",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
         "description": [
             "You can modify minerals whose Presence is less than the listed value that you are in contact with. You gain the following actions:",
             {
-                "name": "Control Creature of Mineral",
+                "name": "Control Creature of Light",
                 "type": "entries",
                 "entries": [
                     "**Action**: 2 AP",
@@ -251,6 +270,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice increases in weight. You cannot increase a target's weight to be more than twice its original weight."
         ],
@@ -300,6 +324,15 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one object",
+                "limit": [
+                    "presence",
+                    "weight"
+                ]
+            }
+        ],
         "description": [
             "A mineral object whose total Presence is no greater than the listed value of your choice transforms from one mineral into another mineral. The mass of the object remains the same. For example, you could turn 10 lb. of lead into 10 lb. of gold.",
             "The transformation ends when the spell ends."
@@ -354,6 +387,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice gains a bonus bonus to PhR and Fortitude."
         ],
@@ -407,6 +445,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You raise the dirt and minerals around you to create a supernatural barrier with the listed Life Points. The barrier possess a Base Damage Negate which can be overcome with an Imbued attack. Note, the barrier does not possess the Imbue trait.",
             "If you are not near a mineral that you can control, this spell fails."
@@ -461,6 +504,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check suffers a power penalty to their Initiative and Movement Value."
@@ -519,6 +567,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice gains a natural AV against the Physical and Elemental Damage Groups."
         ],
@@ -568,6 +621,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You create a supernatural barrier with the listed Life Points that can only protect from physical attacks with some amount of metal in them or attacks using the Electricity Damage Type. The barrier is immune to Physical Damage that do not have the [@trait Imbued @] trait.",
             "Any attack made against the barrier using metal suffers D2 to the Offensive Roll."
@@ -618,6 +676,14 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one or more entities",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
         "description": [
             "A number of entities of your choice can pass through solid objects at will, meaning they can only be damaged by attacks with the Imbued trait. This does not grant the Immaterial trait, since a target does not gain the ability to interact with other immaterial entities."
         ],
@@ -667,6 +733,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one or more entities"
+            }
+        ],
         "description": [
             "You create a number of earth spikes. You make an Offensive Roll against an entity for each spike. On a hit, a target takes Thrust Damage with 6 Base Damage.",
             "You must choose all targets before making any roll. You can have all spikes target the same entity.",
@@ -718,6 +789,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice gains a power bonus to Breakage."
         ],
@@ -767,6 +843,17 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self"
+                }
+            }
+        ],
         "description": [
             "You can detect major landmarks within an area around you. This sense informs you of the listed landmark types. A hidden landmark can resist the detection by make a SR 12 Check."
         ],
@@ -820,6 +907,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self",
+                    "move": "self"
+                }
+            }
+        ],
         "description": [
             "You create a zone centered on you. You gain the following actions:",
             {
@@ -884,6 +983,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
+        ],
         "description": [
             "You instantly complete a crafting project involving metal if the amount of effort needed is no greater than the listed value.",
             "If you cast this spell more than once per day, the amount of effort it can complete is halved."
@@ -934,6 +1038,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice gains a natural AV against Physical and Elemental Damage Groups and a Base Damage Negate equal to twice a target's Presence which can be overcome by an Imbued attack. A target also gains a power bonus to Strength and a -2 power penalty to Movement Value."
         ],
@@ -989,6 +1098,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "An entity of your choice uses the the Rex Damage Role but does not gain a Rex Multiplier. Instead, the target gains a power bonus to their maximum Life Points and they regain the same number Life Points. When the spell ends, the target's current and maximum Life Points are reduced by the amount gained."
         ],
@@ -1038,6 +1152,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
         "description": [
             "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
             "A target that fails the Resistance Check cannot move and has no awareness of their surroundings. The target does not age while the spell lasts. Any damage inflicted can result in death or lasting damage.",
@@ -1089,6 +1208,18 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "rectangular prism",
+                    "dimension": [
+                        "depth: 20 m to 50 m"
+                    ],
+                    "center": "point"
+                }
+            }
+        ],
         "description": [
             "You create a fissure in the earth, about 60 to 150 feet deep. Any creature in the area of the fissure must make a Dodge Check to avoid falling in, as if attacked by an area attack.",
             "Structures in the area are destroyed if their Base Damage Negate is not greater than the listed value."
@@ -1143,6 +1274,19 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "cylinder",
+                    "dimension": [
+                        "height: 30 m"
+                    ],
+                    "center": "point | self",
+                    "move": "stationary | self | active"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check;a target can choose to fail.",
             "A target that fails the Resistance Check feels the effects of gravity reserve for them. A target cannot repeat the Resistance Check. The affects of the spell only end when you stop maintaining it or they leave the zone.",
@@ -1198,6 +1342,11 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
+        ],
         "description": [
             "You create an object composed of metal or stone whose total Presence is no greater than the listed value or twice your Presence. The object must appear in a location that is logical for it, according to its nature. For example, you could not create a boulder in mid air, but a cloud could appear in the sky."
         ],
@@ -1247,6 +1396,17 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "area",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self"
+                }
+            }
+        ],
         "description": [
             "You detect all entities and structures that are in contact with the ground within the area centered on you. A target with the Imbued trait can resist the detection by making a SR Check."
         ],
@@ -1300,6 +1460,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. Structures with a Base Damage Negate 4 or less are instantly destroyed. Structures with BDN 14 or less suffer 5 points of Force damage the first round and twice as much each subsequent round -- 5, 10, 20, 40 -- up to 14."
         ],
@@ -1349,6 +1521,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. All entities within the zone must make a PhR 20 Check; a target can add their Impact AV to the Check.",
             "A target that fails the Resistance Check takes 5 points of Impact Damage per Degree of Failure. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier. An affected target cannot move within the zone unless they make a Strength 16 Check.",
@@ -1401,6 +1585,11 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
+        ],
         "description": [
             "You create a monad creature. The creature's level can be no greater than the listed value and must follow the rules for monad creatures. The creature is created with the following rules:",
             {
@@ -1456,6 +1645,18 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "point",
+                    "move": "stationary"
+                }
+            }
+        ],
         "description": [
             "You create a stationary zone centered on a point of your choice. The force of gravity is increased within the zone."
         ],
@@ -1509,6 +1710,11 @@
         "maintTime": "no",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "one or more points"
+            }
+        ],
         "description": [
             "Choose a number of points that you can see. You call down a meteor which will appear in 2d6 rounds on the End Phase. When the meteor impacts, All entities in a 150-foot radius centered on the point of impact must make a Defensive Roll against your Offensive Roll.",
             "A target that takes a direct hit from the meteor takes 15 Heat and Impact Base Damage. A target within a 30-foot radius takes 10 Heat and Impact Base Damage. A target more than 30 feet away takes 5 Impact Base.",
@@ -1561,6 +1767,18 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self",
+                    "move": "self"
+                }
+            }
+        ],
         "description": [
             "You create a zone centered on you. You have control over gravity within the zone. You can increase it to 10 times its original value or reverse it. All entities in the zone are equally affected.",
             "Your control is such that you can cause different effects to specific parts of the zone."
@@ -1611,6 +1829,18 @@
         "maintTime": "day",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self",
+                    "move": "self"
+                }
+            }
+        ],
         "description": [
             "You gain the following actions:",
             {
@@ -1690,6 +1920,18 @@
         "maintTime": "turn",
         "tags": [],
         "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self",
+                    "move": "self"
+                }
+            }
+        ],
         "description": [
             "You create a zone centered on you. All material entities within the zone must make a PhR or SR Check.",
             "A target that fails the Resistance Check falls under your control. You have complete control over their atomic structure. The Game Master can require a certain degree in a trade skill or a scientific understanding in order to make the change. A target does not gain a new Resistance Check, any changes made are permanent.",

@@ -14,6 +14,23 @@
     "maintTime": "turn",
     "tags": [],
     "flavor":[],
+    "target": [
+        {
+            "target": "one entity | one or more entities | one point | zone | area | self | touch",
+            "limit": [
+                "presence",
+                "weight"
+            ],
+            "shape": {
+                "geometry": "sphere",
+                "dimension": [
+                    "radius: 10 m"
+                ],
+                "center": "point | self",
+                "move": "stationary | self | active"
+            }
+        }
+    ],
     "description": [
         "something"
     ],
