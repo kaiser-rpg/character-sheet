@@ -658,7 +658,7 @@
             }
         ],
         "description": [
-            "Make one Offensive Roll against all targets. On a hit, a target takes Cut Damage with Base Damage 8 which ignores 2 AV."
+            "Make one Offensive Roll against all targets. On a hit, a target takes Cut Damage -- Base Damage 8. The spell ignores 2 Cut AV."
         ],
         "degree": {
             "base": {
@@ -769,7 +769,7 @@
             }
         ],
         "description": [
-            "Make an Offensive Roll against the target. On a hit, a target takes Electricity Damage with Base Damage 10.",
+            "Make an Offensive Roll against the target. On a hit, a target takes Electricity Damage -- Base Damage 10.",
             "After hitting, the nearest entity within 15 feet is targeted, with the same Final Offensive Roll. An entity cannot be hit more than once due to bouncing lightning and if there are no valid entities or it has reached its maximum bounces, it harmlessly hits the ground. You cannot be targeted but you cannot choose targets after the first."
         ],
         "degree": {
@@ -832,7 +832,7 @@
             }
         ],
         "description": [
-            "You create a whirlwind, which you can move as an active action as if it had Movement Value 8. Any entity in the zone of the whirlwind is subject to an Offensive Roll with a final value of Absurd (20). On a hit, a target takes Impact Damage with Base Damage 4. Any target of size 30 or less, who is not tied down, and takes damage from the attack must make an Opposed Characteristic Check with Strength or Agility against this spell with a Strength 12.",
+            "You create a whirlwind, which you can move as an active action as if it had Movement Value 8. Any entity in the zone of the whirlwind is subject to an Offensive Roll with a final value of Absurd (20). On a hit, a target takes Impact Damage -- Base Damage 4. Any target of size 30 or less, who is not tied down, and takes damage from the attack must make an Opposed Characteristic Check with Strength or Agility against this spell with a Strength 12.",
             {
                 "name": "DoF 1+",
                 "type": "result",
@@ -1095,7 +1095,7 @@
                 ]
             },
             {
-                "name": "Redirect Air",
+                "name": "Redirect Electricity",
                 "type": "action.reaction",
                 "cost": 0,
                 "entries": [
@@ -1219,7 +1219,9 @@
             {
                 "target": "one or more entities",
                 "limit": [
-                    "presence"
+                    "presence",
+                    "touch",
+                    "willing"
                 ]
             }
         ],
@@ -1292,7 +1294,7 @@
                 "name": "DoF 1+",
                 "type": "result",
                 "entries": [
-                    "The target gains the Immaterial trait and cannot choose to interact with material objects. The Resistance Check is repeated after one day has passed."
+                    "The target gains the Immaterial trait and cannot interact with material objects. The Resistance Check is repeated after one day has passed."
                 ]
             }
         ],
@@ -1372,7 +1374,7 @@
                 "name": "DoS 1+",
                 "type": "result",
                 "entries": [
-                    "The target only repeats the Opposed Characteristic Check the first time they take the Dash or Step action."
+                    "The target only repeats the Opposed Characteristic Check when performing the Dash or Step action in the following rounds. A target who previously failed the Characteristic Check and is carried by the winds can choose where to land within the zone of the spell."
                 ]
             },
             "Structures with a Base Damage Negate of 6 or less shatter. Those with a BDN of 12 or less take 10 damage each round on the End Phase. Structures with BDN 13 or more are unaffected."
@@ -1437,7 +1439,7 @@
             }
         ],
         "description": [
-            "You cause any amount of air within the zone to become solid and remain solid until the spell ends. Any shape you make will remain in the air without support. Each cubic meter of solid air has 150 Life Points. The solid air can only be seen by passing an Inhuman (32) Notice Check or Absurd (20) Search Check. You can use this spell to trap an entity with Strength 14.",
+            "You cause any amount of air within the zone to become solid and remain solid until the spell ends. Any shape you make will remain in the air without support. Each cubic meter of solid air has 150 Life Points. The solid air can only be seen by passing an Inhuman (32) Notice Check or Absurd (20) Search Check. You can use this spell to perform the Trap (14) maneuver.",
             "The objects created by this spell allow light and air to freely pass through them, but they are rigid and count as cover."
         ],
         "degree": {
@@ -1678,7 +1680,7 @@
             }
         ],
         "description": [
-            "Make one Offensive Roll against all targets. On a hit, a target takes Electrical Damage with the listed Base Damage. The attack has the Immaterial trait and produces an automatic critical."
+            "Make one Offensive Roll against all targets. On a hit, a target takes Electrical Damage. The attack has the Immaterial trait and produces an automatic critical."
         ],
         "degree": {
             "base": {
