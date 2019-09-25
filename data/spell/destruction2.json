@@ -19,7 +19,7 @@
             }
         ],
         "description": [
-            "An object of your choice whose total Presence is no greater than the listed value loses its Base Damage Negate and suffers a power penalty to its Fortitude."
+            "The target loses its Base Damage Negate and suffers a power penalty to its Fortitude."
         ],
         "degree": {
             "base": {
@@ -80,7 +80,7 @@
             }
         ],
         "description": [
-            "An entity of your choice whose total Presence is no greater than the listed value begins to disassemble. Once the spell is cast, the deconstruction takes a 1 minute per point of Presence."
+            "The targets begins to disassemble. Once the spell is cast, the deconstruction takes a 1 minute per point of Presence."
         ],
         "degree": {
             "base": {
@@ -134,9 +134,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check loses intensities of Heat, Cold, or Electricity. If the target is an elemental, it loses 5 Life Points per intensity destroyed.",
-            "If the target element is natural, no SR Check is required."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check. A natural source of an element automatically fails the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target loses intensities of Heat, Cold, or Electricity. If the target is an elemental, it instead loses 5 Life Points per intensity destroyed."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -197,8 +209,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against a lifeless object. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check loses one point of quality, as it is failed a Breakage Check, if its Presence is no greater than the listed value."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target loses 1 quality, as if it failed a Breakage Check."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -252,8 +277,7 @@
             }
         ],
         "description": [
-            "You create a number of spheres of energy. You make an Offensive Roll against an entity for each sphere. On a hit, a target takes Force Damage with 3 Base Damage.",
-            "You must choose all targets before making any roll. You can have all spheres target the same entity."
+            "Make an Offensive Roll against a target for each sphere. On a hit, a target takes Force Damage -- Base Damage 3. You must choose all targets before making any roll but you can target the same entity with multiple spheres."
         ],
         "degree": {
             "base": {
@@ -307,9 +331,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check doubles any Damage Vulnerability or weakness it possess. For example, a light elemental that suffers double damage from Darkness Damage now suffers quadruple.",
-            "A target can repeat the Resistance Check when they take damage from their weakness or Damage Vulnerability."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target doubles any Damage Vulnerabilities or Damage Weakness it possess. For example, a light elemental with a Damage Weakness to Darkness suffers fours times the final damage from Darkness attacks, instead of the normal double. The target can repeat the Resistance Check on the End Phase after they take damage from a Vulnerability or Weakness."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -363,14 +399,14 @@
             }
         ],
         "description": [
-            "You can cast this spell when another spell is cast but before any dice are rolled. You reduce the mana available to the triggering spell. If this reduces the spell's accumulated mana below the Mana Cost, the spell fizzles and the mana is lost.",
+            "You can cast this spell when another spell configuration is cast but before any dice are rolled. You reduce the mana available to the triggering spell configuration. If this reduces the spell's accumulated mana below the Mana Cost, the spell fizzles and the mana is lost.",
             "The caster can choose to reallocate mana as the following:",
             {
                 "type": "list",
                 "items": [
                     "The caster can remove principles that increase the Mana Cost.",
                     "The caster can reduce the spell's degree to reduce the Mana Cost.",
-                    "If the spell was cast from a mass of mana, the caster can spend additional mana."
+                    "If the spell was cast from a mass of mana, the caster can add additional mana."
                 ]
             }
         ],
@@ -480,7 +516,7 @@
             }
         ],
         "description": [
-            "You can cast this spell when a phenom is manifested but before Phenom Projection is rolled are rolled. You nullify a phenom whose Final Potential Roll is no greater than the listed degree."
+            "You can cast this spell when a phenom is manifested but before Projection is rolled. You nullify that phenom if its final roll for Potential is no greater than the listed degree."
         ],
         "degree": {
             "base": {
@@ -534,8 +570,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check takes atomic damage equal to a percent of their current Life Points, round down. This percent is not their total."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target takes atomic damage equal to a percentage of their current Life Points, round down."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -593,8 +642,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check.",
-            "A target that fails the Resistance Check loses 10 ki points per Degree of Failure from their Ki Reserve."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target loses 10 Ki per Degree of Failure from their Ki Reserve."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -648,8 +710,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check.",
-            "A target that fails the Resistance Check takes Atomic Damage with the listed Final Damage. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target takes Atomic Damage. If the target has the Rex Damage Role, multiple the final damage by their Rex Multiplier."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -707,8 +782,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check loses a sense of your choice."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target loses their ability to use one of their senses, your choice."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -762,7 +850,7 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target takes Force Damage with the listed Base Damage."
+            "Make an Offensive Roll against an entity. On a hit, the target takes Force Damage."
         ],
         "degree": {
             "base": {
@@ -807,7 +895,7 @@
             "effect"
         ],
         "action": "active",
-        "maintTime": "turn",
+        "maintTime": "no",
         "tags": [],
         "flavor": [],
         "target": [
@@ -816,8 +904,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an that is a conjurer or a creature controlled by a conjurer. On a hit, the conjurer must make a SR Check.",
-            "Conjurer that fails the Resistance Check loses control over the creature. If you directly targeted the conjurer, break one control for every Degree of Failure on the Resistance Check."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check. If the target is a controlled creature, the conjurer makes the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "If the target has used Control to control one or more creatures, one control breaks per Degree of Failure. If the target was instead a controlled creature, the control ends on just that creature."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -871,8 +972,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check.",
-            "A target that fails the Resistance Check suffers a power penalty equal to their Degree of Failure."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target suffers a power penalty to their Resistance Checks equal to their Degree of Failure. The target can repeat the Resistance Check on the End Phase after they make a Resistance Check. The new Resistance Check is made without applying the power penalty from this spell."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -930,14 +1044,27 @@
             }
         ],
         "description": [
-            "All entities of your choice whose total Presence is no greater than the listed value must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check removes all of the following states:",
+            "Make one Offensive Roll against all targets. On a hit, a target must make a SR or MR Check. A target can choose to fail the Resistance Check.",
             {
-                "type": "list",
-                "items": [
-                    "Pain, not caused by a Critical",
-                    "Weakness, Dazed, and Unaligned",
-                    "Rage, Fear, Fascinated, Confused, Stunned, and Charmed"
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target removes all of the following states:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Pain, not caused by a Critical",
+                            "Weakness, Dazed, and Unaligned",
+                            "Rage, Fear, Fascinated, Confused, Stunned, and Charmed"
+                        ]
+                    }
                 ]
             }
         ],
@@ -1003,7 +1130,7 @@
             }
         ],
         "description": [
-            "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target takes Force Damage with the listed Base Damage."
+            "Make one Offensive Roll against all targets. On a hit, a target takes Force Damage."
         ],
         "degree": {
             "base": {
@@ -1068,8 +1195,21 @@
             }
         ],
         "description": [
-            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check on the End Phase.",
-            "A target that fails the Resistance Check takes atomic damage equal to 10% of their total Life Points, round down. A target must repeat the Resistance Check every round while they remain in the zone."
+            "The first time an entity enters the zone or if it starts its turn in the zone, they must make a SR Check. You are affect by this spell and you cannot select targets, no matter what other powers allow, all entities are affected equally.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected this round."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target takes atomic damage equal to 10% of their total Life Points, round down."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1124,6 +1264,9 @@
         "target": [
             {
                 "target": "one object",
+                "limit": [
+                    "presence"
+                ],
                 "boolean": "or"
             },
             {
@@ -1139,9 +1282,21 @@
             }
         ],
         "description": [
-            "You enchant an object whose total Presence is no greater than the listed or a stationary zone centered on a point of your choice. Any entity who touches the object or enters the zone must make a SR Check.",
-            "A target that fails the Resistance Check takes 10 points of Atomic Damage per Degree of Failure. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier.",
-            "The Resistance Check is only made the first time a target enters the zone each round or if it starts the Action Phase in the zone."
+            "The first time an entity enters the zone or if it starts its turn in the zone (or touches the targeted object), they must make a SR Check. You are affect by this spell and you cannot select targets, no matter what other powers allow, all entities are affected equally.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected this round."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target takes 10 atomic damage per Degree of Failure. If the target uses the Rex Damage Role, the final damage is multiplied by their Rex Multiplier."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1194,7 +1349,7 @@
             "effect"
         ],
         "action": "active",
-        "maintTime": "turn",
+        "maintTime": "no",
         "tags": [],
         "flavor": [],
         "target": [
@@ -1203,9 +1358,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR or MR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check has some of its memory destroyed. The effects of this spell do not require maintenance.",
-            "You must have an idea what the memories you are destroying are before making your Offensive Roll. If the memory is core to the nature of the target, the Resistance Check is reduced by 6 points. For example, in order to delete the memory of a childhood friend, you must know the name of the friend."
+            "Make one Offensive Roll against all targets. On a hit, a target must make a SR or MR Check. A target can choose to fail the Resistance Check. Before the target makes the Resistance Check, you must have an idea of what memory to destroy. For example, in order to destroy the memory of a childhood friend, you need the name of the friend. If the memory is core to the nature of the target, the Resistance Check is reduced by 6 points.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target has the chosen memories destroyed. The target can repeat the Resistance Check when given reason to doubt their memory."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1259,8 +1426,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check cannot invest Experience Points or Phenom Points. A target can repeat the Resistance Check after one day has passed."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR or MR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target cannot invest Experience Points, Phenom Points, Spirit Knowledge, Mana Knowledge, or Phenom Knowledge. The target can repeat the Resistance Check after one day has passed."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1314,8 +1494,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check is unable to perform an Active Action of your choice. If the forbidden action is general, like moving or attacking, a target can add a +3 deed bonus."
+            "Make one Offensive Roll against all targets. On a hit, a target must make a SR or MR Check. A target can choose to fail the Resistance Check. Before the target rolls the Resistance Check, you must choose an Active action or a broad type of action, such as moving. You cannot choose an action that would put the target in danger. If the forbidden action is too broad, like talking, the Resistance Check is reduced by 4 points.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target is unable to perform the chosen actions. The target can repeat the Resistance Check on the End Phase after a number of minutes have passed equal to their Degree of Failure"
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1369,8 +1562,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check is unable to use any power or supernatural feature."
+            "Make one Offensive Roll against all targets. On a hit, a target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target is unable to use any power or supernatural feature. The target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure"
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1424,7 +1630,7 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target takes Force Damage with the listed Base Damage."
+            "You make an Offensive Roll against the target. On a hit, the target takes Force Damage."
         ],
         "degree": {
             "base": {
@@ -1484,8 +1690,21 @@
             }
         ],
         "description": [
-            "All entities in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check is unable to take Active Actions unless they are done as part of instinct. For example, a creature would move to avoid a collapsing building but would otherwise not move."
+            "Make one Offensive Roll against all targets. On a hit, a target must make a SR or MR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target cannot perform Active actions unless they would be in danger by not doing so. For example, a target would be able to move out of a burning building."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1550,8 +1769,21 @@
             }
         ],
         "description": [
-            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check.",
-            "A target that fails the Resistance Check becomes fragile. Any damage suffered is doubled and their entire body counts as a vulnerable point. Structures lose their Base Damage Negate. Objects suffer a -5 deed penalty to Fortitude. A target can repeat the Resistance Check after one day has passed."
+            "The first time an entity enters the zone or if it starts its turn in the zone, they must make a SR Check. A target can choose to fail the Resistance Check. You are affect by this spell and you cannot select targets, no matter what other powers allow, all entities are affected equally.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is immune to this spell for one day."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target gain Damage Weakness to all damage and their entire body counts as a Vulnerable Point. Structures also lose their Base Damage Negate and suffer a -5 deed penalty to Fortitude. The target can repeat the Resistance Check after one day has passed."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1593,7 +1825,7 @@
         }
     },
     {
-        "name": "Essence of Destruction",
+        "name": "Destructive Form",
         "type": "path",
         "level": 70,
         "power": [
@@ -1605,11 +1837,15 @@
         "flavor": [],
         "target": [
             {
-                "target": "one entity"
+                "target": "one entity",
+                "limit": [
+                    "touch",
+                    "willing"
+                ]
             }
         ],
         "description": [
-            "An entity of your choice transforms into pure destructive energy. A target gain a Base Damage Negate 100 that can be overcome with the Imbued trait. Any entity that comes into contact with a target must make a SR Check or take 10 Atomic Damage per Degree of Failure."
+            "The target gains Base Damage Negate 100 which can be overcome by an Imbued attack. Any other entity that comes into contact with the target must make a SR Check or take 10 atomic damage per Degree of Failure."
         ],
         "degree": {
             "base": {
@@ -1663,8 +1899,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a PrR or SR Check.",
-            "A target that fails the Resistance Check dies, separating its body and spirit and a Psychopomp is called. If the target beats the Psychopomp, their spirit returns to their body. As this death is not true, it does not increase Death's desire."
+            "Make an Offensive Roll against the target. On a hit, the target must make a PrR or SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "A psychopomp appears next to the target and claims their spirit. If the target beats the psychopomp, their spirit returns to their body immediately. Death's desire for the target remains unchanged since the psychompomp was not called on true terms."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1725,10 +1974,22 @@
             }
         ],
         "description": [
-            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a PhR or SR Check.",
-            "A target that fails the Resistance Check reduces their Presence by half a point and suffers a -1 all-action penalty. A target must repeat the Resistance Check after one day has passed while they remain in the zone.",
-            "Once a target's Presence becomes zero, they fade away into nothing. A half value is rounded up for the purpose of Final Value.",
-            "The reduced Presence and all-action penalty returns one point each day the target is not in the zone."
+            "The first time an entity enters the zone or if it starts its turn in the zone, it must make a PhR or SR Check. You are affect by this spell and you cannot select targets, no matter what other powers allow, all entities are affected equally.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is immune to this spell for one day."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target reduces their Presence by half a point and suffers a -1 all-action ppenalty The target is then immune to this spell for one day.",
+                    "If the target's Presence is reduced to zero, they fade away into nothing. A half value is rounded up for the purpose of final value. The reduced Presence and all-action penalty are restored one point each day the target is not in thee zone."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1786,8 +2047,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check.",
-            "A target that fails the Resistance Check has the listed number of XP uninvested from a Primary or Secondary Skill. You can choose from where the XP is uninvested, although no single investment can lose more than half of the listed value."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target must uninvest XP from Primary or Secondary Skills of your choice. No skill can lose more than half of its invested XP and the target can choose if you choose more than one skill."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1847,9 +2121,21 @@
             }
         ],
         "description": [
-            "All entities in line must make a Defensive Roll against your Offensive Roll. On a hit, a target must make a SR Check.",
-            "A target that fails the Resistance Check ceases to exist. A Psychopomp is not called and their spirit does not return to the Nexus, it simple stops existing.",
-            "This spell is completely visible on the material plane."
+            "Make one Offensive Roll against all targets. On a hit, a target must make a PrR or SR Check. This spell is visible on the material plane.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target stops existing; their spirit is not collected by a psychopomp and does not return to the Nexus."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1857,7 +2143,7 @@
                 "int": 12,
                 "maint": 0,
                 "effect": [
-                    "SR 12",
+                    "PrR or SR 12",
                     "30-foot line"
                 ]
             },
@@ -1866,7 +2152,7 @@
                 "int": 14,
                 "maint": 0,
                 "effect": [
-                    "SR 16",
+                    "PrR or SR 16",
                     "120-foot line"
                 ]
             },
@@ -1875,7 +2161,7 @@
                 "int": 18,
                 "maint": 0,
                 "effect": [
-                    "SR 20",
+                    "PrR or SR 20",
                     "300-foot line"
                 ]
             },
@@ -1884,7 +2170,7 @@
                 "int": 22,
                 "maint": 0,
                 "effect": [
-                    "SR 24",
+                    "PrR or SR 24",
                     "1000-foot line"
                 ]
             }
@@ -1914,8 +2200,21 @@
             }
         ],
         "description": [
-            "All entities of your choice in an area centered on a point of your choice must make a Defensive Roll against your Offensive Roll. On a hit, a target takes Force Damage with the listed Base Damage. If a target takes any damage, they must make a SR Check.",
-            "A target that fails the Resistance Check takes 10 points of Force Damage per Degree of Failure."
+            "Make one Offensive Roll against all targets. On a hit, a target takes force damage. A target that takes any damage must make a SR Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target takes 10 force damage per degree of failure."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1977,7 +2276,7 @@
             }
         ],
         "description": [
-            "A maintained spell of your choice loses an amount of mana. The spell first loses principles that increase the Mana Cost and then reduces the degree. If the mana available is still not enough to meet the Mana Cost, the spell is destroyed."
+            "A maintained spell of your choice loses an amount of mana. The spell first loses principles that increase the Mana Cost. If the mana cost is still not enough then the degree is reduced. If the mana available is still not enough to meet the Mana Cost, the spell ends."
         ],
         "degree": {
             "base": {
@@ -2035,8 +2334,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check reduces it Nornir by the listed value. A target cannot repeat the Resistance Check."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target reduces its Nornir. The target cannot repeat the Resistance Check, the effects last as long as you maintain the spell."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -2101,7 +2413,7 @@
             }
         ],
         "description": [
-            "You create a stationary orb centered on a point of your choice. The orb has its own Initiative Roll 15 each round. On its turn, the orb makes an Opposed Characteristic Check with Strength 14 against the Strength or Agility Characteristic against all entities within an area around it. A target is pulled 30-feet per Degree of Failure toward the orb.",
+            "You create a stationary orb centered on a point of your choice. The orb has its own Initiative Roll of 15 each round. On its turn, the orb makes an Opposed Characteristic Check with Strength 14 against the Strength or Agility Characteristic against all entities within an area around it. A target is pulled 30-feet per Degree of Failure toward the orb.",
             "Any entity in contact with the orb on its turn must make a PhR Check and a SR Check.",
             "A target that fails the PhR Check takes 10 points of Force Damage per Degree of Failure. A target that fails the SR Check loses 10 points of mana from their Mana Pool per Degree of Failure. If the target's Life Points are reduced to zero while in contact with the orb, they are swallowed by the the void and their soul does not return to the Nexus."
         ],

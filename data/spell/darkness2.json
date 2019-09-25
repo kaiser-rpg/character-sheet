@@ -518,7 +518,7 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, the target takes Darkness Damage."
+            "Make an Offensive Roll against the target. On a hit, the target takes Darkness Damage."
         ],
         "degree": {
             "base": {
@@ -1328,7 +1328,11 @@
         "flavor": [],
         "target": [
             {
-                "target": "one entity"
+                "target": "one entity",
+                "limit": [
+                    "touch",
+                    "willing"
+                ]
             }
         ],
         "description": [
