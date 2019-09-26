@@ -1409,7 +1409,7 @@
             }
         ],
         "description": [
-            "All entities within the zone must make a SR Check. A target can choose to fail",
+            "All entities within the zone must make a SR Check. A target can choose to fail.",
             {
                 "name": "DoS 1+",
                 "type": "result",

@@ -16,10 +16,12 @@
     "flavor":[],
     "target": [
         {
-            "target": "one entity | one or more entities | one point | zone | area | self | touch",
+            "target": "one entity | one or more entities | one point | zone | area | self",
             "limit": [
                 "presence",
-                "weight"
+                "weight",
+                "willing",
+                "touch"
             ],
             "shape": {
                 "geometry": "sphere",

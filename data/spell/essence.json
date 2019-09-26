@@ -1,0 +1,715 @@
+[
+    {
+        "name": "Natural Affinity",
+        "type": "path",
+        "level": 2,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
+        "description": [
+            "The target can bond with creatures and is recognized as one-of-them. This does not make a creature like you, only removes some of the wariness."
+        ],
+        "degree": {
+            "base": {
+                "mana": 30,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "Affects natural animals"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "Affects all natural beings"
+                ]
+            },
+            "advanced": {
+                "mana": 100,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "Affects both natural and beyond the veil creatures"
+                ]
+            },
+            "arcane": {
+                "mana": 120,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "Affects all creatures, including beings of high Nornir"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Sense Nature",
+        "type": "path",
+        "level": 6,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "zone",
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self",
+                    "move": "self"
+                }
+            }
+        ],
+        "description": [
+            "Any entity that you look at within the zone must make a SR Check. A target can choose to fail.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target can choose to pass any Resistance Check from this spell when you cast it for one hundred days."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "You sense the nature of the target. This information does not provide you with any real information, but you can recognize parts of its nature in others. For example, you could see the nature of a human heritage and recognize that nature in other humans."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 30,
+                "int": 5,
+                "maint": 5,
+                "effect": [
+                    "10 m radius",
+                    "SR 10"
+                ]
+            },
+            "intermediate": {
+                "mana": 60,
+                "int": 8,
+                "maint": 10,
+                "effect": [
+                    "25 m radius",
+                    "SR 14"
+                ]
+            },
+            "advanced": {
+                "mana": 100,
+                "int": 10,
+                "maint": 10,
+                "effect": [
+                    "50 m radius",
+                    "SR 16"
+                ]
+            },
+            "arcane": {
+                "mana": 140,
+                "int": 12,
+                "maint": 15,
+                "effect": [
+                    "100 m radius",
+                    "SR 20"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Communication Through Essence",
+        "type": "path",
+        "level": 10,
+        "power": [
+            "trigger"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "self",
+                "limit": [
+                    "presence",
+                    "weight",
+                    "willing",
+                    "touch"
+                ],
+                "shape": {
+                    "geometry": "sphere",
+                    "dimension": [
+                    ],
+                    "center": "self",
+                    "move": "self"
+                }
+            }
+        ],
+        "description": [
+            "Any entity that you look at within the zone can communicate with you. Due to the nature of the connection, the target always knows who you are but you do not need to share a language to communicate."
+        ],
+        "degree": {
+            "base": {
+                "mana": 30,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "You can communicate with natural animals and plants"
+                ]
+            },
+            "intermediate": {
+                "mana": 70,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "You can communicate with all natural beings"
+                ]
+            },
+            "advanced": {
+                "mana": 100,
+                "int": 12,
+                "maint": 20,
+                "effect": [
+                    "You can communicate with natural beings and creatures from beyond the veil"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 25,
+                "effect": [
+                    "You can communicate with any type of being -- even constructs and undead"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Natural Knowledge",
+        "type": "path",
+        "level": 12,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one natural entity",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
+        "description": [
+            "You analyze the target and its nature. For example, you could use this spell on a strange plant to determine its toxicity or to identify any special properties it might have."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "Presence 3"
+                ]
+            },
+            "intermediate": {
+                "mana": 60,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "Presence 5"
+                ]
+            },
+            "advanced": {
+                "mana": 90,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Presence 8"
+                ]
+            },
+            "arcane": {
+                "mana": 120,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "Presence 10"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Healing",
+        "type": "path",
+        "level": 16,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
+        "description": [
+            "The target recovers a percentage of their maximum Lifee Points. This spell cannot restore damaged limbs or eliminate Pain. If the target uses the Rex Damage Role, they only recover half as many Life Points."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "20%"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "30%"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "40%"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "50%"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Soul Shield",
+        "type": "path",
+        "level": 20,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
+        ],
+        "description": [
+            "You automatically pass a PhR or SR Check with one Degree of Success from an effect spell. This does not stop Resistance Checks that result from taking damage, like the SR Check from Rain of Destruction or those caused by any other type of spell or power."
+        ],
+        "degree": {
+            "base": {
+                "mana": 40,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "Up to PhR or MR 12"
+                ]
+            },
+            "intermediate": {
+                "mana": 60,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "Up to PhR or MR 16"
+                ]
+            },
+            "advanced": {
+                "mana": 90,
+                "int": 12,
+                "maint": 10,
+                "effect": [
+                    "Up to PhR or MR 20"
+                ]
+            },
+            "arcane": {
+                "mana": 120,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "Up to PhR or MR 24"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Share Senses",
+        "type": "path",
+        "level": 22,
+        "power": [
+            "effect",
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "you and one or more entities",
+                "limit": [
+                    "presence"
+                ]
+            }
+        ],
+        "description": [
+            "All targets must make a PhR or SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected by the spell."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "You can choose if a target's sense of hearing or vision are shared with what other targets. A target who does not have another sense shared with them will not immediatly know they are affected by the spell. If the target goes beyond the listed distance from you or is blocked by an imbued wall, the target is no longer affected by the spell. The target can repeat the Resistance Check after one hour has passed."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 10,
+                "effect": [
+                    "Presence 10",
+                    "PhR or SR 10",
+                    "Max distance of 1 km"
+                ]
+            },
+            "intermediate": {
+                "mana": 180,
+                "int": 9,
+                "maint": 20,
+                "effect": [
+                    "Presence 16",
+                    "PhR or SR 16",
+                    "Max distance of 10 km"
+                ]
+            },
+            "advanced": {
+                "mana": 240,
+                "int": 12,
+                "maint": 25,
+                "effect": [
+                    "Presence 19",
+                    "PhR or SR 20",
+                    "Max distance of 50 km"
+                ]
+            },
+            "arcane": {
+                "mana": 300,
+                "int": 15,
+                "maint": 30,
+                "effect": [
+                    "Presence 22",
+                    "PhR or SR 24",
+                    "Max distance of 150 km"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Modify Essence",
+        "type": "path",
+        "level": 26,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "turn",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
+        "description": [
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "You change the target's essence. This does not grant any special powers to the target, but it can alter their elemental nature. For example, you could turn a mineral elemental into an ice elemental, causing it to gain Damage Vulnerability to heat damage and to deal cold damage."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 50,
+                "int": 6,
+                "maint": 5,
+                "effect": [
+                    "SR 14"
+                ]
+            },
+            "intermediate": {
+                "mana": 80,
+                "int": 9,
+                "maint": 10,
+                "effect": [
+                    "SR 16"
+                ]
+            },
+            "advanced": {
+                "mana": 100,
+                "int": 12,
+                "maint": 10,
+                "effect": [
+                    "SR 18"
+                ]
+            },
+            "arcane": {
+                "mana": 140,
+                "int": 15,
+                "maint": 15,
+                "effect": [
+                    "SR 20"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Soul Poison",
+        "type": "path",
+        "level": 30,
+        "power": [
+            "effect"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
+        "description": [
+            "Make an Offensive Roll against the target. On a hit, you create a poison within the target's body. This poison counts as one dose and you can choose its effects using the rules for poison crafting."
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "Poison Level 40"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "Poison Level 50"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "Poison Level 60"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "Poison Level 70"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Analyze Soul",
+        "type": "path",
+        "level": 32,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "no",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "one entity"
+            }
+        ],
+        "description": [
+            "The target must make a SR Check. The target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "You learn the target the following things about the target: if possess The Gift feature, if they can manifest phenom, if they can exploit a talent, if they have any natural powers. You do not learn any specific, only if they posses the ability to use powers and what type. The Game Master might also provide additional information."
+                ]
+            }
+        ],
+        "degree": {
+            "base": {
+                "mana": 60,
+                "int": 6,
+                "maint": 0,
+                "effect": [
+                    "SR 12"
+                ]
+            },
+            "intermediate": {
+                "mana": 90,
+                "int": 9,
+                "maint": 0,
+                "effect": [
+                    "SR 14"
+                ]
+            },
+            "advanced": {
+                "mana": 120,
+                "int": 12,
+                "maint": 0,
+                "effect": [
+                    "SR 18"
+                ]
+            },
+            "arcane": {
+                "mana": 150,
+                "int": 15,
+                "maint": 0,
+                "effect": [
+                    "SR 20"
+                ]
+            }
+        }
+    },
+    {
+        "name": "Acquire Natural Powers",
+        "type": "path",
+        "level": 36,
+        "power": [
+            "automatic"
+        ],
+        "action": "active",
+        "maintTime": "day",
+        "tags": [],
+        "flavor": [],
+        "target": [
+            {
+                "target": "self"
+            }
+        ],
+        "description": [
+            "You gain features and secondary skills whose total XP cost is no greater than the listed amount using a monad template. The features can be purchased as a Nornir 0 creature. Your physical form will change as appropriate. For example, if you gain a natural Flight Value, you would sprout wings."
+        ],
+        "degree": {
+            "base": {
+                "mana": 120,
+                "int": 8,
+                "maint": 25,
+                "effect": [
+                    "5 XP"
+                ]
+            },
+            "intermediate": {
+                "mana": 200,
+                "int": 10,
+                "maint": 40,
+                "effect": [
+                    "10 XP"
+                ]
+            },
+            "advanced": {
+                "mana": 280,
+                "int": 14,
+                "maint": 60,
+                "effect": [
+                    "15 XP"
+                ]
+            },
+            "arcane": {
+                "mana": 360,
+                "int": 18,
+                "maint": 80,
+                "effect": [
+                    "20 XP"
+                ]
+            }
+        }
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
