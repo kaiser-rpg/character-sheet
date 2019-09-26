@@ -1574,7 +1574,7 @@
                 "name": "DoF 1+",
                 "type": "result",
                 "entries": [
-                    "The target is unable to use any power or supernatural feature. The target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure"
+                    "The target is unable to use any power or supernatural feature. The target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure."
                 ]
             }
         ],
@@ -2402,7 +2402,7 @@
         "flavor": [],
         "target": [
             {
-                "target": "zone",
+                "target": "orb",
                 "shape": {
                     "geometry": "sphere",
                     "dimension": [
@@ -2413,9 +2413,30 @@
             }
         ],
         "description": [
-            "You create a stationary orb centered on a point of your choice. The orb has its own Initiative Roll of 15 each round. On its turn, the orb makes an Opposed Characteristic Check with Strength 14 against the Strength or Agility Characteristic against all entities within an area around it. A target is pulled 30-feet per Degree of Failure toward the orb.",
-            "Any entity in contact with the orb on its turn must make a PhR Check and a SR Check.",
-            "A target that fails the PhR Check takes 10 points of Force Damage per Degree of Failure. A target that fails the SR Check loses 10 points of mana from their Mana Pool per Degree of Failure. If the target's Life Points are reduced to zero while in contact with the orb, they are swallowed by the the void and their soul does not return to the Nexus."
+            "The round after you cast this spell, the orb has an Initiative Roll of 15 each round, the orb loses any ties and cannot delay its turn. On its turn, the orb creates a vortex that tries to pull all entities within its radius. The orb makes one Opposed Characteristic Check, with a Strength of 14, against all targets; a target can use their Strength or Agility. A target is pulled 10 m closer to the orb per Degree of Failure.",
+            "The first time an entity moves within 1 m of the orb or starts their turn within 1m, they must make a PhR Check and a SR Check. Any attempt to move away from the orb takes ten times as much movement.",
+            {
+                "name": "DoS 1+ on PhR or SR",
+                "type": "result",
+                "entries": [
+                    "The target is not affected this round by this Resistance Check."
+                ]
+            },
+            {
+                "name": "DoF 1+ on PhR",
+                "type": "result",
+                "entries": [
+                    "The target takes 10 force damage per Degree of Failure."
+                ]
+            },
+            {
+                "name": "DoF 1+ on SR",
+                "type": "result",
+                "entries": [
+                    "The target loses 10 mana from their Mana Pool and Accumulated Mana per Degree of Failure."
+                ]
+            },
+            "If an entity dies within 1 m of the orb, its spirit is destroyed and does not return to the Nexus."
         ],
         "degree": {
             "base": {
@@ -2480,7 +2501,7 @@
             }
         ],
         "description": [
-            "A number of objects of your choice whose total Presence is no greater than the listed value are destroyed."
+            "The targets are destroyed."
         ],
         "degree": {
             "base": {
@@ -2540,8 +2561,21 @@
             }
         ],
         "description": [
-            "All entities in an area centered on a point of your choice must make a SR Check.",
-            "A target that fails the Resistance Check has its spirit destroyed. Their spirit is not collected by a Psychopomp and it does not return to the Nexus."
+            "All entities within the area must make a SR Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target's spirit is completely destroyed and does not return to the Nexus."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -2592,7 +2626,9 @@
         "action": "active",
         "maintTime": "day",
         "tags": [],
-        "flavor": [],
+        "flavor": [
+            "Reality within the zone is shaken; chaos is the only thing that holds."
+        ],
         "target": [
             {
                 "target": "zone",
@@ -2606,18 +2642,18 @@
             }
         ],
         "description": [
-            "You create a stationary zone centered on a point of your choice. Reality within the zone is shaken; chaos is the only thing that holds. You can choose to alter a specific aspect of reality or allow the spell to take control. The follow list are examples of what can happen within the zone of Entropy.",
+            "You can choose to alter a specific aspect of reality or allow the spell to take control. The follow list are examples of what can happen within the zone of Entropy.",
             {
                 "type": "list",
                 "items": [
                     "Invert the weight of things. So a feather weighs a ton while a boulder is as light as a feather.",
-                    "Lovers hate eachother and enemies fall in love.",
+                    "Lovers hate each other and enemies fall in love.",
                     "Time flows forward in altering tempos.",
                     "Icy winds blow off of a tropical storm.",
                     "Ice forms when things are on fire, and as things freeze they turn to ash."
                 ]
             },
-            "You have absolutely no control on what this spell does. All entities within the zone are affected, unless they have the listed Nornir. "
+            "All entities within the zone are affected, unless they have the listed Nornir."
         ],
         "degree": {
             "base": {
@@ -2675,8 +2711,21 @@
             }
         ],
         "description": [
-            "An entity of your choice must make a SR Check. The entity can be anything, such as an entire city, a species, or a single individual.",
-            "A target that fails the Resistance Check is deleted, so that it had never existed. Any death caused by the existence of a target returns to life if the spirit still exists. All entities forget a target existed unless the entity has Nornir 40."
+            "The target must make a SR Check. The target can be anything, such as an entire city, a species, or a single individual.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target essentially never existed. Any death caused by the existence of the target returns to life, only if the spirit still exists. To a limited degree, history is rewritten. All entities, with a Nornir less than 40, forget that the target existed."
+                ]
+            }
         ],
         "degree": {
             "base": {

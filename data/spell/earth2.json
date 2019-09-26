@@ -193,30 +193,45 @@
         "flavor": [],
         "target": [
             {
-                "target": "touch",
-                "limit": [
-                    "presence"
-                ]
+                "target": "self"
             }
         ],
         "description": [
-            "You can modify minerals whose Presence is less than the listed value that you are in contact with. You gain the following actions:",
+            "You can perform the following actions while you maintain the spell:",
             {
-                "name": "Control Creature of Light",
-                "type": "entries",
+                "name": "Control Creature of Mineral",
+                "type": "action",
+                "action": [
+                    "active"
+                ],
+                "cost": 2,
                 "entries": [
-                    "**Action**: 2 AP",
-                    "You can gain control over a mineral elemental you are touching. A target must make a SR Check. A target that succeeds is immune to the control from this spell for a number of rounds equal to their Degree of Success.",
-                    "Failure means the target falls under your control. This control is active, meaning you must spend AP to make the target perform actions.",
-                    "A target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure on the previous Check. If you lose contact with the target or the spell ends, your control ends."
+                    "You can gain control over a mineral elemental you are touching whose Presence is no greater than the listed value. The target must make a SR Check.",
+                    {
+                        "name": "DoS 1+",
+                        "type": "result",
+                        "entries": [
+                            "The target is immune to this action for a number of rounds equal to their Degree of Success."
+                        ]
+                    },
+                    {
+                        "name": "DoF 1+",
+                        "type": "result",
+                        "entries": [
+                            "You gain active control over the target. The target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure. If you lose contact with the target or the spell ends, your control ends."
+                        ]
+                    }
                 ]
             },
             {
                 "name": "Modify Mineral",
-                "type": "entries",
+                "type": "action",
+                "action": [
+                    "active"
+                ],
+                "cost": 1,
                 "entries": [
-                    "**Action**: 1 AP",
-                    "You can reshape minerals you are in contact with. For example, you can turn a pebble into an arrow head."
+                    "You can reshape minerals whose Presence is less than the listed value that you are in contact with. For example, you can turn a pebble into an arrow head."
                 ]
             }
         ],
@@ -276,7 +291,7 @@
             }
         ],
         "description": [
-            "An entity of your choice increases in weight. You cannot increase a target's weight to be more than twice its original weight."
+            "The target increases in weight. You cannot increase a target's weight to be more than twice its original weight."
         ],
         "degree": {
             "base": {
@@ -334,8 +349,7 @@
             }
         ],
         "description": [
-            "A mineral object whose total Presence is no greater than the listed value of your choice transforms from one mineral into another mineral. The mass of the object remains the same. For example, you could turn 10 lb. of lead into 10 lb. of gold.",
-            "The transformation ends when the spell ends."
+            "The target transforms from one mineral into another mineral. The mass of the object remains the same. For example, you could turn 10 kg of lead into 10 kg of gold. The transformation ends when the spell ends."
         ],
         "degree": {
             "base": {
@@ -393,7 +407,7 @@
             }
         ],
         "description": [
-            "An entity of your choice gains a bonus bonus to PhR and Fortitude."
+            "The target gains a bonus bonus to PhR and Fortitude."
         ],
         "degree": {
             "base": {
@@ -451,8 +465,7 @@
             }
         ],
         "description": [
-            "You raise the dirt and minerals around you to create a supernatural barrier with the listed Life Points. The barrier possess a Base Damage Negate which can be overcome with an Imbued attack. Note, the barrier does not possess the Imbue trait.",
-            "If you are not near a mineral that you can control, this spell fails."
+            "You to create a supernatural barrier with the listed Life Points. The barrier possess a Base Damage Negate which can be overcome with an Imbued attack. Note, the barrier does not possess the Imbue trait. If you are not near a mineral that you can control, this spell fails."
         ],
         "degree": {
             "base": {
@@ -510,8 +523,21 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check suffers a power penalty to their Initiative and Movement Value."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target suffers a power penalty to their Initiative and Movement Value. The target can repeat the Resistance Check on the End Phase after a number of rounds have passed equal to their Degree of Failure."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -569,11 +595,14 @@
         "flavor": [],
         "target": [
             {
-                "target": "one entity"
+                "target": "one entity",
+                "limit": [
+                    "touch"
+                ]
             }
         ],
         "description": [
-            "An entity of your choice gains a natural AV against the Physical and Elemental Damage Groups."
+            "The target gains a natural AV against the Physical and Elemental Damage Groups."
         ],
         "degree": {
             "base": {
@@ -627,7 +656,7 @@
             }
         ],
         "description": [
-            "You create a supernatural barrier with the listed Life Points that can only protect from physical attacks with some amount of metal in them or attacks using the Electricity Damage Type. The barrier is immune to Physical Damage that do not have the [@trait Imbued @] trait.",
+            "You create a supernatural barrier with the listed Life Points that can only protect from physical attacks with some amount of metal in them or attacks using the Electricity Damage Type. The barrier is immune to Physical Damage that does not have the [@trait Imbued @] trait.",
             "Any attack made against the barrier using metal suffers D2 to the Offensive Roll."
         ],
         "degree": {
@@ -685,7 +714,7 @@
             }
         ],
         "description": [
-            "A number of entities of your choice can pass through solid objects at will, meaning they can only be damaged by attacks with the Imbued trait. This does not grant the Immaterial trait, since a target does not gain the ability to interact with other immaterial entities."
+            "The targets can pass through solid objects at will, meaning they can only be damaged by attacks with the Imbued trait. This does not grant the Immaterial trait, since a target does not gain the ability to interact with other immaterial entities."
         ],
         "degree": {
             "base": {
@@ -739,9 +768,7 @@
             }
         ],
         "description": [
-            "You create a number of earth spikes. You make an Offensive Roll against an entity for each spike. On a hit, a target takes Thrust Damage with 6 Base Damage.",
-            "You must choose all targets before making any roll. You can have all spikes target the same entity.",
-            "The spikes are unable to hit a target that is more than 30 feet away from solid ground."
+            "Make an Offensive Roll against a target for each spike. On a hit, a target takes Thrust Damage -- Base Damage 6. You must choose all targets before making any roll. You can have all spikes target the same entity. The spikes are unable to hit a target that is more than 30 feet away from solid ground."
         ],
         "degree": {
             "base": {
@@ -795,7 +822,7 @@
             }
         ],
         "description": [
-            "An entity of your choice gains a power bonus to Breakage."
+            "The target gains a power bonus to Breakage."
         ],
         "degree": {
             "base": {
@@ -920,16 +947,16 @@
             }
         ],
         "description": [
-            "You create a zone centered on you. You gain the following actions:",
+            "You can perform the following actions while you maintain the spell:",
             {
                 "name": "Manipulate Metal",
-                "type": "entries",
+                "type": "action",
+                "action": [
+                    "active"
+                ],
+                "cost": 2,
                 "entries": [
-                    "**Action**: 2 AP",
-                    "You can manipulate metal within the zone as if you had Strength 10.",
-                    "This control lets you perform the Opposed Characteristic Check of the Disarm and Trap maneuvers, with no penalty or bonus from an Offensive Roll.",
-                    "You can use this control to manipulate impure metal or metal with the Imbued trait, but at a -4 deed penalty to your Strength.",
-                    "You can only take this action once each round but you can affect all metal in the area at once."
+                    "You can manipulate metal within the zone as if you had the listed Strength. This control lets you perform the Disarm and Trap maneuvers on all entities within the zone, assuming they are holding or wearing metal. You must use your Spell Projection for the Offensive Roll, but at no penalty. When you manipulate impure metal or metal with the Imbued trait, you suffer a -4 deed penalty to Strenght Checks. You can only take this action once each round but you affect all metal in the zone at once."
                 ]
             }
         ],
@@ -989,8 +1016,7 @@
             }
         ],
         "description": [
-            "You instantly complete a crafting project involving metal if the amount of effort needed is no greater than the listed value.",
-            "If you cast this spell more than once per day, the amount of effort it can complete is halved."
+            "You instantly gain effort on a crafting project involving metal, up to a certain Difficulty. If you cast this spell more than once per day, the amount of effort it can complete is halved each time."
         ],
         "degree": {
             "base": {
@@ -998,7 +1024,8 @@
                 "int": 8,
                 "maint": 0,
                 "effect": [
-                    "80 effort"
+                    "80 effort",
+                    "Moderate difficulty"
                 ]
             },
             "intermediate": {
@@ -1006,7 +1033,8 @@
                 "int": 10,
                 "maint": 0,
                 "effect": [
-                    "150 effort"
+                    "150 effort",
+                    "Very Difficult difficulty"
                 ]
             },
             "advanced": {
@@ -1014,7 +1042,8 @@
                 "int": 14,
                 "maint": 0,
                 "effect": [
-                    "200 effort"
+                    "200 effort",
+                    "Almost Impossible difficulty"
                 ]
             },
             "arcane": {
@@ -1022,7 +1051,8 @@
                 "int": 18,
                 "maint": 0,
                 "effect": [
-                    "250 effort"
+                    "250 effort",
+                    "Inhuman difficulty"
                 ]
             }
         }
@@ -1044,7 +1074,7 @@
             }
         ],
         "description": [
-            "An entity of your choice gains a natural AV against Physical and Elemental Damage Groups and a Base Damage Negate equal to twice a target's Presence which can be overcome by an Imbued attack. A target also gains a power bonus to Strength and a -2 power penalty to Movement Value."
+            "The target gains a natural AV against Physical and Elemental Damage Groups and a Base Damage Negate equal to twice a target's Presence which can be overcome by an Imbued attack. A target also gains a power bonus to Strength and a -2 power penalty to Movement Value."
         ],
         "degree": {
             "base": {
@@ -1072,7 +1102,7 @@
                 "effect": [
                     "10 AV",
                     "+3 Strength",
-                    "You are immune to Physical and Elemental Damage that do not have the Imbued trait"
+                    "The target is immune to Physical and Elemental Damage that do not have the Imbued trait"
                 ]
             },
             "arcane": {
@@ -1082,7 +1112,7 @@
                 "effect": [
                     "12 AV",
                     "+4 Strength",
-                    "As advanced and you halve the Final Damage from Physical and Elemental Damage that have the Imbued trait."
+                    "As advanced and the target reduces the final damage from Physical and Elemental Damage that have the Imbued trait by half."
                 ]
             }
         }
@@ -1100,11 +1130,14 @@
         "flavor": [],
         "target": [
             {
-                "target": "one entity"
+                "target": "one entity",
+                "limit": [
+                    "willing"
+                ]
             }
         ],
         "description": [
-            "An entity of your choice uses the the Rex Damage Role but does not gain a Rex Multiplier. Instead, the target gains a power bonus to their maximum Life Points and they regain the same number Life Points. When the spell ends, the target's current and maximum Life Points are reduced by the amount gained."
+            "The target uses the the Rex Damage Role but does not gain a Rex Multiplier. Instead, the target gains a power bonus to their maximum Life Points and they regain the same number Life Points. When the spell ends, the target's current and maximum Life Points are reduced by the amount gained."
         ],
         "degree": {
             "base": {
@@ -1158,9 +1191,28 @@
             }
         ],
         "description": [
-            "You make an Offensive Roll against an entity. On a hit, a target must make a SR Check; a target can choose to fail.",
-            "A target that fails the Resistance Check cannot move and has no awareness of their surroundings. The target does not age while the spell lasts. Any damage inflicted can result in death or lasting damage.",
-            "A target can repeat the Resistance Check after one day has passed, and then after one week."
+            "Make an Offensive Roll against the target. On a hit, the target must make a SR Check. A target can choose to fail the Resistance Check.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The spell ends."
+                ]
+            },
+            {
+                "name": "DoF 1 to 4",
+                "type": "result",
+                "entries": [
+                    "The target suffers an all-action penalty equal to twice their Degree of Failure and their Movement Value is halved. The target must repeat the Resistance Check on each End Phase."
+                ]
+            },
+            {
+                "name": "DoF 5+",
+                "type": "result",
+                "entries": [
+                    "The target turns to stone and cannot move. While made of stone, the target cannot take any action, sense their surroundings, and does not age. Any damage inflicted can result in death or permanent damage. The target can repeat the Resistance Check after one day has passed, but each Check after that takes twice as long: one day, two days, four days, eight days, and so on."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1221,7 +1273,7 @@
             }
         ],
         "description": [
-            "You create a fissure in the earth, about 60 to 150 feet deep. Any creature in the area of the fissure must make a Dodge Check to avoid falling in, as if attacked by an area attack.",
+            "You create a fissure in the earth, about 20 m deep. Any creature in the area of the fissure must make a Dodge Check to avoid falling in, as if attacked by an area attack.",
             "Structures in the area are destroyed if their Base Damage Negate is not greater than the listed value."
         ],
         "degree": {
@@ -1288,9 +1340,21 @@
             }
         ],
         "description": [
-            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a SR Check;a target can choose to fail.",
-            "A target that fails the Resistance Check feels the effects of gravity reserve for them. A target cannot repeat the Resistance Check. The affects of the spell only end when you stop maintaining it or they leave the zone.",
-            "You can set some limits to the zone, such as only affecting entities within a structure."
+            "The first time an entity enters the zone or if it starts its turn in the zone, they must make a SR Check. You are affect by this spell and you cannot select targets, no matter what other powers allow, all entities are affected equally. But, you can designate some boundaries to the zone, such as fitting with a structure.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected this round."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target has gravity reversed for them. The target cannot repeat the Resistance Check, the effects last as long as they remain in the zone and you maintain the spell."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1348,7 +1412,7 @@
             }
         ],
         "description": [
-            "You create an object composed of metal or stone whose total Presence is no greater than the listed value or twice your Presence. The object must appear in a location that is logical for it, according to its nature. For example, you could not create a boulder in mid air, but a cloud could appear in the sky."
+            "You create an object composed of metal or stone whose total Presence is no greater than the listed value or twice your Presence. The object must appear in a location that is logical for it, according to its nature. For example, you could not create a boulder in mid air, but a sword could appear in your hand."
         ],
         "degree": {
             "base": {
@@ -1473,7 +1537,7 @@
             }
         ],
         "description": [
-            "You create a stationary zone centered on a point of your choice. Structures with a Base Damage Negate 4 or less are instantly destroyed. Structures with BDN 14 or less suffer 5 points of Force damage the first round and twice as much each subsequent round -- 5, 10, 20, 40 -- up to 14."
+            "Structures within the zone and who have a Base Damage Negate 4 or less are instantly destroyed. Structures with BDN 14 or less suffer 5 points of impact damage the first round and twice as much each subsequent round -- 5, 10, 20, 40 -- up to 160."
         ],
         "degree": {
             "base": {
@@ -1534,10 +1598,21 @@
             }
         ],
         "description": [
-            "You create a stationary zone centered on a point of your choice. All entities within the zone must make a PhR 20 Check; a target can add their Impact AV to the Check.",
-            "A target that fails the Resistance Check takes 5 points of Impact Damage per Degree of Failure. A target with the Rex Damage Role multiplies the damage by their Rex Multiplier. An affected target cannot move within the zone unless they make a Strength 16 Check.",
-            "All entities in the zone must repeat the Resistance Check at the beginning of the Action Phase each round until they leave the zone or the spell ends.",
-            "Immaterial entities are also affected by this spell, but they gain a +5 deed bonus to the PhR and Strength Check."
+            "The first time an entity enters the zone or if it starts its turn in the zone, they must make a PhR 20 Check; a target can add their Impact AV to the Check. Immaterial entities are also affected by spell, but gain a +5 deed bonus to the PhR and Strength Checks.",
+            {
+                "name": "DoS 1+",
+                "type": "result",
+                "entries": [
+                    "The target is not affected this round."
+                ]
+            },
+            {
+                "name": "DoF 1+",
+                "type": "result",
+                "entries": [
+                    "The target takes 5 impact damage per Degree of Failure. If the target uses the Rex Damage Role, the final damage is multiplied by their Rex Multiplier. The target cannot move within the zone unless they make a Strength 16 Check."
+                ]
+            }
         ],
         "degree": {
             "base": {
@@ -1658,7 +1733,7 @@
             }
         ],
         "description": [
-            "You create a stationary zone centered on a point of your choice. The force of gravity is increased within the zone."
+            "The force of gravity is increased within the zone."
         ],
         "degree": {
             "base": {
@@ -1716,10 +1791,8 @@
             }
         ],
         "description": [
-            "Choose a number of points that you can see. You call down a meteor which will appear in 2d6 rounds on the End Phase. When the meteor impacts, All entities in a 150-foot radius centered on the point of impact must make a Defensive Roll against your Offensive Roll.",
-            "A target that takes a direct hit from the meteor takes 15 Heat and Impact Base Damage. A target within a 30-foot radius takes 10 Heat and Impact Base Damage. A target more than 30 feet away takes 5 Impact Base.",
-            "On a hit, a target also suffers an Impact maneuver as if hit with a Strength of 14.",
-            "A meteor will impact any structure or landmass in the way. This could change its trajectory."
+            "Choose a number points you can see, you must also choose the sequence of the points. A meteor -- 6 m in diameter -- will fall on that point on the Action Phase 2d6 rounds, with an Initiative Roll of 0. When a meteor impacts, make an Offensive Roll against all entities within 50 m of the impact point. If an entity is directly hit with a meteor, it takes 15 impact damage and 15 heat damage. Targets within 10 m take 10 impact damage and 10 heat damage. A target more than 10 m away only takes 5 impact damage. All targets are subject to an Impact maneuver from the meteor with a Strength of 14.",
+            "A meteor will not always travel straight down, the Game Master can have a meteor come in from nearly any angle, but an angle between 45&deg; and 135&deg; is the most common arc. Anything in the path of the meteor will be hit. If the imposing object is huge or larger, the meteor will impact on that object. Anything smaller will instead be carried by or bounce off the meteor; this would count as direct hit but will not cause the meteor to explode."
         ],
         "degree": {
             "base": {
@@ -1780,7 +1853,7 @@
             }
         ],
         "description": [
-            "You create a zone centered on you. You have control over gravity within the zone. You can increase it to 10 times its original value or reverse it. All entities in the zone are equally affected.",
+            "You have control over gravity within the zone. You can increase it to 10 times its original value or reverse it. All entities in the zone are equally affected.",
             "Your control is such that you can cause different effects to specific parts of the zone."
         ],
         "degree": {
@@ -1842,12 +1915,15 @@
             }
         ],
         "description": [
-            "You gain the following actions:",
+            "You can perform the following actions while you maintain the spell:",
             {
                 "name": "Control Creature of Mineral",
-                "type": "entries",
+                "type": "action",
+                "action": [
+                    "active"
+                ],
+                "cost": 2,
                 "entries": [
-                    "**Action**: 2 AP",
                     "You can gain control over a mineral elemental. A target must make a SR Check. A target that succeeds is immune to the control from this spell for a number of rounds equal to their Degree of Success.",
                     "Failure means the target falls under your control. This control is sentient, meaning you can give the target commands without needing to take any yourself.",
                     "A target cannot repeat the Resistance Check. If the target ever leaves the area or the spell ends, your control ends."
@@ -1855,17 +1931,23 @@
             },
             {
                 "name": "Modify Mineral",
-                "type": "entries",
+                "type": "action",
+                "action": [
+                    "active"
+                ],
+                "cost": 1,
                 "entries": [
-                    "**Action**: 1 AP",
                     "You can cause mountains to rise and redirect rivers within the zone."
                 ]
             },
             {
                 "name": "Redirect Mineral",
-                "type": "entries",
+                "type": "action",
+                "action": [
+                    "reaction"
+                ],
+                "cost": 0,
                 "entries": [
-                    "**Reaction**: 0 AP",
                     "You can take this reaction when an attack made with a metal weapon or a spell from the Earth path passes through the area, it suffers `D10` on the Offensive Roll."
                 ]
             }
@@ -1933,10 +2015,32 @@
             }
         ],
         "description": [
-            "You create a zone centered on you. All material entities within the zone must make a PhR or SR Check.",
-            "A target that fails the Resistance Check falls under your control. You have complete control over their atomic structure. The Game Master can require a certain degree in a trade skill or a scientific understanding in order to make the change. A target does not gain a new Resistance Check, any changes made are permanent.",
-            "For example, you could turn lead into gold if you understand that both are basic elements. You could also form a soulless human being if you possess an inhuman understanding of biology.",
-            "As this spell only grants control over atoms, it has no affect on Immaterial entities or spirits."
+            "You can perform the following action while you maintain the spell:",
+            {
+                "name": "Control Atomic Structures",
+                "type": "action",
+                "action": [
+                    "active"
+                ],
+                "cost": 2,
+                "entries": [
+                    "All material entities within the zone that you choose must make a SR Check. This has no affect on Immaterial entities.",
+                    {
+                        "name": "DoS 1+",
+                        "type": "result",
+                        "entries": [
+                            "The target is immune to this action for a number of rounds equal to their Degree of Success."
+                        ]
+                    },
+                    {
+                        "name": "DoF 1+",
+                        "type": "result",
+                        "entries": [
+                            "You gain active control over the atomic structure of the target. With an understanding of the atomic structure of different materials, you can transmute any material into another. The Game Master can set a certain requirement in the Science skill to perform this, with more complex materials requiring a higher value. Any changes made are permanent. If a creature is transmuted into an object, its spirit remains with the object until that object is destroyed or the transmutation is reversed."
+                        ]
+                    }
+                ]
+            }
         ],
         "degree": {
             "base": {

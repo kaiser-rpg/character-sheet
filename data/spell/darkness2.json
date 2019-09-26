@@ -217,7 +217,7 @@
             }
         ],
         "description": [
-            "You create a supernatural barrier with the listed Life Points. This barrier possess the Imbued trait. The barrier suffers double damage to attacks using the Light Damage Type."
+            "You create a supernatural barrier with the listed Life Points. This barrier possess the Imbued trait. The barrier has Damage Weakness to light damage."
         ],
         "degree": {
             "base": {
@@ -518,7 +518,7 @@
             }
         ],
         "description": [
-            "Make an Offensive Roll against the target. On a hit, the target takes Darkness Damage."
+            "Make an Offensive Roll against the target. On a hit, the target takes darkness damage."
         ],
         "degree": {
             "base": {
@@ -710,7 +710,10 @@
             "You can perform the following actions while you maintain the spell:",
             {
                 "name": "Control Creature of Darkness",
-                "type": "action.active",
+                "type": "action",
+                "action": [
+                    "active"
+                ],
                 "cost": 2,
                 "entries": [
                     "You can gain control over a darkness elemental within the zone. The target must make a SR Check.",
@@ -732,7 +735,10 @@
             },
             {
                 "name": "Modify Shadows",
-                "type": "action.active",
+                "type": "action",
+                "action": [
+                    "active"
+                ],
                 "cost": 1,
                 "entries": [
                     "You can change the shape of shadows."
@@ -740,7 +746,10 @@
             },
             {
                 "name": "Redirect Darkness",
-                "type": "action.reaction",
+                "type": "action",
+                "action": [
+                    "reaction"
+                ],
                 "cost": 0,
                 "entries": [
                     "You can take this reaction when an attack using Darkness Damage passes through the zone, it suffers `D2` on the Offensive Roll."
@@ -1702,7 +1711,10 @@
             "You create a supernatural barrier with the listed Life Points. You can perform the Gate of Mana action while you maintain the spell.",
             {
                 "name": "Gate of Mana",
-                "type": "action.reaction",
+                "type": "action",
+                "action": [
+                    "reaction"
+                ],
                 "cost": 1,
                 "entries": [
                     "You can take this reaction when you obtain at least 1 Degree of Success on a Defensive Roll with a Dark Gate against a spell. You can make a Power Collision using the listed Base Damage. On a failure, the attacking spell dissipates into nothing.",
@@ -2145,7 +2157,7 @@
                 "maint": 65,
                 "effect": [
                     "[@skill SR @] 14",
-                    "If you are in the Veil and in an area of positive energy, you can control your surroundings as if it were a nightmare. Neutral areas and areas of positive energy use the reduced Nornir. This does not work if there is a creature with similar or greater levels of Nornir to yourself."
+                    "If you are in the Veil and in an area of negative emotion, you can control your surroundings as if it were a nightmare. Neutral areas and areas of positive empotion use the reduced Nornir. This does not work if there is a creature with similar or greater levels of Nornir nearby."
                 ]
             },
             "advanced": {
@@ -2502,7 +2514,7 @@
             }
         ],
         "description": [
-            "You enter a state of meditation in which your body becomes one with the darkness. You leave this world and travel to the Nexus to nourish yourself with the energies found there. While there, you are only aware of your own body; the passage of time is meaningless. Your Mana Recovery is multiplied by 10 and you gain a physical and spiritual Regeneration Value of 16. While there there is no maintenance cost, you can remain in the nexus for the listed time, you can try to leave early but there is a 50% chance it will take you the entire time."
+            "You enter a state of meditation in which your body becomes one with the darkness. You leave this world and travel to the Nexus to nourish yourself with the energies found there. While there, you are only aware of your own body; the passage of time is meaningless. Your Mana Recovery is multiplied by 10 and you gain a physical and spiritual Regeneration Value of 16. While there there is no maintenance cost, you can remain in the Nexus for the listed time, you can try to leave early but there is a 50% chance it will take you the entire time."
         ],
         "degree": {
             "base": {
@@ -2633,7 +2645,7 @@
                 "name": "DoF 1+",
                 "type": "result",
                 "entries": [
-                    "The target is lost in the darkness. The body and soul are completely destroyed."
+                    "The target is lost in the darkness. Their body and soul are completely destroyed."
                 ]
             },
             "This spell cannot select targets, even if another power would allow you to; everyone in the area, but you, is equally affected."
